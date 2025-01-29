@@ -15,12 +15,12 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
   m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogColor: {r: 0.7075472, g: 0.7075472, b: 0.7075472, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.9843221, g: 0.9227302, b: 0.7693105, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -146,8 +146,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.9843221, g: 0.9227302, b: 0.7693105, a: 1}
+  m_Intensity: 0.89166665
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -156,7 +156,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.5
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -209,7 +209,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 216031750}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.81664157, y: 0, z: 0, w: 0.57714516}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -541,10 +541,10 @@ Terrain:
   serializedVersion: 6
   m_TerrainData: {fileID: 15600000, guid: 3cba2418f15490e4d9b6533d0216a186, type: 2}
   m_TreeDistance: 5000
-  m_TreeBillboardDistance: 50
-  m_TreeCrossFadeLength: 5
+  m_TreeBillboardDistance: 892
+  m_TreeCrossFadeLength: 126
   m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 80
+  m_DetailObjectDistance: 221
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
@@ -688,6 +688,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &1776902212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1776902214}
+  - component: {fileID: 1776902213}
+  m_Layer: 0
+  m_Name: LightingManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1776902213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776902212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6289ad34a168ded4eb13ff4f2af99637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SunDirectionalLight: {fileID: 216031751}
+  Preset: {fileID: 11400000, guid: 10703449fc64e7143a3eb054ef487398, type: 2}
+  rotationAxis: 0
+  IsDayCycleOn: 1
+  RandomStartTime: 0
+  TimeOfDay: 13.3
+  StartTime: 13.3
+  CycleDuration: 360
+  morningInterval: {x: 0, y: 0.5}
+  afterNoonInterval: {x: 0.5, y: 1}
+  lightIntensity: {x: 0, y: 1}
+  IsShadowChangeOn: 0
+  shadowStrength: 0.5
+  IsSkyBoxOn: 1
+  skyboxMat: {fileID: 2100000, guid: 74bdd88279bbeea479f1068bffe6e751, type: 2}
+  customPropertyName: 
+  IsMoonActive: 0
+  MoonDirectionalLight: {fileID: 0}
+  IsMoonRotationOn: 0
+  MoonIntensity: {x: 0, y: 1}
+  MoonShadowStrength: 0.5
+  IsEventsOn: 0
+  events:
+  - eventName: 
+    Time: 0
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+    executed: 0
+  eventsTolerance: 0.2
+  ResetEventsTime: 0.1
+--- !u!4 &1776902214
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776902212}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -45.441135, y: 117.61679, z: -207.9363}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -697,3 +772,4 @@ SceneRoots:
   - {fileID: 781908778}
   - {fileID: 597118846}
   - {fileID: 1492742651}
+  - {fileID: 1776902214}
