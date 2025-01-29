@@ -317,6 +317,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 444946740}
+    - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: Gravity
       value: -13
       objectReference: {fileID: 0}
@@ -698,6 +702,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1776902214}
   - component: {fileID: 1776902213}
+  - component: {fileID: 1776902215}
   m_Layer: 0
   m_Name: LightingManager
   m_TagString: Untagged
@@ -763,6 +768,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1776902215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776902212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64a46db482cfb76408dc38fe27b3f3f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2018306163
 GameObject:
   m_ObjectHideFlags: 0
