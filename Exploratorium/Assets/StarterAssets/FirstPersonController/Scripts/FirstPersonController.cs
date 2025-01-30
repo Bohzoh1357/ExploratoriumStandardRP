@@ -64,6 +64,11 @@ namespace StarterAssets
 		private float _jumpTimeoutDelta;
 		private float _fallTimeoutDelta;
 
+		// new fov change
+		[Header("Ben Additions")]
+		[Tooltip("Main Camera player is seeing through")]
+		public Camera playerCamera;
+
 	
 #if ENABLE_INPUT_SYSTEM
 		private PlayerInput _playerInput;
@@ -115,6 +120,7 @@ namespace StarterAssets
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
+			SprintFOVChange();
 		}
 
 		private void LateUpdate()
@@ -246,7 +252,19 @@ namespace StarterAssets
 			}
 		}
 
-		private static float ClampAngle(float lfAngle, float lfMin, float lfMax)
+		private void SprintFOVChange()
+		{
+			if (_input.sprint && playerCamera.fieldOfView < 75f)
+			{
+				playerCamera.fieldOfView += Time.deltaTime * 50f;
+			}
+            else if (!_input.sprint && playerCamera.fieldOfView > 60f)
+            {
+                playerCamera.fieldOfView -= Time.deltaTime * 50f;
+            }
+        }
+
+        private static float ClampAngle(float lfAngle, float lfMin, float lfMax)
 		{
 			if (lfAngle < -360f) lfAngle += 360f;
 			if (lfAngle > 360f) lfAngle -= 360f;
