@@ -65,7 +65,9 @@ namespace StarterAssets
 		private float _fallTimeoutDelta;
 
 		// new fov change
-		public Camera camera;
+		[Header("Ben Additions")]
+		[Tooltip("Main Camera player is seeing through")]
+		public Camera playerCamera;
 
 	
 #if ENABLE_INPUT_SYSTEM
@@ -252,13 +254,13 @@ namespace StarterAssets
 
 		private void SprintFOVChange()
 		{
-			if (_input.sprint && camera.fieldOfView < 75f)
+			if (_input.sprint && playerCamera.fieldOfView < 75f)
 			{
-				camera.fieldOfView += Time.deltaTime * 50f;
+				playerCamera.fieldOfView += Time.deltaTime * 50f;
 			}
-            else if (!_input.sprint && camera.fieldOfView > 60f)
+            else if (!_input.sprint && playerCamera.fieldOfView > 60f)
             {
-                camera.fieldOfView -= Time.deltaTime * 50f;
+                playerCamera.fieldOfView -= Time.deltaTime * 50f;
             }
         }
 
