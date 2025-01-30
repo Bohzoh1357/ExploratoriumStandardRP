@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using TMPro;
 
 public class ManageUI : MonoBehaviour
 {
@@ -9,10 +10,14 @@ public class ManageUI : MonoBehaviour
     private bool isMinimapToggled;
     private bool isStaticMapToggled;
     private bool displayNewTooltip;
+    private bool displayResultsScreen;
 
     public GameObject minimap;
     public GameObject staticMap;
     public GameObject tooltip;
+    public GameObject results;
+    public TMP_Text starShardCount;
+    public GameManager gameManager;
 
     private float timer;
 
@@ -25,12 +30,14 @@ public class ManageUI : MonoBehaviour
         isMinimapToggled = false;
         isStaticMapToggled = false;
         displayNewTooltip = false;
+        displayResultsScreen = false;
 
         timer = 0.0f;
 
         minimap.SetActive(isMinimapToggled);
         staticMap.SetActive(isStaticMapToggled);
         tooltip.SetActive(false);
+        results.SetActive(false);
     }
 
     // Update is called once per frame
@@ -62,6 +69,12 @@ public class ManageUI : MonoBehaviour
                 tooltip.SetActive(true);
             }
         }
+        if (displayResultsScreen)
+        {
+            results.SetActive(true);
+        }
+
+        starShardCount.text = "Star Shards: " + gameManager.starCount;
     }
 
     public void ResetUI()
@@ -73,5 +86,12 @@ public class ManageUI : MonoBehaviour
         displayNewTooltip = true;
     }
 
-
+    public void DisplayWinScreen()
+    {
+        isMinimapToggled = false;
+        isStaticMapToggled = false;
+        minimap.SetActive(false);
+        staticMap.SetActive(false);
+        results.SetActive(true);
+    }
 }

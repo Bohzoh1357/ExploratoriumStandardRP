@@ -1,3 +1,4 @@
+using System.Threading;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -5,6 +6,9 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private ManageUI ui;
 
+    public int starCount;
+
+    public float timer;
 
     public void triggerFoundMinimap()
     {
@@ -21,12 +25,21 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        starCount = 0;
+        timer = 0.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (starCount == 5)
+        {
+            ui.DisplayWinScreen();
+            timer += Time.deltaTime;
+            if (timer > 7.0f)
+            {
+                GetComponent<TitleButtonBehavior>().MainMenu();
+            }
+        }
     }
 }
