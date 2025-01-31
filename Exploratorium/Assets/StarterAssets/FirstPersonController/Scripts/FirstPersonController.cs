@@ -254,11 +254,11 @@ namespace StarterAssets
 
 		private void SprintFOVChange()
 		{
-			if (_input.sprint && _input.move != Vector2.zero && playerCamera.fieldOfView < 85f)
+			if (_input.sprint && _input.move != Vector2.zero && playerCamera.fieldOfView < 70f)
 			{
 				playerCamera.fieldOfView += Time.deltaTime * 90f;
 			}
-            else if (!_input.sprint && playerCamera.fieldOfView > 60f)
+            else if ((!_input.sprint || _input.move == Vector2.zero) && playerCamera.fieldOfView > 60f)
             {
                 playerCamera.fieldOfView -= Time.deltaTime * 90f;
             }
