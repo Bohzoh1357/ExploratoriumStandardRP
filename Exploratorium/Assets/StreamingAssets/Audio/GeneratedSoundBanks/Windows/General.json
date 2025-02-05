@@ -1,0 +1,45 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "133642231",
+    "Type": "User",
+    "GUID": "{A19F3440-3F3A-464F-90E0-B70824685515}",
+    "Language": "SFX",
+    "Hash": "{272B9B00-6412-B833-49A7-5A6D65966A50}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\General",
+    "ShortName": "General",
+    "Path": "General.bnk",
+    "Media": [
+     {
+      "Id": "90669199",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NachtMusik-72bpm4-4_L54M_v1.wav",
+      "CachePath": "29/{2948AAE6-226A-7C9D-F0E7-EE5EDE822ECA}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music",
+      "GUID": "{1D3365FA-089C-4927-BED4-DC3051893AF9}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "90669199"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{6A20840C-9951-5201-7B87-0DEC2E78560B}"
+ }
+}

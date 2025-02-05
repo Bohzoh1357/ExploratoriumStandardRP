@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3991942870	Music			\Default Work Unit\Music	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	90669199	NachtMusik-72bpm4-4_L54M_v1	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\29\{2948AAE6-226A-7C9D-F0E7-EE5EDE822ECA}.wem		\Interactive Music Hierarchy\Default Work Unit\Music\NachtMusik-72bpm4-4_L54M_v1\NachtMusik-72bpm4-4_L54M_v1		36480100
+
