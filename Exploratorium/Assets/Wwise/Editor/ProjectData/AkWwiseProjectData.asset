@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 066e43001ae1ea44b23b8efbcb25ca6e
     GuidInternal: 
-    m_lastTime: -8584628206874130171
+    m_lastTime: -8584627157547752316
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: e233e7ef4d8ae34ab662f20c007d1656
     GuidInternal: 
-    m_lastTime: -8584628206875918326
+    m_lastTime: -8584627157552656252
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 7499e83547751a438679ea52f9d44a40
     GuidInternal: 
-    m_lastTime: -8584628206875308927
+    m_lastTime: -8584627157547782707
     List:
     - name: General
       guid: 40349fa13a3f4f4690e0b70824685515
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6a2c2bde733c794e97c4d75f0447af56
     GuidInternal: 
-    m_lastTime: -8584628206875808261
+    m_lastTime: -8584627157559138571
     List:
+    - name: FootStep
+      guid: b5127a5b2683bf4e870c4d46726fa75b
+      id: 1866025847
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6a2c2bde733c794e97c4d75f0447af56
+      - ElementName: FootStep
+        ObjectType: 3
+        guid: b5127a5b2683bf4e870c4d46726fa75b
+      Path: Events\Default Work Unit\FootStep
+      maxAttenuation: 0
+      maxDuration: 1.5
+      minDuration: 0.375
     - name: Music
       guid: fa65331d9c082749bed4dc3051893af9
       id: 3991942870
@@ -125,7 +142,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: d55cc9f1dc3cb949ac089a06a527b4da
     GuidInternal: 
-    m_lastTime: -8584628206874779505
+    m_lastTime: -8584627157559128572
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -139,7 +156,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: cef5d7a649734543b3c70166ac695192
     GuidInternal: 
-    m_lastTime: -8584628206875428710
+    m_lastTime: -8584627157547773524
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -153,8 +170,106 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 89f24706b43e9d4da320960a82266e5d
     GuidInternal: 
-    m_lastTime: -8584628206875558697
-    List: []
+    m_lastTime: -8584627157547763468
+    List:
+    - name: Step
+      guid: 0fd15993964098469042c16269c5a7b0
+      id: 621108255
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 89f24706b43e9d4da320960a82266e5d
+      - ElementName: Step
+        ObjectType: 11
+        guid: 0fd15993964098469042c16269c5a7b0
+      Path: Switches\Default Work Unit\Step
+      values:
+      - name: Dirt
+        guid: c9d4bf969b73ab429739365199fbefff
+        id: 2195636714
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 89f24706b43e9d4da320960a82266e5d
+        - ElementName: Step
+          ObjectType: 11
+          guid: 0fd15993964098469042c16269c5a7b0
+        - ElementName: Dirt
+          ObjectType: 10
+          guid: c9d4bf969b73ab429739365199fbefff
+      - name: Grass
+        guid: 0750fe8572a09944bc1f2faf36fd9a7e
+        id: 4248645337
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 89f24706b43e9d4da320960a82266e5d
+        - ElementName: Step
+          ObjectType: 11
+          guid: 0fd15993964098469042c16269c5a7b0
+        - ElementName: Grass
+          ObjectType: 10
+          guid: 0750fe8572a09944bc1f2faf36fd9a7e
+      - name: Leaves
+        guid: 00d4f48a6a7eea4aa61718483b712161
+        id: 582824249
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 89f24706b43e9d4da320960a82266e5d
+        - ElementName: Step
+          ObjectType: 11
+          guid: 0fd15993964098469042c16269c5a7b0
+        - ElementName: Leaves
+          ObjectType: 10
+          guid: 00d4f48a6a7eea4aa61718483b712161
+      - name: Snow
+        guid: 96e1493f0cc4964f8ff5bcefb3bc4cc4
+        id: 787898836
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 89f24706b43e9d4da320960a82266e5d
+        - ElementName: Step
+          ObjectType: 11
+          guid: 0fd15993964098469042c16269c5a7b0
+        - ElementName: Snow
+          ObjectType: 10
+          guid: 96e1493f0cc4964f8ff5bcefb3bc4cc4
+      - name: Water
+        guid: f82c2aeb4d7fbe4ebcc376dbdd954ef4
+        id: 2654748154
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 89f24706b43e9d4da320960a82266e5d
+        - ElementName: Step
+          ObjectType: 11
+          guid: 0fd15993964098469042c16269c5a7b0
+        - ElementName: Water
+          ObjectType: 10
+          guid: f82c2aeb4d7fbe4ebcc376dbdd954ef4
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -167,9 +282,9 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: e001c2d1a33b934984704e0e8c082691
     GuidInternal: 
-    m_lastTime: -8584628206873690600
+    m_lastTime: -8584627157547763468
     List: []
-  ExpandedFileSystemItemIds: 0200000003000000
+  ExpandedFileSystemItemIds: 0200000003000000060000000700000008000000
   ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

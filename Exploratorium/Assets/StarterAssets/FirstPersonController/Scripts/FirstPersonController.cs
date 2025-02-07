@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using JetBrains.Annotations;
+using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
 #endif
@@ -68,7 +69,16 @@ namespace StarterAssets
 		[Header("Ben Additions")]
 		[Tooltip("Main Camera player is seeing through")]
 		public Camera playerCamera;
+        [Tooltip("SFX Footstep frequency")]
+        public float footstepFrequency = 0.3f;
+        [Tooltip("SFX Footstep counter")]
+        public float footstepTimer = 0.0f;
+		public float footRunFrequency = .13f;
 
+		public AK.Wwise.Event footstepSFX;
+		public AK.Wwise.Switch[] terrainSwitch;
+
+        public TerrainDetection terrainUnderfoot;
 	
 #if ENABLE_INPUT_SYSTEM
 		private PlayerInput _playerInput;
@@ -89,6 +99,14 @@ namespace StarterAssets
 				return false;
 				#endif
 			}
+		}
+
+		public void SelectTexture()
+		{
+			int currentTerrainTexture = terrainUnderfoot.GetDominantTextureIndexAt(transform.position);
+			if (currentTerrainTexture == -1) { return; }
+			Debug.Log("Current terrain texture index = " + currentTerrainTexture);
+			terrainSwitch[currentTerrainTexture].SetValue(this.gameObject);
 		}
 
 		private void Awake()
@@ -162,6 +180,13 @@ namespace StarterAssets
 			// set target speed based on move speed, sprint speed and if sprint is pressed
 			float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
 
+			if (_input.sprint) {
+				footstepFrequency = footRunFrequency;
+			} else
+			{
+				footstepFrequency = 0.3f;
+			}
+
 			// a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
 
 			// note: Vector2's == operator uses approximation so is not floating point error prone, and is cheaper than magnitude
@@ -198,6 +223,15 @@ namespace StarterAssets
 			{
 				// move
 				inputDirection = transform.right * _input.move.x + transform.forward * _input.move.y;
+
+				if (footstepTimer > footstepFrequency)
+				{
+					SelectTexture();
+					footstepSFX.Post(this.gameObject);
+					footstepTimer = 0.0f;
+				}
+
+				footstepTimer += Time.deltaTime;
 			}
 
 			// move the player
