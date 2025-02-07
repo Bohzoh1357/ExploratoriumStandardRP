@@ -13,8 +13,27 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID FOOTSTEP = 1866025847U;
         static const AkUniqueID MUSIC = 3991942870U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace STEP
+        {
+            static const AkUniqueID GROUP = 621108255U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID DIRT = 2195636714U;
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID LEAVES = 582824249U;
+                static const AkUniqueID SNOW = 787898836U;
+                static const AkUniqueID WATER = 2654748154U;
+            } // namespace SWITCH
+        } // namespace STEP
+
+    } // namespace SWITCHES
 
     namespace BANKS
     {
