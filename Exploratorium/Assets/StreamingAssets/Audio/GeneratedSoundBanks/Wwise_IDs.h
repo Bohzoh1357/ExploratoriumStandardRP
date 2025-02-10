@@ -26,8 +26,35 @@ namespace AK
         static const AkUniqueID RUNNINGWIND_STOP = 4104063435U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace JUMP
+        {
+            static const AkUniqueID GROUP = 3833651337U;
+
+            namespace STATE
+            {
+                static const AkUniqueID GROUNDED = 2907122923U;
+                static const AkUniqueID INAIR = 1710892944U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace JUMP
+
+    } // namespace STATES
+
     namespace SWITCHES
     {
+        namespace JUMP
+        {
+            static const AkUniqueID GROUP = 3833651337U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID GROUNDED = 2907122923U;
+                static const AkUniqueID INAIR = 1710892944U;
+            } // namespace SWITCH
+        } // namespace JUMP
+
         namespace STEP
         {
             static const AkUniqueID GROUP = 621108255U;

@@ -77,6 +77,8 @@ namespace StarterAssets
 
 		public AK.Wwise.Event footstepSFX;
 		public AK.Wwise.Switch[] terrainSwitch;
+		public AK.Wwise.State inAirMute;
+		public AK.Wwise.State groundedUnMute;
 
         public TerrainDetection terrainUnderfoot;
 	
@@ -242,8 +244,11 @@ namespace StarterAssets
 		{
 			if (Grounded)
 			{
-				// reset the fall timeout timer
-				_fallTimeoutDelta = FallTimeout;
+                // sets state to unmute footsteps
+				groundedUnMute.SetValue();
+
+                // reset the fall timeout timer
+                _fallTimeoutDelta = FallTimeout;
 
 				// stop our velocity dropping infinitely when grounded
 				if (_verticalVelocity < 0.0f)
@@ -266,6 +271,9 @@ namespace StarterAssets
 			}
 			else
 			{
+				//sets state to mute footsteps
+                inAirMute.SetValue();
+               
 				// reset the jump timeout timer
 				_jumpTimeoutDelta = JumpTimeout;
 

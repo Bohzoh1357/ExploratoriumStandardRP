@@ -17,6 +17,12 @@
 						<Switch Name="Water" ID="{7E8283D3-D580-47B6-8B04-A1752ADB180F}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Jump" ID="{3F4693A3-0B04-4D23-8732-36FCDF7BBF78}">
+					<ChildrenList>
+						<Switch Name="Grounded" ID="{23104471-3C07-4516-ABA3-EF628EF7AD1E}"/>
+						<Switch Name="InAir" ID="{E9522A81-EE3F-4AC0-88FF-FDA1EDAE95F8}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

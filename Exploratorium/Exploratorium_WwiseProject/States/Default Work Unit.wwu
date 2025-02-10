@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{A6D7F5CE-7349-4345-B3C7-0166AC695192}" SchemaVersion="123">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{A6D7F5CE-7349-4345-B3C7-0166AC695192}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{A6D7F5CE-7349-4345-B3C7-0166AC695192}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Jump" ID="{7B017F38-D57D-4EA1-A97F-6F89D1833BC1}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{B95A2DF3-A000-44DA-B7B3-3031BA896034}"/>
+						<State Name="InAir" ID="{C17554B1-3CCE-4D08-BE86-7F9521E44CF4}"/>
+						<State Name="Grounded" ID="{736BD908-6C0C-4E78-BEED-5B6589B28A27}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{412B69BC-5FA7-3B35-13FD-935CBF334012}",
+    "Hash": "{778CE408-08B0-1B87-48EB-CD5B83AE6054}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -74,6 +74,34 @@
       "GUID": "{4D4D4E41-A7C2-4C27-BBB9-187052C5DBE3}"
      }
     ],
+    "StateGroups": [
+     {
+      "Id": "3833651337",
+      "Name": "Jump",
+      "ObjectPath": "\\States\\Default Work Unit\\Jump",
+      "GUID": "{7B017F38-D57D-4EA1-A97F-6F89D1833BC1}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Jump\\None",
+        "GUID": "{B95A2DF3-A000-44DA-B7B3-3031BA896034}"
+       },
+       {
+        "Id": "1710892944",
+        "Name": "InAir",
+        "ObjectPath": "\\States\\Default Work Unit\\Jump\\InAir",
+        "GUID": "{C17554B1-3CCE-4D08-BE86-7F9521E44CF4}"
+       },
+       {
+        "Id": "2907122923",
+        "Name": "Grounded",
+        "ObjectPath": "\\States\\Default Work Unit\\Jump\\Grounded",
+        "GUID": "{736BD908-6C0C-4E78-BEED-5B6589B28A27}"
+       }
+      ]
+     }
+    ],
     "SwitchGroups": [
      {
       "Id": "621108255",
@@ -126,10 +154,30 @@
         "GUID": "{19A1EA46-7F5A-43AD-A331-624181745DFF}"
        }
       ]
+     },
+     {
+      "Id": "3833651337",
+      "Name": "Jump",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Jump",
+      "GUID": "{3F4693A3-0B04-4D23-8732-36FCDF7BBF78}",
+      "Switches": [
+       {
+        "Id": "1710892944",
+        "Name": "InAir",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Jump\\InAir",
+        "GUID": "{E9522A81-EE3F-4AC0-88FF-FDA1EDAE95F8}"
+       },
+       {
+        "Id": "2907122923",
+        "Name": "Grounded",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Jump\\Grounded",
+        "GUID": "{23104471-3C07-4516-ABA3-EF628EF7AD1E}"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{FF239B20-71DF-7AE6-005D-263C0AC272C8}"
+  "FileHash": "{9705BFDC-A84F-4B71-4437-F69025112CB5}"
  }
 }

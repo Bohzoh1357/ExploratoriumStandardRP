@@ -1,3 +1,11 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	3833651337	Jump			\Default Work Unit\Jump	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Jump			
+	1710892944	InAir	Jump			
+	2907122923	Grounded	Jump			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
 	1117531639	AMB			\Default Work Unit\Master Audio Bus\AMB	

@@ -823,6 +823,27 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Jump" ID="{7B017F38-D57D-4EA1-A97F-6F89D1833BC1}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="InAir" ID="{C17554B1-3CCE-4D08-BE86-7F9521E44CF4}"/>
+										<CustomState Name="" ID="{B0B81C4B-036C-4F1C-B7BD-FC76047A90DF}" ShortID="712052023">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Grounded" ID="{736BD908-6C0C-4E78-BEED-5B6589B28A27}"/>
+										<CustomState Name="" ID="{24CF7B07-C1DF-4115-BC06-BF1DB7AD20E2}" ShortID="353873252"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists>
 								<ObjectList Name="Effects">
 									<Reference>
@@ -833,6 +854,18 @@
 														<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 													</Reference>
 												</ReferenceList>
+												<StateInfo>
+													<CustomStateList>
+														<CustomState>
+															<StateRef Name="InAir" ID="{C17554B1-3CCE-4D08-BE86-7F9521E44CF4}"/>
+															<CustomState Name="" ID="{2E48513C-6392-4609-BC54-59ACD92CCDD6}" ShortID="910677675"/>
+														</CustomState>
+														<CustomState>
+															<StateRef Name="Grounded" ID="{736BD908-6C0C-4E78-BEED-5B6589B28A27}"/>
+															<CustomState Name="" ID="{80436BE9-1C9D-4F62-99E3-525EEB514BE7}" ShortID="849149316"/>
+														</CustomState>
+													</CustomStateList>
+												</StateInfo>
 											</EffectSlot>
 										</Local>
 									</Reference>

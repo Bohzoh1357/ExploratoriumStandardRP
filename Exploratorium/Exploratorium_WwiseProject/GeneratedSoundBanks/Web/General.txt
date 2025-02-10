@@ -23,6 +23,14 @@ Switch	ID	Name	Switch Group			Notes
 	2654748154	Water	Step_Water			
 	3451314871	DryLand	Step_Water			
 
+State Group	ID	Name			Wwise Object Path	Notes
+	3833651337	Jump			\Default Work Unit\Jump	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Jump			
+	1710892944	InAir	Jump			
+	2907122923	Grounded	Jump			
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	3729505769	TimeOfDay			\Default Work Unit\TimeOfDay	
 
