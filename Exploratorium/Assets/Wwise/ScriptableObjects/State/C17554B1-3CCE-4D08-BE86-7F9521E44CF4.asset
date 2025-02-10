@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: InAir
   id: 1710892944
   guid: C17554B1-3CCE-4D08-BE86-7F9521E44CF4
-  WwiseStateGroupReference: {fileID: 0}
+  WwiseStateGroupReference: {fileID: 11400000, guid: 5a1f4a3294a551c418fa1ec5fee31242, type: 2}

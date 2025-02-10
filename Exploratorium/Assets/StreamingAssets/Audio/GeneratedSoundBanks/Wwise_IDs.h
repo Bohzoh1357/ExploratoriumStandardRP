@@ -40,6 +40,20 @@ namespace AK
             } // namespace STATE
         } // namespace JUMP
 
+        namespace REGIONS
+        {
+            static const AkUniqueID GROUP = 2091077764U;
+
+            namespace STATE
+            {
+                static const AkUniqueID FIELD = 514358619U;
+                static const AkUniqueID FORREST = 760316600U;
+                static const AkUniqueID MOUNTAINTOP = 946954817U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID OCEAN = 3802555985U;
+            } // namespace STATE
+        } // namespace REGIONS
+
     } // namespace STATES
 
     namespace SWITCHES

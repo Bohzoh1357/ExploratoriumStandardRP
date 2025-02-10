@@ -1,7 +1,13 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	2091077764	Regions			\Default Work Unit\Regions	
 	3833651337	Jump			\Default Work Unit\Jump	
 
 State	ID	Name	State Group			Notes
+	514358619	Field	Regions			
+	748895195	None	Regions			
+	760316600	Forrest	Regions			
+	946954817	MountainTop	Regions			
+	3802555985	Ocean	Regions			
 	748895195	None	Jump			
 	1710892944	InAir	Jump			
 	2907122923	Grounded	Jump			

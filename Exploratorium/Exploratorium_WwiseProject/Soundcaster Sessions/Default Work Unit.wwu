@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{6A368EE0-A46F-457B-9128-BF460B18EDFA}" SchemaVersion="123">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{6A368EE0-A46F-457B-9128-BF460B18EDFA}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{6A368EE0-A46F-457B-9128-BF460B18EDFA}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{2893DF70-431F-4F95-87EF-DF648FF22C8E}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="RunningWind_Play" ID="{E459A933-0A67-4F25-AE3C-5B10F310D257}" WorkUnitID="{B1A60F62-6A0A-4166-9F30-8667BF0F44AB}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RunningWind_Stop" ID="{ABAEDAED-D15A-4633-81BF-142248A51845}" WorkUnitID="{B1A60F62-6A0A-4166-9F30-8667BF0F44AB}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="DryLand" ID="{19A1EA46-7F5A-43AD-A331-624181745DFF}"/>
+						<CurrentSwitchRef Name="Grass" ID="{85FE5007-A072-4499-BC1F-2FAF36FD9A7E}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

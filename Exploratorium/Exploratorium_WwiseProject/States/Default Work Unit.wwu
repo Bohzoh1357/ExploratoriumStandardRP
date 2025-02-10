@@ -13,6 +13,15 @@
 						<State Name="Grounded" ID="{736BD908-6C0C-4E78-BEED-5B6589B28A27}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Regions" ID="{4B90D8F6-CBEC-4321-A844-1FDC864F0829}">
+					<ChildrenList>
+						<State Name="None" ID="{5ACC5440-A09E-49FF-A733-53455BC0F461}"/>
+						<State Name="MountainTop" ID="{BB8568EA-4610-4276-8895-9D1004183F6D}"/>
+						<State Name="Forrest" ID="{278ACD23-32A4-4FA1-92BE-A2286C1E6859}"/>
+						<State Name="Ocean" ID="{9785FF92-29F4-4FC5-B59C-0151809704F8}"/>
+						<State Name="Field" ID="{5FF7C1A7-EEB9-4B9F-AA3A-D1FDE12E5479}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

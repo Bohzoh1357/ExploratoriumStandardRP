@@ -79,6 +79,8 @@ namespace StarterAssets
 		public AK.Wwise.Switch[] terrainSwitch;
 		public AK.Wwise.State inAirMute;
 		public AK.Wwise.State groundedUnMute;
+		public AK.Wwise.Event runningStartSFX;
+		public AK.Wwise.Event runningStopSFX;
 
         public TerrainDetection terrainUnderfoot;
 	
@@ -183,10 +185,14 @@ namespace StarterAssets
 			float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
 
 			if (_input.sprint) {
+
 				footstepFrequency = footRunFrequency;
+				runningStartSFX.Post(this.gameObject);
+
 			} else
 			{
-				footstepFrequency = 0.3f;
+				footstepFrequency = 0.4f;
+				runningStopSFX.Post(this.gameObject);
 			}
 
 			// a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon

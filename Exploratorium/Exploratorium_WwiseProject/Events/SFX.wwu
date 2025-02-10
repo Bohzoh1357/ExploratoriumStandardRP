@@ -40,6 +40,8 @@
 						<Action Name="" ID="{9FFF8DDD-17FD-4815-9237-5D2874092913}" ShortID="690727037">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -52,6 +54,9 @@
 				<Event Name="RunningWind_Play" ID="{E459A933-0A67-4F25-AE3C-5B10F310D257}">
 					<ChildrenList>
 						<Action Name="" ID="{62F12564-26CE-4CBA-BB31-3DCC855126E7}" ShortID="575530494">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="RunningWind" ID="{D45A3C5F-DFFD-47BF-ABF9-8C09AB90621F}" WorkUnitID="{E5C35D79-9CEB-4864-8FF8-7BB61FAEB606}"/>

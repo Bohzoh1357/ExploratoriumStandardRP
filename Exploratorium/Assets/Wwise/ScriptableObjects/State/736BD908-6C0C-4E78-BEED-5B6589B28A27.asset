@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Grounded
   id: 2907122923
   guid: 736BD908-6C0C-4E78-BEED-5B6589B28A27
-  WwiseStateGroupReference: {fileID: 0}
+  WwiseStateGroupReference: {fileID: 11400000, guid: 5a1f4a3294a551c418fa1ec5fee31242, type: 2}

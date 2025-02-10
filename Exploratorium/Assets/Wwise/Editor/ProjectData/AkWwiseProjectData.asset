@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Events\SFX
     guid: 620fa6b10a6a66419f308667bf0f44ab
     GuidInternal: 
-    m_lastTime: -8584623939382274159
+    m_lastTime: -8584623900200418794
     List:
     - name: FootStep
       guid: b5127a5b2683bf4e870c4d46726fa75b
@@ -430,8 +430,172 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: cef5d7a649734543b3c70166ac695192
     GuidInternal: 
-    m_lastTime: -8584627157547773524
-    List: []
+    m_lastTime: -8584623892820044524
+    List:
+    - name: Jump
+      guid: 387f017b7dd5a14ea97f6f89d1833bc1
+      id: 3833651337
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: cef5d7a649734543b3c70166ac695192
+      - ElementName: Jump
+        ObjectType: 9
+        guid: 387f017b7dd5a14ea97f6f89d1833bc1
+      Path: States\Default Work Unit\Jump
+      values:
+      - name: Grounded
+        guid: 08d96b730c6c784ebeed5b6589b28a27
+        id: 2907122923
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: Jump
+          ObjectType: 9
+          guid: 387f017b7dd5a14ea97f6f89d1833bc1
+        - ElementName: Grounded
+          ObjectType: 8
+          guid: 08d96b730c6c784ebeed5b6589b28a27
+      - name: InAir
+        guid: b15475c1ce3c084dbe867f9521e44cf4
+        id: 1710892944
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: Jump
+          ObjectType: 9
+          guid: 387f017b7dd5a14ea97f6f89d1833bc1
+        - ElementName: InAir
+          ObjectType: 8
+          guid: b15475c1ce3c084dbe867f9521e44cf4
+      - name: None
+        guid: f32d5ab900a0da44b7b33031ba896034
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: Jump
+          ObjectType: 9
+          guid: 387f017b7dd5a14ea97f6f89d1833bc1
+        - ElementName: None
+          ObjectType: 8
+          guid: f32d5ab900a0da44b7b33031ba896034
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Regions
+      guid: f6d8904beccb2143a8441fdc864f0829
+      id: 2091077764
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: cef5d7a649734543b3c70166ac695192
+      - ElementName: Regions
+        ObjectType: 9
+        guid: f6d8904beccb2143a8441fdc864f0829
+      Path: States\Default Work Unit\Regions
+      values:
+      - name: Field
+        guid: a7c1f75fb9ee9f4baa3ad1fde12e5479
+        id: 514358619
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: Regions
+          ObjectType: 9
+          guid: f6d8904beccb2143a8441fdc864f0829
+        - ElementName: Field
+          ObjectType: 8
+          guid: a7c1f75fb9ee9f4baa3ad1fde12e5479
+      - name: Forrest
+        guid: 23cd8a27a432a14f92bea2286c1e6859
+        id: 760316600
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: Regions
+          ObjectType: 9
+          guid: f6d8904beccb2143a8441fdc864f0829
+        - ElementName: Forrest
+          ObjectType: 8
+          guid: 23cd8a27a432a14f92bea2286c1e6859
+      - name: MountainTop
+        guid: ea6885bb1046764288959d1004183f6d
+        id: 946954817
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: Regions
+          ObjectType: 9
+          guid: f6d8904beccb2143a8441fdc864f0829
+        - ElementName: MountainTop
+          ObjectType: 8
+          guid: ea6885bb1046764288959d1004183f6d
+      - name: None
+        guid: 4054cc5a9ea0ff49a73353455bc0f461
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: Regions
+          ObjectType: 9
+          guid: f6d8904beccb2143a8441fdc864f0829
+        - ElementName: None
+          ObjectType: 8
+          guid: 4054cc5a9ea0ff49a73353455bc0f461
+      - name: Ocean
+        guid: 92ff8597f429c54fb59c0151809704f8
+        id: 3802555985
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: Regions
+          ObjectType: 9
+          guid: f6d8904beccb2143a8441fdc864f0829
+        - ElementName: Ocean
+          ObjectType: 8
+          guid: 92ff8597f429c54fb59c0151809704f8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -444,8 +608,58 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 89f24706b43e9d4da320960a82266e5d
     GuidInternal: 
-    m_lastTime: -8584623914924724938
+    m_lastTime: -8584623906215587775
     List:
+    - name: Jump
+      guid: a393463f040b234d873236fcdf7bbf78
+      id: 3833651337
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 89f24706b43e9d4da320960a82266e5d
+      - ElementName: Jump
+        ObjectType: 11
+        guid: a393463f040b234d873236fcdf7bbf78
+      Path: Switches\Default Work Unit\Jump
+      values:
+      - name: Grounded
+        guid: 71441023073c1645aba3ef628ef7ad1e
+        id: 2907122923
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 89f24706b43e9d4da320960a82266e5d
+        - ElementName: Jump
+          ObjectType: 11
+          guid: a393463f040b234d873236fcdf7bbf78
+        - ElementName: Grounded
+          ObjectType: 10
+          guid: 71441023073c1645aba3ef628ef7ad1e
+      - name: InAir
+        guid: 812a52e93feec04a88fffda1edae95f8
+        id: 1710892944
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 89f24706b43e9d4da320960a82266e5d
+        - ElementName: Jump
+          ObjectType: 11
+          guid: a393463f040b234d873236fcdf7bbf78
+        - ElementName: InAir
+          ObjectType: 10
+          guid: 812a52e93feec04a88fffda1edae95f8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: Step
       guid: 0fd15993964098469042c16269c5a7b0
       id: 621108255
@@ -593,7 +807,7 @@ MonoBehaviour:
     m_lastTime: -8584627157547763468
     List: []
   ExpandedFileSystemItemIds: 0200000003000000060000000700000008000000
-  ExpandedWaapiItemIds: 0200000003000000060000000700000008000000
+  ExpandedWaapiItemIds: 02000000030000000600000007000000080000001000000015000000160000001700000018000000190000001b0000001c0000001e00000027000000f3000000f4000000f6000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

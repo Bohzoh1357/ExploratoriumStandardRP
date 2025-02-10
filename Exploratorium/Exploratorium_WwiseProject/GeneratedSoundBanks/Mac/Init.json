@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{778CE408-08B0-1B87-48EB-CD5B83AE6054}",
+    "Hash": "{40075202-35D0-169E-12D0-7A7EFC5B019B}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -75,6 +75,44 @@
      }
     ],
     "StateGroups": [
+     {
+      "Id": "2091077764",
+      "Name": "Regions",
+      "ObjectPath": "\\States\\Default Work Unit\\Regions",
+      "GUID": "{4B90D8F6-CBEC-4321-A844-1FDC864F0829}",
+      "States": [
+       {
+        "Id": "514358619",
+        "Name": "Field",
+        "ObjectPath": "\\States\\Default Work Unit\\Regions\\Field",
+        "GUID": "{5FF7C1A7-EEB9-4B9F-AA3A-D1FDE12E5479}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Regions\\None",
+        "GUID": "{5ACC5440-A09E-49FF-A733-53455BC0F461}"
+       },
+       {
+        "Id": "760316600",
+        "Name": "Forrest",
+        "ObjectPath": "\\States\\Default Work Unit\\Regions\\Forrest",
+        "GUID": "{278ACD23-32A4-4FA1-92BE-A2286C1E6859}"
+       },
+       {
+        "Id": "946954817",
+        "Name": "MountainTop",
+        "ObjectPath": "\\States\\Default Work Unit\\Regions\\MountainTop",
+        "GUID": "{BB8568EA-4610-4276-8895-9D1004183F6D}"
+       },
+       {
+        "Id": "3802555985",
+        "Name": "Ocean",
+        "ObjectPath": "\\States\\Default Work Unit\\Regions\\Ocean",
+        "GUID": "{9785FF92-29F4-4FC5-B59C-0151809704F8}"
+       }
+      ]
+     },
      {
       "Id": "3833651337",
       "Name": "Jump",
@@ -178,6 +216,6 @@
     ]
    }
   ],
-  "FileHash": "{9705BFDC-A84F-4B71-4437-F69025112CB5}"
+  "FileHash": "{F4171632-C3A3-A931-7949-02CB6B920E2B}"
  }
 }
