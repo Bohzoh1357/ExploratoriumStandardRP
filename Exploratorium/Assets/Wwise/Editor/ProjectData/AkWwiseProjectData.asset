@@ -38,8 +38,25 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: e233e7ef4d8ae34ab662f20c007d1656
     GuidInternal: 
-    m_lastTime: -8584627157552656252
+    m_lastTime: -8584623980197745274
     List:
+    - name: AMB
+      guid: 6fe166de750ee34fa2d758334da5dd85
+      id: 1117531639
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e233e7ef4d8ae34ab662f20c007d1656
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: AMB
+        ObjectType: 2
+        guid: 6fe166de750ee34fa2d758334da5dd85
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AMB
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -54,6 +71,57 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Music
+      guid: 46dc85af135da14a996570ffe0888ced
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e233e7ef4d8ae34ab662f20c007d1656
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: 46dc85af135da14a996570ffe0888ced
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
+    - name: SFX
+      guid: b1c757fa89e13b4f9a651e89a9379e9c
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e233e7ef4d8ae34ab662f20c007d1656
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: b1c757fa89e13b4f9a651e89a9379e9c
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX
+    - name: UI
+      guid: 08b239063b93ba46900611f8f9334a55
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e233e7ef4d8ae34ab662f20c007d1656
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: UI
+        ObjectType: 2
+        guid: 08b239063b93ba46900611f8f9334a55
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\UI
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -66,7 +134,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 7499e83547751a438679ea52f9d44a40
     GuidInternal: 
-    m_lastTime: -8584627157547782707
+    m_lastTime: -8584623939237385095
     List:
     - name: General
       guid: 40349fa13a3f4f4690e0b70824685515
@@ -83,6 +151,104 @@ MonoBehaviour:
         guid: 40349fa13a3f4f4690e0b70824685515
       Path: SoundBanks\Default Work Unit\General
   EventWwu:
+  - PhysicalPath: Events\Ambiences.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Ambiences
+      ObjectType: 12
+      guid: 8cd75206366a67409f616615b585095f
+    ParentPath: Events\Ambiences
+    guid: 8cd75206366a67409f616615b585095f
+    GuidInternal: 
+    m_lastTime: -8584623939382134435
+    List:
+    - name: Field_Ambience
+      guid: 180f9d5798531c45873935871b8b9525
+      id: 2305043226
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Ambiences
+        ObjectType: 12
+        guid: 8cd75206366a67409f616615b585095f
+      - ElementName: Field_Ambience
+        ObjectType: 3
+        guid: 180f9d5798531c45873935871b8b9525
+      Path: Events\Ambiences\Field_Ambience
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Mountain_Wind
+      guid: 12cffe651f1a9642baf330078f351c4b
+      id: 2066972797
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Ambiences
+        ObjectType: 12
+        guid: 8cd75206366a67409f616615b585095f
+      - ElementName: Mountain_Wind
+        ObjectType: 3
+        guid: 12cffe651f1a9642baf330078f351c4b
+      Path: Events\Ambiences\Mountain_Wind
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: OceanBackground
+      guid: 672ac9ec31df4b44ada220da465dfa5d
+      id: 644435109
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Ambiences
+        ObjectType: 12
+        guid: 8cd75206366a67409f616615b585095f
+      - ElementName: OceanBackground
+        ObjectType: 3
+        guid: 672ac9ec31df4b44ada220da465dfa5d
+      Path: Events\Ambiences\OceanBackground
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: OceanWaves
+      guid: e78653215a1e0d41bd8737a92530a464
+      id: 3350388417
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Ambiences
+        ObjectType: 12
+        guid: 8cd75206366a67409f616615b585095f
+      - ElementName: OceanWaves
+        ObjectType: 3
+        guid: e78653215a1e0d41bd8737a92530a464
+      Path: Events\Ambiences\OceanWaves
+      maxAttenuation: 0
+      maxDuration: 7.1
+      minDuration: 7.1
+    - name: River
+      guid: 3a9dd686d97eac43957a6a0628410a35
+      id: 3605787649
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Ambiences
+        ObjectType: 12
+        guid: 8cd75206366a67409f616615b585095f
+      - ElementName: River
+        ObjectType: 3
+        guid: 3a9dd686d97eac43957a6a0628410a35
+      Path: Events\Ambiences\River
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -94,7 +260,50 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6a2c2bde733c794e97c4d75f0447af56
     GuidInternal: 
-    m_lastTime: -8584627157559138571
+    m_lastTime: -8584623939382324236
+    List: []
+  - PhysicalPath: Events\Music.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Music
+      ObjectType: 12
+      guid: baba841079c8514493bf6c26f4c5e8a5
+    ParentPath: Events\Music
+    guid: baba841079c8514493bf6c26f4c5e8a5
+    GuidInternal: 
+    m_lastTime: -8584623940669076057
+    List:
+    - name: Music
+      guid: fa65331d9c082749bed4dc3051893af9
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: baba841079c8514493bf6c26f4c5e8a5
+      - ElementName: Music
+        ObjectType: 3
+        guid: fa65331d9c082749bed4dc3051893af9
+      Path: Events\Music\Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  - PhysicalPath: Events\SFX.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: SFX
+      ObjectType: 12
+      guid: 620fa6b10a6a66419f308667bf0f44ab
+    ParentPath: Events\SFX
+    guid: 620fa6b10a6a66419f308667bf0f44ab
+    GuidInternal: 
+    m_lastTime: -8584623939382274159
     List:
     - name: FootStep
       guid: b5127a5b2683bf4e870c4d46726fa75b
@@ -103,30 +312,81 @@ MonoBehaviour:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
+      - ElementName: SFX
         ObjectType: 12
-        guid: 6a2c2bde733c794e97c4d75f0447af56
+        guid: 620fa6b10a6a66419f308667bf0f44ab
       - ElementName: FootStep
         ObjectType: 3
         guid: b5127a5b2683bf4e870c4d46726fa75b
-      Path: Events\Default Work Unit\FootStep
+      Path: Events\SFX\FootStep
       maxAttenuation: 0
-      maxDuration: 1.5
-      minDuration: 0.375
-    - name: Music
-      guid: fa65331d9c082749bed4dc3051893af9
-      id: 3991942870
+      maxDuration: 1.37
+      minDuration: 0.36
+    - name: Inventory_Open
+      guid: b791a787a2fcb145b6dae1c41b11a7a0
+      id: 3325545974
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
+      - ElementName: SFX
         ObjectType: 12
-        guid: 6a2c2bde733c794e97c4d75f0447af56
-      - ElementName: Music
+        guid: 620fa6b10a6a66419f308667bf0f44ab
+      - ElementName: Inventory_Open
         ObjectType: 3
-        guid: fa65331d9c082749bed4dc3051893af9
-      Path: Events\Default Work Unit\Music
+        guid: b791a787a2fcb145b6dae1c41b11a7a0
+      Path: Events\SFX\Inventory_Open
+      maxAttenuation: 0
+      maxDuration: 1.12
+      minDuration: 1.12
+    - name: Jump_Landing
+      guid: 14d8f6e045d49a4e9b7304b3d9bd6139
+      id: 2883244301
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 620fa6b10a6a66419f308667bf0f44ab
+      - ElementName: Jump_Landing
+        ObjectType: 3
+        guid: 14d8f6e045d49a4e9b7304b3d9bd6139
+      Path: Events\SFX\Jump_Landing
+      maxAttenuation: 0
+      maxDuration: 1.46
+      minDuration: 0.45000002
+    - name: RunningWind_Play
+      guid: 33a959e4670a254fae3c5b10f310d257
+      id: 1918324573
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 620fa6b10a6a66419f308667bf0f44ab
+      - ElementName: RunningWind_Play
+        ObjectType: 3
+        guid: 33a959e4670a254fae3c5b10f310d257
+      Path: Events\SFX\RunningWind_Play
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: RunningWind_Stop
+      guid: eddaaeab5ad1334681bf142248a51845
+      id: 4104063435
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: SFX
+        ObjectType: 12
+        guid: 620fa6b10a6a66419f308667bf0f44ab
+      - ElementName: RunningWind_Stop
+        ObjectType: 3
+        guid: eddaaeab5ad1334681bf142248a51845
+      Path: Events\SFX\RunningWind_Stop
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -142,8 +402,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: d55cc9f1dc3cb949ac089a06a527b4da
     GuidInternal: 
-    m_lastTime: -8584627157559128572
-    List: []
+    m_lastTime: -8584623953655824595
+    List:
+    - name: TimeOfDay
+      guid: 414e4d4dc2a7274cbbb9187052c5dbe3
+      id: 3729505769
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d55cc9f1dc3cb949ac089a06a527b4da
+      - ElementName: TimeOfDay
+        ObjectType: 13
+        guid: 414e4d4dc2a7274cbbb9187052c5dbe3
+      Path: Game Parameters\Default Work Unit\TimeOfDay
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -170,7 +444,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 89f24706b43e9d4da320960a82266e5d
     GuidInternal: 
-    m_lastTime: -8584627157547763468
+    m_lastTime: -8584623914924724938
     List:
     - name: Step
       guid: 0fd15993964098469042c16269c5a7b0
@@ -251,8 +525,42 @@ MonoBehaviour:
         - ElementName: Snow
           ObjectType: 10
           guid: 96e1493f0cc4964f8ff5bcefb3bc4cc4
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Step_Water
+      guid: cebafb0c9dbd374181cd5cfe7bfda1f4
+      id: 901951531
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 89f24706b43e9d4da320960a82266e5d
+      - ElementName: Step_Water
+        ObjectType: 11
+        guid: cebafb0c9dbd374181cd5cfe7bfda1f4
+      Path: Switches\Default Work Unit\Step_Water
+      values:
+      - name: DryLand
+        guid: 46eaa1195a7fad43a331624181745dff
+        id: 3451314871
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 89f24706b43e9d4da320960a82266e5d
+        - ElementName: Step_Water
+          ObjectType: 11
+          guid: cebafb0c9dbd374181cd5cfe7bfda1f4
+        - ElementName: DryLand
+          ObjectType: 10
+          guid: 46eaa1195a7fad43a331624181745dff
       - name: Water
-        guid: f82c2aeb4d7fbe4ebcc376dbdd954ef4
+        guid: d383827e80d5b6478b04a1752adb180f
         id: 2654748154
         PathAndIcons:
         - ElementName: Switches
@@ -261,12 +569,12 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 89f24706b43e9d4da320960a82266e5d
-        - ElementName: Step
+        - ElementName: Step_Water
           ObjectType: 11
-          guid: 0fd15993964098469042c16269c5a7b0
+          guid: cebafb0c9dbd374181cd5cfe7bfda1f4
         - ElementName: Water
           ObjectType: 10
-          guid: f82c2aeb4d7fbe4ebcc376dbdd954ef4
+          guid: d383827e80d5b6478b04a1752adb180f
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -285,8 +593,8 @@ MonoBehaviour:
     m_lastTime: -8584627157547763468
     List: []
   ExpandedFileSystemItemIds: 0200000003000000060000000700000008000000
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0200000003000000060000000700000008000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 1
+  currentDataSource: 0
   CurrentPluginConfig: 

@@ -9,7 +9,12 @@
 						<Switch Name="Grass" ID="{85FE5007-A072-4499-BC1F-2FAF36FD9A7E}"/>
 						<Switch Name="Leaves" ID="{8AF4D400-7E6A-4AEA-A617-18483B712161}"/>
 						<Switch Name="Snow" ID="{3F49E196-C40C-4F96-8FF5-BCEFB3BC4CC4}"/>
-						<Switch Name="Water" ID="{EB2A2CF8-7F4D-4EBE-BCC3-76DBDD954EF4}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Step_Water" ID="{0CFBBACE-BD9D-4137-81CD-5CFE7BFDA1F4}">
+					<ChildrenList>
+						<Switch Name="DryLand" ID="{19A1EA46-7F5A-43AD-A331-624181745DFF}"/>
+						<Switch Name="Water" ID="{7E8283D3-D580-47B6-8B04-A1752ADB180F}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

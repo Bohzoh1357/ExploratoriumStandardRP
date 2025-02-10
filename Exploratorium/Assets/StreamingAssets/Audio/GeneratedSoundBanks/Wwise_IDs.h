@@ -13,8 +13,17 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID FIELD_AMBIENCE = 2305043226U;
         static const AkUniqueID FOOTSTEP = 1866025847U;
+        static const AkUniqueID INVENTORY_OPEN = 3325545974U;
+        static const AkUniqueID JUMP_LANDING = 2883244301U;
+        static const AkUniqueID MOUNTAIN_WIND = 2066972797U;
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID OCEANBACKGROUND = 644435109U;
+        static const AkUniqueID OCEANWAVES = 3350388417U;
+        static const AkUniqueID RIVER = 3605787649U;
+        static const AkUniqueID RUNNINGWIND_PLAY = 1918324573U;
+        static const AkUniqueID RUNNINGWIND_STOP = 4104063435U;
     } // namespace EVENTS
 
     namespace SWITCHES
@@ -29,11 +38,26 @@ namespace AK
                 static const AkUniqueID GRASS = 4248645337U;
                 static const AkUniqueID LEAVES = 582824249U;
                 static const AkUniqueID SNOW = 787898836U;
-                static const AkUniqueID WATER = 2654748154U;
             } // namespace SWITCH
         } // namespace STEP
 
+        namespace STEP_WATER
+        {
+            static const AkUniqueID GROUP = 901951531U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID DRYLAND = 3451314871U;
+                static const AkUniqueID WATER = 2654748154U;
+            } // namespace SWITCH
+        } // namespace STEP_WATER
+
     } // namespace SWITCHES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID TIMEOFDAY = 3729505769U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {
@@ -43,7 +67,11 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID AMB = 1117531639U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID SFX = 393239870U;
+        static const AkUniqueID UI = 1551306167U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES
