@@ -1,31 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{DE2B2C6A-3C73-4E79-97C4-D75F0447AF56}" SchemaVersion="123">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{DE2B2C6A-3C73-4E79-97C4-D75F0447AF56}" PersistMode="Standalone">
-			<ChildrenList>
-				<Event Name="Music" ID="{1D3365FA-089C-4927-BED4-DC3051893AF9}">
-					<ChildrenList>
-						<Action Name="" ID="{912D8956-CACB-4161-8E84-7EA8011E53A8}" ShortID="707690606">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Music" ID="{5CFA5D89-2CC3-4D97-81DA-74C6077CD828}" WorkUnitID="{AD5C76CE-70EC-425A-BDBC-C67C996B61C1}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="FootStep" ID="{5B7A12B5-8326-4EBF-870C-4D46726FA75B}">
-					<ChildrenList>
-						<Action Name="" ID="{D75EC835-ABEC-49A1-A6C4-E8CFB6970B98}" ShortID="160559288">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Footsteps" ID="{F2FEA5E6-ECC2-4E39-9708-B33C8558CE21}" WorkUnitID="{19CD1233-6A68-4BAC-9ED9-AFFD084C65D4}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{DE2B2C6A-3C73-4E79-97C4-D75F0447AF56}" PersistMode="Standalone"/>
 	</Events>
 </WwiseDocument>

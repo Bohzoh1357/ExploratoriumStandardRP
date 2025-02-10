@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0652D78C-6A36-4067-9F61-6615B585095F}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Ambiences" ID="{0652D78C-6A36-4067-9F61-6615B585095F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="OceanBackground" ID="{ECC92A67-DF31-444B-ADA2-20DA465DFA5D}">
+					<ChildrenList>
+						<Action Name="" ID="{700DEF58-A94C-4D7D-AE89-A67D18DF770E}" ShortID="626007867">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="OceanBackground" ID="{7B640B51-29E5-48F0-B8C6-F32E991D41F2}" WorkUnitID="{7DA39E3B-6ED7-4368-A514-77DBEA521D51}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Field_Ambience" ID="{579D0F18-5398-451C-8739-35871B8B9525}">
+					<ChildrenList>
+						<Action Name="" ID="{7CA14082-C3E8-405D-9E44-D4B2C3618D0B}" ShortID="841834882">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Field_Ambience" ID="{CA4DB8EE-AC96-434D-8D26-DE010E830D4A}" WorkUnitID="{7DA39E3B-6ED7-4368-A514-77DBEA521D51}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Mountain_Wind" ID="{65FECF12-1A1F-4296-BAF3-30078F351C4B}">
+					<ChildrenList>
+						<Action Name="" ID="{255B724B-D2D7-48F0-B256-79EABCC00B49}" ShortID="801380275">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mountain_Wind" ID="{C522D188-071A-4261-85E8-67BCAE2E8322}" WorkUnitID="{7DA39E3B-6ED7-4368-A514-77DBEA521D51}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="OceanWaves" ID="{215386E7-1E5A-410D-BD87-37A92530A464}">
+					<ChildrenList>
+						<Action Name="" ID="{D4B583A7-9EB3-4998-B3E5-8B9E604D5731}" ShortID="1018558070">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="OceanWaves" ID="{5A4B9427-BA6D-43C9-B3BA-F2393B55B243}" WorkUnitID="{7DA39E3B-6ED7-4368-A514-77DBEA521D51}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="River" ID="{86D69D3A-7ED9-43AC-957A-6A0628410A35}">
+					<ChildrenList>
+						<Action Name="" ID="{CDA48D46-D646-43E2-9893-4DB73F89D1E2}" ShortID="948840427">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="River" ID="{BE3D77D7-886B-499F-BC43-5087CAB75CF7}" WorkUnitID="{7DA39E3B-6ED7-4368-A514-77DBEA521D51}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
