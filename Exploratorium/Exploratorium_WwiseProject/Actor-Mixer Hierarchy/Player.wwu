@@ -978,6 +978,142 @@
 								<ActiveSource Name="SFX_Player_RunWind_v1_JL" ID="{C399B696-12D5-4A6C-AC02-B10D99B4CC18}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="Landing" ID="{23746503-9BE6-4BFD-AD9E-62A952D2ACB7}" ShortID="213847598">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>16</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_Player_JumpLanding1_v1_JL" ID="{9A67E1F6-1BE9-4D3F-9C24-78936167961D}" ShortID="623524888">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Player_JumpLanding1_v1_JL" ID="{9D49282E-EFF3-4F47-B8C6-F6884B5FEF77}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Player_JumpLanding1_v1_JL.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="129690830"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Player_JumpLanding1_v1_JL" ID="{9D49282E-EFF3-4F47-B8C6-F6884B5FEF77}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Player_JumpLanding2_v1_JL" ID="{A0474766-7A24-4AA2-A345-051FA51ED512}" ShortID="313019118">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Player_JumpLanding2_v1_JL" ID="{DF22B583-6594-4E8E-98C8-E46388F21A8C}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Player_JumpLanding2_v1_JL.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="227669353"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Player_JumpLanding2_v1_JL" ID="{DF22B583-6594-4E8E-98C8-E46388F21A8C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Player_JumpLanding3_v1_JL" ID="{CA24F579-2FF9-4233-B1B0-6D2DA4DEE878}" ShortID="819270929">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Player_JumpLanding3_v1_JL" ID="{136CF6B2-D613-473F-8843-B4C3925B6E08}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Player_JumpLanding3_v1_JL.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="272238155"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Player_JumpLanding3_v1_JL" ID="{136CF6B2-D613-473F-8843-B4C3925B6E08}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Player_JumpLanding4_v1_JL" ID="{E8EAAC41-9E49-407B-A8DD-40F9CDD4628F}" ShortID="1065604646">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Player_JumpLanding4_v1_JL" ID="{1DAD4EB6-41A9-4F15-86E2-1305D8AC50D0}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Player_JumpLanding4_v1_JL.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="353696856"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Player_JumpLanding4_v1_JL" ID="{1DAD4EB6-41A9-4F15-86E2-1305D8AC50D0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{202C1B57-CCF8-470B-991A-613E971DB03A}" ShortID="689324249">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Parametric EQ (Custom)" ID="{3B8DCAB8-E0B5-4785-906C-82BA7F05A633}" ShortID="16242820" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																<PropertyList>
+																	<Property Name="FrequencyBand2" Type="Real32" Value="149"/>
+																	<Property Name="GainBand2" Type="Real32" Value="9.5"/>
+																	<Property Name="QFactorBand2" Type="Real32" Value="22.8"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

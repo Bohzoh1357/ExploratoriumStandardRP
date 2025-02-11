@@ -74,13 +74,15 @@ namespace StarterAssets
         [Tooltip("SFX Footstep counter")]
         public float footstepTimer = 0.0f;
 		public float footRunFrequency = .13f;
+        private bool startedFalling;
 
-		public AK.Wwise.Event footstepSFX;
+        public AK.Wwise.Event footstepSFX;
 		public AK.Wwise.Switch[] terrainSwitch;
 		public AK.Wwise.State inAirMute;
 		public AK.Wwise.State groundedUnMute;
 		public AK.Wwise.Event runningStartSFX;
 		public AK.Wwise.Event runningStopSFX;
+		public AK.Wwise.Event landingSound;
 
         public TerrainDetection terrainUnderfoot;
 	
@@ -187,12 +189,10 @@ namespace StarterAssets
 			if (_input.sprint) {
 
 				footstepFrequency = footRunFrequency;
-				runningStartSFX.Post(this.gameObject);
 
 			} else
 			{
 				footstepFrequency = 0.4f;
-				runningStopSFX.Post(this.gameObject);
 			}
 
 			// a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
@@ -274,7 +274,14 @@ namespace StarterAssets
 				{
 					_jumpTimeoutDelta -= Time.deltaTime;
 				}
-			}
+
+                //if we are grounded after falling or jumping then falling, play landing sound
+                if (startedFalling == true)
+                {
+					landingSound.Post(this.gameObject);
+                    startedFalling = false;
+                }
+            }
 			else
 			{
 				//sets state to mute footsteps
@@ -291,7 +298,10 @@ namespace StarterAssets
 
 				// if we are not grounded, do not jump
 				_input.jump = false;
-			}
+
+                //indicates that we have either fallen or jumped
+                startedFalling = true;
+            }
 
 			// apply gravity over time if under terminal (multiply by delta time twice to linearly speed up over time)
 			if (_verticalVelocity < _terminalVelocity)
@@ -305,10 +315,12 @@ namespace StarterAssets
 			if (_input.sprint && _input.move != Vector2.zero && playerCamera.fieldOfView < 70f)
 			{
 				playerCamera.fieldOfView += Time.deltaTime * 90f;
-			}
+                runningStartSFX.Post(this.gameObject);
+            }
             else if ((!_input.sprint || _input.move == Vector2.zero) && playerCamera.fieldOfView > 60f)
             {
                 playerCamera.fieldOfView -= Time.deltaTime * 90f;
+                runningStopSFX.Post(this.gameObject);
             }
         }
 

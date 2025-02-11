@@ -9438,6 +9438,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 8f4c4732d7543924295e47c545c51c83, type: 2}
     - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: landingSound.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: a3a7aaa79aa15d545898b4ba7e01a27b, type: 2}
+    - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: runningStart.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: ef1d848ea6a2633408a4c1ebb3004b2b, type: 2}
@@ -10797,7 +10801,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 136437516}
-  m_VersionIndex: 30
+  m_VersionIndex: 33
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
