@@ -134,7 +134,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 7499e83547751a438679ea52f9d44a40
     GuidInternal: 
-    m_lastTime: -8584623939237385095
+    m_lastTime: -8584623761017105146
     List:
     - name: General
       guid: 40349fa13a3f4f4690e0b70824685515
@@ -162,28 +162,11 @@ MonoBehaviour:
     ParentPath: Events\Ambiences
     guid: 8cd75206366a67409f616615b585095f
     GuidInternal: 
-    m_lastTime: -8584623939382134435
+    m_lastTime: -8584623761179730218
     List:
-    - name: Field_Ambience
-      guid: 180f9d5798531c45873935871b8b9525
-      id: 2305043226
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Ambiences
-        ObjectType: 12
-        guid: 8cd75206366a67409f616615b585095f
-      - ElementName: Field_Ambience
-        ObjectType: 3
-        guid: 180f9d5798531c45873935871b8b9525
-      Path: Events\Ambiences\Field_Ambience
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Mountain_Wind
+    - name: Mountain_Wind1
       guid: 12cffe651f1a9642baf330078f351c4b
-      id: 2066972797
+      id: 1863533814
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -191,11 +174,28 @@ MonoBehaviour:
       - ElementName: Ambiences
         ObjectType: 12
         guid: 8cd75206366a67409f616615b585095f
-      - ElementName: Mountain_Wind
+      - ElementName: Mountain_Wind1
         ObjectType: 3
         guid: 12cffe651f1a9642baf330078f351c4b
-      Path: Events\Ambiences\Mountain_Wind
-      maxAttenuation: 0
+      Path: Events\Ambiences\Mountain_Wind1
+      maxAttenuation: 145
+      maxDuration: 0
+      minDuration: 0
+    - name: Mountain_Wind2
+      guid: 153d936415fd324d98d77c0155a36ae7
+      id: 1863533813
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Ambiences
+        ObjectType: 12
+        guid: 8cd75206366a67409f616615b585095f
+      - ElementName: Mountain_Wind2
+        ObjectType: 3
+        guid: 153d936415fd324d98d77c0155a36ae7
+      Path: Events\Ambiences\Mountain_Wind2
+      maxAttenuation: 96
       maxDuration: 0
       minDuration: 0
     - name: OceanBackground
@@ -232,9 +232,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 7.1
       minDuration: 7.1
-    - name: River
-      guid: 3a9dd686d97eac43957a6a0628410a35
-      id: 3605787649
+    - name: RegionAmbience
+      guid: 180f9d5798531c45873935871b8b9525
+      id: 3100698545
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -242,11 +242,45 @@ MonoBehaviour:
       - ElementName: Ambiences
         ObjectType: 12
         guid: 8cd75206366a67409f616615b585095f
-      - ElementName: River
+      - ElementName: RegionAmbience
+        ObjectType: 3
+        guid: 180f9d5798531c45873935871b8b9525
+      Path: Events\Ambiences\RegionAmbience
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: RiverClose
+      guid: 3a9dd686d97eac43957a6a0628410a35
+      id: 155135507
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Ambiences
+        ObjectType: 12
+        guid: 8cd75206366a67409f616615b585095f
+      - ElementName: RiverClose
         ObjectType: 3
         guid: 3a9dd686d97eac43957a6a0628410a35
-      Path: Events\Ambiences\River
-      maxAttenuation: 0
+      Path: Events\Ambiences\RiverClose
+      maxAttenuation: 100
+      maxDuration: 0
+      minDuration: 0
+    - name: RiverFar
+      guid: aee9cbde2ca15d41a4a029b94c65420e
+      id: 362167352
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Ambiences
+        ObjectType: 12
+        guid: 8cd75206366a67409f616615b585095f
+      - ElementName: RiverFar
+        ObjectType: 3
+        guid: aee9cbde2ca15d41a4a029b94c65420e
+      Path: Events\Ambiences\RiverFar
+      maxAttenuation: 150
       maxDuration: 0
       minDuration: 0
   - PhysicalPath: Events\Default Work Unit.wwu
@@ -303,7 +337,7 @@ MonoBehaviour:
     ParentPath: Events\SFX
     guid: 620fa6b10a6a66419f308667bf0f44ab
     GuidInternal: 
-    m_lastTime: -8584623900200418794
+    m_lastTime: -8584623789730786333
     List:
     - name: FootStep
       guid: b5127a5b2683bf4e870c4d46726fa75b
@@ -430,7 +464,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: cef5d7a649734543b3c70166ac695192
     GuidInternal: 
-    m_lastTime: -8584623892820044524
+    m_lastTime: -8584623765762747070
     List:
     - name: Jump
       guid: 387f017b7dd5a14ea97f6f89d1833bc1
@@ -807,7 +841,7 @@ MonoBehaviour:
     m_lastTime: -8584627157547763468
     List: []
   ExpandedFileSystemItemIds: 0200000003000000060000000700000008000000
-  ExpandedWaapiItemIds: 02000000030000000600000007000000080000001000000015000000160000001700000018000000190000001b0000001c0000001e00000027000000f3000000f4000000f6000000
+  ExpandedWaapiItemIds: 02000000030000000600000007000000080000001000000015000000160000001700000018000000190000001b0000001c0000001e000000260000002700000055000000560000006e0000006f0000007a0000008700000088000000f3000000f4000000f6000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

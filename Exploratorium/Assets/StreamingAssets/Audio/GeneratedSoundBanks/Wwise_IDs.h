@@ -13,15 +13,17 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID FIELD_AMBIENCE = 2305043226U;
         static const AkUniqueID FOOTSTEP = 1866025847U;
         static const AkUniqueID INVENTORY_OPEN = 3325545974U;
         static const AkUniqueID JUMP_LANDING = 2883244301U;
-        static const AkUniqueID MOUNTAIN_WIND = 2066972797U;
+        static const AkUniqueID MOUNTAIN_WIND1 = 1863533814U;
+        static const AkUniqueID MOUNTAIN_WIND2 = 1863533813U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID OCEANBACKGROUND = 644435109U;
         static const AkUniqueID OCEANWAVES = 3350388417U;
-        static const AkUniqueID RIVER = 3605787649U;
+        static const AkUniqueID REGIONAMBIENCE = 3100698545U;
+        static const AkUniqueID RIVERCLOSE = 155135507U;
+        static const AkUniqueID RIVERFAR = 362167352U;
         static const AkUniqueID RUNNINGWIND_PLAY = 1918324573U;
         static const AkUniqueID RUNNINGWIND_STOP = 4104063435U;
     } // namespace EVENTS

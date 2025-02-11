@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{A19F3440-3F3A-464F-90E0-B70824685515}",
     "Language": "SFX",
-    "Hash": "{352F40DD-6DB9-FBD0-94B8-5D3195DE9F72}",
+    "Hash": "{DCB06D4A-B1A6-84CD-821B-552D7765316E}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\General",
     "ShortName": "General",
     "Path": "General.bnk",
@@ -37,7 +37,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Player_StepDirt3_v2_JL.wav",
-      "CachePath": "45/{4517A1FC-847F-9FF6-6A5A-0ED236D7001E}.wem"
+      "CachePath": "9D/{9D8BB133-6F7E-B6BF-63CA-676E7F44A89E}.wem"
      },
      {
       "Id": "90669199",
@@ -77,7 +77,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Player_StepDirt4_v2_JL.wav",
-      "CachePath": "6B/{6BCD6A50-028A-5E73-EC28-78EF245985D0}.wem"
+      "CachePath": "90/{904056CD-9968-98A0-5A1F-D5C16D4AF693}.wem"
      },
      {
       "Id": "243668791",
@@ -125,7 +125,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Player_StepDirt1_v2_JL.wav",
-      "CachePath": "E7/{E7D03F05-177E-499F-FC4D-BA5DE4863F67}.wem"
+      "CachePath": "9D/{9D2291FD-1C5C-0FBE-CCA4-08E79C953F31}.wem"
      },
      {
       "Id": "359265107",
@@ -133,7 +133,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Player_StepDirt7_v2_JL.wav",
-      "CachePath": "90/{905BEACF-DBE9-A016-3245-FD2120D7798E}.wem"
+      "CachePath": "8E/{8E2F27AE-81CB-7A54-B498-C726ADD0CEEB}.wem"
      },
      {
       "Id": "361862295",
@@ -165,7 +165,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "AMB_ENV_RiverClose2_v1_JL.wav",
-      "CachePath": "4C/{4C77F00E-FAE8-16D6-C054-0191AE4D4825}.wem"
+      "CachePath": "D3/{D3D1FCBC-23C6-F807-BF18-8DB16CABDAAB}.wem"
      },
      {
       "Id": "467309718",
@@ -214,14 +214,6 @@
       "Location": "Memory",
       "ShortName": "SFX_Player_StepSnow1_v2_JL.wav",
       "CachePath": "85/{856B6BC1-6E84-C453-CFF5-AF2DD48095BD}.wem"
-     },
-     {
-      "Id": "545189716",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AMB_ENV_WindLeaves_v1_JL.wav",
-      "CachePath": "99/{991358D6-63A7-F427-DBAB-46DC77A147F0}.wem"
      },
      {
       "Id": "547230264",
@@ -285,7 +277,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Player_StepDirt6_v2_JL.wav",
-      "CachePath": "72/{727108EB-C839-5402-A32B-664F802A1862}.wem"
+      "CachePath": "FB/{FB1C0325-14F3-4B4A-FA16-28FA2C9A82D7}.wem"
      },
      {
       "Id": "716513626",
@@ -293,7 +285,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Player_StepDirt5_v2_JL.wav",
-      "CachePath": "E1/{E19E548F-FB27-5C0D-9E58-85C39C16DF98}.wem"
+      "CachePath": "E5/{E5865496-AC5B-BCAD-9664-5D7036E2DEA8}.wem"
+     },
+     {
+      "Id": "719232856",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB_ENV_FieldWind_v1_JL.wav",
+      "CachePath": "99/{991358D6-63A7-F427-DBAB-46DC77A147F0}.wem"
      },
      {
       "Id": "745446118",
@@ -302,6 +302,14 @@
       "Location": "Memory",
       "ShortName": "AMB_ENV_FieldBirds2_v1_JL.wav",
       "CachePath": "A8/{A85D34FE-7A70-3E71-37CD-CC3ED1B333D5}.wem"
+     },
+     {
+      "Id": "756459854",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB_ENV_LeavesWind_v1_JL.wav",
+      "CachePath": "C5/{C50BEFCA-B232-0304-D516-E43186AE50B9}.wem"
      },
      {
       "Id": "798221971",
@@ -349,7 +357,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Player_StepDirt2_v2_JL.wav",
-      "CachePath": "C2/{C20D2BA5-2455-5BE7-D175-46D21ED29560}.wem"
+      "CachePath": "E3/{E30EFF33-BEC2-62AE-C43D-F0A68248E1AA}.wem"
      },
      {
       "Id": "928695506",
@@ -397,7 +405,7 @@
       {
        "Id": "1018388373",
        "Name": "Silence",
-       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Environment\\AMB\\Field_Ambience\\Birds\\BirdsSilence\\Silence",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Environment\\AMB\\RegionAmbiences\\Field_Ambience\\Birds\\BirdsSilence\\Silence",
        "GUID": "{FA5751D5-E4E0-49F7-9100-62A4B7D71412}",
        "LibName": "Wwise Silence",
        "LibId": "6619138"
@@ -405,46 +413,6 @@
      ]
     },
     "Events": [
-     {
-      "Id": "2305043226",
-      "Name": "Field_Ambience",
-      "ObjectPath": "\\Events\\Ambiences\\Field_Ambience",
-      "GUID": "{579D0F18-5398-451C-8739-35871B8B9525}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "361862295"
-       },
-       {
-        "Id": "403844754"
-       },
-       {
-        "Id": "545189716"
-       },
-       {
-        "Id": "708755240"
-       },
-       {
-        "Id": "745446118"
-       },
-       {
-        "Id": "866256559"
-       },
-       {
-        "Id": "882701167"
-       },
-       {
-        "Id": "970619497"
-       }
-      ],
-      "PluginRefs": {
-       "Custom": [
-        {
-         "Id": "1018388373"
-        }
-       ]
-      }
-     },
      {
       "Id": "1866025847",
       "Name": "FootStep",
@@ -780,10 +748,24 @@
       ]
      },
      {
-      "Id": "2066972797",
-      "Name": "Mountain_Wind",
-      "ObjectPath": "\\Events\\Ambiences\\Mountain_Wind",
+      "Id": "1863533814",
+      "Name": "Mountain_Wind1",
+      "ObjectPath": "\\Events\\Ambiences\\Mountain_Wind1",
       "GUID": "{65FECF12-1A1F-4296-BAF3-30078F351C4B}",
+      "MaxAttenuation": "145",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "34936954"
+       }
+      ]
+     },
+     {
+      "Id": "1863533813",
+      "Name": "Mountain_Wind2",
+      "ObjectPath": "\\Events\\Ambiences\\Mountain_Wind2",
+      "GUID": "{64933D15-FD15-4D32-98D7-7C0155A36AE7}",
+      "MaxAttenuation": "96",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -836,15 +818,90 @@
       ]
      },
      {
-      "Id": "3605787649",
-      "Name": "River",
-      "ObjectPath": "\\Events\\Ambiences\\River",
+      "Id": "3100698545",
+      "Name": "RegionAmbience",
+      "ObjectPath": "\\Events\\Ambiences\\RegionAmbience",
+      "GUID": "{579D0F18-5398-451C-8739-35871B8B9525}",
+      "DurationType": "Infinite",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "2091077764",
+         "Id": "760316600",
+         "GUID": "{278ACD23-32A4-4FA1-92BE-A2286C1E6859}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "756459854"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "2091077764",
+         "Id": "514358619",
+         "GUID": "{5FF7C1A7-EEB9-4B9F-AA3A-D1FDE12E5479}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "361862295"
+         },
+         {
+          "Id": "403844754"
+         },
+         {
+          "Id": "708755240"
+         },
+         {
+          "Id": "719232856"
+         },
+         {
+          "Id": "745446118"
+         },
+         {
+          "Id": "866256559"
+         },
+         {
+          "Id": "882701167"
+         },
+         {
+          "Id": "970619497"
+         }
+        ],
+        "PluginRefs": {
+         "Custom": [
+          {
+           "Id": "1018388373"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "Id": "155135507",
+      "Name": "RiverClose",
+      "ObjectPath": "\\Events\\Ambiences\\RiverClose",
       "GUID": "{86D69D3A-7ED9-43AC-957A-6A0628410A35}",
+      "MaxAttenuation": "100",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "25282039"
-       },
+       }
+      ]
+     },
+     {
+      "Id": "362167352",
+      "Name": "RiverFar",
+      "ObjectPath": "\\Events\\Ambiences\\RiverFar",
+      "GUID": "{DECBE9AE-A12C-415D-A4A0-29B94C65420E}",
+      "MaxAttenuation": "150",
+      "DurationType": "Infinite",
+      "MediaRefs": [
        {
         "Id": "405912730"
        }
@@ -879,6 +936,46 @@
       "Name": "TimeOfDay",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\TimeOfDay",
       "GUID": "{4D4D4E41-A7C2-4C27-BBB9-187052C5DBE3}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "2091077764",
+      "Name": "Regions",
+      "ObjectPath": "\\States\\Default Work Unit\\Regions",
+      "GUID": "{4B90D8F6-CBEC-4321-A844-1FDC864F0829}",
+      "States": [
+       {
+        "Id": "514358619",
+        "Name": "Field",
+        "ObjectPath": "\\States\\Default Work Unit\\Regions\\Field",
+        "GUID": "{5FF7C1A7-EEB9-4B9F-AA3A-D1FDE12E5479}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Regions\\None",
+        "GUID": "{5ACC5440-A09E-49FF-A733-53455BC0F461}"
+       },
+       {
+        "Id": "760316600",
+        "Name": "Forrest",
+        "ObjectPath": "\\States\\Default Work Unit\\Regions\\Forrest",
+        "GUID": "{278ACD23-32A4-4FA1-92BE-A2286C1E6859}"
+       },
+       {
+        "Id": "946954817",
+        "Name": "MountainTop",
+        "ObjectPath": "\\States\\Default Work Unit\\Regions\\MountainTop",
+        "GUID": "{BB8568EA-4610-4276-8895-9D1004183F6D}"
+       },
+       {
+        "Id": "3802555985",
+        "Name": "Ocean",
+        "ObjectPath": "\\States\\Default Work Unit\\Regions\\Ocean",
+        "GUID": "{9785FF92-29F4-4FC5-B59C-0151809704F8}"
+       }
+      ]
      }
     ],
     "SwitchGroups": [
@@ -937,6 +1034,6 @@
     ]
    }
   ],
-  "FileHash": "{B8FF1EB8-FF4A-C9D1-9D70-8DE689F36620}"
+  "FileHash": "{C00CDBFA-8534-0148-E14B-4491754A5764}"
  }
 }

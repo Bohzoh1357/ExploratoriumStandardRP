@@ -7,15 +7,17 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Ambiences" ID="{0652D78C-6A36-4067-9F61-6615B585095F}" WorkUnitID="{0652D78C-6A36-4067-9F61-6615B585095F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="OceanWaves" ID="{215386E7-1E5A-410D-BD87-37A92530A464}" WorkUnitID="{0652D78C-6A36-4067-9F61-6615B585095F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="RiverFar" ID="{DECBE9AE-A12C-415D-A4A0-29B94C65420E}" WorkUnitID="{0652D78C-6A36-4067-9F61-6615B585095F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SFX" ID="{B1A60F62-6A0A-4166-9F30-8667BF0F44AB}" WorkUnitID="{B1A60F62-6A0A-4166-9F30-8667BF0F44AB}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Mountain_Wind" ID="{65FECF12-1A1F-4296-BAF3-30078F351C4B}" WorkUnitID="{0652D78C-6A36-4067-9F61-6615B585095F}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="River" ID="{86D69D3A-7ED9-43AC-957A-6A0628410A35}" WorkUnitID="{0652D78C-6A36-4067-9F61-6615B585095F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Mountain_Wind1" ID="{65FECF12-1A1F-4296-BAF3-30078F351C4B}" WorkUnitID="{0652D78C-6A36-4067-9F61-6615B585095F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="RiverClose" ID="{86D69D3A-7ED9-43AC-957A-6A0628410A35}" WorkUnitID="{0652D78C-6A36-4067-9F61-6615B585095F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="OceanBackground" ID="{ECC92A67-DF31-444B-ADA2-20DA465DFA5D}" WorkUnitID="{0652D78C-6A36-4067-9F61-6615B585095F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music" ID="{1084BABA-C879-4451-93BF-6C26F4C5E8A5}" WorkUnitID="{1084BABA-C879-4451-93BF-6C26F4C5E8A5}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Field_Ambience" ID="{579D0F18-5398-451C-8739-35871B8B9525}" WorkUnitID="{0652D78C-6A36-4067-9F61-6615B585095F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="RegionAmbience" ID="{579D0F18-5398-451C-8739-35871B8B9525}" WorkUnitID="{0652D78C-6A36-4067-9F61-6615B585095F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Inventory_Open" ID="{87A791B7-FCA2-45B1-B6DA-E1C41B11A7A0}" WorkUnitID="{B1A60F62-6A0A-4166-9F30-8667BF0F44AB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RunningWind_Stop" ID="{ABAEDAED-D15A-4633-81BF-142248A51845}" WorkUnitID="{B1A60F62-6A0A-4166-9F30-8667BF0F44AB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music" ID="{1D3365FA-089C-4927-BED4-DC3051893AF9}" WorkUnitID="{1084BABA-C879-4451-93BF-6C26F4C5E8A5}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Mountain_Wind2" ID="{64933D15-FD15-4D32-98D7-7C0155A36AE7}" WorkUnitID="{0652D78C-6A36-4067-9F61-6615B585095F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Jump_Landing" ID="{E0F6D814-D445-4E9A-9B73-04B3D9BD6139}" WorkUnitID="{B1A60F62-6A0A-4166-9F30-8667BF0F44AB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FootStep" ID="{5B7A12B5-8326-4EBF-870C-4D46726FA75B}" WorkUnitID="{B1A60F62-6A0A-4166-9F30-8667BF0F44AB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RunningWind_Play" ID="{E459A933-0A67-4F25-AE3C-5B10F310D257}" WorkUnitID="{B1A60F62-6A0A-4166-9F30-8667BF0F44AB}" Origin="Manual" Filter="7"/>

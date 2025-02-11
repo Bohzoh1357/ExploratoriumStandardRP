@@ -12,8 +12,25 @@
 						<State Name="InAir" ID="{C17554B1-3CCE-4D08-BE86-7F9521E44CF4}"/>
 						<State Name="Grounded" ID="{736BD908-6C0C-4E78-BEED-5B6589B28A27}"/>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Grounded" ID="{736BD908-6C0C-4E78-BEED-5B6589B28A27}"/>
+							<EndState Name="InAir" ID="{C17554B1-3CCE-4D08-BE86-7F9521E44CF4}"/>
+							<Time>0.1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="InAir" ID="{C17554B1-3CCE-4D08-BE86-7F9521E44CF4}"/>
+							<EndState Name="Grounded" ID="{736BD908-6C0C-4E78-BEED-5B6589B28A27}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 				<StateGroup Name="Regions" ID="{4B90D8F6-CBEC-4321-A844-1FDC864F0829}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="5"/>
+					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{5ACC5440-A09E-49FF-A733-53455BC0F461}"/>
 						<State Name="MountainTop" ID="{BB8568EA-4610-4276-8895-9D1004183F6D}"/>

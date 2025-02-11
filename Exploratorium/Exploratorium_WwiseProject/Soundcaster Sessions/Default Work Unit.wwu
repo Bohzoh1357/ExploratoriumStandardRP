@@ -14,11 +14,20 @@
 							<Position X="2" Y="1"/>
 						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
-					<CurrentStateList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="TimeOfDay" ID="{4D4D4E41-A7C2-4C27-BBB9-187052C5DBE3}"/>
+							<Value>9.52602336455542</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Field" ID="{5FF7C1A7-EEB9-4B9F-AA3A-D1FDE12E5479}"/>
+						<CurrentStateRef Name="Grounded" ID="{736BD908-6C0C-4E78-BEED-5B6589B28A27}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="DryLand" ID="{19A1EA46-7F5A-43AD-A331-624181745DFF}"/>
-						<CurrentSwitchRef Name="Grass" ID="{85FE5007-A072-4499-BC1F-2FAF36FD9A7E}"/>
+						<CurrentSwitchRef Name="Dirt" ID="{96BFD4C9-739B-42AB-9739-365199FBEFFF}"/>
+						<CurrentSwitchRef Name="Grounded" ID="{23104471-3C07-4516-ABA3-EF628EF7AD1E}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
