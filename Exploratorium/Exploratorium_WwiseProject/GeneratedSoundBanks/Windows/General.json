@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{A19F3440-3F3A-464F-90E0-B70824685515}",
     "Language": "SFX",
-    "Hash": "{DCB06D4A-B1A6-84CD-821B-552D7765316E}",
+    "Hash": "{8565DE25-1B55-3365-416B-305316BE5874}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\General",
     "ShortName": "General",
     "Path": "General.bnk",
@@ -40,20 +40,28 @@
       "CachePath": "9D/{9D8BB133-6F7E-B6BF-63CA-676E7F44A89E}.wem"
      },
      {
-      "Id": "90669199",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "NachtMusik-72bpm4-4_L54M_v1.wav",
-      "CachePath": "05/{05C2C498-D664-9F03-68D3-81CD23048810}.wem"
-     },
-     {
       "Id": "105687993",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Player_StepWater5_v2_JL.wav",
       "CachePath": "96/{96154CBC-4C8E-8FD1-0C4E-DA487114B27A}.wem"
+     },
+     {
+      "Id": "114287338",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Day6_80bpm4-4_L2M.wav",
+      "CachePath": "1B/{1B3995EF-63F3-FFFC-F8FE-8169B851BE4D}.wem"
+     },
+     {
+      "Id": "129690830",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Player_JumpLanding1_v1_JL.wav",
+      "CachePath": "AF/{AFA54215-6C2F-DBD8-65B8-90E36B746D1A}.wem"
      },
      {
       "Id": "134896037",
@@ -72,12 +80,36 @@
       "CachePath": "AF/{AF32F06C-7BE9-B8FF-D716-DE225BDB86D2}.wem"
      },
      {
+      "Id": "149907718",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "DaytoNight_Trans_80bpm4-4_L12S(4M).wav",
+      "CachePath": "1D/{1D31DE06-4023-1253-94E6-C7C30B3B6617}.wem"
+     },
+     {
+      "Id": "153955504",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Day3_Piano_80bpm4-4_L6M.wav",
+      "CachePath": "0A/{0AEBF6BB-F361-1B18-4BBB-488AC045FD60}.wem"
+     },
+     {
       "Id": "213707038",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Player_StepDirt4_v2_JL.wav",
       "CachePath": "90/{904056CD-9968-98A0-5A1F-D5C16D4AF693}.wem"
+     },
+     {
+      "Id": "227669353",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Player_JumpLanding2_v1_JL.wav",
+      "CachePath": "5B/{5B25E5BC-E233-6051-B3D4-550803F5D1B6}.wem"
      },
      {
       "Id": "243668791",
@@ -96,6 +128,14 @@
       "CachePath": "FE/{FEC79A2C-00FE-8A60-79FC-AECD9835104D}.wem"
      },
      {
+      "Id": "272238155",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Player_JumpLanding3_v1_JL.wav",
+      "CachePath": "E6/{E63DC4C7-23CD-40B1-AE1E-175A4CECAF55}.wem"
+     },
+     {
       "Id": "273231139",
       "Language": "SFX",
       "Streaming": "false",
@@ -112,6 +152,22 @@
       "CachePath": "64/{644CAB5D-E6F3-C5F9-997B-AFCCA288761E}.wem"
      },
      {
+      "Id": "288702264",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Day4_Piano_80bpm4-4_L6M.wav",
+      "CachePath": "46/{4665436F-5AF4-20D8-D631-BD6E5C777EFA}.wem"
+     },
+     {
+      "Id": "297746855",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Day3_ReversePiano_80bpm4-4_L6M.wav",
+      "CachePath": "EA/{EA2847D0-63FF-7B43-1BC1-227AD8F0C294}.wem"
+     },
+     {
       "Id": "309791869",
       "Language": "SFX",
       "Streaming": "false",
@@ -120,12 +176,28 @@
       "CachePath": "CD/{CD46CB48-ABD0-3B18-9331-8E6BD43F99B2}.wem"
      },
      {
+      "Id": "331946098",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NachtMusik-72bpm4-4_L54M_v2.wav",
+      "CachePath": "28/{28C5FD6B-A179-DBC2-4D01-20F7A4FE08B0}.wem"
+     },
+     {
       "Id": "334427377",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Player_StepDirt1_v2_JL.wav",
       "CachePath": "9D/{9D2291FD-1C5C-0FBE-CCA4-08E79C953F31}.wem"
+     },
+     {
+      "Id": "353696856",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Player_JumpLanding4_v1_JL.wav",
+      "CachePath": "17/{176E6646-530E-5853-8C53-D25022A08BBC}.wem"
      },
      {
       "Id": "359265107",
@@ -142,6 +214,14 @@
       "Location": "Memory",
       "ShortName": "AMB_ENV_FieldBirds3_v1_JL.wav",
       "CachePath": "D5/{D5CD1499-C921-2760-21A5-9B28AE2A1AED}.wem"
+     },
+     {
+      "Id": "395661530",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Day2_Piano_80bpm4-4_L4M.wav",
+      "CachePath": "1D/{1D090FCF-9183-D3CF-81D8-D202AF052269}.wem"
      },
      {
       "Id": "400684044",
@@ -248,6 +328,14 @@
       "CachePath": "59/{59D01569-8EFD-039C-CEC4-37C235AD5BF9}.wem"
      },
      {
+      "Id": "596137497",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "DaytoNight_Transition_endloop - Kalimba.wav",
+      "CachePath": "E8/{E8666B1E-EE5E-DED1-B773-9933E8C4CC27}.wem"
+     },
+     {
       "Id": "607027924",
       "Language": "SFX",
       "Streaming": "false",
@@ -262,6 +350,30 @@
       "Location": "Memory",
       "ShortName": "SFX_Player_StepSnow6_v2_JL.wav",
       "CachePath": "05/{057CCBDD-0CB6-5F10-A771-625FFFA04986}.wem"
+     },
+     {
+      "Id": "650019613",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Day5_Piano_80bpm4-4_L10M.wav",
+      "CachePath": "9E/{9E7E7F35-3A2E-CBE9-F2C2-6AC1ADD859AA}.wem"
+     },
+     {
+      "Id": "672334936",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Day4_Kalimba_80bpm4-4_L6M.wav",
+      "CachePath": "49/{4984BD20-C859-40A3-FE5D-CDA7281F835C}.wem"
+     },
+     {
+      "Id": "676148844",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Day7_80bpm4-4_L16M.wav",
+      "CachePath": "4D/{4DE5973B-4C2B-4CE0-80B7-1085E55AE31E}.wem"
      },
      {
       "Id": "708755240",
@@ -368,6 +480,14 @@
       "CachePath": "D6/{D63F42B3-61E0-E4C9-D016-48B2DCE17E1F}.wem"
      },
      {
+      "Id": "936860406",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Day1_Piano_80bpm4-4_L3M.wav",
+      "CachePath": "02/{023C2D43-ED4F-04D2-6B11-376E3285AD13}.wem"
+     },
+     {
       "Id": "970619497",
       "Language": "SFX",
       "Streaming": "false",
@@ -398,10 +518,26 @@
       "Location": "Memory",
       "ShortName": "SFX_Player_StepWater4_v2_JL.wav",
       "CachePath": "04/{0458BA7A-1052-6E01-317C-EC97B25F9064}.wem"
+     },
+     {
+      "Id": "1052648874",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Day1_ReversePiano_80bpm4-4_L3M.wav",
+      "CachePath": "46/{4640FA48-937B-5508-C685-01A0B3F01D06}.wem"
      }
     ],
     "Plugins": {
      "Custom": [
+      {
+       "Id": "16242820",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\Player\\Player\\Landing\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{3B8DCAB8-E0B5-4785-906C-82BA7F05A633}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
       {
        "Id": "1018388373",
        "Name": "Silence",
@@ -593,8 +729,29 @@
       "ObjectPath": "\\Events\\SFX\\Jump_Landing",
       "GUID": "{E0F6D814-D445-4E9A-9B73-04B3D9BD6139}",
       "DurationType": "OneShot",
-      "DurationMin": "0.45000002",
+      "DurationMin": "1.3",
       "DurationMax": "1.46",
+      "MediaRefs": [
+       {
+        "Id": "129690830"
+       },
+       {
+        "Id": "227669353"
+       },
+       {
+        "Id": "272238155"
+       },
+       {
+        "Id": "353696856"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "16242820"
+        }
+       ]
+      },
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -781,7 +938,65 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "90669199"
+        "Id": "149907718"
+       },
+       {
+        "Id": "596137497"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "3991942870",
+         "Id": "311764537",
+         "GUID": "{A336EC3A-F2E9-44A3-9C98-B427A304A06B}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "114287338"
+         },
+         {
+          "Id": "153955504"
+         },
+         {
+          "Id": "288702264"
+         },
+         {
+          "Id": "297746855"
+         },
+         {
+          "Id": "395661530"
+         },
+         {
+          "Id": "650019613"
+         },
+         {
+          "Id": "672334936"
+         },
+         {
+          "Id": "676148844"
+         },
+         {
+          "Id": "936860406"
+         },
+         {
+          "Id": "1052648874"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "3991942870",
+         "Id": "1011622525",
+         "GUID": "{AD22D92D-1CCC-4F87-A90E-9215531F47B6}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "331946098"
+         }
+        ]
        }
       ]
      },
@@ -928,6 +1143,25 @@
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "0"
+     },
+     {
+      "Id": "1941965176",
+      "Name": "toDay",
+      "ObjectPath": "\\Events\\Music\\toDay",
+      "GUID": "{13A97A39-AD48-42C1-807C-6157ACCEDBEC}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "3991942870",
+        "Id": "311764537",
+        "Name": "Day",
+        "ObjectPath": "\\States\\Default Work Unit\\Music\\Day",
+        "GUID": "{A336EC3A-F2E9-44A3-9C98-B427A304A06B}"
+       }
+      ]
      }
     ],
     "GameParameters": [
@@ -974,6 +1208,38 @@
         "Name": "Ocean",
         "ObjectPath": "\\States\\Default Work Unit\\Regions\\Ocean",
         "GUID": "{9785FF92-29F4-4FC5-B59C-0151809704F8}"
+       }
+      ]
+     },
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\States\\Default Work Unit\\Music",
+      "GUID": "{0206A50E-6D10-4543-BC1D-6B8D9E675CD2}",
+      "States": [
+       {
+        "Id": "311764537",
+        "Name": "Day",
+        "ObjectPath": "\\States\\Default Work Unit\\Music\\Day",
+        "GUID": "{A336EC3A-F2E9-44A3-9C98-B427A304A06B}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Music\\None",
+        "GUID": "{4C403699-A63C-4B62-B7E0-5D2A1B2B0998}"
+       },
+       {
+        "Id": "1011622525",
+        "Name": "Night",
+        "ObjectPath": "\\States\\Default Work Unit\\Music\\Night",
+        "GUID": "{AD22D92D-1CCC-4F87-A90E-9215531F47B6}"
+       },
+       {
+        "Id": "4264815106",
+        "Name": "EndGame",
+        "ObjectPath": "\\States\\Default Work Unit\\Music\\EndGame",
+        "GUID": "{7DDC0E27-EE7E-4196-8B42-B3423D068899}"
        }
       ]
      }
@@ -1034,6 +1300,6 @@
     ]
    }
   ],
-  "FileHash": "{C00CDBFA-8534-0148-E14B-4491754A5764}"
+  "FileHash": "{31783ABD-2BC2-8C0D-CD89-EDD725F9BFE3}"
  }
 }

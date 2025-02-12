@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{C1668EB8-FE09-68FE-98A8-0EEB9D2B0D6D}",
+    "Hash": "{2FC167D5-9A59-7A2D-9BCB-5CE58832D3D0}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -138,6 +138,38 @@
         "GUID": "{736BD908-6C0C-4E78-BEED-5B6589B28A27}"
        }
       ]
+     },
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\States\\Default Work Unit\\Music",
+      "GUID": "{0206A50E-6D10-4543-BC1D-6B8D9E675CD2}",
+      "States": [
+       {
+        "Id": "311764537",
+        "Name": "Day",
+        "ObjectPath": "\\States\\Default Work Unit\\Music\\Day",
+        "GUID": "{A336EC3A-F2E9-44A3-9C98-B427A304A06B}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Music\\None",
+        "GUID": "{4C403699-A63C-4B62-B7E0-5D2A1B2B0998}"
+       },
+       {
+        "Id": "1011622525",
+        "Name": "Night",
+        "ObjectPath": "\\States\\Default Work Unit\\Music\\Night",
+        "GUID": "{AD22D92D-1CCC-4F87-A90E-9215531F47B6}"
+       },
+       {
+        "Id": "4264815106",
+        "Name": "EndGame",
+        "ObjectPath": "\\States\\Default Work Unit\\Music\\EndGame",
+        "GUID": "{7DDC0E27-EE7E-4196-8B42-B3423D068899}"
+       }
+      ]
      }
     ],
     "SwitchGroups": [
@@ -216,6 +248,6 @@
     ]
    }
   ],
-  "FileHash": "{4FFF6BE8-922D-933A-EACF-771C2322D1C9}"
+  "FileHash": "{BA6D2FE5-1FD0-A02C-C6DC-17227E9C9E07}"
  }
 }

@@ -1,6 +1,7 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	2091077764	Regions			\Default Work Unit\Regions	
 	3833651337	Jump			\Default Work Unit\Jump	
+	3991942870	Music			\Default Work Unit\Music	
 
 State	ID	Name	State Group			Notes
 	514358619	Field	Regions			
@@ -11,6 +12,10 @@ State	ID	Name	State Group			Notes
 	748895195	None	Jump			
 	1710892944	InAir	Jump			
 	2907122923	Grounded	Jump			
+	311764537	Day	Music			
+	748895195	None	Music			
+	1011622525	Night	Music			
+	4264815106	EndGame	Music			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	

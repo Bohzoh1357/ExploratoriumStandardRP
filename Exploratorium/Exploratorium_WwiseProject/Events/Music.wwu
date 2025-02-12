@@ -8,7 +8,21 @@
 						<Action Name="" ID="{912D8956-CACB-4161-8E84-7EA8011E53A8}" ShortID="707690606">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Music" ID="{5CFA5D89-2CC3-4D97-81DA-74C6077CD828}" WorkUnitID="{AD5C76CE-70EC-425A-BDBC-C67C996B61C1}"/>
+									<ObjectRef Name="Music" ID="{D9833681-CD4C-4AE3-9C85-6A560B5C9DA1}" WorkUnitID="{AD5C76CE-70EC-425A-BDBC-C67C996B61C1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="toDay" ID="{13A97A39-AD48-42C1-807C-6157ACCEDBEC}">
+					<ChildrenList>
+						<Action Name="" ID="{7C874A65-71E7-4EDC-944A-C5EC0BD656CA}" ShortID="426578445">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Day" ID="{A336EC3A-F2E9-44A3-9C98-B427A304A06B}" WorkUnitID="{A6D7F5CE-7349-4345-B3C7-0166AC695192}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

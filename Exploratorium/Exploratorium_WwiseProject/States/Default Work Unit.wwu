@@ -39,6 +39,14 @@
 						<State Name="Field" ID="{5FF7C1A7-EEB9-4B9F-AA3A-D1FDE12E5479}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Music" ID="{0206A50E-6D10-4543-BC1D-6B8D9E675CD2}">
+					<ChildrenList>
+						<State Name="None" ID="{4C403699-A63C-4B62-B7E0-5D2A1B2B0998}"/>
+						<State Name="Day" ID="{A336EC3A-F2E9-44A3-9C98-B427A304A06B}"/>
+						<State Name="Night" ID="{AD22D92D-1CCC-4F87-A90E-9215531F47B6}"/>
+						<State Name="EndGame" ID="{7DDC0E27-EE7E-4196-8B42-B3423D068899}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

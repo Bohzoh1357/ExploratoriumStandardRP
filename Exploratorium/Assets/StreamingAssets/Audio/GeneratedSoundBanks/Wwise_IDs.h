@@ -26,6 +26,7 @@ namespace AK
         static const AkUniqueID RIVERFAR = 362167352U;
         static const AkUniqueID RUNNINGWIND_PLAY = 1918324573U;
         static const AkUniqueID RUNNINGWIND_STOP = 4104063435U;
+        static const AkUniqueID TODAY = 1941965176U;
     } // namespace EVENTS
 
     namespace STATES
@@ -41,6 +42,19 @@ namespace AK
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
         } // namespace JUMP
+
+        namespace MUSIC
+        {
+            static const AkUniqueID GROUP = 3991942870U;
+
+            namespace STATE
+            {
+                static const AkUniqueID DAY = 311764537U;
+                static const AkUniqueID ENDGAME = 4264815106U;
+                static const AkUniqueID NIGHT = 1011622525U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace MUSIC
 
         namespace REGIONS
         {

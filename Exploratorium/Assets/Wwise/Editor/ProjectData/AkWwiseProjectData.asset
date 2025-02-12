@@ -307,7 +307,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: baba841079c8514493bf6c26f4c5e8a5
     GuidInternal: 
-    m_lastTime: -8584623940669076057
+    m_lastTime: -8584622147986915706
     List:
     - name: Music
       guid: fa65331d9c082749bed4dc3051893af9
@@ -326,6 +326,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: toDay
+      guid: 397aa91348adc142807c6157accedbec
+      id: 1941965176
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: baba841079c8514493bf6c26f4c5e8a5
+      - ElementName: toDay
+        ObjectType: 3
+        guid: 397aa91348adc142807c6157accedbec
+      Path: Events\Music\toDay
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\SFX.wwu
     PathAndIcons:
     - ElementName: Events
@@ -464,7 +481,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: cef5d7a649734543b3c70166ac695192
     GuidInternal: 
-    m_lastTime: -8584623765762747070
+    m_lastTime: -8584622156806085672
     List:
     - name: Jump
       guid: 387f017b7dd5a14ea97f6f89d1833bc1
@@ -529,6 +546,88 @@ MonoBehaviour:
         - ElementName: None
           ObjectType: 8
           guid: f32d5ab900a0da44b7b33031ba896034
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Music
+      guid: 0ea50602106d4345bc1d6b8d9e675cd2
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: cef5d7a649734543b3c70166ac695192
+      - ElementName: Music
+        ObjectType: 9
+        guid: 0ea50602106d4345bc1d6b8d9e675cd2
+      Path: States\Default Work Unit\Music
+      values:
+      - name: Day
+        guid: 3aec36a3e9f2a3449c98b427a304a06b
+        id: 311764537
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: Music
+          ObjectType: 9
+          guid: 0ea50602106d4345bc1d6b8d9e675cd2
+        - ElementName: Day
+          ObjectType: 8
+          guid: 3aec36a3e9f2a3449c98b427a304a06b
+      - name: EndGame
+        guid: 270edc7d7eee96418b42b3423d068899
+        id: 4264815106
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: Music
+          ObjectType: 9
+          guid: 0ea50602106d4345bc1d6b8d9e675cd2
+        - ElementName: EndGame
+          ObjectType: 8
+          guid: 270edc7d7eee96418b42b3423d068899
+      - name: Night
+        guid: 2dd922adcc1c874fa90e9215531f47b6
+        id: 1011622525
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: Music
+          ObjectType: 9
+          guid: 0ea50602106d4345bc1d6b8d9e675cd2
+        - ElementName: Night
+          ObjectType: 8
+          guid: 2dd922adcc1c874fa90e9215531f47b6
+      - name: None
+        guid: 9936404c3ca6624bb7e05d2a1b2b0998
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: Music
+          ObjectType: 9
+          guid: 0ea50602106d4345bc1d6b8d9e675cd2
+        - ElementName: None
+          ObjectType: 8
+          guid: 9936404c3ca6624bb7e05d2a1b2b0998
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
