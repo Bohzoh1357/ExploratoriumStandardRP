@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class WwiseMusic : MonoBehaviour
 {
-    public AK.Wwise.Event nightMusic;
+    public AK.Wwise.State nightMusic;
     public void NightMusic()
     {
         if (nightMusic != null)
-            nightMusic.Post(this.gameObject);
-        Debug.Log("called night music");
+            nightMusic.SetValue();
+        Debug.Log("state change");
     }
 }

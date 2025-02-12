@@ -341,8 +341,8 @@ MonoBehaviour:
         guid: 397aa91348adc142807c6157accedbec
       Path: Events\Music\toDay
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\SFX.wwu
     PathAndIcons:
     - ElementName: Events
@@ -406,7 +406,7 @@ MonoBehaviour:
       Path: Events\SFX\Jump_Landing
       maxAttenuation: 0
       maxDuration: 1.46
-      minDuration: 0.45000002
+      minDuration: 1.3
     - name: RunningWind_Play
       guid: 33a959e4670a254fae3c5b10f310d257
       id: 1918324573
@@ -940,7 +940,7 @@ MonoBehaviour:
     m_lastTime: -8584627157547763468
     List: []
   ExpandedFileSystemItemIds: 0200000003000000060000000700000008000000
-  ExpandedWaapiItemIds: 0200000003000000060000000700000008000000100000001200000015000000160000001700000018000000190000001b0000001c0000001e000000260000002700000055000000560000006e0000006f0000007a0000008700000088000000f3000000f4000000f6000000
+  ExpandedWaapiItemIds: 0200000003000000060000000700000008000000100000001200000015000000160000001700000018000000190000001a0000001b0000001c0000001e000000260000002700000055000000560000006e0000006f0000007a0000008700000088000000f3000000f4000000f6000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
