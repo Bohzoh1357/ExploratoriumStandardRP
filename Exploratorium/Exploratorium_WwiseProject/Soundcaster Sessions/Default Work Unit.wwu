@@ -16,14 +16,30 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="StarPieces" ID="{EE923E92-66FB-4362-B131-09AC0F0151DD}"/>
+							<Value>2.33522853191935E-312</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFXVolume" ID="{093962EF-E8CA-43D0-BE82-D37441923B11}"/>
+							<Value>0.8</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="TimeOfDay" ID="{4D4D4E41-A7C2-4C27-BBB9-187052C5DBE3}"/>
 							<Value>9.52602336455542</Value>
 						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MasterVolume" ID="{59335BB3-AB05-4DFA-A5C6-F284D567F553}"/>
+							<Value>0.8</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MusicVolume" ID="{9982D970-29A0-4E9D-BF25-9305AD648265}"/>
+							<Value>0.8</Value>
+						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Field" ID="{5FF7C1A7-EEB9-4B9F-AA3A-D1FDE12E5479}"/>
-						<CurrentStateRef Name="Day" ID="{A336EC3A-F2E9-44A3-9C98-B427A304A06B}"/>
-						<CurrentStateRef Name="Grounded" ID="{736BD908-6C0C-4E78-BEED-5B6589B28A27}"/>
+						<CurrentStateRef Name="None" ID="{5ACC5440-A09E-49FF-A733-53455BC0F461}"/>
+						<CurrentStateRef Name="None" ID="{4C403699-A63C-4B62-B7E0-5D2A1B2B0998}"/>
+						<CurrentStateRef Name="None" ID="{B95A2DF3-A000-44DA-B7B3-3031BA896034}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="DryLand" ID="{19A1EA46-7F5A-43AD-A331-624181745DFF}"/>

@@ -9,6 +9,30 @@
 						<Property Name="Max" Type="Real64" Value="24"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="MasterVolume" ID="{59335BB3-AB05-4DFA-A5C6-F284D567F553}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0.8"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="SFXVolume" ID="{093962EF-E8CA-43D0-BE82-D37441923B11}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0.8"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="MusicVolume" ID="{9982D970-29A0-4E9D-BF25-9305AD648265}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0.8"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="StarPieces" ID="{EE923E92-66FB-4362-B131-09AC0F0151DD}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="5"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

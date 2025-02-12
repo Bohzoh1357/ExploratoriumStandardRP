@@ -5722,7 +5722,7 @@ GameObject:
   - component: {fileID: 80101295}
   - component: {fileID: 80101296}
   m_Layer: 5
-  m_Name: MusicLevel
+  m_Name: MusicVolume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5745,9 +5745,9 @@ RectTransform:
   - {fileID: 990097667}
   m_Father: {fileID: 1125032747}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 132, y: -117}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -19.2, y: 48.9}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &80101295
@@ -5827,6 +5827,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 821153072}
   slider: {fileID: 80101295}
+  volumeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9e68b02c9b50314468d7d84fe36e19bb, type: 2}
 --- !u!1001 &81671510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8554,7 +8558,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -131, y: -80}
+  m_AnchoredPosition: {x: -426, y: -241.7}
   m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &368100182
@@ -8577,7 +8581,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'SFX Level: '
+  m_text: 'SFX Volume: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15381,9 +15385,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1125032747}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 131, y: -80}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -20.200027, y: 85.899994}
   m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &821153072
@@ -15406,7 +15410,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Music Level: '
+  m_text: 'Music Volume: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -19410,10 +19414,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 821153071}
-  - {fileID: 80101294}
   - {fileID: 1680581244}
   - {fileID: 1440223049}
+  - {fileID: 821153071}
+  - {fileID: 80101294}
   - {fileID: 368100181}
   - {fileID: 1184946142}
   - {fileID: 325166248}
@@ -19932,7 +19936,7 @@ GameObject:
   - component: {fileID: 1184946143}
   - component: {fileID: 1184946144}
   m_Layer: 5
-  m_Name: SFXLevel
+  m_Name: SFXVolume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19957,7 +19961,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -131, y: -117}
+  m_AnchoredPosition: {x: -426, y: -278.69998}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1184946143
@@ -20037,6 +20041,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 368100182}
   slider: {fileID: 1184946143}
+  volumeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3cc5baae583e0f846ab7affbdb31d73f, type: 2}
 --- !u!1 &1188294633
 GameObject:
   m_ObjectHideFlags: 0
@@ -22952,7 +22960,7 @@ GameObject:
   - component: {fileID: 1440223051}
   - component: {fileID: 1440223050}
   m_Layer: 5
-  m_Name: AudioLevel
+  m_Name: MasterVolume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22975,9 +22983,9 @@ RectTransform:
   - {fileID: 1432169896}
   m_Father: {fileID: 1125032747}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 132, y: -306.00003}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -19, y: -98.5}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1440223050
@@ -22994,6 +23002,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 1680581242}
   slider: {fileID: 1440223051}
+  volumeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ea7df17b577bab149acab56db948f26e, type: 2}
 --- !u!114 &1440223051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25058,7 +25070,7 @@ GameObject:
   - component: {fileID: 1680581243}
   - component: {fileID: 1680581242}
   m_Layer: 5
-  m_Name: AudioText
+  m_Name: MasterText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25084,7 +25096,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Audio Level: '
+  m_text: 'Master Volume: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -25177,9 +25189,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1125032747}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 131, y: -269}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -20, y: -61.49997}
   m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1700009441
