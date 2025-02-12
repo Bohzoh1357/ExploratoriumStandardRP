@@ -23,7 +23,7 @@ public class TerrainDetection : MonoBehaviour
     /// </summary>
     public int GetDominantTextureIndexAt(Vector3 worldPosition)
     {
-        Debug.Log(worldPosition);
+        //Debug.Log(worldPosition);
         Vector3Int alphamapCoordinates = ConvertToAlphamapCoordinates(worldPosition);
 
         if (!CachedTerrainAlphamapData.ContainsIndex(alphamapCoordinates.x, dimension: 1))
@@ -57,7 +57,7 @@ public class TerrainDetection : MonoBehaviour
             Vector3 relativePosition = _worldPosition - transform.position;
             // Important note: terrains cannot be rotated, so we don't have to worry about rotation
 
-            Debug.Log("AlphaMap coordinates: x = " + Mathf.RoundToInt((relativePosition.x / ThisTerrainData.size.x) * ThisTerrainData.alphamapWidth) + " y = " + Mathf.RoundToInt((relativePosition.z / ThisTerrainData.size.z) * ThisTerrainData.alphamapHeight));
+            //Debug.Log("AlphaMap coordinates: x = " + Mathf.RoundToInt((relativePosition.x / ThisTerrainData.size.x) * ThisTerrainData.alphamapWidth) + " y = " + Mathf.RoundToInt((relativePosition.z / ThisTerrainData.size.z) * ThisTerrainData.alphamapHeight));
             return new Vector3Int
             (
                 x: Mathf.RoundToInt((relativePosition.x / ThisTerrainData.size.x) * ThisTerrainData.alphamapWidth),

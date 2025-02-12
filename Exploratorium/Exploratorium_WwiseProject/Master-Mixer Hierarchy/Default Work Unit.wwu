@@ -10,7 +10,24 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="Music" ID="{AF85DC46-5D13-4AA1-9965-70FFE0888CED}"/>
+						<Bus Name="Music" ID="{AF85DC46-5D13-4AA1-9965-70FFE0888CED}">
+							<ChildrenList>
+								<Bus Name="NotStinger" ID="{9D9F2C8D-1C1B-4AF5-823A-1A45DA7648C8}"/>
+								<Bus Name="Stinger" ID="{14FD5C67-5E52-4301-A97D-FA1D29F4B567}">
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="NotStinger" ID="{9D9F2C8D-1C1B-4AF5-823A-1A45DA7648C8}"/>
+											<DuckingParam>
+												<Volume>-96</Volume>
+												<FadeInTime>2</FadeInTime>
+												<FadeOutTime>1</FadeOutTime>
+												<FadeCurve>FadeSCurve</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
 						<Bus Name="SFX" ID="{FA57C7B1-E189-4F3B-9A65-1E89A9379E9C}"/>
 						<Bus Name="AMB" ID="{DE66E16F-0E75-4FE3-A2D7-58334DA5DD85}"/>
 						<Bus Name="UI" ID="{0639B208-933B-46BA-9006-11F8F9334A55}"/>

@@ -47,6 +47,45 @@
 						<State Name="EndGame" ID="{7DDC0E27-EE7E-4196-8B42-B3423D068899}"/>
 					</ChildrenList>
 				</StateGroup>
+				<Folder Name="StartState" ID="{BA8627FC-CFD5-44B0-A633-0155101585E5}" ShortID="975269684">
+					<ChildrenList>
+						<StateGroup Name="Star0" ID="{7896A590-3D4A-4A5A-9172-DF59D4AFBB99}">
+							<ChildrenList>
+								<State Name="None" ID="{1D43A5E4-DC81-4E81-BB80-6FF21370DADF}"/>
+								<State Name="Collected" ID="{CBD5E943-6A4A-43C4-83FE-0E8BED0BAD64}"/>
+								<State Name="UnCollected" ID="{D8183886-D3F5-4EFA-AC27-082EEE35299F}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="Star2" ID="{847DB199-1C8D-4076-96CD-5C2FEF6E6344}">
+							<ChildrenList>
+								<State Name="None" ID="{F1549C9E-FEC2-437E-B799-E99C88EB14CD}"/>
+								<State Name="Collected" ID="{0D9B8056-A128-4BC3-97FE-0453D3D85205}"/>
+								<State Name="UnCollected" ID="{DAE8B785-5E05-4000-8B4F-0B4D7C411B1E}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="Star3" ID="{7037803C-F335-4231-A591-84D52B1C877E}">
+							<ChildrenList>
+								<State Name="None" ID="{AC0B20BE-BD07-45B6-8470-AFE53E68E561}"/>
+								<State Name="Collected" ID="{ACA84E3A-E74B-4019-BE54-1AB89B8AEDBF}"/>
+								<State Name="UnCollected" ID="{E0C0F3C1-47E0-4A07-B746-72674C50C98D}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="Star4" ID="{31CBDD08-AEB7-4EC5-B251-6FDB0A0FCA32}">
+							<ChildrenList>
+								<State Name="None" ID="{EAAC21A9-5D81-4082-80CF-D15BC061C713}"/>
+								<State Name="Collected" ID="{1F241A7A-484C-47F4-A939-9C040B703381}"/>
+								<State Name="UnCollected" ID="{DC4FB21A-B735-4CB3-958F-A4203217C395}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="Star1" ID="{E7A66AA9-6CD1-4BA5-8347-C9C1595D0415}">
+							<ChildrenList>
+								<State Name="None" ID="{C99EC989-D103-485B-99B0-84F35335DAFB}"/>
+								<State Name="Collected" ID="{3955EC11-1DE9-4688-B56C-4D9BB1967941}"/>
+								<State Name="UnCollected" ID="{8D9B3500-3019-4730-963F-C083D9B4AF3C}"/>
+							</ChildrenList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

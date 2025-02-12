@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D1C201E0-3BA3-4993-8470-4E0E8C082691}" SchemaVersion="123">
 	<Triggers>
-		<WorkUnit Name="Default Work Unit" ID="{D1C201E0-3BA3-4993-8470-4E0E8C082691}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D1C201E0-3BA3-4993-8470-4E0E8C082691}" PersistMode="Standalone">
+			<ChildrenList>
+				<Trigger Name="StarCollected" ID="{50E5DFFB-215C-45F1-ACE9-6F4EACF0F09C}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Triggers>
 </WwiseDocument>

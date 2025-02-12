@@ -6,12 +6,20 @@
 				<SoundcasterSession Name="New Soundcaster Session" ID="{2893DF70-431F-4F95-87EF-DF648FF22C8E}">
 					<ModuleList>
 						<Module>
+							<ObjectRef Name="StarCollected" ID="{10A8CE16-65D3-45C9-909B-515266C3C008}" WorkUnitID="{1084BABA-C879-4451-93BF-6C26F4C5E8A5}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="RunningWind_Play" ID="{E459A933-0A67-4F25-AE3C-5B10F310D257}" WorkUnitID="{B1A60F62-6A0A-4166-9F30-8667BF0F44AB}"/>
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="RunningWind_Stop" ID="{ABAEDAED-D15A-4633-81BF-142248A51845}" WorkUnitID="{B1A60F62-6A0A-4166-9F30-8667BF0F44AB}"/>
 							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music" ID="{1D3365FA-089C-4927-BED4-DC3051893AF9}" WorkUnitID="{1084BABA-C879-4451-93BF-6C26F4C5E8A5}"/>
+							<Position X="3" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -37,9 +45,14 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{5ACC5440-A09E-49FF-A733-53455BC0F461}"/>
-						<CurrentStateRef Name="None" ID="{4C403699-A63C-4B62-B7E0-5D2A1B2B0998}"/>
-						<CurrentStateRef Name="None" ID="{B95A2DF3-A000-44DA-B7B3-3031BA896034}"/>
+						<CurrentStateRef Name="UnCollected" ID="{DAE8B785-5E05-4000-8B4F-0B4D7C411B1E}"/>
+						<CurrentStateRef Name="UnCollected" ID="{E0C0F3C1-47E0-4A07-B746-72674C50C98D}"/>
+						<CurrentStateRef Name="MountainTop" ID="{BB8568EA-4610-4276-8895-9D1004183F6D}"/>
+						<CurrentStateRef Name="Night" ID="{AD22D92D-1CCC-4F87-A90E-9215531F47B6}"/>
+						<CurrentStateRef Name="UnCollected" ID="{D8183886-D3F5-4EFA-AC27-082EEE35299F}"/>
+						<CurrentStateRef Name="UnCollected" ID="{8D9B3500-3019-4730-963F-C083D9B4AF3C}"/>
+						<CurrentStateRef Name="Grounded" ID="{736BD908-6C0C-4E78-BEED-5B6589B28A27}"/>
+						<CurrentStateRef Name="UnCollected" ID="{DC4FB21A-B735-4CB3-958F-A4203217C395}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="DryLand" ID="{19A1EA46-7F5A-43AD-A331-624181745DFF}"/>

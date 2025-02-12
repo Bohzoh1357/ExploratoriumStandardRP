@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{A19F3440-3F3A-464F-90E0-B70824685515}",
     "Language": "SFX",
-    "Hash": "{8565DE25-1B55-3365-416B-305316BE5874}",
+    "Hash": "{71971C5C-C5FD-C731-BE1B-63873FA5DEA2}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\General",
     "ShortName": "General",
     "Path": "General.bnk",
@@ -256,6 +256,14 @@
       "CachePath": "EF/{EFDBB2C2-81B1-E960-32D6-F7FDF49AF2D2}.wem"
      },
      {
+      "Id": "469979251",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "StartStinger_KalimbaLow_80-50bpm4-4_L3M(11.626S).wav",
+      "CachePath": "0D/{0D904924-CD08-5E02-09C3-A6D083136304}.wem"
+     },
+     {
       "Id": "493226867",
       "Language": "SFX",
       "Streaming": "false",
@@ -272,6 +280,14 @@
       "CachePath": "F9/{F9388D99-CCB5-799B-F116-157DE8038B5F}.wem"
      },
      {
+      "Id": "508755875",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "StartStinger_Guitar_80-50bpm4-4_L3M(11.626S).wav",
+      "CachePath": "50/{50518418-DFEC-7E0C-5E67-FD51DFF60A99}.wem"
+     },
+     {
       "Id": "509768431",
       "Language": "SFX",
       "Streaming": "false",
@@ -286,6 +302,14 @@
       "Location": "Memory",
       "ShortName": "SFX_Player_StepGrass1_v2_JL.wav",
       "CachePath": "D8/{D82E000A-510D-D61B-9940-F3805E3A7ED5}.wem"
+     },
+     {
+      "Id": "539792457",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "StartStinger_Cello_80-50bpm4-4_L3M(11.626S).wav",
+      "CachePath": "1A/{1AA87CAF-6AFB-9464-1E3B-749321BFDEF9}.wem"
      },
      {
       "Id": "542425319",
@@ -312,6 +336,14 @@
       "CachePath": "24/{24908188-C54E-A6E5-A681-4401032A41E3}.wem"
      },
      {
+      "Id": "550827518",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "StartStinger_SynthBass_80-50bpm4-4_L3M(2).wav",
+      "CachePath": "E5/{E555D489-2920-A54E-94ED-4CA46F64035E}.wem"
+     },
+     {
       "Id": "554263416",
       "Language": "SFX",
       "Streaming": "false",
@@ -326,14 +358,6 @@
       "Location": "Memory",
       "ShortName": "SFX_Player_StepSnow4_v2_JL.wav",
       "CachePath": "59/{59D01569-8EFD-039C-CEC4-37C235AD5BF9}.wem"
-     },
-     {
-      "Id": "596137497",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "DaytoNight_Transition_endloop - Kalimba.wav",
-      "CachePath": "E8/{E8666B1E-EE5E-DED1-B773-9933E8C4CC27}.wem"
      },
      {
       "Id": "607027924",
@@ -358,6 +382,14 @@
       "Location": "Memory",
       "ShortName": "Day5_Piano_80bpm4-4_L10M.wav",
       "CachePath": "9E/{9E7E7F35-3A2E-CBE9-F2C2-6AC1ADD859AA}.wem"
+     },
+     {
+      "Id": "664929944",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "StartStinger_KalimbaHigh_80-50bpm4-4_L3M(11.626S).wav",
+      "CachePath": "AA/{AAA61AA6-E463-86E0-0389-9C5B8EC89C2B}.wem"
      },
      {
       "Id": "672334936",
@@ -430,6 +462,14 @@
       "Location": "Memory",
       "ShortName": "SFX_UI_InvOpen_v1_JL.wav",
       "CachePath": "C7/{C71651E9-1C6E-F6F4-6566-AB76478F0054}.wem"
+     },
+     {
+      "Id": "841204228",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "StartStinger_Piano_80-50bpm4-4_L3M(11.626S).wav",
+      "CachePath": "6A/{6A71F79D-AD66-66D8-8116-C4757FC94C94}.wem"
      },
      {
       "Id": "866256559",
@@ -941,7 +981,22 @@
         "Id": "149907718"
        },
        {
-        "Id": "596137497"
+        "Id": "469979251"
+       },
+       {
+        "Id": "508755875"
+       },
+       {
+        "Id": "539792457"
+       },
+       {
+        "Id": "550827518"
+       },
+       {
+        "Id": "664929944"
+       },
+       {
+        "Id": "841204228"
        }
       ],
       "SwitchContainers": [
@@ -1145,6 +1200,43 @@
       "DurationMax": "0"
      },
      {
+      "Id": "1972369290",
+      "Name": "StarCollected",
+      "ObjectPath": "\\Events\\Music\\StarCollected",
+      "GUID": "{10A8CE16-65D3-45C9-909B-515266C3C008}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionTrigger": [
+       {
+        "Id": "1972369290",
+        "Name": "StarCollected",
+        "ObjectPath": "\\Triggers\\Default Work Unit\\StarCollected",
+        "GUID": "{50E5DFFB-215C-45F1-ACE9-6F4EACF0F09C}"
+       }
+      ]
+     },
+     {
+      "Id": "3219695003",
+      "Name": "StarInitializer",
+      "ObjectPath": "\\Events\\Music\\StarInitializer",
+      "GUID": "{6F172BEB-BA84-4045-8469-55D549145402}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "1281810867",
+        "Id": "395500817",
+        "Name": "UnCollected",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star0\\UnCollected",
+        "GUID": "{D8183886-D3F5-4EFA-AC27-082EEE35299F}"
+       }
+      ]
+     },
+     {
       "Id": "1941965176",
       "Name": "toDay",
       "ObjectPath": "\\Events\\Music\\toDay",
@@ -1173,6 +1265,136 @@
      }
     ],
     "StateGroups": [
+     {
+      "Id": "1281810864",
+      "Name": "Star3",
+      "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star3",
+      "GUID": "{7037803C-F335-4231-A591-84D52B1C877E}",
+      "States": [
+       {
+        "Id": "395500817",
+        "Name": "UnCollected",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star3\\UnCollected",
+        "GUID": "{E0C0F3C1-47E0-4A07-B746-72674C50C98D}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star3\\None",
+        "GUID": "{AC0B20BE-BD07-45B6-8470-AFE53E68E561}"
+       },
+       {
+        "Id": "3874392366",
+        "Name": "Collected",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star3\\Collected",
+        "GUID": "{ACA84E3A-E74B-4019-BE54-1AB89B8AEDBF}"
+       }
+      ]
+     },
+     {
+      "Id": "1281810865",
+      "Name": "Star2",
+      "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star2",
+      "GUID": "{847DB199-1C8D-4076-96CD-5C2FEF6E6344}",
+      "States": [
+       {
+        "Id": "395500817",
+        "Name": "UnCollected",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star2\\UnCollected",
+        "GUID": "{DAE8B785-5E05-4000-8B4F-0B4D7C411B1E}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star2\\None",
+        "GUID": "{F1549C9E-FEC2-437E-B799-E99C88EB14CD}"
+       },
+       {
+        "Id": "3874392366",
+        "Name": "Collected",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star2\\Collected",
+        "GUID": "{0D9B8056-A128-4BC3-97FE-0453D3D85205}"
+       }
+      ]
+     },
+     {
+      "Id": "1281810866",
+      "Name": "Star1",
+      "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star1",
+      "GUID": "{E7A66AA9-6CD1-4BA5-8347-C9C1595D0415}",
+      "States": [
+       {
+        "Id": "395500817",
+        "Name": "UnCollected",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star1\\UnCollected",
+        "GUID": "{8D9B3500-3019-4730-963F-C083D9B4AF3C}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star1\\None",
+        "GUID": "{C99EC989-D103-485B-99B0-84F35335DAFB}"
+       },
+       {
+        "Id": "3874392366",
+        "Name": "Collected",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star1\\Collected",
+        "GUID": "{3955EC11-1DE9-4688-B56C-4D9BB1967941}"
+       }
+      ]
+     },
+     {
+      "Id": "1281810867",
+      "Name": "Star0",
+      "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star0",
+      "GUID": "{7896A590-3D4A-4A5A-9172-DF59D4AFBB99}",
+      "States": [
+       {
+        "Id": "395500817",
+        "Name": "UnCollected",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star0\\UnCollected",
+        "GUID": "{D8183886-D3F5-4EFA-AC27-082EEE35299F}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star0\\None",
+        "GUID": "{1D43A5E4-DC81-4E81-BB80-6FF21370DADF}"
+       },
+       {
+        "Id": "3874392366",
+        "Name": "Collected",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star0\\Collected",
+        "GUID": "{CBD5E943-6A4A-43C4-83FE-0E8BED0BAD64}"
+       }
+      ]
+     },
+     {
+      "Id": "1281810871",
+      "Name": "Star4",
+      "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star4",
+      "GUID": "{31CBDD08-AEB7-4EC5-B251-6FDB0A0FCA32}",
+      "States": [
+       {
+        "Id": "395500817",
+        "Name": "UnCollected",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star4\\UnCollected",
+        "GUID": "{DC4FB21A-B735-4CB3-958F-A4203217C395}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star4\\None",
+        "GUID": "{EAAC21A9-5D81-4082-80CF-D15BC061C713}"
+       },
+       {
+        "Id": "3874392366",
+        "Name": "Collected",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star4\\Collected",
+        "GUID": "{1F241A7A-484C-47F4-A939-9C040B703381}"
+       }
+      ]
+     },
      {
       "Id": "2091077764",
       "Name": "Regions",
@@ -1297,9 +1519,17 @@
        }
       ]
      }
+    ],
+    "Triggers": [
+     {
+      "Id": "1972369290",
+      "Name": "StarCollected",
+      "ObjectPath": "\\Triggers\\Default Work Unit\\StarCollected",
+      "GUID": "{50E5DFFB-215C-45F1-ACE9-6F4EACF0F09C}"
+     }
     ]
    }
   ],
-  "FileHash": "{A3A81D70-F382-367C-258D-F6A6C4F80C6E}"
+  "FileHash": "{F6A89B8E-DBF6-C1E3-EC2D-584A77195C4D}"
  }
 }

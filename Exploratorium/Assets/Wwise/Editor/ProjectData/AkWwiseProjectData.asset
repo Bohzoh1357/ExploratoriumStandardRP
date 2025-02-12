@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: e233e7ef4d8ae34ab662f20c007d1656
     GuidInternal: 
-    m_lastTime: -8584623980197745274
+    m_lastTime: -8584622065537472048
     List:
     - name: AMB
       guid: 6fe166de750ee34fa2d758334da5dd85
@@ -88,6 +88,26 @@ MonoBehaviour:
         ObjectType: 2
         guid: 46dc85af135da14a996570ffe0888ced
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
+    - name: NotStinger
+      guid: 8d2c9f9d1b1cf54a823a1a45da7648c8
+      id: 4003965662
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e233e7ef4d8ae34ab662f20c007d1656
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: 46dc85af135da14a996570ffe0888ced
+      - ElementName: NotStinger
+        ObjectType: 2
+        guid: 8d2c9f9d1b1cf54a823a1a45da7648c8
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\NotStinger
     - name: SFX
       guid: b1c757fa89e13b4f9a651e89a9379e9c
       id: 393239870
@@ -105,6 +125,26 @@ MonoBehaviour:
         ObjectType: 2
         guid: b1c757fa89e13b4f9a651e89a9379e9c
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX
+    - name: Stinger
+      guid: 675cfd14525e0143a97dfa1d29f4b567
+      id: 78360149
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e233e7ef4d8ae34ab662f20c007d1656
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: 46dc85af135da14a996570ffe0888ced
+      - ElementName: Stinger
+        ObjectType: 2
+        guid: 675cfd14525e0143a97dfa1d29f4b567
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\Stinger
     - name: UI
       guid: 08b239063b93ba46900611f8f9334a55
       id: 1551306167
@@ -307,7 +347,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: baba841079c8514493bf6c26f4c5e8a5
     GuidInternal: 
-    m_lastTime: -8584622147986915706
+    m_lastTime: -8584622070977786832
     List:
     - name: Music
       guid: fa65331d9c082749bed4dc3051893af9
@@ -323,6 +363,40 @@ MonoBehaviour:
         ObjectType: 3
         guid: fa65331d9c082749bed4dc3051893af9
       Path: Events\Music\Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: StarCollected
+      guid: 16cea810d365c945909b515266c3c008
+      id: 1972369290
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: baba841079c8514493bf6c26f4c5e8a5
+      - ElementName: StarCollected
+        ObjectType: 3
+        guid: 16cea810d365c945909b515266c3c008
+      Path: Events\Music\StarCollected
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StarInitializer
+      guid: eb2b176f84ba4540846955d549145402
+      id: 3219695003
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: baba841079c8514493bf6c26f4c5e8a5
+      - ElementName: StarInitializer
+        ObjectType: 3
+        guid: eb2b176f84ba4540846955d549145402
+      Path: Events\Music\StarInitializer
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -453,7 +527,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: d55cc9f1dc3cb949ac089a06a527b4da
     GuidInternal: 
-    m_lastTime: -8584622136366630671
+    m_lastTime: -8584622114459566268
     List:
     - name: MasterVolume
       guid: b35b335905abfa4da5c6f284d567f553
@@ -497,6 +571,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: ef623909cae8d043be82d37441923b11
       Path: Game Parameters\Default Work Unit\SFXVolume
+    - name: StarPieces
+      guid: 923e92eefb666243b13109ac0f0151dd
+      id: 3570761712
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d55cc9f1dc3cb949ac089a06a527b4da
+      - ElementName: StarPieces
+        ObjectType: 13
+        guid: 923e92eefb666243b13109ac0f0151dd
+      Path: Game Parameters\Default Work Unit\StarPieces
     - name: TimeOfDay
       guid: 414e4d4dc2a7274cbbb9187052c5dbe3
       id: 3729505769
@@ -523,7 +611,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: cef5d7a649734543b3c70166ac695192
     GuidInternal: 
-    m_lastTime: -8584622156806085672
+    m_lastTime: -8584622077050460336
     List:
     - name: Jump
       guid: 387f017b7dd5a14ea97f6f89d1833bc1
@@ -771,6 +859,414 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: Star0
+      guid: 90a596784a3d5a4a9172df59d4afbb99
+      id: 1281810867
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: cef5d7a649734543b3c70166ac695192
+      - ElementName: StartState
+        ObjectType: 4
+        guid: fc2786bad5cfb044a6330155101585e5
+      - ElementName: Star0
+        ObjectType: 9
+        guid: 90a596784a3d5a4a9172df59d4afbb99
+      Path: States\Default Work Unit\StartState\Star0
+      values:
+      - name: Collected
+        guid: 43e9d5cb4a6ac44383fe0e8bed0bad64
+        id: 3874392366
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: StartState
+          ObjectType: 4
+          guid: fc2786bad5cfb044a6330155101585e5
+        - ElementName: Star0
+          ObjectType: 9
+          guid: 90a596784a3d5a4a9172df59d4afbb99
+        - ElementName: Collected
+          ObjectType: 8
+          guid: 43e9d5cb4a6ac44383fe0e8bed0bad64
+      - name: None
+        guid: e4a5431d81dc814ebb806ff21370dadf
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: StartState
+          ObjectType: 4
+          guid: fc2786bad5cfb044a6330155101585e5
+        - ElementName: Star0
+          ObjectType: 9
+          guid: 90a596784a3d5a4a9172df59d4afbb99
+        - ElementName: None
+          ObjectType: 8
+          guid: e4a5431d81dc814ebb806ff21370dadf
+      - name: UnCollected
+        guid: 863818d8f5d3fa4eac27082eee35299f
+        id: 395500817
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: StartState
+          ObjectType: 4
+          guid: fc2786bad5cfb044a6330155101585e5
+        - ElementName: Star0
+          ObjectType: 9
+          guid: 90a596784a3d5a4a9172df59d4afbb99
+        - ElementName: UnCollected
+          ObjectType: 8
+          guid: 863818d8f5d3fa4eac27082eee35299f
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Star1
+      guid: a96aa6e7d16ca54b8347c9c1595d0415
+      id: 1281810866
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: cef5d7a649734543b3c70166ac695192
+      - ElementName: StartState
+        ObjectType: 4
+        guid: fc2786bad5cfb044a6330155101585e5
+      - ElementName: Star1
+        ObjectType: 9
+        guid: a96aa6e7d16ca54b8347c9c1595d0415
+      Path: States\Default Work Unit\StartState\Star1
+      values:
+      - name: Collected
+        guid: 11ec5539e91d8846b56c4d9bb1967941
+        id: 3874392366
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: StartState
+          ObjectType: 4
+          guid: fc2786bad5cfb044a6330155101585e5
+        - ElementName: Star1
+          ObjectType: 9
+          guid: a96aa6e7d16ca54b8347c9c1595d0415
+        - ElementName: Collected
+          ObjectType: 8
+          guid: 11ec5539e91d8846b56c4d9bb1967941
+      - name: None
+        guid: 89c99ec903d15b4899b084f35335dafb
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: StartState
+          ObjectType: 4
+          guid: fc2786bad5cfb044a6330155101585e5
+        - ElementName: Star1
+          ObjectType: 9
+          guid: a96aa6e7d16ca54b8347c9c1595d0415
+        - ElementName: None
+          ObjectType: 8
+          guid: 89c99ec903d15b4899b084f35335dafb
+      - name: UnCollected
+        guid: 00359b8d19303047963fc083d9b4af3c
+        id: 395500817
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: StartState
+          ObjectType: 4
+          guid: fc2786bad5cfb044a6330155101585e5
+        - ElementName: Star1
+          ObjectType: 9
+          guid: a96aa6e7d16ca54b8347c9c1595d0415
+        - ElementName: UnCollected
+          ObjectType: 8
+          guid: 00359b8d19303047963fc083d9b4af3c
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Star2
+      guid: 99b17d848d1c764096cd5c2fef6e6344
+      id: 1281810865
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: cef5d7a649734543b3c70166ac695192
+      - ElementName: StartState
+        ObjectType: 4
+        guid: fc2786bad5cfb044a6330155101585e5
+      - ElementName: Star2
+        ObjectType: 9
+        guid: 99b17d848d1c764096cd5c2fef6e6344
+      Path: States\Default Work Unit\StartState\Star2
+      values:
+      - name: Collected
+        guid: 56809b0d28a1c34b97fe0453d3d85205
+        id: 3874392366
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: StartState
+          ObjectType: 4
+          guid: fc2786bad5cfb044a6330155101585e5
+        - ElementName: Star2
+          ObjectType: 9
+          guid: 99b17d848d1c764096cd5c2fef6e6344
+        - ElementName: Collected
+          ObjectType: 8
+          guid: 56809b0d28a1c34b97fe0453d3d85205
+      - name: None
+        guid: 9e9c54f1c2fe7e43b799e99c88eb14cd
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: StartState
+          ObjectType: 4
+          guid: fc2786bad5cfb044a6330155101585e5
+        - ElementName: Star2
+          ObjectType: 9
+          guid: 99b17d848d1c764096cd5c2fef6e6344
+        - ElementName: None
+          ObjectType: 8
+          guid: 9e9c54f1c2fe7e43b799e99c88eb14cd
+      - name: UnCollected
+        guid: 85b7e8da055e00408b4f0b4d7c411b1e
+        id: 395500817
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: StartState
+          ObjectType: 4
+          guid: fc2786bad5cfb044a6330155101585e5
+        - ElementName: Star2
+          ObjectType: 9
+          guid: 99b17d848d1c764096cd5c2fef6e6344
+        - ElementName: UnCollected
+          ObjectType: 8
+          guid: 85b7e8da055e00408b4f0b4d7c411b1e
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Star3
+      guid: 3c80377035f33142a59184d52b1c877e
+      id: 1281810864
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: cef5d7a649734543b3c70166ac695192
+      - ElementName: StartState
+        ObjectType: 4
+        guid: fc2786bad5cfb044a6330155101585e5
+      - ElementName: Star3
+        ObjectType: 9
+        guid: 3c80377035f33142a59184d52b1c877e
+      Path: States\Default Work Unit\StartState\Star3
+      values:
+      - name: Collected
+        guid: 3a4ea8ac4be71940be541ab89b8aedbf
+        id: 3874392366
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: StartState
+          ObjectType: 4
+          guid: fc2786bad5cfb044a6330155101585e5
+        - ElementName: Star3
+          ObjectType: 9
+          guid: 3c80377035f33142a59184d52b1c877e
+        - ElementName: Collected
+          ObjectType: 8
+          guid: 3a4ea8ac4be71940be541ab89b8aedbf
+      - name: None
+        guid: be200bac07bdb6458470afe53e68e561
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: StartState
+          ObjectType: 4
+          guid: fc2786bad5cfb044a6330155101585e5
+        - ElementName: Star3
+          ObjectType: 9
+          guid: 3c80377035f33142a59184d52b1c877e
+        - ElementName: None
+          ObjectType: 8
+          guid: be200bac07bdb6458470afe53e68e561
+      - name: UnCollected
+        guid: c1f3c0e0e047074ab74672674c50c98d
+        id: 395500817
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: StartState
+          ObjectType: 4
+          guid: fc2786bad5cfb044a6330155101585e5
+        - ElementName: Star3
+          ObjectType: 9
+          guid: 3c80377035f33142a59184d52b1c877e
+        - ElementName: UnCollected
+          ObjectType: 8
+          guid: c1f3c0e0e047074ab74672674c50c98d
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Star4
+      guid: 08ddcb31b7aec54eb2516fdb0a0fca32
+      id: 1281810871
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: cef5d7a649734543b3c70166ac695192
+      - ElementName: StartState
+        ObjectType: 4
+        guid: fc2786bad5cfb044a6330155101585e5
+      - ElementName: Star4
+        ObjectType: 9
+        guid: 08ddcb31b7aec54eb2516fdb0a0fca32
+      Path: States\Default Work Unit\StartState\Star4
+      values:
+      - name: Collected
+        guid: 7a1a241f4c48f447a9399c040b703381
+        id: 3874392366
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: StartState
+          ObjectType: 4
+          guid: fc2786bad5cfb044a6330155101585e5
+        - ElementName: Star4
+          ObjectType: 9
+          guid: 08ddcb31b7aec54eb2516fdb0a0fca32
+        - ElementName: Collected
+          ObjectType: 8
+          guid: 7a1a241f4c48f447a9399c040b703381
+      - name: None
+        guid: a921acea815d824080cfd15bc061c713
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: StartState
+          ObjectType: 4
+          guid: fc2786bad5cfb044a6330155101585e5
+        - ElementName: Star4
+          ObjectType: 9
+          guid: 08ddcb31b7aec54eb2516fdb0a0fca32
+        - ElementName: None
+          ObjectType: 8
+          guid: a921acea815d824080cfd15bc061c713
+      - name: UnCollected
+        guid: 1ab24fdc35b7b34c958fa4203217c395
+        id: 395500817
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cef5d7a649734543b3c70166ac695192
+        - ElementName: StartState
+          ObjectType: 4
+          guid: fc2786bad5cfb044a6330155101585e5
+        - ElementName: Star4
+          ObjectType: 9
+          guid: 08ddcb31b7aec54eb2516fdb0a0fca32
+        - ElementName: UnCollected
+          ObjectType: 8
+          guid: 1ab24fdc35b7b34c958fa4203217c395
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: StartState
+      guid: fc2786bad5cfb044a6330155101585e5
+      id: 2132235746
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: cef5d7a649734543b3c70166ac695192
+      - ElementName: StartState
+        ObjectType: 4
+        guid: fc2786bad5cfb044a6330155101585e5
+      Path: States\Default Work Unit\StartState
+      values: []
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -979,10 +1475,24 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: e001c2d1a33b934984704e0e8c082691
     GuidInternal: 
-    m_lastTime: -8584627157547763468
-    List: []
+    m_lastTime: -8584622070977617015
+    List:
+    - name: StarCollected
+      guid: fbdfe5505c21f145ace96f4eacf0f09c
+      id: 1972369290
+      PathAndIcons:
+      - ElementName: Triggers
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e001c2d1a33b934984704e0e8c082691
+      - ElementName: StarCollected
+        ObjectType: 14
+        guid: fbdfe5505c21f145ace96f4eacf0f09c
+      Path: Triggers\Default Work Unit\StarCollected
   ExpandedFileSystemItemIds: 0200000003000000060000000700000008000000
-  ExpandedWaapiItemIds: 0200000003000000060000000700000008000000100000001200000015000000160000001700000018000000190000001a0000001b0000001c0000001e0000002600000027000000290000002a00000055000000560000006e0000006f0000007a0000008700000088000000f3000000f4000000f6000000
+  ExpandedWaapiItemIds: 0200000003000000060000000700000008000000100000001200000015000000160000001700000018000000190000001a0000001b0000001d0000001e0000002600000027000000290000002a0000003e00000042000000460000004a0000004e00000055000000560000006e0000006f0000007a0000008700000088000000f3000000f4000000f6000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

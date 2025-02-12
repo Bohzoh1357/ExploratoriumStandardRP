@@ -111,7 +111,7 @@ namespace StarterAssets
 		{
 			int currentTerrainTexture = terrainUnderfoot.GetDominantTextureIndexAt(transform.position);
 			if (currentTerrainTexture == -1) { return; }
-			Debug.Log("Current terrain texture index = " + currentTerrainTexture);
+			//Debug.Log("Current terrain texture index = " + currentTerrainTexture);
 			terrainSwitch[currentTerrainTexture].SetValue(this.gameObject);
 		}
 

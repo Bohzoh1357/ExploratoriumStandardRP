@@ -7,8 +7,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	1866025847	FootStep			\SFX\FootStep	
 	1918324573	RunningWind_Play			\SFX\RunningWind_Play	
 	1941965176	toDay			\Music\toDay	
+	1972369290	StarCollected			\Music\StarCollected	
 	2883244301	Jump_Landing			\SFX\Jump_Landing	
 	3100698545	RegionAmbience			\Ambiences\RegionAmbience	
+	3219695003	StarInitializer			\Music\StarInitializer	
 	3325545974	Inventory_Open			\SFX\Inventory_Open	
 	3350388417	OceanWaves			\Ambiences\OceanWaves	
 	3991942870	Music			\Music\Music	
@@ -48,6 +50,9 @@ State	ID	Name	State Group			Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	3729505769	TimeOfDay			\Default Work Unit\TimeOfDay	
 
+Trigger	ID	Name			Wwise Object Path	Notes
+	1972369290	StarCollected			\Default Work Unit\StarCollected	
+
 Effect plug-ins	ID	Name	Type				Notes
 	16242820	Parametric EQ (Custom)	Wwise Parametric EQ			
 
@@ -85,19 +90,23 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	403844754	AMB_ENV_FieldBirds5_v1_JL	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\E8\{E8E4891F-311E-E470-115F-1DA209789EF5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\AMB\RegionAmbiences\Field_Ambience\Birds\FieldBirds\AMB_ENV_FieldBirds5_v1_JL		56162
 	405912730	RiverFar	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\D3\{D3D1FCBC-23C6-F807-BF18-8DB16CABDAAB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Emitters\RiverFar		1415209
 	467309718	AMB_ENV_OceanWaves_v1_JL 4	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\EF\{EFDBB2C2-81B1-E960-32D6-F7FDF49AF2D2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Emitters\OceanWaves\AMB_ENV_OceanWaves_v1_JL 4		104540
+	469979251	StartStinger_KalimbaLow_80-50bpm4-4_L3M(11_626S)	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\0D\{0D904924-CD08-5E02-09C3-A6D083136304}.wem		\Interactive Music Hierarchy\Default Work Unit\StartStinger\StartStinger_KalimbaLow_80-50bpm4-4_L3M(11_626S)		209776
 	493226867	SFX_Player_StepGrass4_v2_JL	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\6A\{6AA979B0-A863-5D6F-5D15-89C05CA8ED73}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Footsteps\Non-Water\StepGrass\SFX_Player_StepGrass4_v2_JL		9004
 	499896437	SFX_Player_StepLeaves5_v2_JL	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\F9\{F9388D99-CCB5-799B-F116-157DE8038B5F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Footsteps\Non-Water\StepLeaves\SFX_Player_StepLeaves5_v2_JL		9724
+	508755875	StartStinger_Guitar_80-50bpm4-4_L3M(11_626S)	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\50\{50518418-DFEC-7E0C-5E67-FD51DFF60A99}.wem		\Interactive Music Hierarchy\Default Work Unit\StartStinger\StartStinger_Guitar_80-50bpm4-4_L3M(11_626S)		128409
 	509768431	SFX_Player_StepGrass3_v2_JL	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\C2\{C2F9BEC9-F146-5D21-1444-4E0144A3A571}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Footsteps\Non-Water\StepGrass\SFX_Player_StepGrass3_v2_JL		11756
 	522882346	SFX_Player_StepGrass1_v2_JL	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\D8\{D82E000A-510D-D61B-9940-F3805E3A7ED5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Footsteps\Non-Water\StepGrass\SFX_Player_StepGrass1_v2_JL		10920
+	539792457	StartStinger_Cello_80-50bpm4-4_L3M(11_626S)	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\1A\{1AA87CAF-6AFB-9464-1E3B-749321BFDEF9}.wem		\Interactive Music Hierarchy\Default Work Unit\StartStinger\StartStinger_Cello_80-50bpm4-4_L3M(11_626S)		230912
 	542425319	SFX_Player_StepSnow1_v2_JL	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\85\{856B6BC1-6E84-C453-CFF5-AF2DD48095BD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Footsteps\Non-Water\StepSnow\SFX_Player_StepSnow1_v2_JL		8473
 	547230264	SFX_Player_StepWater1_v2_JL	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\40\{407D4F38-36C6-11AD-4BD8-913FDA6BA182}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Footsteps\StepWater\SFX_Player_StepWater1_v2_JL		27048
 	549668459	AMB_ENV_OceanWaves_v1_JL 3	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\24\{24908188-C54E-A6E5-A681-4401032A41E3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Emitters\OceanWaves\AMB_ENV_OceanWaves_v1_JL 3		105605
+	550827518	StartStinger_SynthBass_80-50bpm4-4_L3M(11_626S)	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\E5\{E555D489-2920-A54E-94ED-4CA46F64035E}.wem		\Interactive Music Hierarchy\Default Work Unit\StartStinger\StartStinger_SynthBass_80-50bpm4-4_L3M(11_626S)		129248
 	554263416	SFX_Player_StepSnow3_v2_JL	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\D3\{D3F8FF95-F232-C6E3-C24A-400BE1D22848}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Footsteps\Non-Water\StepSnow\SFX_Player_StepSnow3_v2_JL		9310
 	555020502	SFX_Player_StepSnow4_v2_JL	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\59\{59D01569-8EFD-039C-CEC4-37C235AD5BF9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Footsteps\Non-Water\StepSnow\SFX_Player_StepSnow4_v2_JL		9297
-	596137497	DaytoNight_Transition_endloop - Kalimba	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\E8\{E8666B1E-EE5E-DED1-B773-9933E8C4CC27}.wem		\Interactive Music Hierarchy\Default Work Unit\Music\DaytoNight_Trans_80bpm4-4_L12S(4M)\DaytoNight_Transition_endloop - Kalimba		315681
 	607027924	SFX_Player_StepGrass2_v2_JL	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\7B\{7B7F37F1-C212-ACA3-0021-56863E6CFB3E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Footsteps\Non-Water\StepGrass\SFX_Player_StepGrass2_v2_JL		10893
 	640092675	SFX_Player_StepSnow6_v2_JL	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\05\{057CCBDD-0CB6-5F10-A771-625FFFA04986}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Footsteps\Non-Water\StepSnow\SFX_Player_StepSnow6_v2_JL		8287
 	650019613	Day5_Piano_80bpm4-4_L10M	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\9E\{9E7E7F35-3A2E-CBE9-F2C2-6AC1ADD859AA}.wem		\Interactive Music Hierarchy\Default Work Unit\Music\DayMusic\Day5\Day5_Piano_80bpm4-4_L10M		489115
+	664929944	StartStinger_KalimbaHigh_80-50bpm4-4_L3M(11_626S)_01	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\AA\{AAA61AA6-E463-86E0-0389-9C5B8EC89C2B}.wem		\Interactive Music Hierarchy\Default Work Unit\StartStinger\StartStinger_KalimbaHigh_80-50bpm4-4_L3M(11_626S)_01		208774
 	672334936	Day4_Kalimba_80bpm4-4_L6M	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\49\{4984BD20-C859-40A3-FE5D-CDA7281F835C}.wem		\Interactive Music Hierarchy\Default Work Unit\Music\DayMusic\Day4\Day4_Kalimba_80bpm4-4_L6M		370187
 	676148844	Day7_80bpm4-4_L16M	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\4D\{4DE5973B-4C2B-4CE0-80B7-1085E55AE31E}.wem		\Interactive Music Hierarchy\Default Work Unit\Music\DayMusic\Day7\Day7_80bpm4-4_L16M		748425
 	708755240	AMB_ENV_FieldBirds1_v1_JL	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\3F\{3F9ED41B-0DA5-B5CC-DC9F-1D847F3F0FDF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\AMB\RegionAmbiences\Field_Ambience\Birds\FieldBirds\AMB_ENV_FieldBirds1_v1_JL		58492
@@ -107,6 +116,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	745446118	AMB_ENV_FieldBirds2_v1_JL	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\A8\{A85D34FE-7A70-3E71-37CD-CC3ED1B333D5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\AMB\RegionAmbiences\Field_Ambience\Birds\FieldBirds\AMB_ENV_FieldBirds2_v1_JL		57107
 	756459854	Forest_Ambience	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\C5\{C50BEFCA-B232-0304-D516-E43186AE50B9}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\AMB\RegionAmbiences\Forest_Ambience		1169439
 	798221971	Inventory_Open	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\C7\{C71651E9-1C6E-F6F4-6566-AB76478F0054}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI\Inventory_Open		11848
+	841204228	StartStinger_Piano_80-50bpm4-4_L3M(11_626S)	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\6A\{6A71F79D-AD66-66D8-8116-C4757FC94C94}.wem		\Interactive Music Hierarchy\Default Work Unit\StartStinger\StartStinger_Piano_80-50bpm4-4_L3M(11_626S)		230318
 	866256559	AMB_ENV_FieldBirds4_v1_JL	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\AD\{AD1CE6AB-EE0A-AF79-A40B-06DEC18D68AB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\AMB\RegionAmbiences\Field_Ambience\Birds\FieldBirds\AMB_ENV_FieldBirds4_v1_JL		56504
 	882701167	AMB_ENV_FieldBirds6_v1_JL	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\28\{28C92FE3-E980-5DE0-2F64-B8D2A5099076}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\AMB\RegionAmbiences\Field_Ambience\Birds\FieldBirds\AMB_ENV_FieldBirds6_v1_JL		69203
 	885915024	SFX_Player_StepLeaves2_v2_JL	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\22\{22612D1F-F64D-E104-47CB-C668FEB0E928}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Footsteps\Non-Water\StepLeaves\SFX_Player_StepLeaves2_v2_JL		10443
