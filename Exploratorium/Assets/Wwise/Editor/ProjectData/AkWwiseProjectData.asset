@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 066e43001ae1ea44b23b8efbcb25ca6e
     GuidInternal: 
-    m_lastTime: -8584627157547752316
+    m_lastTime: -8584621319108223339
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: e233e7ef4d8ae34ab662f20c007d1656
     GuidInternal: 
-    m_lastTime: -8584622065537472048
+    m_lastTime: -8584621319175183152
     List:
     - name: AMB
       guid: 6fe166de750ee34fa2d758334da5dd85
@@ -174,7 +174,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 7499e83547751a438679ea52f9d44a40
     GuidInternal: 
-    m_lastTime: -8584623761017105146
+    m_lastTime: -8584621319108362917
     List:
     - name: General
       guid: 40349fa13a3f4f4690e0b70824685515
@@ -202,7 +202,7 @@ MonoBehaviour:
     ParentPath: Events\Ambiences
     guid: 8cd75206366a67409f616615b585095f
     GuidInternal: 
-    m_lastTime: -8584623761179730218
+    m_lastTime: -8584621319185112204
     List:
     - name: Mountain_Wind1
       guid: 12cffe651f1a9642baf330078f351c4b
@@ -334,7 +334,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6a2c2bde733c794e97c4d75f0447af56
     GuidInternal: 
-    m_lastTime: -8584623939382324236
+    m_lastTime: -8584621319185102292
     List: []
   - PhysicalPath: Events\Music.wwu
     PathAndIcons:
@@ -347,7 +347,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: baba841079c8514493bf6c26f4c5e8a5
     GuidInternal: 
-    m_lastTime: -8584622070977786832
+    m_lastTime: -8584621319185072256
     List:
     - name: Music
       guid: fa65331d9c082749bed4dc3051893af9
@@ -381,8 +381,8 @@ MonoBehaviour:
         guid: 16cea810d365c945909b515266c3c008
       Path: Events\Music\StarCollected
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: StarInitializer
       guid: eb2b176f84ba4540846955d549145402
       id: 3219695003
@@ -428,7 +428,7 @@ MonoBehaviour:
     ParentPath: Events\SFX
     guid: 620fa6b10a6a66419f308667bf0f44ab
     GuidInternal: 
-    m_lastTime: -8584623739216153921
+    m_lastTime: -8584621319185062368
     List:
     - name: FootStep
       guid: b5127a5b2683bf4e870c4d46726fa75b
@@ -527,7 +527,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: d55cc9f1dc3cb949ac089a06a527b4da
     GuidInternal: 
-    m_lastTime: -8584622114459566268
+    m_lastTime: -8584621319184960732
     List:
     - name: MasterVolume
       guid: b35b335905abfa4da5c6f284d567f553
@@ -611,7 +611,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: cef5d7a649734543b3c70166ac695192
     GuidInternal: 
-    m_lastTime: -8584622077050460336
+    m_lastTime: -8584621319108313206
     List:
     - name: Jump
       guid: 387f017b7dd5a14ea97f6f89d1833bc1
@@ -1279,7 +1279,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 89f24706b43e9d4da320960a82266e5d
     GuidInternal: 
-    m_lastTime: -8584623906215587775
+    m_lastTime: -8584621319108272967
     List:
     - name: Jump
       guid: a393463f040b234d873236fcdf7bbf78
@@ -1475,7 +1475,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: e001c2d1a33b934984704e0e8c082691
     GuidInternal: 
-    m_lastTime: -8584622070977617015
+    m_lastTime: -8584621319108253210
     List:
     - name: StarCollected
       guid: fbdfe5505c21f145ace96f4eacf0f09c

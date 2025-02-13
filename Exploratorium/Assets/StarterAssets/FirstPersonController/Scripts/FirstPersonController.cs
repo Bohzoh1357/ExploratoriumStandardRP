@@ -75,6 +75,7 @@ namespace StarterAssets
         public float footstepTimer = 0.0f;
 		public float footRunFrequency = .13f;
         private bool startedFalling;
+		private bool startedJumping = false;
 
         public AK.Wwise.Event footstepSFX;
 		public AK.Wwise.Switch[] terrainSwitch;
@@ -253,6 +254,15 @@ namespace StarterAssets
                 // sets state to unmute footsteps
 				groundedUnMute.SetValue();
 
+                //if we are grounded after falling or jumping then falling, play landing sound
+                if (startedFalling)
+                {
+                    landingSound.Post(this.gameObject);
+                    startedFalling = false;
+					startedJumping = false;
+
+                }
+
                 // reset the fall timeout timer
                 _fallTimeoutDelta = FallTimeout;
 
@@ -267,7 +277,10 @@ namespace StarterAssets
 				{
 					// the square root of H * -2 * G = how much velocity needed to reach desired height
 					_verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
-				}
+
+                    //indicates that we have either fallen or jumped
+                    startedJumping = true;
+                }
 
 				// jump timeout
 				if (_jumpTimeoutDelta >= 0.0f)
@@ -275,12 +288,7 @@ namespace StarterAssets
 					_jumpTimeoutDelta -= Time.deltaTime;
 				}
 
-                //if we are grounded after falling or jumping then falling, play landing sound
-                if (startedFalling == true)
-                {
-					landingSound.Post(this.gameObject);
-                    startedFalling = false;
-                }
+
             }
 			else
 			{
@@ -299,8 +307,12 @@ namespace StarterAssets
 				// if we are not grounded, do not jump
 				_input.jump = false;
 
-                //indicates that we have either fallen or jumped
-                startedFalling = true;
+				if(startedJumping)
+				{
+					startedFalling = true;
+				}
+
+                
             }
 
 			// apply gravity over time if under terminal (multiply by delta time twice to linearly speed up over time)
