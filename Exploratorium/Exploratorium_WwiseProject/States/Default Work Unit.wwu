@@ -86,6 +86,16 @@
 						</StateGroup>
 					</ChildrenList>
 				</Folder>
+				<StateGroup Name="StarID" ID="{54107805-C2CE-4982-BB64-E8E09C21EB30}">
+					<ChildrenList>
+						<State Name="None" ID="{A1A15914-1F45-4E07-B301-252547CA9006}"/>
+						<State Name="Star0" ID="{BD10DE55-C082-4110-93D0-A52D2160AC14}"/>
+						<State Name="Star1" ID="{C482D35D-1AAB-4A33-8C4E-F6A797D4D5F5}"/>
+						<State Name="Star2" ID="{79E2B440-6CD0-469A-ADF9-67E7F207A824}"/>
+						<State Name="Star3" ID="{C4228BFE-1EE9-4568-9B78-DECB7D06CA29}"/>
+						<State Name="Star4" ID="{6ECE3F65-110B-4FCA-BE69-D6F4C42667DC}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

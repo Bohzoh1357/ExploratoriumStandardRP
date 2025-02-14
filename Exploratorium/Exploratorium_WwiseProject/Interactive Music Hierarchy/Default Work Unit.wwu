@@ -1365,7 +1365,1277 @@
 						</ObjectList>
 					</ObjectLists>
 				</MusicSwitchContainer>
-				<Folder Name="StarAmbient" ID="{D4FD5438-E91A-452B-A137-19BA8285ABF8}" ShortID="852335949"/>
+				<Folder Name="StarAmbient" ID="{D4FD5438-E91A-452B-A137-19BA8285ABF8}" ShortID="852335949">
+					<ChildrenList>
+						<MusicPlaylistContainer Name="StarAmbient" ID="{1D6E5837-A41E-495F-B0F0-DCE385332612}" ShortID="277993477">
+							<PropertyList>
+								<Property Name="Tempo" Type="Real64" Value="80"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{C6BFC534-6F33-4103-81A2-0DDE6CEEF83D}" ShortID="362328815">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{218D4BD9-8636-4D09-9690-93945F2E5913}" ShortID="464248162">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="StarAmbientMajor" ID="{688A88F3-C720-4756-831B-B99BCD2E5B78}" WorkUnitID="{AD5C76CE-70EC-425A-BDBC-C67C996B61C1}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{8E03BFC7-2512-43E2-9063-558E4734D7EF}" ShortID="943516450">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="StarAmbientMajor" ID="{688A88F3-C720-4756-831B-B99BCD2E5B78}" WorkUnitID="{AD5C76CE-70EC-425A-BDBC-C67C996B61C1}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{63F08080-6A84-4B52-9557-0337204930FF}" ShortID="679880608">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="StarAmbientMinor" ID="{D239B0CA-6BD1-4098-A91D-4C6A5E04AFBA}" WorkUnitID="{AD5C76CE-70EC-425A-BDBC-C67C996B61C1}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{C9AA06F3-CC25-43CD-87A5-13B2F4C86D64}" ShortID="579735088">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="StarAmbientMinor" ID="{D239B0CA-6BD1-4098-A91D-4C6A5E04AFBA}" WorkUnitID="{AD5C76CE-70EC-425A-BDBC-C67C996B61C1}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{68B09B8D-0909-425E-B4B2-BD06C6253FCB}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{EDFA6DF1-69F3-423C-BAF5-8F4A063E8D47}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="StarAmbientMajor" ID="{688A88F3-C720-4756-831B-B99BCD2E5B78}" ShortID="692006696">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="66000"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="StarAmb_Bass" ID="{A5AA842E-71E8-4CD4-A1F7-8211A85B6C8D}" ShortID="39602138">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Star0" ID="{E45D32F7-666A-4983-BBD7-FF1FFE8DA5A9}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="StarCounter" ID="{4FF51364-EB75-49A4-B4B5-B167CB92D2C4}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{9A854493-1C56-426A-8EBC-FD0E7A6AC2CA}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{92310439-FEC1-4261-85ED-B3F91D75214A}">
+																	<PropertyList>
+																		<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+																		<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+																		<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="StarAmb_Bass1-2Major_80bpm4-4_L8M_P3B" ID="{D2BE6DE7-0446-493B-9E7E-40F35D13675A}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_Bass1-2Major_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="8367953"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="StarAmb_Bass1-8Major_80bpm4-4_L8M_P3B" ID="{55ED9F06-CF16-48A9-9050-47548A048A8D}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_Bass1-8Major_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="29032291"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="StarAmb_Bass1-8tMajor_80bpm4-4_L8M_P3B" ID="{225926D2-9819-4188-87D4-A9696527158E}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_Bass1-8tMajor_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="108649928"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="StarAmb_Bass1-16Major_80bpm4-4_L8M_P3B" ID="{F5761F69-CB4F-44E8-A4DF-592D9BFF2E65}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_Bass1-16Major_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="742908057"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="StarAmb_Bass1-16tMajor_80bpm4-4_L8M_P3B" ID="{A990D046-F507-4121-A5D3-13680FA75B21}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_Bass1-16tMajor_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="908280898"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="StarAmb_Bass1-32Major_80bpm4-4_L8M_P3B" ID="{9B906473-6D1A-4048-A2BD-095F24E62117}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_Bass1-32Major_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="138799514"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="StarAmb_Bass1-4Major_80bpm4-4_L8M_P3B" ID="{A67E8FFE-33CB-4C5B-B742-4026B16E6137}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_Bass1-4Major_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="958879665"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{B99BD51A-3623-4E35-B39F-2225FF9F0C6C}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_Bass1-2Major_80bpm4-4_L8M_P3B" ID="{D794C9A2-58DF-41DD-B2C4-0A5594E64CFB}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_Bass1-2Major_80bpm4-4_L8M_P3B" ID="{D2BE6DE7-0446-493B-9E7E-40F35D13675A}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="StarsCollect0" ID="{77CC9B1C-9612-48DD-85B4-EF065468C275}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{DC380218-85C6-4D35-9361-881D2F45DCC9}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_Bass1-4Major_80bpm4-4_L8M_P3B" ID="{CAF74347-2BB0-44BF-9CF4-D483B66B14BA}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_Bass1-4Major_80bpm4-4_L8M_P3B" ID="{A67E8FFE-33CB-4C5B-B742-4026B16E6137}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="StarsCollect1" ID="{2E804BD0-887D-4769-92A9-FC9455126DB2}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{1216C3EA-EE7B-4396-8995-FD195789D027}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_Bass1-8Major_80bpm4-4_L8M_P3B" ID="{5C4E3B01-B413-4BFD-9186-D92F7986DF09}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_Bass1-8Major_80bpm4-4_L8M_P3B" ID="{55ED9F06-CF16-48A9-9050-47548A048A8D}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="StarsCollect2" ID="{2BF742CE-5085-4FFC-96BC-81F6D875981B}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{4AB8C4A7-3A1B-414A-8360-7BD57EC9C0E2}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_Bass1-8tMajor_80bpm4-4_L8M_P3B" ID="{0646ECEE-186A-4C32-98D4-0A869720F6F9}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_Bass1-8tMajor_80bpm4-4_L8M_P3B" ID="{225926D2-9819-4188-87D4-A9696527158E}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="StarsCollect3" ID="{29A22BA4-E9D5-47ED-9D77-4374073BE326}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{FC3883AF-7062-4274-8C5B-0E04F2F6B8AB}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_Bass1-16Major_80bpm4-4_L8M_P3B" ID="{2AE4AFF0-4F34-41D8-8336-84F4F777CC11}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_Bass1-16Major_80bpm4-4_L8M_P3B" ID="{F5761F69-CB4F-44E8-A4DF-592D9BFF2E65}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="StarsCollect4" ID="{AAF7D718-4B8D-44CA-8258-9E914DA9D224}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{01B6F2FB-C3B4-4A8A-90FE-D1055FB74CAB}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_Bass1-16tMajor_80bpm4-4_L8M_P3B" ID="{018545A6-0354-4F94-9F44-4B8B4312F784}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_Bass1-16tMajor_80bpm4-4_L8M_P3B" ID="{A990D046-F507-4121-A5D3-13680FA75B21}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{6AFF08AB-3982-49BD-B338-D0BB32A7FB0F}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_Bass1-32Major_80bpm4-4_L8M_P3B" ID="{AB1EDCDF-3A06-4962-B14E-3A148A36E9A5}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_Bass1-32Major_80bpm4-4_L8M_P3B" ID="{9B906473-6D1A-4048-A2BD-095F24E62117}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="StarAmb_All" ID="{5C1C0DDF-6189-4AE9-891A-17C75E9A55B2}" ShortID="547209526">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="StarID" ID="{79711138-C946-40A3-A517-CAB703AFF346}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{49A254EA-45FC-4AFD-9C23-04BDF12C9176}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{28252E9B-2ACB-49A6-8F0D-A9B245FC38AA}">
+																	<PropertyList>
+																		<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+																		<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+																		<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<TransitionInfo>
+																		<SourceFadeOut>
+																			<MusicFade Name="Source Fade-out" ID="{95531B57-F082-4184-8731-6B5B4E7EA817}">
+																				<PropertyList>
+																					<Property Name="FadeType" Type="int16" Value="1"/>
+																				</PropertyList>
+																			</MusicFade>
+																		</SourceFadeOut>
+																	</TransitionInfo>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="StarAmb_Cello_80bpm4-4_L8M_P3B" ID="{5430FC2A-0B2A-4174-9EEF-50CB430A99C8}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_Cello_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="538794420"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="StarAmb_KalimbaHigh_80bpm4-4_L8M_P3B" ID="{5ED26070-4A75-49EF-8A35-6D7B5AE6CACC}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_KalimbaHigh_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="182284008"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="StarAmb_KalimbaLow_80bpm4-4_L8M_P3B" ID="{9FF1BE1D-C567-4694-86A5-3E92E7AA4FEA}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_KalimbaLow_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="657134684"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="StarAmb_Piano_80bpm4-4_L8M_P3B" ID="{41DB7778-63A0-48DB-A838-38D69818383C}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_Piano_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1048791186"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="StarAmb_Guitar_80bpm4-4_L8M_P3B" ID="{1687945B-034E-4B03-A6A6-2CC81F723E7F}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_Guitar_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="996020030"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{91D4FCC7-996E-43C3-909F-360DDEC79FE5}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_Cello_80bpm4-4_L8M_P3B" ID="{B895F563-072C-45E8-B93E-66D11A06B366}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_Cello_80bpm4-4_L8M_P3B" ID="{5430FC2A-0B2A-4174-9EEF-50CB430A99C8}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Star0" ID="{E45D32F7-666A-4983-BBD7-FF1FFE8DA5A9}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{9AB30968-5040-4EF3-925B-5BC0674D062C}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_KalimbaHigh_80bpm4-4_L8M_P3B" ID="{9CCC7773-7AE9-4997-BF93-454E62545F6B}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_KalimbaHigh_80bpm4-4_L8M_P3B" ID="{5ED26070-4A75-49EF-8A35-6D7B5AE6CACC}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Star1" ID="{D05EBA6C-FB16-41EE-BC54-02BF45FADEA3}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{5D05C483-139C-4EDA-83D6-E7AEF2835B3A}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_KalimbaLow_80bpm4-4_L8M_P3B" ID="{B4F51166-169C-475A-A056-AB6ED2003CF5}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_KalimbaLow_80bpm4-4_L8M_P3B" ID="{9FF1BE1D-C567-4694-86A5-3E92E7AA4FEA}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Star2" ID="{7C0D8FE8-D193-49BB-BB8A-7F66E26FF369}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{8B7962A9-79FF-4091-B990-1B4C13C3B7DA}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_Piano_80bpm4-4_L8M_P3B" ID="{5D63040A-A3C4-434A-BC4C-E80B8AE88804}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_Piano_80bpm4-4_L8M_P3B" ID="{41DB7778-63A0-48DB-A838-38D69818383C}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Star3" ID="{AA898885-C301-45DE-949D-A926A4666110}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{B57D92F2-FDED-4852-A6FE-1D91707E2F34}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_Guitar_80bpm4-4_L8M_P3B" ID="{6E02463A-40A2-4060-B8D0-2521B29909F3}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_Guitar_80bpm4-4_L8M_P3B" ID="{1687945B-034E-4B03-A6A6-2CC81F723E7F}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Star4" ID="{F7DB913D-0C14-415E-BCCC-D935DA2EE77F}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="StarAmb_KalimbaSample_80bpm4-4_L8M_P3B" ID="{F0EFF080-2D44-4AF2-9E47-400904056079}" ShortID="3873681">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="StarID" ID="{79711138-C946-40A3-A517-CAB703AFF346}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{8A2C7C1F-0DF9-4A94-923C-8F4727E422FB}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{629311AB-AB01-40BE-B1C1-20DCA8C05925}">
+																	<TransitionInfo/>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="StarAmb_KalimbaSample_80bpm4-4_L8M_P3B" ID="{A8B70E82-4C60-4E9D-95FE-2FB2B987FC1D}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_KalimbaSample_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1015632412"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{A83D6E3E-D2DA-45B6-BDF9-7D544C4C56BF}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_KalimbaSample_80bpm4-4_L8M_P3B" ID="{5D69CD5B-DA97-4A89-8E4E-A6E4511C9D99}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_KalimbaSample_80bpm4-4_L8M_P3B" ID="{A8B70E82-4C60-4E9D-95FE-2FB2B987FC1D}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{19D2B170-CF71-46C9-8634-598843DC465F}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="2250"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{06CEC2B1-C74F-4593-BA63-72B4C89677FE}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="26250"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicSegment Name="StarAmbientMinor" ID="{D239B0CA-6BD1-4098-A91D-4C6A5E04AFBA}" ShortID="103036077">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="32250"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="StarAmb_Bass" ID="{B7631CD0-CA1D-430D-B1AF-BFEFCA3ECD69}" ShortID="874694298">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Star0" ID="{E45D32F7-666A-4983-BBD7-FF1FFE8DA5A9}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="StarCounter" ID="{4FF51364-EB75-49A4-B4B5-B167CB92D2C4}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{962887F9-E0D4-4BF5-905A-6DDB080A11C5}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{DEA9815B-F266-477F-B22A-2C288653834F}">
+																	<PropertyList>
+																		<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+																		<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+																		<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<TransitionInfo>
+																		<SourceFadeOut>
+																			<MusicFade Name="Source Fade-out" ID="{22A75C88-8DF4-4336-B5B2-ABFE97AC5C42}">
+																				<PropertyList>
+																					<Property Name="FadeOffset" Type="Real64" Value="0.5"/>
+																					<Property Name="FadeTime" Type="Real64" Value="1"/>
+																					<Property Name="FadeType" Type="int16" Value="1"/>
+																				</PropertyList>
+																			</MusicFade>
+																		</SourceFadeOut>
+																		<DestinationFadeIn>
+																			<MusicFade Name="Destination Fade-in" ID="{7CC6F2FA-E635-41B8-9CE9-B75C385DE3BB}">
+																				<PropertyList>
+																					<Property Name="FadeOffset" Type="Real64" Value="-0.5"/>
+																					<Property Name="FadeTime" Type="Real64" Value="1"/>
+																				</PropertyList>
+																			</MusicFade>
+																		</DestinationFadeIn>
+																	</TransitionInfo>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="StarAmb_Bass1-2Minor_80bpm4-4_L8M_P3B" ID="{F0D77E75-395E-449A-BB0D-E3986F2F0BDD}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_Bass1-2Minor_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="610593916"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="StarAmb_Bass1-4Minor_80bpm4-4_L8M_P3B" ID="{66E8934D-4B18-4B79-BF65-187590788302}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_Bass1-4Minor_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="801546477"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="StarAmb_Bass1-8Minor_80bpm4-4_L8M_P3B" ID="{581C0636-EDA1-41AB-A0A2-F6FE49D45DB8}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_Bass1-8Minor_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="20184349"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="StarAmb_Bass1-8tMinor_80bpm4-4_L8M_P3B" ID="{C79E1808-DBD2-4AAF-9553-5970A5646C32}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_Bass1-8tMinor_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="246401033"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="StarAmb_Bass1-16Minor_80bpm4-4_L8M_P3B" ID="{A70AE0D6-BE2C-4355-B494-6FB26C5E4907}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_Bass1-16Minor_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="567330253"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="StarAmb_Bass1-16tMinor_80bpm4-4_L8M_P3B" ID="{BB80B038-BF2B-4F20-AD88-A6B280F01D06}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_Bass1-16tMinor_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="999408022"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="StarAmb_Bass1-32Minor_80bpm4-4_L8M_P3B" ID="{59CE2381-39B9-4702-A3D9-C42183ADFF45}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_Bass1-32Minor_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="306935995"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{6498865F-8281-4911-883E-3EC401B3E52D}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_Bass1-2Minor_80bpm4-4_L8M_P3B" ID="{D27C307B-77EA-4F62-BC09-FCA6A5B407A7}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_Bass1-2Minor_80bpm4-4_L8M_P3B" ID="{F0D77E75-395E-449A-BB0D-E3986F2F0BDD}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="StarsCollect0" ID="{77CC9B1C-9612-48DD-85B4-EF065468C275}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{178A3916-468B-4B02-95C7-F2BAA4A683DF}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_Bass1-4Minor_80bpm4-4_L8M_P3B" ID="{114302AD-180C-462E-8EDA-C93653F2F985}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_Bass1-4Minor_80bpm4-4_L8M_P3B" ID="{66E8934D-4B18-4B79-BF65-187590788302}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="StarsCollect1" ID="{2E804BD0-887D-4769-92A9-FC9455126DB2}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{309BC69E-B955-43AE-B401-B374350D256F}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_Bass1-8Minor_80bpm4-4_L8M_P3B" ID="{84E2A43A-D4D0-4611-9F6F-6E1C5E9F6E8D}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_Bass1-8Minor_80bpm4-4_L8M_P3B" ID="{581C0636-EDA1-41AB-A0A2-F6FE49D45DB8}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="StarsCollect2" ID="{2BF742CE-5085-4FFC-96BC-81F6D875981B}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{F0DEB60A-6216-4B2E-A0F7-95C469FD8DB4}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_Bass1-8tMinor_80bpm4-4_L8M_P3B" ID="{356DF9DE-3A91-4146-AE9B-601E53979987}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_Bass1-8tMinor_80bpm4-4_L8M_P3B" ID="{C79E1808-DBD2-4AAF-9553-5970A5646C32}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="StarsCollect3" ID="{29A22BA4-E9D5-47ED-9D77-4374073BE326}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{31C1825E-19B4-488F-97BA-3048D3CE8A33}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_Bass1-16Minor_80bpm4-4_L8M_P3B" ID="{02351F4A-A435-4C42-80EC-D6EA05817A53}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_Bass1-16Minor_80bpm4-4_L8M_P3B" ID="{A70AE0D6-BE2C-4355-B494-6FB26C5E4907}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="StarsCollect4" ID="{AAF7D718-4B8D-44CA-8258-9E914DA9D224}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{8C1FBB35-0A7E-4D6B-AEBC-65DB772473B2}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_Bass1-16tMinor_80bpm4-4_L8M_P3B" ID="{2CCD6FD7-8017-4A02-8293-A8B67771B7FF}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_Bass1-16tMinor_80bpm4-4_L8M_P3B" ID="{BB80B038-BF2B-4F20-AD88-A6B280F01D06}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{CEF0018B-334A-4F7E-9D51-A0A728A266DB}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_Bass1-32Minor_80bpm4-4_L8M_P3B" ID="{3DE2B7DD-1447-4C13-8483-AC6B28A0D036}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_Bass1-32Minor_80bpm4-4_L8M_P3B" ID="{59CE2381-39B9-4702-A3D9-C42183ADFF45}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="StarAmb_All" ID="{EB5A4D8F-E3EA-4B6A-AEEA-DD0B7E54753F}" ShortID="401444789">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="StarID" ID="{79711138-C946-40A3-A517-CAB703AFF346}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{2150A89D-62CE-411F-9483-51151AA21030}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{7AE22ADD-7EF8-42AA-A151-1036C5E34B3C}">
+																	<PropertyList>
+																		<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+																		<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+																		<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="StarAmb_Cello_80bpm4-4_L8M_P3B" ID="{06BC5993-1FC9-4384-B628-57898198639F}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_Cello_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="538794420"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="StarAmb_KalimbaHigh_80bpm4-4_L8M_P3B" ID="{EEA34491-5A42-4E20-8274-5AEA299345FB}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_KalimbaHigh_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="182284008"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="StarAmb_KalimbaLow_80bpm4-4_L8M_P3B" ID="{BE7EF941-BDA9-43ED-B97A-4771242D3250}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_KalimbaLow_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="657134684"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="StarAmb_Piano_80bpm4-4_L8M_P3B" ID="{F60B7C14-7EDF-42AC-AA38-70C4F07D348F}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_Piano_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1048791186"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="StarAmb_Guitar_80bpm4-4_L8M_P3B" ID="{F3949200-9025-4998-9379-D76FCCFFA02C}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_Guitar_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="996020030"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{52B2E741-09C9-4953-943A-E30AFF941773}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_Cello_80bpm4-4_L8M_P3B" ID="{0056C00D-FBF4-4A23-884C-EA18BC6BC9AD}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_Cello_80bpm4-4_L8M_P3B" ID="{06BC5993-1FC9-4384-B628-57898198639F}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Star0" ID="{E45D32F7-666A-4983-BBD7-FF1FFE8DA5A9}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{9D434777-BB09-44A9-AD8C-7BEE1A82CF33}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_KalimbaHigh_80bpm4-4_L8M_P3B" ID="{B485B8BD-DE68-499D-A146-5141EA1EBFC5}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_KalimbaHigh_80bpm4-4_L8M_P3B" ID="{EEA34491-5A42-4E20-8274-5AEA299345FB}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Star1" ID="{D05EBA6C-FB16-41EE-BC54-02BF45FADEA3}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{2E524B07-5557-49FF-B688-75431D6F45DF}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_KalimbaLow_80bpm4-4_L8M_P3B" ID="{2863A131-D284-4A7A-A5ED-6A8F19CD56EB}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_KalimbaLow_80bpm4-4_L8M_P3B" ID="{BE7EF941-BDA9-43ED-B97A-4771242D3250}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Star2" ID="{7C0D8FE8-D193-49BB-BB8A-7F66E26FF369}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{0BB34A5F-A29E-46E0-B0CE-86BED8AE0FDC}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_Piano_80bpm4-4_L8M_P3B" ID="{4DEF0615-09DD-4059-9981-A3C85EB0A522}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_Piano_80bpm4-4_L8M_P3B" ID="{F60B7C14-7EDF-42AC-AA38-70C4F07D348F}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Star3" ID="{AA898885-C301-45DE-949D-A926A4666110}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{D6AD880F-C30D-4C73-B98D-909FAEBA88BA}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_Guitar_80bpm4-4_L8M_P3B" ID="{FF7A34DA-E4A3-40A3-A48D-BB59C34A05B3}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_Guitar_80bpm4-4_L8M_P3B" ID="{F3949200-9025-4998-9379-D76FCCFFA02C}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Star4" ID="{F7DB913D-0C14-415E-BCCC-D935DA2EE77F}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="StarAmb_KalimbaSample_80bpm4-4_L8M_P3B" ID="{E8B3E04F-C228-4784-8D39-C7FE9E150493}" ShortID="273930238">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="StarID" ID="{79711138-C946-40A3-A517-CAB703AFF346}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{784339C9-843E-4542-9F46-5E50B40C7817}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{68C2C696-D8AB-4B4E-9CE7-664D70B50494}">
+																	<TransitionInfo/>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="StarAmb_KalimbaSample_80bpm4-4_L8M_P3B" ID="{A79B8EDF-0963-432C-85BB-3B4042020921}">
+													<Language>SFX</Language>
+													<AudioFile>StarAmb_KalimbaSample_80bpm4-4_L8M_P3B.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1015632412"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{1006D58F-FF11-423E-948D-77ED4973BC64}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="StarAmb_KalimbaSample_80bpm4-4_L8M_P3B" ID="{DC5D76DE-08ED-4E16-86B6-54EFFC0C8395}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="32250"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="StarAmb_KalimbaSample_80bpm4-4_L8M_P3B" ID="{A79B8EDF-0963-432C-85BB-3B4042020921}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{FB282010-1DD1-4BC6-BFD0-5540AFF87EDF}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="2250"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{1AAA79FC-18CC-4460-9388-555A3BE85F42}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="26250"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+					</ChildrenList>
+				</Folder>
 				<MusicSegment Name="StartStinger" ID="{FB5431CA-6667-4FCB-942D-5EFCCA2FCC61}" ShortID="727419776">
 					<PropertyList>
 						<Property Name="EndPosition" Type="Real64" Value="33675.7083333333"/>
