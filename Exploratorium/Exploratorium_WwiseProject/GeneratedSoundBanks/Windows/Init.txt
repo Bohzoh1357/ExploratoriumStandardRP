@@ -1,0 +1,52 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1281810864	Star3			\Default Work Unit\StartState\Star3	
+	1281810865	Star2			\Default Work Unit\StartState\Star2	
+	1281810866	Star1			\Default Work Unit\StartState\Star1	
+	1281810867	Star0			\Default Work Unit\StartState\Star0	
+	1281810871	Star4			\Default Work Unit\StartState\Star4	
+	2091077764	Regions			\Default Work Unit\Regions	
+	3833651337	Jump			\Default Work Unit\Jump	
+	3991942870	Music			\Default Work Unit\Music	
+
+State	ID	Name	State Group			Notes
+	395500817	UnCollected	Star3			
+	748895195	None	Star3			
+	3874392366	Collected	Star3			
+	395500817	UnCollected	Star2			
+	748895195	None	Star2			
+	3874392366	Collected	Star2			
+	395500817	UnCollected	Star1			
+	748895195	None	Star1			
+	3874392366	Collected	Star1			
+	395500817	UnCollected	Star0			
+	748895195	None	Star0			
+	3874392366	Collected	Star0			
+	395500817	UnCollected	Star4			
+	748895195	None	Star4			
+	3874392366	Collected	Star4			
+	514358619	Field	Regions			
+	748895195	None	Regions			
+	760316600	Forrest	Regions			
+	946954817	MountainTop	Regions			
+	3802555985	Ocean	Regions			
+	748895195	None	Jump			
+	1710892944	InAir	Jump			
+	2907122923	Grounded	Jump			
+	311764537	Day	Music			
+	748895195	None	Music			
+	1011622525	Night	Music			
+	4264815106	EndGame	Music			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	78360149	Stinger			\Default Work Unit\Master Audio Bus\Music\Stinger	
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	1117531639	AMB			\Default Work Unit\Master Audio Bus\AMB	
+	1551306167	UI			\Default Work Unit\Master Audio Bus\UI	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+	4003965662	NotStinger			\Default Work Unit\Master Audio Bus\Music\NotStinger	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

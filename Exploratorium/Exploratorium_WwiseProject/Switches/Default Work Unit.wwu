@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0647F289-3EB4-4D9D-A320-960A82266E5D}" SchemaVersion="123">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{0647F289-3EB4-4D9D-A320-960A82266E5D}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Step" ID="{9359D10F-4096-4698-9042-C16269C5A7B0}">
+					<ChildrenList>
+						<Switch Name="Dirt" ID="{96BFD4C9-739B-42AB-9739-365199FBEFFF}"/>
+						<Switch Name="Grass" ID="{85FE5007-A072-4499-BC1F-2FAF36FD9A7E}"/>
+						<Switch Name="Leaves" ID="{8AF4D400-7E6A-4AEA-A617-18483B712161}"/>
+						<Switch Name="Snow" ID="{3F49E196-C40C-4F96-8FF5-BCEFB3BC4CC4}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Step_Water" ID="{0CFBBACE-BD9D-4137-81CD-5CFE7BFDA1F4}">
+					<ChildrenList>
+						<Switch Name="DryLand" ID="{19A1EA46-7F5A-43AD-A331-624181745DFF}"/>
+						<Switch Name="Water" ID="{7E8283D3-D580-47B6-8B04-A1752ADB180F}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Jump" ID="{3F4693A3-0B04-4D23-8732-36FCDF7BBF78}">
+					<ChildrenList>
+						<Switch Name="Grounded" ID="{23104471-3C07-4516-ABA3-EF628EF7AD1E}"/>
+						<Switch Name="InAir" ID="{E9522A81-EE3F-4AC0-88FF-FDA1EDAE95F8}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="StarID" ID="{79711138-C946-40A3-A517-CAB703AFF346}">
+					<ChildrenList>
+						<Switch Name="Star0" ID="{E45D32F7-666A-4983-BBD7-FF1FFE8DA5A9}"/>
+						<Switch Name="Star2" ID="{7C0D8FE8-D193-49BB-BB8A-7F66E26FF369}"/>
+						<Switch Name="Star3" ID="{AA898885-C301-45DE-949D-A926A4666110}"/>
+						<Switch Name="Star1" ID="{D05EBA6C-FB16-41EE-BC54-02BF45FADEA3}"/>
+						<Switch Name="Star4" ID="{F7DB913D-0C14-415E-BCCC-D935DA2EE77F}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="StarCounter" ID="{4FF51364-EB75-49A4-B4B5-B167CB92D2C4}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="StarsCollect0" ID="{77CC9B1C-9612-48DD-85B4-EF065468C275}"/>
+						<Switch Name="StarsCollect1" ID="{2E804BD0-887D-4769-92A9-FC9455126DB2}"/>
+						<Switch Name="StarsCollect2" ID="{2BF742CE-5085-4FFC-96BC-81F6D875981B}"/>
+						<Switch Name="StarsCollect3" ID="{29A22BA4-E9D5-47ED-9D77-4374073BE326}"/>
+						<Switch Name="StarsCollect4" ID="{AAF7D718-4B8D-44CA-8258-9E914DA9D224}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="StarPieces" ID="{EE923E92-66FB-4362-B131-09AC0F0151DD}"/>
+						<Curve Name="" ID="{295AA505-1F4F-4B45-9C5B-673C44AAECB4}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>3</XPos>
+									<YPos>4</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>4</XPos>
+									<YPos>5</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>5</XPos>
+									<YPos>5</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

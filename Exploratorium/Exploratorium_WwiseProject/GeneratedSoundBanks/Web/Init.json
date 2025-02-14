@@ -1,0 +1,419 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Web",
+  "BasePlatform": "Web",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "Type": "User",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "{BC364C04-B29F-3167-F5A8-72AC97D890A5}",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk",
+    "Plugins": {
+     "AudioDevices": [
+      {
+       "Id": "2317455096",
+       "Name": "No_Output",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\No_Output",
+       "GUID": "{29B6EECC-0A36-4221-9B45-6B24C5370CF8}",
+       "LibName": "No Output",
+       "LibId": "11862023"
+      },
+      {
+       "Id": "3859886410",
+       "Name": "System",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\System",
+       "GUID": "{6D117051-BFED-49B2-A7F1-66D691276B89}",
+       "LibName": "System",
+       "LibId": "11403271"
+      }
+     ]
+    },
+    "Busses": [
+     {
+      "Id": "78360149",
+      "Name": "Stinger",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music\\Stinger",
+      "GUID": "{14FD5C67-5E52-4301-A97D-FA1D29F4B567}"
+     },
+     {
+      "Id": "393239870",
+      "Name": "SFX",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX",
+      "GUID": "{FA57C7B1-E189-4F3B-9A65-1E89A9379E9C}"
+     },
+     {
+      "Id": "1117531639",
+      "Name": "AMB",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\AMB",
+      "GUID": "{DE66E16F-0E75-4FE3-A2D7-58334DA5DD85}"
+     },
+     {
+      "Id": "1551306167",
+      "Name": "UI",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\UI",
+      "GUID": "{0639B208-933B-46BA-9006-11F8F9334A55}"
+     },
+     {
+      "Id": "3803692087",
+      "Name": "Master Audio Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     },
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music",
+      "GUID": "{AF85DC46-5D13-4AA1-9965-70FFE0888CED}"
+     },
+     {
+      "Id": "4003965662",
+      "Name": "NotStinger",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music\\NotStinger",
+      "GUID": "{9D9F2C8D-1C1B-4AF5-823A-1A45DA7648C8}"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "988953028",
+      "Name": "SFXVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\SFXVolume",
+      "GUID": "{093962EF-E8CA-43D0-BE82-D37441923B11}"
+     },
+     {
+      "Id": "2346531308",
+      "Name": "MusicVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MusicVolume",
+      "GUID": "{9982D970-29A0-4E9D-BF25-9305AD648265}"
+     },
+     {
+      "Id": "2918011349",
+      "Name": "MasterVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MasterVolume",
+      "GUID": "{59335BB3-AB05-4DFA-A5C6-F284D567F553}"
+     },
+     {
+      "Id": "3570761712",
+      "Name": "StarPieces",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\StarPieces",
+      "GUID": "{EE923E92-66FB-4362-B131-09AC0F0151DD}"
+     },
+     {
+      "Id": "3729505769",
+      "Name": "TimeOfDay",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\TimeOfDay",
+      "GUID": "{4D4D4E41-A7C2-4C27-BBB9-187052C5DBE3}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "1281810864",
+      "Name": "Star3",
+      "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star3",
+      "GUID": "{7037803C-F335-4231-A591-84D52B1C877E}",
+      "States": [
+       {
+        "Id": "395500817",
+        "Name": "UnCollected",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star3\\UnCollected",
+        "GUID": "{E0C0F3C1-47E0-4A07-B746-72674C50C98D}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star3\\None",
+        "GUID": "{AC0B20BE-BD07-45B6-8470-AFE53E68E561}"
+       },
+       {
+        "Id": "3874392366",
+        "Name": "Collected",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star3\\Collected",
+        "GUID": "{ACA84E3A-E74B-4019-BE54-1AB89B8AEDBF}"
+       }
+      ]
+     },
+     {
+      "Id": "1281810865",
+      "Name": "Star2",
+      "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star2",
+      "GUID": "{847DB199-1C8D-4076-96CD-5C2FEF6E6344}",
+      "States": [
+       {
+        "Id": "395500817",
+        "Name": "UnCollected",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star2\\UnCollected",
+        "GUID": "{DAE8B785-5E05-4000-8B4F-0B4D7C411B1E}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star2\\None",
+        "GUID": "{F1549C9E-FEC2-437E-B799-E99C88EB14CD}"
+       },
+       {
+        "Id": "3874392366",
+        "Name": "Collected",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star2\\Collected",
+        "GUID": "{0D9B8056-A128-4BC3-97FE-0453D3D85205}"
+       }
+      ]
+     },
+     {
+      "Id": "1281810866",
+      "Name": "Star1",
+      "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star1",
+      "GUID": "{E7A66AA9-6CD1-4BA5-8347-C9C1595D0415}",
+      "States": [
+       {
+        "Id": "395500817",
+        "Name": "UnCollected",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star1\\UnCollected",
+        "GUID": "{8D9B3500-3019-4730-963F-C083D9B4AF3C}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star1\\None",
+        "GUID": "{C99EC989-D103-485B-99B0-84F35335DAFB}"
+       },
+       {
+        "Id": "3874392366",
+        "Name": "Collected",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star1\\Collected",
+        "GUID": "{3955EC11-1DE9-4688-B56C-4D9BB1967941}"
+       }
+      ]
+     },
+     {
+      "Id": "1281810867",
+      "Name": "Star0",
+      "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star0",
+      "GUID": "{7896A590-3D4A-4A5A-9172-DF59D4AFBB99}",
+      "States": [
+       {
+        "Id": "395500817",
+        "Name": "UnCollected",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star0\\UnCollected",
+        "GUID": "{D8183886-D3F5-4EFA-AC27-082EEE35299F}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star0\\None",
+        "GUID": "{1D43A5E4-DC81-4E81-BB80-6FF21370DADF}"
+       },
+       {
+        "Id": "3874392366",
+        "Name": "Collected",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star0\\Collected",
+        "GUID": "{CBD5E943-6A4A-43C4-83FE-0E8BED0BAD64}"
+       }
+      ]
+     },
+     {
+      "Id": "1281810871",
+      "Name": "Star4",
+      "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star4",
+      "GUID": "{31CBDD08-AEB7-4EC5-B251-6FDB0A0FCA32}",
+      "States": [
+       {
+        "Id": "395500817",
+        "Name": "UnCollected",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star4\\UnCollected",
+        "GUID": "{DC4FB21A-B735-4CB3-958F-A4203217C395}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star4\\None",
+        "GUID": "{EAAC21A9-5D81-4082-80CF-D15BC061C713}"
+       },
+       {
+        "Id": "3874392366",
+        "Name": "Collected",
+        "ObjectPath": "\\States\\Default Work Unit\\StartState\\Star4\\Collected",
+        "GUID": "{1F241A7A-484C-47F4-A939-9C040B703381}"
+       }
+      ]
+     },
+     {
+      "Id": "2091077764",
+      "Name": "Regions",
+      "ObjectPath": "\\States\\Default Work Unit\\Regions",
+      "GUID": "{4B90D8F6-CBEC-4321-A844-1FDC864F0829}",
+      "States": [
+       {
+        "Id": "514358619",
+        "Name": "Field",
+        "ObjectPath": "\\States\\Default Work Unit\\Regions\\Field",
+        "GUID": "{5FF7C1A7-EEB9-4B9F-AA3A-D1FDE12E5479}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Regions\\None",
+        "GUID": "{5ACC5440-A09E-49FF-A733-53455BC0F461}"
+       },
+       {
+        "Id": "760316600",
+        "Name": "Forrest",
+        "ObjectPath": "\\States\\Default Work Unit\\Regions\\Forrest",
+        "GUID": "{278ACD23-32A4-4FA1-92BE-A2286C1E6859}"
+       },
+       {
+        "Id": "946954817",
+        "Name": "MountainTop",
+        "ObjectPath": "\\States\\Default Work Unit\\Regions\\MountainTop",
+        "GUID": "{BB8568EA-4610-4276-8895-9D1004183F6D}"
+       },
+       {
+        "Id": "3802555985",
+        "Name": "Ocean",
+        "ObjectPath": "\\States\\Default Work Unit\\Regions\\Ocean",
+        "GUID": "{9785FF92-29F4-4FC5-B59C-0151809704F8}"
+       }
+      ]
+     },
+     {
+      "Id": "3833651337",
+      "Name": "Jump",
+      "ObjectPath": "\\States\\Default Work Unit\\Jump",
+      "GUID": "{7B017F38-D57D-4EA1-A97F-6F89D1833BC1}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Jump\\None",
+        "GUID": "{B95A2DF3-A000-44DA-B7B3-3031BA896034}"
+       },
+       {
+        "Id": "1710892944",
+        "Name": "InAir",
+        "ObjectPath": "\\States\\Default Work Unit\\Jump\\InAir",
+        "GUID": "{C17554B1-3CCE-4D08-BE86-7F9521E44CF4}"
+       },
+       {
+        "Id": "2907122923",
+        "Name": "Grounded",
+        "ObjectPath": "\\States\\Default Work Unit\\Jump\\Grounded",
+        "GUID": "{736BD908-6C0C-4E78-BEED-5B6589B28A27}"
+       }
+      ]
+     },
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\States\\Default Work Unit\\Music",
+      "GUID": "{0206A50E-6D10-4543-BC1D-6B8D9E675CD2}",
+      "States": [
+       {
+        "Id": "311764537",
+        "Name": "Day",
+        "ObjectPath": "\\States\\Default Work Unit\\Music\\Day",
+        "GUID": "{A336EC3A-F2E9-44A3-9C98-B427A304A06B}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Music\\None",
+        "GUID": "{4C403699-A63C-4B62-B7E0-5D2A1B2B0998}"
+       },
+       {
+        "Id": "1011622525",
+        "Name": "Night",
+        "ObjectPath": "\\States\\Default Work Unit\\Music\\Night",
+        "GUID": "{AD22D92D-1CCC-4F87-A90E-9215531F47B6}"
+       },
+       {
+        "Id": "4264815106",
+        "Name": "EndGame",
+        "ObjectPath": "\\States\\Default Work Unit\\Music\\EndGame",
+        "GUID": "{7DDC0E27-EE7E-4196-8B42-B3423D068899}"
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "621108255",
+      "Name": "Step",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Step",
+      "GUID": "{9359D10F-4096-4698-9042-C16269C5A7B0}",
+      "Switches": [
+       {
+        "Id": "582824249",
+        "Name": "Leaves",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step\\Leaves",
+        "GUID": "{8AF4D400-7E6A-4AEA-A617-18483B712161}"
+       },
+       {
+        "Id": "787898836",
+        "Name": "Snow",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step\\Snow",
+        "GUID": "{3F49E196-C40C-4F96-8FF5-BCEFB3BC4CC4}"
+       },
+       {
+        "Id": "2195636714",
+        "Name": "Dirt",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step\\Dirt",
+        "GUID": "{96BFD4C9-739B-42AB-9739-365199FBEFFF}"
+       },
+       {
+        "Id": "4248645337",
+        "Name": "Grass",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step\\Grass",
+        "GUID": "{85FE5007-A072-4499-BC1F-2FAF36FD9A7E}"
+       }
+      ]
+     },
+     {
+      "Id": "901951531",
+      "Name": "Step_Water",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Step_Water",
+      "GUID": "{0CFBBACE-BD9D-4137-81CD-5CFE7BFDA1F4}",
+      "Switches": [
+       {
+        "Id": "2654748154",
+        "Name": "Water",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Water\\Water",
+        "GUID": "{7E8283D3-D580-47B6-8B04-A1752ADB180F}"
+       },
+       {
+        "Id": "3451314871",
+        "Name": "DryLand",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Water\\DryLand",
+        "GUID": "{19A1EA46-7F5A-43AD-A331-624181745DFF}"
+       }
+      ]
+     },
+     {
+      "Id": "3833651337",
+      "Name": "Jump",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Jump",
+      "GUID": "{3F4693A3-0B04-4D23-8732-36FCDF7BBF78}",
+      "Switches": [
+       {
+        "Id": "1710892944",
+        "Name": "InAir",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Jump\\InAir",
+        "GUID": "{E9522A81-EE3F-4AC0-88FF-FDA1EDAE95F8}"
+       },
+       {
+        "Id": "2907122923",
+        "Name": "Grounded",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Jump\\Grounded",
+        "GUID": "{23104471-3C07-4516-ABA3-EF628EF7AD1E}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{B72E7679-284A-2D6C-4806-1E267AFA1428}"
+ }
+}

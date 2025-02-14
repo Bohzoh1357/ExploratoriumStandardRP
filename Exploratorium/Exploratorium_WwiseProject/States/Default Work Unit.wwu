@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A6D7F5CE-7349-4345-B3C7-0166AC695192}" SchemaVersion="123">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{A6D7F5CE-7349-4345-B3C7-0166AC695192}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Jump" ID="{7B017F38-D57D-4EA1-A97F-6F89D1833BC1}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{B95A2DF3-A000-44DA-B7B3-3031BA896034}"/>
+						<State Name="InAir" ID="{C17554B1-3CCE-4D08-BE86-7F9521E44CF4}"/>
+						<State Name="Grounded" ID="{736BD908-6C0C-4E78-BEED-5B6589B28A27}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Grounded" ID="{736BD908-6C0C-4E78-BEED-5B6589B28A27}"/>
+							<EndState Name="InAir" ID="{C17554B1-3CCE-4D08-BE86-7F9521E44CF4}"/>
+							<Time>0.1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="InAir" ID="{C17554B1-3CCE-4D08-BE86-7F9521E44CF4}"/>
+							<EndState Name="Grounded" ID="{736BD908-6C0C-4E78-BEED-5B6589B28A27}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="Regions" ID="{4B90D8F6-CBEC-4321-A844-1FDC864F0829}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="5"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{5ACC5440-A09E-49FF-A733-53455BC0F461}"/>
+						<State Name="MountainTop" ID="{BB8568EA-4610-4276-8895-9D1004183F6D}"/>
+						<State Name="Forrest" ID="{278ACD23-32A4-4FA1-92BE-A2286C1E6859}"/>
+						<State Name="Ocean" ID="{9785FF92-29F4-4FC5-B59C-0151809704F8}"/>
+						<State Name="Field" ID="{5FF7C1A7-EEB9-4B9F-AA3A-D1FDE12E5479}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Music" ID="{0206A50E-6D10-4543-BC1D-6B8D9E675CD2}">
+					<ChildrenList>
+						<State Name="None" ID="{4C403699-A63C-4B62-B7E0-5D2A1B2B0998}"/>
+						<State Name="Day" ID="{A336EC3A-F2E9-44A3-9C98-B427A304A06B}"/>
+						<State Name="Night" ID="{AD22D92D-1CCC-4F87-A90E-9215531F47B6}"/>
+						<State Name="EndGame" ID="{7DDC0E27-EE7E-4196-8B42-B3423D068899}"/>
+					</ChildrenList>
+				</StateGroup>
+				<Folder Name="StartState" ID="{BA8627FC-CFD5-44B0-A633-0155101585E5}" ShortID="975269684">
+					<ChildrenList>
+						<StateGroup Name="Star0" ID="{7896A590-3D4A-4A5A-9172-DF59D4AFBB99}">
+							<ChildrenList>
+								<State Name="None" ID="{1D43A5E4-DC81-4E81-BB80-6FF21370DADF}"/>
+								<State Name="Collected" ID="{CBD5E943-6A4A-43C4-83FE-0E8BED0BAD64}"/>
+								<State Name="UnCollected" ID="{D8183886-D3F5-4EFA-AC27-082EEE35299F}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="Star2" ID="{847DB199-1C8D-4076-96CD-5C2FEF6E6344}">
+							<ChildrenList>
+								<State Name="None" ID="{F1549C9E-FEC2-437E-B799-E99C88EB14CD}"/>
+								<State Name="Collected" ID="{0D9B8056-A128-4BC3-97FE-0453D3D85205}"/>
+								<State Name="UnCollected" ID="{DAE8B785-5E05-4000-8B4F-0B4D7C411B1E}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="Star3" ID="{7037803C-F335-4231-A591-84D52B1C877E}">
+							<ChildrenList>
+								<State Name="None" ID="{AC0B20BE-BD07-45B6-8470-AFE53E68E561}"/>
+								<State Name="Collected" ID="{ACA84E3A-E74B-4019-BE54-1AB89B8AEDBF}"/>
+								<State Name="UnCollected" ID="{E0C0F3C1-47E0-4A07-B746-72674C50C98D}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="Star4" ID="{31CBDD08-AEB7-4EC5-B251-6FDB0A0FCA32}">
+							<ChildrenList>
+								<State Name="None" ID="{EAAC21A9-5D81-4082-80CF-D15BC061C713}"/>
+								<State Name="Collected" ID="{1F241A7A-484C-47F4-A939-9C040B703381}"/>
+								<State Name="UnCollected" ID="{DC4FB21A-B735-4CB3-958F-A4203217C395}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="Star1" ID="{E7A66AA9-6CD1-4BA5-8347-C9C1595D0415}">
+							<ChildrenList>
+								<State Name="None" ID="{C99EC989-D103-485B-99B0-84F35335DAFB}"/>
+								<State Name="Collected" ID="{3955EC11-1DE9-4688-B56C-4D9BB1967941}"/>
+								<State Name="UnCollected" ID="{8D9B3500-3019-4730-963F-C083D9B4AF3C}"/>
+							</ChildrenList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
+				<StateGroup Name="StarID" ID="{54107805-C2CE-4982-BB64-E8E09C21EB30}">
+					<ChildrenList>
+						<State Name="None" ID="{A1A15914-1F45-4E07-B301-252547CA9006}"/>
+						<State Name="Star0" ID="{BD10DE55-C082-4110-93D0-A52D2160AC14}"/>
+						<State Name="Star1" ID="{C482D35D-1AAB-4A33-8C4E-F6A797D4D5F5}"/>
+						<State Name="Star2" ID="{79E2B440-6CD0-469A-ADF9-67E7F207A824}"/>
+						<State Name="Star3" ID="{C4228BFE-1EE9-4568-9B78-DECB7D06CA29}"/>
+						<State Name="Star4" ID="{6ECE3F65-110B-4FCA-BE69-D6F4C42667DC}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

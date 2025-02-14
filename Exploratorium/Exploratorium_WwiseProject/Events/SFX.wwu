@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B1A60F62-6A0A-4166-9F30-8667BF0F44AB}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="SFX" ID="{B1A60F62-6A0A-4166-9F30-8667BF0F44AB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Jump_Landing" ID="{E0F6D814-D445-4E9A-9B73-04B3D9BD6139}">
+					<ChildrenList>
+						<Action Name="" ID="{E5F1BD68-84B8-4EE3-9C17-10E29B720107}" ShortID="299384503">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps" ID="{F2FEA5E6-ECC2-4E39-9708-B33C8558CE21}" WorkUnitID="{E5C35D79-9CEB-4864-8FF8-7BB61FAEB606}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{ECD3288F-3AF0-4A4D-A559-FA6170371E6E}" ShortID="38887996">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.09"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps" ID="{F2FEA5E6-ECC2-4E39-9708-B33C8558CE21}" WorkUnitID="{E5C35D79-9CEB-4864-8FF8-7BB61FAEB606}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{BE76C687-AE0E-4A03-B9A1-3F197391CD91}" ShortID="1051925542">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Landing" ID="{23746503-9BE6-4BFD-AD9E-62A952D2ACB7}" WorkUnitID="{E5C35D79-9CEB-4864-8FF8-7BB61FAEB606}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FootStep" ID="{5B7A12B5-8326-4EBF-870C-4D46726FA75B}">
+					<ChildrenList>
+						<Action Name="" ID="{D75EC835-ABEC-49A1-A6C4-E8CFB6970B98}" ShortID="160559288">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps" ID="{F2FEA5E6-ECC2-4E39-9708-B33C8558CE21}" WorkUnitID="{E5C35D79-9CEB-4864-8FF8-7BB61FAEB606}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="RunningWind_Stop" ID="{ABAEDAED-D15A-4633-81BF-142248A51845}">
+					<ChildrenList>
+						<Action Name="" ID="{9FFF8DDD-17FD-4815-9237-5D2874092913}" ShortID="690727037">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RunningWind" ID="{D45A3C5F-DFFD-47BF-ABF9-8C09AB90621F}" WorkUnitID="{E5C35D79-9CEB-4864-8FF8-7BB61FAEB606}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="RunningWind_Play" ID="{E459A933-0A67-4F25-AE3C-5B10F310D257}">
+					<ChildrenList>
+						<Action Name="" ID="{62F12564-26CE-4CBA-BB31-3DCC855126E7}" ShortID="575530494">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RunningWind" ID="{D45A3C5F-DFFD-47BF-ABF9-8C09AB90621F}" WorkUnitID="{E5C35D79-9CEB-4864-8FF8-7BB61FAEB606}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Inventory_Open" ID="{87A791B7-FCA2-45B1-B6DA-E1C41B11A7A0}">
+					<ChildrenList>
+						<Action Name="" ID="{72C2ACA8-9A5F-439B-B188-77348F990ACA}" ShortID="1036771825">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Inventory_Open" ID="{575CDE09-D36A-4DC4-A899-FA813D9BE937}" WorkUnitID="{2B0E3E1A-C32D-4F05-9E88-04B6B287F951}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

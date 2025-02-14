@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}" SchemaVersion="123">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{6D117051-BFED-49B2-A7F1-66D691276B89}" WorkUnitID="{D4A5342B-BBB1-4970-A57D-83CCB6DA7021}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Music" ID="{AF85DC46-5D13-4AA1-9965-70FFE0888CED}">
+							<ChildrenList>
+								<Bus Name="NotStinger" ID="{9D9F2C8D-1C1B-4AF5-823A-1A45DA7648C8}"/>
+								<Bus Name="Stinger" ID="{14FD5C67-5E52-4301-A97D-FA1D29F4B567}">
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="NotStinger" ID="{9D9F2C8D-1C1B-4AF5-823A-1A45DA7648C8}"/>
+											<DuckingParam>
+												<Volume>-96</Volume>
+												<FadeInTime>2</FadeInTime>
+												<FadeOutTime>1</FadeOutTime>
+												<FadeCurve>FadeSCurve</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="SFX" ID="{FA57C7B1-E189-4F3B-9A65-1E89A9379E9C}"/>
+						<Bus Name="AMB" ID="{DE66E16F-0E75-4FE3-A2D7-58334DA5DD85}"/>
+						<Bus Name="UI" ID="{0639B208-933B-46BA-9006-11F8F9334A55}"/>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using JetBrains.Annotations;
+using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
 #endif
@@ -68,7 +69,23 @@ namespace StarterAssets
 		[Header("Ben Additions")]
 		[Tooltip("Main Camera player is seeing through")]
 		public Camera playerCamera;
+        [Tooltip("SFX Footstep frequency")]
+        public float footstepFrequency = 0.3f;
+        [Tooltip("SFX Footstep counter")]
+        public float footstepTimer = 0.0f;
+		public float footRunFrequency = .13f;
+        private bool startedFalling;
+		private bool startedJumping = false;
 
+        public AK.Wwise.Event footstepSFX;
+		public AK.Wwise.Switch[] terrainSwitch;
+		public AK.Wwise.State inAirMute;
+		public AK.Wwise.State groundedUnMute;
+		public AK.Wwise.Event runningStartSFX;
+		public AK.Wwise.Event runningStopSFX;
+		public AK.Wwise.Event landingSound;
+
+        public TerrainDetection terrainUnderfoot;
 	
 #if ENABLE_INPUT_SYSTEM
 		private PlayerInput _playerInput;
@@ -89,6 +106,14 @@ namespace StarterAssets
 				return false;
 				#endif
 			}
+		}
+
+		public void SelectTexture()
+		{
+			int currentTerrainTexture = terrainUnderfoot.GetDominantTextureIndexAt(transform.position);
+			if (currentTerrainTexture == -1) { return; }
+			//Debug.Log("Current terrain texture index = " + currentTerrainTexture);
+			terrainSwitch[currentTerrainTexture].SetValue(this.gameObject);
 		}
 
 		private void Awake()
@@ -162,6 +187,15 @@ namespace StarterAssets
 			// set target speed based on move speed, sprint speed and if sprint is pressed
 			float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
 
+			if (_input.sprint) {
+
+				footstepFrequency = footRunFrequency;
+
+			} else
+			{
+				footstepFrequency = 0.4f;
+			}
+
 			// a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
 
 			// note: Vector2's == operator uses approximation so is not floating point error prone, and is cheaper than magnitude
@@ -198,6 +232,15 @@ namespace StarterAssets
 			{
 				// move
 				inputDirection = transform.right * _input.move.x + transform.forward * _input.move.y;
+
+				if (footstepTimer > footstepFrequency)
+				{
+					SelectTexture();
+					footstepSFX.Post(this.gameObject);
+					footstepTimer = 0.0f;
+				}
+
+				footstepTimer += Time.deltaTime;
 			}
 
 			// move the player
@@ -208,8 +251,20 @@ namespace StarterAssets
 		{
 			if (Grounded)
 			{
-				// reset the fall timeout timer
-				_fallTimeoutDelta = FallTimeout;
+                // sets state to unmute footsteps
+				groundedUnMute.SetValue();
+
+                //if we are grounded after falling or jumping then falling, play landing sound
+                if (startedFalling)
+                {
+                    landingSound.Post(this.gameObject);
+                    startedFalling = false;
+					startedJumping = false;
+
+                }
+
+                // reset the fall timeout timer
+                _fallTimeoutDelta = FallTimeout;
 
 				// stop our velocity dropping infinitely when grounded
 				if (_verticalVelocity < 0.0f)
@@ -222,16 +277,24 @@ namespace StarterAssets
 				{
 					// the square root of H * -2 * G = how much velocity needed to reach desired height
 					_verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
-				}
+
+                    //indicates that we have either fallen or jumped
+                    startedJumping = true;
+                }
 
 				// jump timeout
 				if (_jumpTimeoutDelta >= 0.0f)
 				{
 					_jumpTimeoutDelta -= Time.deltaTime;
 				}
-			}
+
+
+            }
 			else
 			{
+				//sets state to mute footsteps
+                inAirMute.SetValue();
+               
 				// reset the jump timeout timer
 				_jumpTimeoutDelta = JumpTimeout;
 
@@ -243,7 +306,14 @@ namespace StarterAssets
 
 				// if we are not grounded, do not jump
 				_input.jump = false;
-			}
+
+				if(startedJumping)
+				{
+					startedFalling = true;
+				}
+
+                
+            }
 
 			// apply gravity over time if under terminal (multiply by delta time twice to linearly speed up over time)
 			if (_verticalVelocity < _terminalVelocity)
@@ -257,10 +327,12 @@ namespace StarterAssets
 			if (_input.sprint && _input.move != Vector2.zero && playerCamera.fieldOfView < 70f)
 			{
 				playerCamera.fieldOfView += Time.deltaTime * 90f;
-			}
+                runningStartSFX.Post(this.gameObject);
+            }
             else if ((!_input.sprint || _input.move == Vector2.zero) && playerCamera.fieldOfView > 60f)
             {
                 playerCamera.fieldOfView -= Time.deltaTime * 90f;
+                runningStopSFX.Post(this.gameObject);
             }
         }
 

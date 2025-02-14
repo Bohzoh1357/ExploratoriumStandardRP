@@ -72,7 +72,9 @@ public class LightingManager : MonoBehaviour
         [SerializeField][Range(0f, 24f)] private float ResetEventsTime = 0.1f;
         private bool DayCycleCompleted;
 
-    #endregion
+        #endregion
+
+        public AK.Wwise.RTPC WwiseTimeOfDay;
 
         private void Start()
         {
@@ -94,6 +96,8 @@ public class LightingManager : MonoBehaviour
             {
                 ResetEvents();
             }
+
+            WwiseTimeOfDay.SetGlobalValue(TimeOfDay);
         }
 
         private void Update()
@@ -120,10 +124,10 @@ public class LightingManager : MonoBehaviour
             {
                 UpdateLighting(TimeOfDay / 24f);
             }
-
+            WwiseTimeOfDay.SetGlobalValue(TimeOfDay);
 
             //Detects when an event should trigger
-            if(IsEventsOn)
+            if (IsEventsOn)
             {
                 foreach (var eventInfo in events)
                 {
