@@ -14,7 +14,7 @@ public class StarIncrementTotal : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            gameManager.starCount++;
+            gameManager.starIncrement();
             starState.SetValue();
             collectionStinger.Post(this.gameObject);
             GameObject.Destroy(gameObject);

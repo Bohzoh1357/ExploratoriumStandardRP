@@ -18,6 +18,20 @@
     "StaticLib": "AkParametricEQFX"
    },
    {
+    "LibName": "Wwise Meter",
+    "LibId": "8454147",
+    "Type": "Effect",
+    "DLL": "AkSoundEngineDLL",
+    "StaticLib": "AkMeterFX"
+   },
+   {
+    "LibName": "Wwise Gain",
+    "LibId": "9109507",
+    "Type": "Effect",
+    "DLL": "AkGain",
+    "StaticLib": "AkGainFX"
+   },
+   {
     "LibName": "System",
     "LibId": "11403271",
     "Type": "AudioDevice"
@@ -28,6 +42,6 @@
     "Type": "AudioDevice"
    }
   ],
-  "FileHash": "{1CBF2E2B-BA3F-B032-E78F-72ABD7D13F85}"
+  "FileHash": "{948D77D5-4F1E-4D00-E8D3-DF3F0EAAA679}"
  }
 }

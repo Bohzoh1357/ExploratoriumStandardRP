@@ -1979,6 +1979,13 @@
 											</ObjectLists>
 										</MusicTrack>
 										<MusicTrack Name="StarAmb_KalimbaSample_80bpm4-4_L8M_P3B" ID="{F0EFF080-2D44-4AF2-9E47-400904056079}" ShortID="3873681">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
@@ -2592,6 +2599,13 @@
 											</ObjectLists>
 										</MusicTrack>
 										<MusicTrack Name="StarAmb_KalimbaSample_80bpm4-4_L8M_P3B" ID="{E8B3E04F-C228-4784-8D39-C7FE9E150493}" ShortID="273930238">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>

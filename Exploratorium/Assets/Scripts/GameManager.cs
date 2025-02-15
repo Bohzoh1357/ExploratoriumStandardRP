@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public int starCount;
 
     public float timer;
+    public AK.Wwise.RTPC starCountRTPC;
 
     public void triggerFoundMinimap()
     {
@@ -27,6 +28,7 @@ public class GameManager : MonoBehaviour
     {
         starCount = 0;
         timer = 0.0f;
+        starCountRTPC.SetGlobalValue(starCount);
     }
 
     // Update is called once per frame
@@ -41,5 +43,11 @@ public class GameManager : MonoBehaviour
                 GetComponent<TitleButtonBehavior>().MainMenu();
             }
         }
+    }
+
+    public void starIncrement()
+    {
+        starCount++;
+        starCountRTPC.SetGlobalValue(starCount);
     }
 }

@@ -10,11 +10,29 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{BC364C04-B29F-3167-F5A8-72AC97D890A5}",
+    "Hash": "{F1A5EBC6-0182-3BC8-9409-1EEC773692C5}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "Custom": [
+      {
+       "Id": "21094305",
+       "Name": "Gain (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music\\Main\\[Effect Slot [0]: (Gain)]\\Gain (Custom)",
+       "GUID": "{4CF64DE8-6E13-4D86-AD76-8E23ADD259FE}",
+       "LibName": "Wwise Gain",
+       "LibId": "9109507"
+      },
+      {
+       "Id": "1047712802",
+       "Name": "Meter (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music\\Stinger\\[Effect Slot [0]: (Meter)]\\Meter (Custom)",
+       "GUID": "{F3621EA0-69F7-41DA-B97A-7828CB14961B}",
+       "LibName": "Wwise Meter",
+       "LibId": "8454147"
+      }
+     ],
      "AudioDevices": [
       {
        "Id": "2317455096",
@@ -39,7 +57,14 @@
       "Id": "78360149",
       "Name": "Stinger",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music\\Stinger",
-      "GUID": "{14FD5C67-5E52-4301-A97D-FA1D29F4B567}"
+      "GUID": "{14FD5C67-5E52-4301-A97D-FA1D29F4B567}",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "1047712802"
+        }
+       ]
+      }
      },
      {
       "Id": "393239870",
@@ -60,6 +85,19 @@
       "GUID": "{0639B208-933B-46BA-9006-11F8F9334A55}"
      },
      {
+      "Id": "3161908922",
+      "Name": "Main",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music\\Main",
+      "GUID": "{9D9F2C8D-1C1B-4AF5-823A-1A45DA7648C8}",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "21094305"
+        }
+       ]
+      }
+     },
+     {
       "Id": "3803692087",
       "Name": "Master Audio Bus",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
@@ -70,12 +108,6 @@
       "Name": "Music",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music",
       "GUID": "{AF85DC46-5D13-4AA1-9965-70FFE0888CED}"
-     },
-     {
-      "Id": "4003965662",
-      "Name": "NotStinger",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music\\NotStinger",
-      "GUID": "{9D9F2C8D-1C1B-4AF5-823A-1A45DA7648C8}"
      }
     ],
     "GameParameters": [
@@ -84,6 +116,12 @@
       "Name": "SFXVolume",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\SFXVolume",
       "GUID": "{093962EF-E8CA-43D0-BE82-D37441923B11}"
+     },
+     {
+      "Id": "1814698023",
+      "Name": "DistancetoLastPiece",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\DistancetoLastPiece",
+      "GUID": "{2CA3F4AF-3F7E-4F8C-B0B2-A4F252B4028B}"
      },
      {
       "Id": "2346531308",
@@ -108,9 +146,59 @@
       "Name": "TimeOfDay",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\TimeOfDay",
       "GUID": "{4D4D4E41-A7C2-4C27-BBB9-187052C5DBE3}"
+     },
+     {
+      "Id": "4122641472",
+      "Name": "Stinger_Sidechain",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Stinger_Sidechain",
+      "GUID": "{5BCC8D51-CC68-4694-9420-EBBFB0A27176}"
      }
     ],
     "StateGroups": [
+     {
+      "Id": "804627258",
+      "Name": "StarID",
+      "ObjectPath": "\\States\\Default Work Unit\\StarID",
+      "GUID": "{54107805-C2CE-4982-BB64-E8E09C21EB30}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\StarID\\None",
+        "GUID": "{A1A15914-1F45-4E07-B301-252547CA9006}"
+       },
+       {
+        "Id": "1281810864",
+        "Name": "Star3",
+        "ObjectPath": "\\States\\Default Work Unit\\StarID\\Star3",
+        "GUID": "{C4228BFE-1EE9-4568-9B78-DECB7D06CA29}"
+       },
+       {
+        "Id": "1281810865",
+        "Name": "Star2",
+        "ObjectPath": "\\States\\Default Work Unit\\StarID\\Star2",
+        "GUID": "{79E2B440-6CD0-469A-ADF9-67E7F207A824}"
+       },
+       {
+        "Id": "1281810866",
+        "Name": "Star1",
+        "ObjectPath": "\\States\\Default Work Unit\\StarID\\Star1",
+        "GUID": "{C482D35D-1AAB-4A33-8C4E-F6A797D4D5F5}"
+       },
+       {
+        "Id": "1281810867",
+        "Name": "Star0",
+        "ObjectPath": "\\States\\Default Work Unit\\StarID\\Star0",
+        "GUID": "{BD10DE55-C082-4110-93D0-A52D2160AC14}"
+       },
+       {
+        "Id": "1281810871",
+        "Name": "Star4",
+        "ObjectPath": "\\States\\Default Work Unit\\StarID\\Star4",
+        "GUID": "{6ECE3F65-110B-4FCA-BE69-D6F4C42667DC}"
+       }
+      ]
+     },
      {
       "Id": "1281810864",
       "Name": "Star3",
@@ -372,6 +460,44 @@
       ]
      },
      {
+      "Id": "804627258",
+      "Name": "StarID",
+      "ObjectPath": "\\Switches\\Default Work Unit\\StarID",
+      "GUID": "{79711138-C946-40A3-A517-CAB703AFF346}",
+      "Switches": [
+       {
+        "Id": "1281810864",
+        "Name": "Star3",
+        "ObjectPath": "\\Switches\\Default Work Unit\\StarID\\Star3",
+        "GUID": "{AA898885-C301-45DE-949D-A926A4666110}"
+       },
+       {
+        "Id": "1281810865",
+        "Name": "Star2",
+        "ObjectPath": "\\Switches\\Default Work Unit\\StarID\\Star2",
+        "GUID": "{7C0D8FE8-D193-49BB-BB8A-7F66E26FF369}"
+       },
+       {
+        "Id": "1281810866",
+        "Name": "Star1",
+        "ObjectPath": "\\Switches\\Default Work Unit\\StarID\\Star1",
+        "GUID": "{D05EBA6C-FB16-41EE-BC54-02BF45FADEA3}"
+       },
+       {
+        "Id": "1281810867",
+        "Name": "Star0",
+        "ObjectPath": "\\Switches\\Default Work Unit\\StarID\\Star0",
+        "GUID": "{E45D32F7-666A-4983-BBD7-FF1FFE8DA5A9}"
+       },
+       {
+        "Id": "1281810871",
+        "Name": "Star4",
+        "ObjectPath": "\\Switches\\Default Work Unit\\StarID\\Star4",
+        "GUID": "{F7DB913D-0C14-415E-BCCC-D935DA2EE77F}"
+       }
+      ]
+     },
+     {
       "Id": "901951531",
       "Name": "Step_Water",
       "ObjectPath": "\\Switches\\Default Work Unit\\Step_Water",
@@ -388,6 +514,100 @@
         "Name": "DryLand",
         "ObjectPath": "\\Switches\\Default Work Unit\\Step_Water\\DryLand",
         "GUID": "{19A1EA46-7F5A-43AD-A331-624181745DFF}"
+       }
+      ]
+     },
+     {
+      "Id": "2472207775",
+      "Name": "EndGameBass",
+      "ObjectPath": "\\Switches\\Default Work Unit\\EndGameBass",
+      "GUID": "{BFBCCE71-7C26-4FF6-BDC8-CD949070F58A}",
+      "GameParameterRef": {
+       "Id": "1814698023"
+      },
+      "Switches": [
+       {
+        "Id": "608556873",
+        "Name": "Bass16th",
+        "ObjectPath": "\\Switches\\Default Work Unit\\EndGameBass\\Bass16th",
+        "GUID": "{9258D17C-CD76-47E6-BE04-C7B3AAB01A12}"
+       },
+       {
+        "Id": "624393472",
+        "Name": "Bass8thT",
+        "ObjectPath": "\\Switches\\Default Work Unit\\EndGameBass\\Bass8thT",
+        "GUID": "{A27DF2AD-FD9C-424C-B8F2-F631DEC9CC8C}"
+       },
+       {
+        "Id": "1660020639",
+        "Name": "Bass16thT",
+        "ObjectPath": "\\Switches\\Default Work Unit\\EndGameBass\\Bass16thT",
+        "GUID": "{29CEE1F7-B699-4E4D-8505-9B10051CC5A8}"
+       },
+       {
+        "Id": "3163633552",
+        "Name": "Bass4th",
+        "ObjectPath": "\\Switches\\Default Work Unit\\EndGameBass\\Bass4th",
+        "GUID": "{2AE170AF-CE2C-46D9-8ADD-47D465D745A4}"
+       },
+       {
+        "Id": "3164325180",
+        "Name": "Bass8th",
+        "ObjectPath": "\\Switches\\Default Work Unit\\EndGameBass\\Bass8th",
+        "GUID": "{C7B8FEBB-402D-4B98-BDEB-0BB52A88EC1D}"
+       },
+       {
+        "Id": "3331115756",
+        "Name": "Bass2nd",
+        "ObjectPath": "\\Switches\\Default Work Unit\\EndGameBass\\Bass2nd",
+        "GUID": "{A9F16843-81E5-4E10-8E25-1ACD7F313D44}"
+       },
+       {
+        "Id": "3836835385",
+        "Name": "Bass32nd",
+        "ObjectPath": "\\Switches\\Default Work Unit\\EndGameBass\\Bass32nd",
+        "GUID": "{CD32E90F-56B8-4085-9F71-4599EDD15A28}"
+       }
+      ]
+     },
+     {
+      "Id": "3156057335",
+      "Name": "StarCounter",
+      "ObjectPath": "\\Switches\\Default Work Unit\\StarCounter",
+      "GUID": "{4FF51364-EB75-49A4-B4B5-B167CB92D2C4}",
+      "GameParameterRef": {
+       "Id": "3570761712"
+      },
+      "Switches": [
+       {
+        "Id": "2268254016",
+        "Name": "StarsCollect2",
+        "ObjectPath": "\\Switches\\Default Work Unit\\StarCounter\\StarsCollect2",
+        "GUID": "{2BF742CE-5085-4FFC-96BC-81F6D875981B}"
+       },
+       {
+        "Id": "2268254017",
+        "Name": "StarsCollect3",
+        "ObjectPath": "\\Switches\\Default Work Unit\\StarCounter\\StarsCollect3",
+        "GUID": "{29A22BA4-E9D5-47ED-9D77-4374073BE326}"
+       },
+       {
+        "Id": "2268254018",
+        "Name": "StarsCollect0",
+        "ObjectPath": "\\Switches\\Default Work Unit\\StarCounter\\StarsCollect0",
+        "GUID": "{77CC9B1C-9612-48DD-85B4-EF065468C275}"
+       },
+       {
+        "Id": "2268254019",
+        "Name": "StarsCollect1",
+        "ObjectPath": "\\Switches\\Default Work Unit\\StarCounter\\StarsCollect1",
+        "GUID": "{2E804BD0-887D-4769-92A9-FC9455126DB2}"
+       },
+       {
+        "Id": "2268254022",
+        "Name": "StarsCollect4",
+        "ObjectPath": "\\Switches\\Default Work Unit\\StarCounter\\StarsCollect4",
+        "GUID": "{AAF7D718-4B8D-44CA-8258-9E914DA9D224}"
        }
       ]
      },
@@ -414,6 +634,6 @@
     ]
    }
   ],
-  "FileHash": "{B72E7679-284A-2D6C-4806-1E267AFA1428}"
+  "FileHash": "{602AD695-C56A-E700-B431-2657C9843E0A}"
  }
 }
