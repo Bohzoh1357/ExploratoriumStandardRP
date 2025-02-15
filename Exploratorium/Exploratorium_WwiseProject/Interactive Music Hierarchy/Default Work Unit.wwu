@@ -12,7 +12,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="NotStinger" ID="{9D9F2C8D-1C1B-4AF5-823A-1A45DA7648C8}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+							<ObjectRef Name="Main" ID="{9D9F2C8D-1C1B-4AF5-823A-1A45DA7648C8}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
 						</Reference>
 						<Reference Name="TransitionRoot">
 							<Custom>
@@ -1723,7 +1723,6 @@
 																		</Reference>
 																	</ObjectList>
 																</ObjectLists>
-																<ReferenceList/>
 															</MusicTrackSequence>
 														</Local>
 													</Reference>
@@ -1746,7 +1745,6 @@
 																		</Reference>
 																	</ObjectList>
 																</ObjectLists>
-																<ReferenceList/>
 															</MusicTrackSequence>
 														</Local>
 													</Reference>
@@ -2034,7 +2032,6 @@
 																		</Reference>
 																	</ObjectList>
 																</ObjectLists>
-																<ReferenceList/>
 															</MusicTrackSequence>
 														</Local>
 													</Reference>
@@ -2339,7 +2336,6 @@
 																		</Reference>
 																	</ObjectList>
 																</ObjectLists>
-																<ReferenceList/>
 															</MusicTrackSequence>
 														</Local>
 													</Reference>
@@ -2362,7 +2358,6 @@
 																		</Reference>
 																	</ObjectList>
 																</ObjectLists>
-																<ReferenceList/>
 															</MusicTrackSequence>
 														</Local>
 													</Reference>
@@ -2650,7 +2645,6 @@
 																		</Reference>
 																	</ObjectList>
 																</ObjectLists>
-																<ReferenceList/>
 															</MusicTrackSequence>
 														</Local>
 													</Reference>
@@ -2785,13 +2779,13 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="DefaultSwitchOrState">
-													<ObjectRef Name="Star0" ID="{E45D32F7-666A-4983-BBD7-FF1FFE8DA5A9}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+													<ObjectRef Name="Bass2nd" ID="{A9F16843-81E5-4E10-8E25-1ACD7F313D44}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
 												</Reference>
 												<Reference Name="SwitchGroupOrStateGroup">
-													<ObjectRef Name="StarCounter" ID="{4FF51364-EB75-49A4-B4B5-B167CB92D2C4}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+													<ObjectRef Name="EndGameBass" ID="{BFBCCE71-7C26-4FF6-BDC8-CD949070F58A}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
@@ -2906,7 +2900,7 @@
 																</ObjectLists>
 																<ReferenceList>
 																	<Reference Name="TrackSequenceSwitch">
-																		<ObjectRef Name="StarsCollect0" ID="{77CC9B1C-9612-48DD-85B4-EF065468C275}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																		<ObjectRef Name="Bass2nd" ID="{A9F16843-81E5-4E10-8E25-1ACD7F313D44}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
 																	</Reference>
 																</ReferenceList>
 															</MusicTrackSequence>
@@ -2933,7 +2927,7 @@
 																</ObjectLists>
 																<ReferenceList>
 																	<Reference Name="TrackSequenceSwitch">
-																		<ObjectRef Name="StarsCollect1" ID="{2E804BD0-887D-4769-92A9-FC9455126DB2}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																		<ObjectRef Name="Bass4th" ID="{2AE170AF-CE2C-46D9-8ADD-47D465D745A4}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
 																	</Reference>
 																</ReferenceList>
 															</MusicTrackSequence>
@@ -2960,7 +2954,7 @@
 																</ObjectLists>
 																<ReferenceList>
 																	<Reference Name="TrackSequenceSwitch">
-																		<ObjectRef Name="StarsCollect2" ID="{2BF742CE-5085-4FFC-96BC-81F6D875981B}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																		<ObjectRef Name="Bass8th" ID="{C7B8FEBB-402D-4B98-BDEB-0BB52A88EC1D}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
 																	</Reference>
 																</ReferenceList>
 															</MusicTrackSequence>
@@ -2987,7 +2981,7 @@
 																</ObjectLists>
 																<ReferenceList>
 																	<Reference Name="TrackSequenceSwitch">
-																		<ObjectRef Name="StarsCollect3" ID="{29A22BA4-E9D5-47ED-9D77-4374073BE326}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																		<ObjectRef Name="Bass8thT" ID="{A27DF2AD-FD9C-424C-B8F2-F631DEC9CC8C}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
 																	</Reference>
 																</ReferenceList>
 															</MusicTrackSequence>
@@ -3014,7 +3008,7 @@
 																</ObjectLists>
 																<ReferenceList>
 																	<Reference Name="TrackSequenceSwitch">
-																		<ObjectRef Name="StarsCollect4" ID="{AAF7D718-4B8D-44CA-8258-9E914DA9D224}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																		<ObjectRef Name="Bass16th" ID="{9258D17C-CD76-47E6-BE04-C7B3AAB01A12}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
 																	</Reference>
 																</ReferenceList>
 															</MusicTrackSequence>
@@ -3039,7 +3033,11 @@
 																		</Reference>
 																	</ObjectList>
 																</ObjectLists>
-																<ReferenceList/>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Bass16thT" ID="{29CEE1F7-B699-4E4D-8505-9B10051CC5A8}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																	</Reference>
+																</ReferenceList>
 															</MusicTrackSequence>
 														</Local>
 													</Reference>
@@ -3062,7 +3060,11 @@
 																		</Reference>
 																	</ObjectList>
 																</ObjectLists>
-																<ReferenceList/>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Bass32nd" ID="{CD32E90F-56B8-4085-9F71-4599EDD15A28}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																	</Reference>
+																</ReferenceList>
 															</MusicTrackSequence>
 														</Local>
 													</Reference>
@@ -3123,7 +3125,6 @@
 																		</Reference>
 																	</ObjectList>
 																</ObjectLists>
-																<ReferenceList/>
 															</MusicTrackSequence>
 														</Local>
 													</Reference>
@@ -3434,13 +3435,13 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="DefaultSwitchOrState">
-													<ObjectRef Name="Star0" ID="{E45D32F7-666A-4983-BBD7-FF1FFE8DA5A9}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+													<ObjectRef Name="Bass2nd" ID="{A9F16843-81E5-4E10-8E25-1ACD7F313D44}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
 												</Reference>
 												<Reference Name="SwitchGroupOrStateGroup">
-													<ObjectRef Name="StarCounter" ID="{4FF51364-EB75-49A4-B4B5-B167CB92D2C4}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+													<ObjectRef Name="EndGameBass" ID="{BFBCCE71-7C26-4FF6-BDC8-CD949070F58A}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
@@ -3555,7 +3556,7 @@
 																</ObjectLists>
 																<ReferenceList>
 																	<Reference Name="TrackSequenceSwitch">
-																		<ObjectRef Name="StarsCollect0" ID="{77CC9B1C-9612-48DD-85B4-EF065468C275}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																		<ObjectRef Name="Bass2nd" ID="{A9F16843-81E5-4E10-8E25-1ACD7F313D44}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
 																	</Reference>
 																</ReferenceList>
 															</MusicTrackSequence>
@@ -3582,7 +3583,7 @@
 																</ObjectLists>
 																<ReferenceList>
 																	<Reference Name="TrackSequenceSwitch">
-																		<ObjectRef Name="StarsCollect1" ID="{2E804BD0-887D-4769-92A9-FC9455126DB2}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																		<ObjectRef Name="Bass4th" ID="{2AE170AF-CE2C-46D9-8ADD-47D465D745A4}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
 																	</Reference>
 																</ReferenceList>
 															</MusicTrackSequence>
@@ -3609,7 +3610,7 @@
 																</ObjectLists>
 																<ReferenceList>
 																	<Reference Name="TrackSequenceSwitch">
-																		<ObjectRef Name="StarsCollect2" ID="{2BF742CE-5085-4FFC-96BC-81F6D875981B}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																		<ObjectRef Name="Bass8th" ID="{C7B8FEBB-402D-4B98-BDEB-0BB52A88EC1D}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
 																	</Reference>
 																</ReferenceList>
 															</MusicTrackSequence>
@@ -3636,7 +3637,7 @@
 																</ObjectLists>
 																<ReferenceList>
 																	<Reference Name="TrackSequenceSwitch">
-																		<ObjectRef Name="StarsCollect3" ID="{29A22BA4-E9D5-47ED-9D77-4374073BE326}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																		<ObjectRef Name="Bass8thT" ID="{A27DF2AD-FD9C-424C-B8F2-F631DEC9CC8C}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
 																	</Reference>
 																</ReferenceList>
 															</MusicTrackSequence>
@@ -3663,7 +3664,7 @@
 																</ObjectLists>
 																<ReferenceList>
 																	<Reference Name="TrackSequenceSwitch">
-																		<ObjectRef Name="StarsCollect4" ID="{AAF7D718-4B8D-44CA-8258-9E914DA9D224}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																		<ObjectRef Name="Bass16th" ID="{9258D17C-CD76-47E6-BE04-C7B3AAB01A12}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
 																	</Reference>
 																</ReferenceList>
 															</MusicTrackSequence>
@@ -3688,7 +3689,11 @@
 																		</Reference>
 																	</ObjectList>
 																</ObjectLists>
-																<ReferenceList/>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Bass16thT" ID="{29CEE1F7-B699-4E4D-8505-9B10051CC5A8}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																	</Reference>
+																</ReferenceList>
 															</MusicTrackSequence>
 														</Local>
 													</Reference>
@@ -3711,7 +3716,11 @@
 																		</Reference>
 																	</ObjectList>
 																</ObjectLists>
-																<ReferenceList/>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Bass32nd" ID="{CD32E90F-56B8-4085-9F71-4599EDD15A28}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+																	</Reference>
+																</ReferenceList>
 															</MusicTrackSequence>
 														</Local>
 													</Reference>
@@ -3772,7 +3781,6 @@
 																		</Reference>
 																	</ObjectList>
 																</ObjectLists>
-																<ReferenceList/>
 															</MusicTrackSequence>
 														</Local>
 													</Reference>
