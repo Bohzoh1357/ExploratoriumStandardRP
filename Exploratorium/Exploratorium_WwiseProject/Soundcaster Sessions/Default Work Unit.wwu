@@ -25,7 +25,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="StarPieces" ID="{EE923E92-66FB-4362-B131-09AC0F0151DD}"/>
-							<Value>4.84</Value>
+							<Value>5</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SFXVolume" ID="{093962EF-E8CA-43D0-BE82-D37441923B11}"/>
@@ -43,6 +43,10 @@
 							<GameParameterRef Name="MusicVolume" ID="{9982D970-29A0-4E9D-BF25-9305AD648265}"/>
 							<Value>0.8</Value>
 						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="DistancetoLastPiece" ID="{2CA3F4AF-3F7E-4F8C-B0B2-A4F252B4028B}"/>
+							<Value>8.62295589196862E-312</Value>
+						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="UnCollected" ID="{DAE8B785-5E05-4000-8B4F-0B4D7C411B1E}"/>
@@ -56,11 +60,12 @@
 						<CurrentStateRef Name="UnCollected" ID="{DC4FB21A-B735-4CB3-958F-A4203217C395}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Star4" ID="{F7DB913D-0C14-415E-BCCC-D935DA2EE77F}"/>
+						<CurrentSwitchRef Name="Star1" ID="{D05EBA6C-FB16-41EE-BC54-02BF45FADEA3}"/>
 						<CurrentSwitchRef Name="DryLand" ID="{19A1EA46-7F5A-43AD-A331-624181745DFF}"/>
 						<CurrentSwitchRef Name="Dirt" ID="{96BFD4C9-739B-42AB-9739-365199FBEFFF}"/>
 						<CurrentSwitchRef Name="StarsCollect4" ID="{AAF7D718-4B8D-44CA-8258-9E914DA9D224}"/>
 						<CurrentSwitchRef Name="Grounded" ID="{23104471-3C07-4516-ABA3-EF628EF7AD1E}"/>
+						<CurrentSwitchRef Name="Bass2nd" ID="{A9F16843-81E5-4E10-8E25-1ACD7F313D44}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
