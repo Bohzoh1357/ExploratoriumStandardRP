@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlatformSettingsNameList:
   - Mac
+  - Web
   - Windows
   PlatformSettingsList:
   - {fileID: 11400000, guid: b4f0f7e211ae43649a7846798f6defc8, type: 2}
+  - {fileID: 11400000, guid: cf4af461b57511f459effc6ba24ac97c, type: 2}
   - {fileID: 11400000, guid: 13a18ebfa481e1f4e9fa9e4193899a0f, type: 2}
   InvalidReferencePlatforms: []
   UserSettings:
