@@ -63,19 +63,24 @@ State	ID	Name	State Group			Notes
 	4264815106	EndGame	Music			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	2569537648	Collection_SideChain			\Default Work Unit\Collection_SideChain	
 	4122641472	Stinger_Sidechain			\Default Work Unit\Stinger_Sidechain	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	77978275	Ambient			\Default Work Unit\Master Audio Bus\Music\Stinger\Ambient	
 	78360149	Stinger			\Default Work Unit\Master Audio Bus\Music\Stinger	
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
 	1117531639	AMB			\Default Work Unit\Master Audio Bus\AMB	
 	1551306167	UI			\Default Work Unit\Master Audio Bus\UI	
+	2925776965	Collection			\Default Work Unit\Master Audio Bus\Music\Stinger\Collection	
 	3161908922	Main			\Default Work Unit\Master Audio Bus\Music\Main	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 Effect plug-ins	ID	Name	Type				Notes
 	21094305	Gain (Custom)	Wwise Gain			
+	429091368	Meter (Custom)	Wwise Meter			
+	729357942	Gain (Custom)	Wwise Gain			
 	1047712802	Meter (Custom)	Wwise Meter			
 
 Audio Devices	ID	Name	Type				Notes

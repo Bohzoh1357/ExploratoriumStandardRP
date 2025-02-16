@@ -5273,6 +5273,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StarShard
       objectReference: {fileID: 0}
+    - target: {fileID: 6240738695930547880, guid: e442d854465eede4faf7ba13652f24d7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6860281036020628373, guid: e442d854465eede4faf7ba13652f24d7, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -11333,6 +11337,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StarShard (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6240738695930547880, guid: e442d854465eede4faf7ba13652f24d7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6860281036020628373, guid: e442d854465eede4faf7ba13652f24d7, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -11637,6 +11645,10 @@ PrefabInstance:
     - target: {fileID: 6240738695930547880, guid: e442d854465eede4faf7ba13652f24d7, type: 3}
       propertyPath: m_Name
       value: StarShard (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6240738695930547880, guid: e442d854465eede4faf7ba13652f24d7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6860281036020628373, guid: e442d854465eede4faf7ba13652f24d7, type: 3}
       propertyPath: m_Mesh
@@ -14932,6 +14944,10 @@ PrefabInstance:
     - target: {fileID: 6240738695930547880, guid: e442d854465eede4faf7ba13652f24d7, type: 3}
       propertyPath: m_Name
       value: StarShard (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6240738695930547880, guid: e442d854465eede4faf7ba13652f24d7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6860281036020628373, guid: e442d854465eede4faf7ba13652f24d7, type: 3}
       propertyPath: m_Mesh
@@ -22875,10 +22891,20 @@ MonoBehaviour:
   ui: {fileID: 804382343}
   starCount: 0
   timer: 0
+  endgameTimer: 0
   starCountRTPC:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 60a478205348e4347b30f410e8e2b5b3, type: 2}
+  stopMusic:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a011eafa64614a8448e7c888d0a5b25f, type: 2}
+  endgameMusic:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8b007e0d456b8184dbc2fa74caac2d5d, type: 2}
+  lastStar: {fileID: 0}
 --- !u!4 &1436598631
 Transform:
   m_ObjectHideFlags: 0

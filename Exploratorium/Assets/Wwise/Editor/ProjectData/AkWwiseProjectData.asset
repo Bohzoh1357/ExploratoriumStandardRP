@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: e233e7ef4d8ae34ab662f20c007d1656
     GuidInternal: 
-    m_lastTime: -8584619609419661543
+    m_lastTime: -8584619444853520781
     List:
     - name: AMB
       guid: 6fe166de750ee34fa2d758334da5dd85
@@ -57,6 +57,52 @@ MonoBehaviour:
         ObjectType: 2
         guid: 6fe166de750ee34fa2d758334da5dd85
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AMB
+    - name: Ambient
+      guid: 2eddd7499b2e6446bd5be3e24790d130
+      id: 77978275
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e233e7ef4d8ae34ab662f20c007d1656
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: 46dc85af135da14a996570ffe0888ced
+      - ElementName: Stinger
+        ObjectType: 2
+        guid: 675cfd14525e0143a97dfa1d29f4b567
+      - ElementName: Ambient
+        ObjectType: 2
+        guid: 2eddd7499b2e6446bd5be3e24790d130
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\Stinger\Ambient
+    - name: Collection
+      guid: 1c1afed6b0985944b03b1e9fdd29175f
+      id: 2925776965
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e233e7ef4d8ae34ab662f20c007d1656
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: 46dc85af135da14a996570ffe0888ced
+      - ElementName: Stinger
+        ObjectType: 2
+        guid: 675cfd14525e0143a97dfa1d29f4b567
+      - ElementName: Collection
+        ObjectType: 2
+        guid: 1c1afed6b0985944b03b1e9fdd29175f
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\Stinger\Collection
     - name: Main
       guid: 8d2c9f9d1b1cf54a823a1a45da7648c8
       id: 3161908922
@@ -174,7 +220,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 7499e83547751a438679ea52f9d44a40
     GuidInternal: 
-    m_lastTime: -8584619589298511815
+    m_lastTime: -8584619425626920957
     List:
     - name: General
       guid: 40349fa13a3f4f4690e0b70824685515
@@ -334,8 +380,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6a2c2bde733c794e97c4d75f0447af56
     GuidInternal: 
-    m_lastTime: -8584619609419271806
-    List: []
+    m_lastTime: -8584619448440061812
+    List:
+    - name: StopAll
+      guid: 0106355caa27474aa95fc4e0731764b8
+      id: 3086540886
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6a2c2bde733c794e97c4d75f0447af56
+      - ElementName: StopAll
+        ObjectType: 3
+        guid: 0106355caa27474aa95fc4e0731764b8
+      Path: Events\Default Work Unit\StopAll
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\Music.wwu
     PathAndIcons:
     - ElementName: Events
@@ -347,7 +410,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: baba841079c8514493bf6c26f4c5e8a5
     GuidInternal: 
-    m_lastTime: -8584619609419511592
+    m_lastTime: -8584619425989059300
     List:
     - name: EndGame
       guid: 53076c3dac51464fad481606833ea7e2
@@ -431,6 +494,40 @@ MonoBehaviour:
         ObjectType: 3
         guid: eb2b176f84ba4540846955d549145402
       Path: Events\Music\StarInitializer
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: StopAmbientLocal
+      guid: d3d33045cf7f4a488d44a35deb1ecce9
+      id: 3494773628
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: baba841079c8514493bf6c26f4c5e8a5
+      - ElementName: StopAmbientLocal
+        ObjectType: 3
+        guid: d3d33045cf7f4a488d44a35deb1ecce9
+      Path: Events\Music\StopAmbientLocal
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: StopMusicforEnd
+      guid: 9f07f343fbef0644abd51d56c3fd3d2c
+      id: 2279929306
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: baba841079c8514493bf6c26f4c5e8a5
+      - ElementName: StopMusicforEnd
+        ObjectType: 3
+        guid: 9f07f343fbef0644abd51d56c3fd3d2c
+      Path: Events\Music\StopMusicforEnd
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -561,8 +658,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: d55cc9f1dc3cb949ac089a06a527b4da
     GuidInternal: 
-    m_lastTime: -8584619632734683962
+    m_lastTime: -8584619406503415427
     List:
+    - name: Collection_SideChain
+      guid: 3f03c70a7feedc409872ab880ff572aa
+      id: 2569537648
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d55cc9f1dc3cb949ac089a06a527b4da
+      - ElementName: Collection_SideChain
+        ObjectType: 13
+        guid: 3f03c70a7feedc409872ab880ff572aa
+      Path: Game Parameters\Default Work Unit\Collection_SideChain
     - name: DistancetoLastPiece
       guid: aff4a32c7e3f8c4fb0b2a4f252b4028b
       id: 1814698023
@@ -1455,7 +1566,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 89f24706b43e9d4da320960a82266e5d
     GuidInternal: 
-    m_lastTime: -8584619660561480192
+    m_lastTime: -8584619406503565274
     List:
     - name: EndGameBass
       guid: 71cebcbf267cf64fbdc8cd949070f58a
@@ -1994,7 +2105,7 @@ MonoBehaviour:
         guid: fbdfe5505c21f145ace96f4eacf0f09c
       Path: Triggers\Default Work Unit\StarCollected
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 150000001f000000330000003400000036000000370000003b000000
+  ExpandedWaapiItemIds: 0600000011000000150000001f000000330000003400000036000000370000003b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

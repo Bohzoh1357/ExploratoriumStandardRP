@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{A19F3440-3F3A-464F-90E0-B70824685515}",
     "Language": "SFX",
-    "Hash": "{9B35A9C4-9C8B-F49B-9A0D-444322650034}",
+    "Hash": "{C00442D7-649E-A853-E40F-FB827B7DF5F6}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\General",
     "ShortName": "General",
     "Path": "General.bnk",
@@ -264,6 +264,14 @@
       "CachePath": "17/{176E6646-530E-5853-8C53-D25022A08BBC}.wem"
      },
      {
+      "Id": "356470039",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "StarStinger_Bass1-16_80bpm4-4_L3M_P1M.wav",
+      "CachePath": "F7/{F7561827-9B17-326B-3374-C1864596692D}.wem"
+     },
+     {
       "Id": "359265107",
       "Language": "SFX",
       "Streaming": "false",
@@ -286,6 +294,14 @@
       "Location": "Memory",
       "ShortName": "Day2_Piano_80bpm4-4_L4M.wav",
       "CachePath": "1D/{1D090FCF-9183-D3CF-81D8-D202AF052269}.wem"
+     },
+     {
+      "Id": "399928953",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "StarStinger_Bass1-4_80bpm4-4_L3M_P1M.wav",
+      "CachePath": "CF/{CFE3BC61-A62A-C3A9-F1ED-0863A9A45955}.wem"
      },
      {
       "Id": "400684044",
@@ -368,6 +384,14 @@
       "CachePath": "D8/{D82E000A-510D-D61B-9940-F3805E3A7ED5}.wem"
      },
      {
+      "Id": "528918105",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "StarStinger_Bass1-32_80bpm4-4_L3M_P1M.wav",
+      "CachePath": "AA/{AA67B8EA-151B-EAE8-648A-A227A5988ED8}.wem"
+     },
+     {
       "Id": "538794420",
       "Language": "SFX",
       "Streaming": "false",
@@ -406,14 +430,6 @@
       "Location": "Memory",
       "ShortName": "AMB_ENV_OceanWaves_v1_JL 3.wav",
       "CachePath": "24/{24908188-C54E-A6E5-A681-4401032A41E3}.wem"
-     },
-     {
-      "Id": "550827518",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "StartStinger_SynthBass_80-50bpm4-4_L3M(2).wav",
-      "CachePath": "E5/{E555D489-2920-A54E-94ED-4CA46F64035E}.wem"
      },
      {
       "Id": "554263416",
@@ -504,6 +520,14 @@
       "CachePath": "4D/{4DE5973B-4C2B-4CE0-80B7-1085E55AE31E}.wem"
      },
      {
+      "Id": "677899089",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "StarStinger_Bass1-8_80bpm4-4_L3M_P1M.wav",
+      "CachePath": "C0/{C0B8B270-DA7B-BC27-7040-51F200A5B14C}.wem"
+     },
+     {
       "Id": "708755240",
       "Language": "SFX",
       "Streaming": "false",
@@ -560,6 +584,14 @@
       "CachePath": "C5/{C50BEFCA-B232-0304-D516-E43186AE50B9}.wem"
      },
      {
+      "Id": "789978989",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "StarStinger_Bass1-8t_80bpm4-4_L3M_P1M.wav",
+      "CachePath": "82/{8223BE74-4680-810E-5E0C-15FB43930AD3}.wem"
+     },
+     {
       "Id": "798221971",
       "Language": "SFX",
       "Streaming": "false",
@@ -582,6 +614,14 @@
       "Location": "Memory",
       "ShortName": "StartStinger_Piano_80-50bpm4-4_L3M(11.626S).wav",
       "CachePath": "6A/{6A71F79D-AD66-66D8-8116-C4757FC94C94}.wem"
+     },
+     {
+      "Id": "860623638",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "StarStinger_KalimbaSample_80bpm4-4_L3M_P1M.wav",
+      "CachePath": "8C/{8C3CACA6-A5DB-BFD1-A5AB-D0563E45BB7C}.wem"
      },
      {
       "Id": "866256559",
@@ -656,6 +696,14 @@
       "CachePath": "7C/{7C35406E-FEF6-F7E2-503B-2F359DDE0BEC}.wem"
      },
      {
+      "Id": "963297258",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "StarStinger_Bass1-16t_80bpm4-4_L3M_P1M.wav",
+      "CachePath": "1C/{1CF53A2D-1175-E8DF-524D-574AA51AD4B7}.wem"
+     },
+     {
       "Id": "970619497",
       "Language": "SFX",
       "Streaming": "false",
@@ -702,6 +750,14 @@
       "Location": "Memory",
       "ShortName": "SFX_Player_StepWater4_v2_JL.wav",
       "CachePath": "04/{0458BA7A-1052-6E01-317C-EC97B25F9064}.wem"
+     },
+     {
+      "Id": "1011889893",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "StarStinger_Bass1-2_80bpm4-4_L3M_P1M.wav",
+      "CachePath": "F7/{F7EE9E42-87F2-4741-EE0F-90DBADEE847B}.wem"
      },
      {
       "Id": "1015632412",
@@ -1208,24 +1264,6 @@
       "MediaRefs": [
        {
         "Id": "149907718"
-       },
-       {
-        "Id": "469979251"
-       },
-       {
-        "Id": "508755875"
-       },
-       {
-        "Id": "539792457"
-       },
-       {
-        "Id": "550827518"
-       },
-       {
-        "Id": "664929944"
-       },
-       {
-        "Id": "841204228"
        }
       ],
       "SwitchContainers": [
@@ -1461,7 +1499,25 @@
         "Id": "306935995"
        },
        {
+        "Id": "356470039"
+       },
+       {
+        "Id": "399928953"
+       },
+       {
+        "Id": "469979251"
+       },
+       {
+        "Id": "508755875"
+       },
+       {
+        "Id": "528918105"
+       },
+       {
         "Id": "538794420"
+       },
+       {
+        "Id": "539792457"
        },
        {
         "Id": "567330253"
@@ -1473,10 +1529,25 @@
         "Id": "657134684"
        },
        {
+        "Id": "664929944"
+       },
+       {
+        "Id": "677899089"
+       },
+       {
         "Id": "742908057"
        },
        {
+        "Id": "789978989"
+       },
+       {
         "Id": "801546477"
+       },
+       {
+        "Id": "841204228"
+       },
+       {
+        "Id": "860623638"
        },
        {
         "Id": "908280898"
@@ -1485,10 +1556,16 @@
         "Id": "958879665"
        },
        {
+        "Id": "963297258"
+       },
+       {
         "Id": "996020030"
        },
        {
         "Id": "999408022"
+       },
+       {
+        "Id": "1011889893"
        },
        {
         "Id": "1015632412"
@@ -1534,6 +1611,36 @@
         "GUID": "{D8183886-D3F5-4EFA-AC27-082EEE35299F}"
        }
       ]
+     },
+     {
+      "Id": "3086540886",
+      "Name": "StopAll",
+      "ObjectPath": "\\Events\\Default Work Unit\\StopAll",
+      "GUID": "{5C350601-27AA-4A47-A95F-C4E0731764B8}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3494773628",
+      "Name": "StopAmbientLocal",
+      "ObjectPath": "\\Events\\Music\\StopAmbientLocal",
+      "GUID": "{4530D3D3-7FCF-484A-8D44-A35DEB1ECCE9}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2279929306",
+      "Name": "StopMusicforEnd",
+      "ObjectPath": "\\Events\\Music\\StopMusicforEnd",
+      "GUID": "{43F3079F-EFFB-4406-ABD5-1D56C3FD3D2C}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      },
      {
       "Id": "1941965176",
@@ -1973,6 +2080,6 @@
     ]
    }
   ],
-  "FileHash": "{0CAA9C0F-579E-7CD5-F611-3D494AFCA7CD}"
+  "FileHash": "{A4C409F9-B5EC-5E71-3A97-8BF036E646EE}"
  }
 }

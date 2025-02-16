@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{F1A5EBC6-0182-3BC8-9409-1EEC773692C5}",
+    "Hash": "{F786E3B0-07C9-363D-9659-835BF29F294B}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -21,6 +21,22 @@
        "Name": "Gain (Custom)",
        "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music\\Main\\[Effect Slot [0]: (Gain)]\\Gain (Custom)",
        "GUID": "{4CF64DE8-6E13-4D86-AD76-8E23ADD259FE}",
+       "LibName": "Wwise Gain",
+       "LibId": "9109507"
+      },
+      {
+       "Id": "429091368",
+       "Name": "Meter (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music\\Stinger\\Collection\\[Effect Slot [0]: (Meter)]\\Meter (Custom)",
+       "GUID": "{7A57BBBD-0579-4593-8AE4-32343B2DE9D1}",
+       "LibName": "Wwise Meter",
+       "LibId": "8454147"
+      },
+      {
+       "Id": "729357942",
+       "Name": "Gain (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music\\Stinger\\Ambient\\[Effect Slot [0]: (Gain)]\\Gain (Custom)",
+       "GUID": "{4B4488E8-E1B2-4B86-826E-3EC96E3F8233}",
        "LibName": "Wwise Gain",
        "LibId": "9109507"
       },
@@ -54,6 +70,19 @@
     },
     "Busses": [
      {
+      "Id": "77978275",
+      "Name": "Ambient",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music\\Stinger\\Ambient",
+      "GUID": "{49D7DD2E-2E9B-4664-BD5B-E3E24790D130}",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "729357942"
+        }
+       ]
+      }
+     },
+     {
       "Id": "78360149",
       "Name": "Stinger",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music\\Stinger",
@@ -83,6 +112,19 @@
       "Name": "UI",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\UI",
       "GUID": "{0639B208-933B-46BA-9006-11F8F9334A55}"
+     },
+     {
+      "Id": "2925776965",
+      "Name": "Collection",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music\\Stinger\\Collection",
+      "GUID": "{D6FE1A1C-98B0-4459-B03B-1E9FDD29175F}",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "429091368"
+        }
+       ]
+      }
      },
      {
       "Id": "3161908922",
@@ -128,6 +170,12 @@
       "Name": "MusicVolume",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\MusicVolume",
       "GUID": "{9982D970-29A0-4E9D-BF25-9305AD648265}"
+     },
+     {
+      "Id": "2569537648",
+      "Name": "Collection_SideChain",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Collection_SideChain",
+      "GUID": "{0AC7033F-EE7F-40DC-9872-AB880FF572AA}"
      },
      {
       "Id": "2918011349",
@@ -634,6 +682,6 @@
     ]
    }
   ],
-  "FileHash": "{602AD695-C56A-E700-B431-2657C9843E0A}"
+  "FileHash": "{529DF80B-B4DD-74A2-13FD-F56CDF7C8555}"
  }
 }

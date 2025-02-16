@@ -1347,22 +1347,6 @@
 								</Local>
 							</Reference>
 						</ObjectList>
-						<ObjectList Name="Stingers">
-							<Reference>
-								<Local>
-									<MusicStinger Name="" ID="{C74C81D6-62B0-455D-9BDB-8ED91967C1E5}">
-										<ReferenceList>
-											<Reference Name="Segment">
-												<ObjectRef Name="StartStinger" ID="{FB5431CA-6667-4FCB-942D-5EFCCA2FCC61}" WorkUnitID="{AD5C76CE-70EC-425A-BDBC-C67C996B61C1}"/>
-											</Reference>
-											<Reference Name="Trigger">
-												<ObjectRef Name="StarCollected" ID="{50E5DFFB-215C-45F1-ACE9-6F4EACF0F09C}" WorkUnitID="{D1C201E0-3BA3-4993-8470-4E0E8C082691}"/>
-											</Reference>
-										</ReferenceList>
-									</MusicStinger>
-								</Local>
-							</Reference>
-						</ObjectList>
 					</ObjectLists>
 				</MusicSwitchContainer>
 				<Folder Name="StarAmbient" ID="{D4FD5438-E91A-452B-A137-19BA8285ABF8}" ShortID="852335949">
@@ -1380,7 +1364,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Stinger" ID="{14FD5C67-5E52-4301-A97D-FA1D29F4B567}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+									<ObjectRef Name="Ambient" ID="{49D7DD2E-2E9B-4664-BD5B-E3E24790D130}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
 								</Reference>
 								<Reference Name="PlaylistRoot">
 									<Custom>
@@ -2694,10 +2678,36 @@
 							<PositioningInfo>
 								<Position Name="" ID="{C662F899-CA89-40D8-B1CB-60C917FE1D00}"/>
 							</PositioningInfo>
+							<ObjectLists>
+								<ObjectList Name="Stingers">
+									<Reference>
+										<Local>
+											<MusicStinger Name="" ID="{BE6BE584-AEDF-4F95-B12B-84B4301026C7}">
+												<PropertyList>
+													<Property Name="PlaySegmentAt" Type="int16" Value="2"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="Segment">
+														<ObjectRef Name="StartStinger" ID="{FB5431CA-6667-4FCB-942D-5EFCCA2FCC61}" WorkUnitID="{AD5C76CE-70EC-425A-BDBC-C67C996B61C1}"/>
+													</Reference>
+													<Reference Name="Trigger">
+														<ObjectRef Name="StarCollected" ID="{50E5DFFB-215C-45F1-ACE9-6F4EACF0F09C}" WorkUnitID="{D1C201E0-3BA3-4993-8470-4E0E8C082691}"/>
+													</Reference>
+												</ReferenceList>
+											</MusicStinger>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 						</MusicPlaylistContainer>
 						<MusicPlaylistContainer Name="EndGame" ID="{47907B18-B406-46F6-9D03-02E54AAB9D89}" ShortID="233723580">
 							<PropertyList>
 								<Property Name="Tempo" Type="Real64" Value="80"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -4097,13 +4107,18 @@
 					<PropertyList>
 						<Property Name="EndPosition" Type="Real64" Value="33675.7083333333"/>
 						<Property Name="Tempo" Type="Real64" Value="80"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-2</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Stinger" ID="{14FD5C67-5E52-4301-A97D-FA1D29F4B567}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+							<ObjectRef Name="Collection" ID="{D6FE1A1C-98B0-4459-B03B-1E9FDD29175F}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -4160,6 +4175,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="12750"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutDuration" Type="Real64" Value="1837.23642323322"/>
+																		<Property Name="PlayAt" Type="Real64" Value="3000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="StartStinger_Cello_80-50bpm4-4_L3M(11_626S)" ID="{03D655EF-B4CF-4122-BD79-2AAE171D8DBC}"/>
 																	<PropertyCurveList>
@@ -4301,6 +4317,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="12750"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutDuration" Type="Real64" Value="1522.28160782181"/>
+																		<Property Name="PlayAt" Type="Real64" Value="3000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="StartStinger_Guitar_80-50bpm4-4_L3M(11_626S)" ID="{796F78D2-3858-4214-B18B-ACCBF7E366D8}"/>
 																	<PropertyCurveList>
@@ -4447,6 +4464,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="12750"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutDuration" Type="Real64" Value="1574.77407705705"/>
+																		<Property Name="PlayAt" Type="Real64" Value="3000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="StartStinger_Piano_80-50bpm4-4_L3M(11_626S)" ID="{EC223CBE-F680-4A54-82E6-056584ADDB32}"/>
 																	<PropertyCurveList>
@@ -4588,6 +4606,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="12750"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutDuration" Type="Real64" Value="1574.77407705705"/>
+																		<Property Name="PlayAt" Type="Real64" Value="3000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="StartStinger_KalimbaLow_80-50bpm4-4_L3M(11_626S)" ID="{53060CCE-EB23-442D-B44C-2119A7DEBCA0}"/>
 																	<PropertyCurveList>
@@ -4729,6 +4748,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="12750"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutDuration" Type="Real64" Value="2939.57827717315"/>
+																		<Property Name="PlayAt" Type="Real64" Value="3000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="StartStinger_KalimbaHigh_80-50bpm4-4_L3M(11_626S)" ID="{BDB33A2A-BD94-406A-867B-DABBDB499357}"/>
 																	<PropertyCurveList>
@@ -4817,21 +4837,274 @@
 								</ObjectList>
 							</ObjectLists>
 						</MusicTrack>
-						<MusicTrack Name="StartStinger_SynthBass_80-50bpm4-4_L3M(11_626S)" ID="{4E106260-8194-465C-BFCC-129A3E13E39C}" ShortID="382606757">
+						<MusicTrack Name="StarStinger_BassVariations" ID="{62DBB337-F7E4-4ADA-B59C-88A475D292B1}" ShortID="911187324">
 							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>2</Value>
-									</ValueList>
-								</Property>
+								<Property Name="MusicTrackType" Type="int16" Value="3"/>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="StarCounter" ID="{4FF51364-EB75-49A4-B4B5-B167CB92D2C4}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{2462414E-7365-4123-88F2-93F60A755160}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{C78E0AE2-7B89-45F1-88B6-C974C003448B}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="StarStinger_Bass1-2_80bpm4-4_L3M_P1M" ID="{49C3F236-2467-4729-B4E2-A514E10598AB}">
+									<Language>SFX</Language>
+									<AudioFile>StarStinger_Bass1-2_80bpm4-4_L3M_P1M.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1011889893"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="StarStinger_Bass1-4_80bpm4-4_L3M_P1M" ID="{FD215EB6-11FB-4582-B1DD-143D812B26DC}">
+									<Language>SFX</Language>
+									<AudioFile>StarStinger_Bass1-4_80bpm4-4_L3M_P1M.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="399928953"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="StarStinger_Bass1-8_80bpm4-4_L3M_P1M" ID="{59C1FA59-2554-45DE-95C2-4295BEC14EB7}">
+									<Language>SFX</Language>
+									<AudioFile>StarStinger_Bass1-8_80bpm4-4_L3M_P1M.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="677899089"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="StarStinger_Bass1-8t_80bpm4-4_L3M_P1M" ID="{E3C5F452-9165-43A6-BD8E-45E174C4AF4B}">
+									<Language>SFX</Language>
+									<AudioFile>StarStinger_Bass1-8t_80bpm4-4_L3M_P1M.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="789978989"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="StarStinger_Bass1-16_80bpm4-4_L3M_P1M" ID="{082EDCC0-ED02-4137-86D3-699189A6CF8B}">
+									<Language>SFX</Language>
+									<AudioFile>StarStinger_Bass1-16_80bpm4-4_L3M_P1M.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="356470039"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="StarStinger_Bass1-16t_80bpm4-4_L3M_P1M" ID="{9A93BB90-DD4B-4BCC-9067-D1D21E96ED51}">
+									<Language>SFX</Language>
+									<AudioFile>StarStinger_Bass1-16t_80bpm4-4_L3M_P1M.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="963297258"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="StarStinger_Bass1-32_80bpm4-4_L3M_P1M" ID="{5F2000BE-8A2E-485F-81FB-5DFEBC4D0695}">
+									<Language>SFX</Language>
+									<AudioFile>StarStinger_Bass1-32_80bpm4-4_L3M_P1M.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="528918105"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{7AB5D7AA-E40A-4E4D-BA38-E43BEB5DE203}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="StarStinger_Bass1-2_80bpm4-4_L3M_P1M" ID="{ABCAA157-01D3-40F6-AA3B-2D25AC7417DC}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="19425.7083333333"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="StarStinger_Bass1-2_80bpm4-4_L3M_P1M" ID="{49C3F236-2467-4729-B4E2-A514E10598AB}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+												<ReferenceList>
+													<Reference Name="TrackSequenceSwitch">
+														<ObjectRef Name="StarsCollect1" ID="{2E804BD0-887D-4769-92A9-FC9455126DB2}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+													</Reference>
+												</ReferenceList>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{FC93322D-8EAE-4809-A702-43644162F31D}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="StarStinger_Bass1-4_80bpm4-4_L3M_P1M" ID="{2E56EF1A-C142-4632-8F0A-1B5B1E4C460E}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="19425.7083333333"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="StarStinger_Bass1-4_80bpm4-4_L3M_P1M" ID="{FD215EB6-11FB-4582-B1DD-143D812B26DC}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+												<ReferenceList>
+													<Reference Name="TrackSequenceSwitch">
+														<ObjectRef Name="StarsCollect2" ID="{2BF742CE-5085-4FFC-96BC-81F6D875981B}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+													</Reference>
+												</ReferenceList>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{F53C0227-D302-40A4-9E70-AF14AD7026E4}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="StarStinger_Bass1-8_80bpm4-4_L3M_P1M" ID="{4777A2EC-B0E9-4C55-B68B-0047FF7168ED}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="19425.7083333333"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="StarStinger_Bass1-8_80bpm4-4_L3M_P1M" ID="{59C1FA59-2554-45DE-95C2-4295BEC14EB7}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+												<ReferenceList>
+													<Reference Name="TrackSequenceSwitch">
+														<ObjectRef Name="StarsCollect3" ID="{29A22BA4-E9D5-47ED-9D77-4374073BE326}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+													</Reference>
+												</ReferenceList>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{22334AAB-7CD5-4591-BD89-CAB426A949AC}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="StarStinger_Bass1-8t_80bpm4-4_L3M_P1M" ID="{DA627788-B6F9-4118-9341-8EBF2F3179A9}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="19425.7083333333"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="StarStinger_Bass1-8t_80bpm4-4_L3M_P1M" ID="{E3C5F452-9165-43A6-BD8E-45E174C4AF4B}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+												<ReferenceList>
+													<Reference Name="TrackSequenceSwitch">
+														<ObjectRef Name="StarsCollect4" ID="{AAF7D718-4B8D-44CA-8258-9E914DA9D224}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+													</Reference>
+												</ReferenceList>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{AFE69C61-DF3B-4047-B34E-C99F2D2C3B90}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="StarStinger_Bass1-16_80bpm4-4_L3M_P1M" ID="{8A706020-8F14-4F2F-8DB2-2F9DF781C97F}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="19425.7083333333"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="StarStinger_Bass1-16_80bpm4-4_L3M_P1M" ID="{082EDCC0-ED02-4137-86D3-699189A6CF8B}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+												<ReferenceList/>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{88BF0338-618B-4BBC-8005-CFC076F0B314}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="StarStinger_Bass1-16t_80bpm4-4_L3M_P1M" ID="{93A5351B-E5B5-4154-B68B-72B6FBCD26DF}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="19425.7083333333"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="StarStinger_Bass1-16t_80bpm4-4_L3M_P1M" ID="{9A93BB90-DD4B-4BCC-9067-D1D21E96ED51}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+												<ReferenceList/>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{BFB01ED2-F14F-4B47-BE97-E430199F2AC8}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="StarStinger_Bass1-32_80bpm4-4_L3M_P1M" ID="{09E49A5E-8A54-4CB7-8CC1-901FB1DB1401}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="19425.7083333333"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="StarStinger_Bass1-32_80bpm4-4_L3M_P1M" ID="{5F2000BE-8A2E-485F-81FB-5DFEBC4D0695}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+												<ReferenceList/>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+						<MusicTrack Name="StarStinger_KalimbaSample_80bpm4-4_L3M_P1M" ID="{868F57C4-8077-49F8-9946-6F3D753877B4}" ShortID="779153878">
 							<ReferenceList>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
 								</Reference>
 								<Reference Name="TransitionRoot">
 									<Custom>
-										<MusicTransition Name="Root" ID="{20C0FA9E-63BF-44D3-8D66-606C9AB84BDB}">
+										<MusicTransition Name="Root" ID="{674F1E08-C040-41A5-9067-F05B3D7E1E3C}">
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
@@ -4841,11 +5114,11 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="StartStinger_SynthBass_80-50bpm4-4_L3M(2)" ID="{0A34025B-49E6-4B39-98B3-EFDFE5193954}">
+								<AudioFileSource Name="StarStinger_KalimbaSample_80bpm4-4_L3M_P1M" ID="{DA8C98ED-E90E-49B4-B9BB-C102AF5EADC9}">
 									<Language>SFX</Language>
-									<AudioFile>StartStinger_SynthBass_80-50bpm4-4_L3M(2).wav</AudioFile>
+									<AudioFile>StarStinger_KalimbaSample_80bpm4-4_L3M_P1M.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="550827518"/>
+										<MediaID ID="860623638"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
@@ -4853,77 +5126,18 @@
 								<ObjectList Name="Sequences">
 									<Reference>
 										<Local>
-											<MusicTrackSequence Name="" ID="{17624118-0649-471F-8900-8BA47B1A93D9}">
+											<MusicTrackSequence Name="" ID="{EB8CC949-A31E-4C35-9504-894E46C506AF}">
 												<ObjectLists>
 													<ObjectList Name="Clips">
 														<Reference>
 															<Local>
-																<MusicClip Name="StartStinger_SynthBass_80-50bpm4-4_L3M(2)" ID="{B8A3A729-4415-4BC6-9A2F-5B2E7DBA1C20}">
+																<MusicClip Name="StarStinger_KalimbaSample_80bpm4-4_L3M_P1M" ID="{E996C0A9-0FD3-4730-A713-7E23695F9C8F}">
 																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="19425.7083333333"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
-																		<Property Name="FadeOutDuration" Type="Real64" Value="1312.31173088087"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																	</PropertyList>
-																	<AudioSourceRef Name="StartStinger_SynthBass_80-50bpm4-4_L3M(2)" ID="{0A34025B-49E6-4B39-98B3-EFDFE5193954}"/>
-																	<PropertyCurveList>
-																		<PropertyCurve PropertyName="Highpass">
-																			<Curve Name="" ID="{C3EA6161-894F-454E-BF51-9BD3B0BB073B}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="1"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>12</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</PropertyCurve>
-																		<PropertyCurve PropertyName="Lowpass">
-																			<Curve Name="" ID="{05B09464-8645-44A4-A6ED-805E25BDCDD4}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="1"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>12</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</PropertyCurve>
-																		<PropertyCurve PropertyName="Volume">
-																			<Curve Name="" ID="{BA9D9AB6-F7C8-4F0F-A9E8-EFB202AD9499}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>12</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</PropertyCurve>
-																	</PropertyCurveList>
+																	<AudioSourceRef Name="StarStinger_KalimbaSample_80bpm4-4_L3M_P1M" ID="{DA8C98ED-E90E-49B4-B9BB-C102AF5EADC9}"/>
 																</MusicClip>
 															</Local>
 														</Reference>
@@ -4940,7 +5154,11 @@
 						<ObjectList Name="Cues">
 							<Reference>
 								<Local>
-									<MusicCue Name="Entry Cue" ID="{85478ABA-D71E-46ED-80E1-C0FEF42B2F3F}"/>
+									<MusicCue Name="Entry Cue" ID="{85478ABA-D71E-46ED-80E1-C0FEF42B2F3F}">
+										<PropertyList>
+											<Property Name="TimeMs" Type="Real64" Value="3000"/>
+										</PropertyList>
+									</MusicCue>
 								</Local>
 							</Reference>
 							<Reference>
@@ -4948,7 +5166,7 @@
 									<MusicCue Name="Exit Cue" ID="{B09113F9-4E3B-403E-B707-736E664C05A7}">
 										<PropertyList>
 											<Property Name="CueType" Type="int16" Value="1"/>
-											<Property Name="TimeMs" Type="Real64" Value="11625"/>
+											<Property Name="TimeMs" Type="Real64" Value="14625"/>
 										</PropertyList>
 									</MusicCue>
 								</Local>

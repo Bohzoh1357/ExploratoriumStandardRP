@@ -109,6 +109,102 @@
 									</ObjectLists>
 								</Bus>
 								<Bus Name="Stinger" ID="{14FD5C67-5E52-4301-A97D-FA1D29F4B567}">
+									<ChildrenList>
+										<Bus Name="Ambient" ID="{49D7DD2E-2E9B-4664-BD5B-E3E24790D130}">
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<Reference>
+														<Local>
+															<EffectSlot Name="" ID="{916DA295-B243-4BDF-A7B6-3BA362780302}" ShortID="372572560">
+																<ReferenceList>
+																	<Reference Name="Effect">
+																		<Custom>
+																			<Effect Name="Gain (Custom)" ID="{4B4488E8-E1B2-4B86-826E-3EC96E3F8233}" ShortID="729357942" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3"/>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</EffectSlot>
+														</Local>
+													</Reference>
+												</ObjectList>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{424CB787-DB7C-40E5-BC7E-9A2B51187191}" ShortID="189417174">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="Collection_SideChain" ID="{0AC7033F-EE7F-40DC-9872-AB880FF572AA}" WorkUnitID="{F1C95CD5-3CDC-49B9-AC08-9A06A527B4DA}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{9AACB944-C5CB-4F98-9532-1F8D219BED5A}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>-48</XPos>
+																						<YPos>-0.04423</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>-34.84234</XPos>
+																						<YPos>-0.02254</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>Log1</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>-9.92818</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>6</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</Bus>
+										<Bus Name="Collection" ID="{D6FE1A1C-98B0-4459-B03B-1E9FDD29175F}">
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<Reference>
+														<Local>
+															<EffectSlot Name="" ID="{8BF39E56-285B-4F1C-8286-0A44BAFCA2A4}" ShortID="913812130">
+																<ReferenceList>
+																	<Reference Name="Effect">
+																		<Custom>
+																			<Effect Name="Meter (Custom)" ID="{7A57BBBD-0579-4593-8AE4-32343B2DE9D1}" ShortID="429091368" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+																				<PropertyList>
+																					<Property Name="Max" Type="Real32" Value="6"/>
+																					<Property Name="ReleaseTime" Type="Real32" Value="5"/>
+																				</PropertyList>
+																				<PluginData>
+	<GameParameter Name="Collection_SideChain" ID="{0AC7033F-EE7F-40DC-9872-AB880FF572AA}"/>
+</PluginData>
+																			</Effect>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</EffectSlot>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</Bus>
+									</ChildrenList>
 									<ObjectLists>
 										<ObjectList Name="Effects">
 											<Reference>

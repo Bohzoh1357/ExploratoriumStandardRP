@@ -30,6 +30,9 @@ namespace AK
         static const AkUniqueID STARAMBIENT = 4106215671U;
         static const AkUniqueID STARCOLLECTED = 1972369290U;
         static const AkUniqueID STARINITIALIZER = 3219695003U;
+        static const AkUniqueID STOPALL = 3086540886U;
+        static const AkUniqueID STOPAMBIENTLOCAL = 3494773628U;
+        static const AkUniqueID STOPMUSICFOREND = 2279929306U;
         static const AkUniqueID TODAY = 1941965176U;
     } // namespace EVENTS
 
@@ -236,6 +239,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID COLLECTION_SIDECHAIN = 2569537648U;
         static const AkUniqueID DISTANCETOLASTPIECE = 1814698023U;
         static const AkUniqueID MASTERVOLUME = 2918011349U;
         static const AkUniqueID MUSICVOLUME = 2346531308U;
@@ -259,6 +263,8 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID AMB = 1117531639U;
+        static const AkUniqueID AMBIENT = 77978275U;
+        static const AkUniqueID COLLECTION = 2925776965U;
         static const AkUniqueID MAIN = 3161908922U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MUSIC = 3991942870U;
