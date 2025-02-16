@@ -5757,12 +5757,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7967206778971724387}
-  - component: {fileID: 8275027883205104184}
   - component: {fileID: -826376918982267403}
   - component: {fileID: -5085234582283238300}
   - component: {fileID: 2498725914010333909}
   - component: {fileID: 7757001636743630262}
   - component: {fileID: 2328470798770032031}
+  - component: {fileID: 1847931086423776524}
   m_Layer: 0
   m_Name: StarShard
   m_TagString: star
@@ -5788,27 +5788,6 @@ Transform:
   - {fileID: 474346206487874206}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &8275027883205104184
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6240738695930547880}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 3.0003176, z: 1.9388695}
-  m_Center: {x: 0.25, y: 1.0001588, z: 0.6}
 --- !u!114 &-826376918982267403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5844,6 +5823,9 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 8f8084397cfb48c4bbc8764187812115, type: 2}
+  uiPickupCanvas: {fileID: 0}
+  canPickup: 0
+  timeToDestroy: 5
 --- !u!114 &2498725914010333909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5889,9 +5871,13 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: e29cf408dfc13344c88131f4f8ae8e62, type: 2}
-  useCallbacks: 0
+  useCallbacks: 1
   stopSoundOnDestroy: 1
-  Callbacks: []
+  Callbacks:
+  - Flags:
+      value: 0
+    FunctionName: 
+    GameObject: {fileID: 6240738695930547880}
   soundEmitterObject: {fileID: 0}
   transitionDuration: 0
   eventIdInternal: 0
@@ -5926,6 +5912,27 @@ MonoBehaviour:
   groupIdInternal: 0
   valueGuidInternal: 
   groupGuidInternal: 
+--- !u!135 &1847931086423776524
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6240738695930547880}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 3.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7893412670533300853
 GameObject:
   m_ObjectHideFlags: 0

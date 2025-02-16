@@ -5044,7 +5044,6 @@
 														</Reference>
 													</ObjectList>
 												</ObjectLists>
-												<ReferenceList/>
 											</MusicTrackSequence>
 										</Local>
 									</Reference>
@@ -5067,7 +5066,6 @@
 														</Reference>
 													</ObjectList>
 												</ObjectLists>
-												<ReferenceList/>
 											</MusicTrackSequence>
 										</Local>
 									</Reference>
@@ -5090,7 +5088,6 @@
 														</Reference>
 													</ObjectList>
 												</ObjectLists>
-												<ReferenceList/>
 											</MusicTrackSequence>
 										</Local>
 									</Reference>
@@ -5167,6 +5164,16 @@
 										<PropertyList>
 											<Property Name="CueType" Type="int16" Value="1"/>
 											<Property Name="TimeMs" Type="Real64" Value="14625"/>
+										</PropertyList>
+									</MusicCue>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicCue Name="DestroyStar" ID="{15772B86-89B5-465C-8D17-F5035D74A4B4}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="2"/>
+											<Property Name="TimeMs" Type="Real64" Value="3000"/>
 										</PropertyList>
 									</MusicCue>
 								</Local>
