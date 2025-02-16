@@ -12,19 +12,225 @@
 					<ChildrenList>
 						<Bus Name="Music" ID="{AF85DC46-5D13-4AA1-9965-70FFE0888CED}">
 							<ChildrenList>
-								<Bus Name="NotStinger" ID="{9D9F2C8D-1C1B-4AF5-823A-1A45DA7648C8}"/>
+								<Bus Name="Main" ID="{9D9F2C8D-1C1B-4AF5-823A-1A45DA7648C8}">
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{FE2C72EC-AC8C-4064-AAA0-B25AD375769E}" ShortID="176380142">
+														<ReferenceList>
+															<Reference Name="Effect">
+																<Custom>
+																	<Effect Name="Gain (Custom)" ID="{4CF64DE8-6E13-4D86-AD76-8E23ADD259FE}" ShortID="21094305" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3"/>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{E4F286CE-A334-468A-904A-145E0395CC3E}" ShortID="94747618">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="Stinger_Sidechain" ID="{5BCC8D51-CC68-4694-9420-EBBFB0A27176}" WorkUnitID="{F1C95CD5-3CDC-49B9-AC08-9A06A527B4DA}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{2455CB17-429D-48D1-9132-D243691070FA}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>-48</XPos>
+																				<YPos>0.03053</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>-19.80409</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>6</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{CA335535-FA56-4843-A5B1-50482931CD8D}" ShortID="889910664">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="Stinger_Sidechain" ID="{5BCC8D51-CC68-4694-9420-EBBFB0A27176}" WorkUnitID="{F1C95CD5-3CDC-49B9-AC08-9A06A527B4DA}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{D0B54E71-89F0-4948-B26F-6D99CE8FA1E8}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>-48</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>6</XPos>
+																				<YPos>89</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</Bus>
 								<Bus Name="Stinger" ID="{14FD5C67-5E52-4301-A97D-FA1D29F4B567}">
-									<DuckingList>
-										<DuckItem>
-											<BusRef Name="NotStinger" ID="{9D9F2C8D-1C1B-4AF5-823A-1A45DA7648C8}"/>
-											<DuckingParam>
-												<Volume>-96</Volume>
-												<FadeInTime>2</FadeInTime>
-												<FadeOutTime>1</FadeOutTime>
-												<FadeCurve>FadeSCurve</FadeCurve>
-											</DuckingParam>
-										</DuckItem>
-									</DuckingList>
+									<ChildrenList>
+										<Bus Name="Ambient" ID="{49D7DD2E-2E9B-4664-BD5B-E3E24790D130}">
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<Reference>
+														<Local>
+															<EffectSlot Name="" ID="{916DA295-B243-4BDF-A7B6-3BA362780302}" ShortID="372572560">
+																<ReferenceList>
+																	<Reference Name="Effect">
+																		<Custom>
+																			<Effect Name="Gain (Custom)" ID="{4B4488E8-E1B2-4B86-826E-3EC96E3F8233}" ShortID="729357942" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3"/>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</EffectSlot>
+														</Local>
+													</Reference>
+												</ObjectList>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{424CB787-DB7C-40E5-BC7E-9A2B51187191}" ShortID="189417174">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="Collection_SideChain" ID="{0AC7033F-EE7F-40DC-9872-AB880FF572AA}" WorkUnitID="{F1C95CD5-3CDC-49B9-AC08-9A06A527B4DA}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{9AACB944-C5CB-4F98-9532-1F8D219BED5A}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>-48</XPos>
+																						<YPos>-0.04423</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>-34.84234</XPos>
+																						<YPos>-0.02254</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>Log1</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>-9.92818</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>6</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</Bus>
+										<Bus Name="Collection" ID="{D6FE1A1C-98B0-4459-B03B-1E9FDD29175F}">
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<Reference>
+														<Local>
+															<EffectSlot Name="" ID="{8BF39E56-285B-4F1C-8286-0A44BAFCA2A4}" ShortID="913812130">
+																<ReferenceList>
+																	<Reference Name="Effect">
+																		<Custom>
+																			<Effect Name="Meter (Custom)" ID="{7A57BBBD-0579-4593-8AE4-32343B2DE9D1}" ShortID="429091368" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+																				<PropertyList>
+																					<Property Name="Max" Type="Real32" Value="6"/>
+																					<Property Name="ReleaseTime" Type="Real32" Value="5"/>
+																				</PropertyList>
+																				<PluginData>
+	<GameParameter Name="Collection_SideChain" ID="{0AC7033F-EE7F-40DC-9872-AB880FF572AA}"/>
+</PluginData>
+																			</Effect>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</EffectSlot>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</Bus>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{9CF1F43D-8C1A-4162-B8D0-9B5C0B820F3B}" ShortID="78744000">
+														<ReferenceList>
+															<Reference Name="Effect">
+																<Custom>
+																	<Effect Name="Meter (Custom)" ID="{F3621EA0-69F7-41DA-B97A-7828CB14961B}" ShortID="1047712802" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+																		<PropertyList>
+																			<Property Name="Hold" Type="Real32" Value="0.4"/>
+																			<Property Name="Max" Type="Real32" Value="6"/>
+																			<Property Name="ReleaseTime" Type="Real32" Value="0.5"/>
+																		</PropertyList>
+																		<PluginData>
+	<GameParameter Name="Stinger_Sidechain" ID="{5BCC8D51-CC68-4694-9420-EBBFB0A27176}"/>
+</PluginData>
+																	</Effect>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 								</Bus>
 							</ChildrenList>
 						</Bus>

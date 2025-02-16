@@ -84,6 +84,70 @@
 						</Curve>
 					</SwitchOnRTPC>
 				</SwitchGroup>
+				<SwitchGroup Name="EndGameBass" ID="{BFBCCE71-7C26-4FF6-BDC8-CD949070F58A}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Bass2nd" ID="{A9F16843-81E5-4E10-8E25-1ACD7F313D44}"/>
+						<Switch Name="Bass4th" ID="{2AE170AF-CE2C-46D9-8ADD-47D465D745A4}"/>
+						<Switch Name="Bass8th" ID="{C7B8FEBB-402D-4B98-BDEB-0BB52A88EC1D}"/>
+						<Switch Name="Bass8thT" ID="{A27DF2AD-FD9C-424C-B8F2-F631DEC9CC8C}"/>
+						<Switch Name="Bass16th" ID="{9258D17C-CD76-47E6-BE04-C7B3AAB01A12}"/>
+						<Switch Name="Bass16thT" ID="{29CEE1F7-B699-4E4D-8505-9B10051CC5A8}"/>
+						<Switch Name="Bass32nd" ID="{CD32E90F-56B8-4085-9F71-4599EDD15A28}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="DistancetoLastPiece" ID="{2CA3F4AF-3F7E-4F8C-B0B2-A4F252B4028B}"/>
+						<Curve Name="" ID="{3C373662-4CB9-49A2-809E-BACEBFE12B89}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>7</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>85.7142857142857</XPos>
+									<YPos>6</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>171.428571428571</XPos>
+									<YPos>5</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>257.142857142857</XPos>
+									<YPos>4</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>342.857142857143</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>428.571428571429</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>514.285714285714</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>600</XPos>
+									<YPos>1</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

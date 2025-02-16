@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{671651AE-A910-4BA3-B8B4-ED4C3A156EFD}" SchemaVersion="123">
 	<MixingSessions>
-		<WorkUnit Name="Default Work Unit" ID="{671651AE-A910-4BA3-B8B4-ED4C3A156EFD}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{671651AE-A910-4BA3-B8B4-ED4C3A156EFD}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="Stingers" ID="{817376BD-656D-4312-88F4-3BCBD6D829BA}">
+					<ObjectList>
+						<ObjectRef Name="AMB" ID="{DE66E16F-0E75-4FE3-A2D7-58334DA5DD85}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+						<ObjectRef Name="Music" ID="{AF85DC46-5D13-4AA1-9965-70FFE0888CED}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+						<ObjectRef Name="Main" ID="{9D9F2C8D-1C1B-4AF5-823A-1A45DA7648C8}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+						<ObjectRef Name="Stinger" ID="{14FD5C67-5E52-4301-A97D-FA1D29F4B567}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+						<ObjectRef Name="SFX" ID="{FA57C7B1-E189-4F3B-9A65-1E89A9379E9C}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+						<ObjectRef Name="UI" ID="{0639B208-933B-46BA-9006-11F8F9334A55}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+						<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+						<ObjectRef Name="Ambient" ID="{49D7DD2E-2E9B-4664-BD5B-E3E24790D130}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+						<ObjectRef Name="Collection" ID="{D6FE1A1C-98B0-4459-B03B-1E9FDD29175F}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
 	</MixingSessions>
 </WwiseDocument>

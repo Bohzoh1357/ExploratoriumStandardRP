@@ -14,22 +14,54 @@
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="EndGame" ID="{3D6C0753-51AC-4F46-AD48-1606833EA7E2}" WorkUnitID="{1084BABA-C879-4451-93BF-6C26F4C5E8A5}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="StartStinger" ID="{FB5431CA-6667-4FCB-942D-5EFCCA2FCC61}" WorkUnitID="{AD5C76CE-70EC-425A-BDBC-C67C996B61C1}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="RunningWind_Stop" ID="{ABAEDAED-D15A-4633-81BF-142248A51845}" WorkUnitID="{B1A60F62-6A0A-4166-9F30-8667BF0F44AB}"/>
 							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="StarAmbient" ID="{5D71FD56-104D-48F6-B74B-F8FE304A3295}" WorkUnitID="{1084BABA-C879-4451-93BF-6C26F4C5E8A5}"/>
+							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Music" ID="{1D3365FA-089C-4927-BED4-DC3051893AF9}" WorkUnitID="{1084BABA-C879-4451-93BF-6C26F4C5E8A5}"/>
 							<Position X="3" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="StarInitializer" ID="{6F172BEB-BA84-4045-8469-55D549145402}" WorkUnitID="{1084BABA-C879-4451-93BF-6C26F4C5E8A5}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="StarCollected" ID="{10A8CE16-65D3-45C9-909B-515266C3C008}" WorkUnitID="{1084BABA-C879-4451-93BF-6C26F4C5E8A5}"/>
+							<Position X="4" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="StopAll" ID="{5C350601-27AA-4A47-A95F-C4E0731764B8}" WorkUnitID="{DE2B2C6A-3C73-4E79-97C4-D75F0447AF56}"/>
+							<Position X="5" Y="1"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="Collection_SideChain" ID="{0AC7033F-EE7F-40DC-9872-AB880FF572AA}"/>
+							<Value>-47.3153252480706</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="StarPieces" ID="{EE923E92-66FB-4362-B131-09AC0F0151DD}"/>
-							<Value>4.84</Value>
+							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SFXVolume" ID="{093962EF-E8CA-43D0-BE82-D37441923B11}"/>
 							<Value>0.8</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Stinger_Sidechain" ID="{5BCC8D51-CC68-4694-9420-EBBFB0A27176}"/>
+							<Value>-48</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="TimeOfDay" ID="{4D4D4E41-A7C2-4C27-BBB9-187052C5DBE3}"/>
@@ -43,24 +75,29 @@
 							<GameParameterRef Name="MusicVolume" ID="{9982D970-29A0-4E9D-BF25-9305AD648265}"/>
 							<Value>0.8</Value>
 						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="DistancetoLastPiece" ID="{2CA3F4AF-3F7E-4F8C-B0B2-A4F252B4028B}"/>
+							<Value>1.10259331635583E-312</Value>
+						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="UnCollected" ID="{DAE8B785-5E05-4000-8B4F-0B4D7C411B1E}"/>
-						<CurrentStateRef Name="UnCollected" ID="{E0C0F3C1-47E0-4A07-B746-72674C50C98D}"/>
+						<CurrentStateRef Name="Collected" ID="{ACA84E3A-E74B-4019-BE54-1AB89B8AEDBF}"/>
 						<CurrentStateRef Name="MountainTop" ID="{BB8568EA-4610-4276-8895-9D1004183F6D}"/>
 						<CurrentStateRef Name="Night" ID="{AD22D92D-1CCC-4F87-A90E-9215531F47B6}"/>
 						<CurrentStateRef Name="None" ID="{A1A15914-1F45-4E07-B301-252547CA9006}"/>
-						<CurrentStateRef Name="UnCollected" ID="{D8183886-D3F5-4EFA-AC27-082EEE35299F}"/>
+						<CurrentStateRef Name="Collected" ID="{CBD5E943-6A4A-43C4-83FE-0E8BED0BAD64}"/>
 						<CurrentStateRef Name="UnCollected" ID="{8D9B3500-3019-4730-963F-C083D9B4AF3C}"/>
 						<CurrentStateRef Name="Grounded" ID="{736BD908-6C0C-4E78-BEED-5B6589B28A27}"/>
 						<CurrentStateRef Name="UnCollected" ID="{DC4FB21A-B735-4CB3-958F-A4203217C395}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Star4" ID="{F7DB913D-0C14-415E-BCCC-D935DA2EE77F}"/>
+						<CurrentSwitchRef Name="Star0" ID="{E45D32F7-666A-4983-BBD7-FF1FFE8DA5A9}"/>
 						<CurrentSwitchRef Name="DryLand" ID="{19A1EA46-7F5A-43AD-A331-624181745DFF}"/>
 						<CurrentSwitchRef Name="Dirt" ID="{96BFD4C9-739B-42AB-9739-365199FBEFFF}"/>
-						<CurrentSwitchRef Name="StarsCollect4" ID="{AAF7D718-4B8D-44CA-8258-9E914DA9D224}"/>
+						<CurrentSwitchRef Name="StarsCollect1" ID="{2E804BD0-887D-4769-92A9-FC9455126DB2}"/>
 						<CurrentSwitchRef Name="Grounded" ID="{23104471-3C07-4516-ABA3-EF628EF7AD1E}"/>
+						<CurrentSwitchRef Name="Bass2nd" ID="{A9F16843-81E5-4E10-8E25-1ACD7F313D44}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

@@ -97,6 +97,68 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="StarAmbient" ID="{5D71FD56-104D-48F6-B74B-F8FE304A3295}">
+					<ChildrenList>
+						<Action Name="" ID="{0385F512-A35D-4F92-8872-DFD21CF7E765}" ShortID="415989726">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="StarAmbient" ID="{1D6E5837-A41E-495F-B0F0-DCE385332612}" WorkUnitID="{AD5C76CE-70EC-425A-BDBC-C67C996B61C1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="EndGame" ID="{3D6C0753-51AC-4F46-AD48-1606833EA7E2}">
+					<ChildrenList>
+						<Action Name="" ID="{712FA8DE-D65B-443A-A169-75F26AD7CF36}" ShortID="742635301">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EndGame" ID="{47907B18-B406-46F6-9D03-02E54AAB9D89}" WorkUnitID="{AD5C76CE-70EC-425A-BDBC-C67C996B61C1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopAmbientLocal" ID="{4530D3D3-7FCF-484A-8D44-A35DEB1ECCE9}">
+					<ChildrenList>
+						<Action Name="" ID="{1B07181A-A4DC-4983-9F4D-6E9D287CDAA0}" ShortID="168487053">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="StarAmbient" ID="{1D6E5837-A41E-495F-B0F0-DCE385332612}" WorkUnitID="{AD5C76CE-70EC-425A-BDBC-C67C996B61C1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopMusicforEnd" ID="{43F3079F-EFFB-4406-ABD5-1D56C3FD3D2C}">
+					<ChildrenList>
+						<Action Name="" ID="{C9022686-031C-4025-9D4C-C616F5DBA64F}" ShortID="40996924">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{D9833681-CD4C-4AE3-9C85-6A560B5C9DA1}" WorkUnitID="{AD5C76CE-70EC-425A-BDBC-C67C996B61C1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F49983C8-1F27-4A4D-A3F7-A7B7AF1BD8A9}" ShortID="80262619">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="StarAmbient" ID="{1D6E5837-A41E-495F-B0F0-DCE385332612}" WorkUnitID="{AD5C76CE-70EC-425A-BDBC-C67C996B61C1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
