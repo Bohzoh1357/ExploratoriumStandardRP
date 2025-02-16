@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: e233e7ef4d8ae34ab662f20c007d1656
     GuidInternal: 
-    m_lastTime: -8584619444853520781
+    m_lastTime: -8584619306152602087
     List:
     - name: AMB
       guid: 6fe166de750ee34fa2d758334da5dd85
@@ -220,7 +220,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 7499e83547751a438679ea52f9d44a40
     GuidInternal: 
-    m_lastTime: -8584619425626920957
+    m_lastTime: -8584619306150494268
     List:
     - name: General
       guid: 40349fa13a3f4f4690e0b70824685515
@@ -380,7 +380,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6a2c2bde733c794e97c4d75f0447af56
     GuidInternal: 
-    m_lastTime: -8584619448440061812
+    m_lastTime: -8584619306158835723
     List:
     - name: StopAll
       guid: 0106355caa27474aa95fc4e0731764b8
@@ -410,7 +410,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: baba841079c8514493bf6c26f4c5e8a5
     GuidInternal: 
-    m_lastTime: -8584619425989059300
+    m_lastTime: -8584619306158825732
     List:
     - name: EndGame
       guid: 53076c3dac51464fad481606833ea7e2
@@ -658,7 +658,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: d55cc9f1dc3cb949ac089a06a527b4da
     GuidInternal: 
-    m_lastTime: -8584619406503415427
+    m_lastTime: -8584619306158685875
     List:
     - name: Collection_SideChain
       guid: 3f03c70a7feedc409872ab880ff572aa
@@ -1566,7 +1566,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 89f24706b43e9d4da320960a82266e5d
     GuidInternal: 
-    m_lastTime: -8584619406503565274
+    m_lastTime: -8584619306150474287
     List:
     - name: EndGameBass
       guid: 71cebcbf267cf64fbdc8cd949070f58a
@@ -2105,7 +2105,7 @@ MonoBehaviour:
         guid: fbdfe5505c21f145ace96f4eacf0f09c
       Path: Triggers\Default Work Unit\StarCollected
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0600000011000000150000001f000000330000003400000036000000370000003b000000
+  ExpandedWaapiItemIds: 050000000600000011000000150000001f000000330000003400000036000000370000003b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
