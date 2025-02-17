@@ -10,8 +10,10 @@ public class StarIncrementTotal : MonoBehaviour
     public GameObject uiPickupCanvas;
 
     public bool canPickup;
+    public bool readyToDestroy;
 
     public float timeToDestroy;
+    public int measureCountdown = 0;
 
     private void Start()
     {
@@ -19,18 +21,19 @@ public class StarIncrementTotal : MonoBehaviour
 
         uiPickupCanvas = GameObject.Find("Canvas UI").transform.GetChild(6).gameObject;
         canPickup = false;
+        readyToDestroy = false;
     }
 
     private void Update()
     {
         if (canPickup && Input.GetKeyDown(KeyCode.E))
         {
-            gameManager.starIncrement();
             starState.SetValue();
-            collectionStinger.Post(this.gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, callbackDestroy); // callback stuff here, make a function for it
+            collectionStinger.Post(this.gameObject);
+            gameManager.starIncrement();
             uiPickupCanvas.SetActive(false);
             canPickup = false;
-            GameObject.Destroy(gameObject, timeToDestroy);
+            readyToDestroy = true;
         }
     }
 
@@ -56,10 +59,23 @@ public class StarIncrementTotal : MonoBehaviour
         }
     }
 
-    void callbackDestroy(object in_cookie, AkCallbackType in_type, object in_info)
+    void callbackDestroy()
     {
-        //GameObject.Destroy(gameObject);
-        Debug.Log("Entry Cue");
+        if(readyToDestroy)
+        {
+            if(measureCountdown > 0)
+            {
+                Debug.Log("ready to destroy");
+                readyToDestroy = false;
+                GameObject.Destroy(gameObject);
+
+            }
+            else
+            {
+                measureCountdown++;
+            }
+        }
+        
     }
 
 }

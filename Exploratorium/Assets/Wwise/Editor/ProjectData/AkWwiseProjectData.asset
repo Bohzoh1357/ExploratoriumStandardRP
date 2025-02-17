@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: e233e7ef4d8ae34ab662f20c007d1656
     GuidInternal: 
-    m_lastTime: -8584619306152602087
+    m_lastTime: -8584618358044879198
     List:
     - name: AMB
       guid: 6fe166de750ee34fa2d758334da5dd85
@@ -298,7 +298,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 672ac9ec31df4b44ada220da465dfa5d
       Path: Events\Ambiences\OceanBackground
-      maxAttenuation: 0
+      maxAttenuation: 150
       maxDuration: 0
       minDuration: 0
     - name: OceanWaves

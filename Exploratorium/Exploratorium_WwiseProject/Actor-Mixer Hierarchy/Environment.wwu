@@ -650,9 +650,14 @@
 						</BlendContainer>
 						<Sound Name="OceanBackground" ID="{7B640B51-29E5-48F0-B8C6-F32E991D41F2}" ShortID="270121258">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="RiverFar" ID="{BC3CA9E4-B418-4665-9F7C-5C90D8E15044}" WorkUnitID="{39837F9C-6D66-44E9-9F0A-66C1541AAD06}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
 								</Reference>

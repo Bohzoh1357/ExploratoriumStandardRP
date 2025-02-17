@@ -5875,8 +5875,8 @@ MonoBehaviour:
   stopSoundOnDestroy: 1
   Callbacks:
   - Flags:
-      value: 0
-    FunctionName: 
+      value: 512
+    FunctionName: callbackDestroy
     GameObject: {fileID: 6240738695930547880}
   soundEmitterObject: {fileID: 0}
   transitionDuration: 0

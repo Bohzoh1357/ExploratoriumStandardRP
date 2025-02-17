@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{A19F3440-3F3A-464F-90E0-B70824685515}",
     "Language": "SFX",
-    "Hash": "{A6F4FC16-446B-1485-134F-84788A8F5119}",
+    "Hash": "{0542820E-6E60-7FF7-EA08-CC42A7E08B95}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\General",
     "ShortName": "General",
     "Path": "General.bnk",
@@ -1327,6 +1327,7 @@
       "Name": "OceanBackground",
       "ObjectPath": "\\Events\\Ambiences\\OceanBackground",
       "GUID": "{ECC92A67-DF31-444B-ADA2-20DA465DFA5D}",
+      "MaxAttenuation": "150",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -2080,6 +2081,6 @@
     ]
    }
   ],
-  "FileHash": "{9B71075E-C510-0DD4-CD45-DAD25936A663}"
+  "FileHash": "{E2E2D223-B699-7A30-1825-244E953E0FD1}"
  }
 }
