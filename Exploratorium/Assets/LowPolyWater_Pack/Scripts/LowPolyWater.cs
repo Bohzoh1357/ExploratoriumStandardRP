@@ -8,6 +8,8 @@ namespace LowPolyWater
         public float waveFrequency = 0.5f;
         public float waveLength = 0.75f;
 
+        public SpecialEmitterCalled oceanEmitter;
+
         public AK.Wwise.Event waveSFX;
 
         private bool waveSoundEmitted;
@@ -29,6 +31,8 @@ namespace LowPolyWater
         {
             CreateMeshLowPoly(meshFilter);
             waveSoundEmitted = false;
+            oceanEmitter = GameObject.Find("OceanCollider").GetComponent<SpecialEmitterCalled>();   
+
         }
 
         /// <summary>
@@ -97,7 +101,7 @@ namespace LowPolyWater
                 {
                     waveSoundEmitted = true;
                     // emit sound
-                    waveSFX.Post(this.gameObject);
+                    oceanEmitter.postEvent();
                 } else if (waveSoundEmitted && v.y > 0.499f)
                 {
                     waveSoundEmitted = false;

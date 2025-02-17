@@ -315,7 +315,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: e78653215a1e0d41bd8737a92530a464
       Path: Events\Ambiences\OceanWaves
-      maxAttenuation: 0
+      maxAttenuation: 70
       maxDuration: 7.1
       minDuration: 7.1
     - name: RegionAmbience

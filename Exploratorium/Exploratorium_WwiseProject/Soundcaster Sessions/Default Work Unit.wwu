@@ -84,7 +84,7 @@
 						<CurrentStateRef Name="UnCollected" ID="{DAE8B785-5E05-4000-8B4F-0B4D7C411B1E}"/>
 						<CurrentStateRef Name="UnCollected" ID="{E0C0F3C1-47E0-4A07-B746-72674C50C98D}"/>
 						<CurrentStateRef Name="Field" ID="{5FF7C1A7-EEB9-4B9F-AA3A-D1FDE12E5479}"/>
-						<CurrentStateRef Name="Day" ID="{A336EC3A-F2E9-44A3-9C98-B427A304A06B}"/>
+						<CurrentStateRef Name="Night" ID="{AD22D92D-1CCC-4F87-A90E-9215531F47B6}"/>
 						<CurrentStateRef Name="None" ID="{A1A15914-1F45-4E07-B301-252547CA9006}"/>
 						<CurrentStateRef Name="UnCollected" ID="{D8183886-D3F5-4EFA-AC27-082EEE35299F}"/>
 						<CurrentStateRef Name="UnCollected" ID="{8D9B3500-3019-4730-963F-C083D9B4AF3C}"/>

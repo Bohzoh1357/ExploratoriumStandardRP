@@ -8313,6 +8313,7 @@ GameObject:
   - component: {fileID: 342609760}
   - component: {fileID: 342609759}
   - component: {fileID: 342609765}
+  - component: {fileID: 342609766}
   m_Layer: 0
   m_Name: OceanCollider
   m_TagString: Untagged
@@ -8341,7 +8342,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: -1
-  m_Mesh: {fileID: 1990464210}
+  m_Mesh: {fileID: 1981626079}
 --- !u!33 &342609760
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -8349,7 +8350,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342609758}
-  m_Mesh: {fileID: 1990464210}
+  m_Mesh: {fileID: 1981626079}
 --- !u!114 &342609761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9375,7 +9376,7 @@ MonoBehaviour:
     m_AreaError: 15
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
-  m_Mesh: {fileID: 1990464210}
+  m_Mesh: {fileID: 1981626079}
   m_VersionIndex: 1945
   m_IsSelectable: 1
   m_SelectedFaces: 
@@ -9500,6 +9501,24 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: edeee975b7a3edb408e440e1ac7d8b1f, type: 2}
+  UpdateInterval: 0.05
+  isAkRoomAware: 0
+--- !u!114 &342609766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342609758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17711085626520c46a80996f015b339d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 68712c1daf5f77d418ccad72cc526e59, type: 2}
   UpdateInterval: 0.05
   isAkRoomAware: 0
 --- !u!1001 &359546274
@@ -14090,6 +14109,7 @@ MonoBehaviour:
   waveHeight: 0.5
   waveFrequency: 0.2
   waveLength: 0.75
+  oceanEmitter: {fileID: 0}
   waveSFX:
     idInternal: 0
     valueGuidInternal: 
@@ -23537,6 +23557,7 @@ MonoBehaviour:
   waveHeight: 0.2
   waveFrequency: 0.03
   waveLength: 0.75
+  oceanEmitter: {fileID: 0}
   waveSFX:
     idInternal: 0
     valueGuidInternal: 
@@ -27323,13 +27344,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4502182011621074378, guid: a8cfb1ffe8396e2428bded19eb48fa52, type: 3}
   m_PrefabInstance: {fileID: 1962897521}
   m_PrefabAsset: {fileID: 0}
---- !u!43 &1990464210
+--- !u!43 &1981626079
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-66446
+  m_Name: pb_Mesh-66446(Clone)(Clone)(Clone)
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -27477,10 +27498,10 @@ Mesh:
     m_Center: {x: -183.94206, y: 41.204994, z: 336.78732}
     m_Extent: {x: 209.30766, y: 41.20507, z: 336.78732}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 0
+  m_CookingOptions: -1
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[0]': 1.0000002
   'm_MeshMetrics[1]': 1
   m_MeshOptimizationFlags: 1
   m_StreamData:
