@@ -12067,7 +12067,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7757001636743630262, guid: e442d854465eede4faf7ba13652f24d7, type: 3}
       propertyPath: Callbacks.Array.data[0].Flags.value
-      value: 1024
+      value: 512
       objectReference: {fileID: 0}
     - target: {fileID: 7967206778971724387, guid: e442d854465eede4faf7ba13652f24d7, type: 3}
       propertyPath: m_LocalPosition.x
