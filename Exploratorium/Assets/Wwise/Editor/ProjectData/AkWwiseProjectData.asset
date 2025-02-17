@@ -220,7 +220,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 7499e83547751a438679ea52f9d44a40
     GuidInternal: 
-    m_lastTime: -8584619306150494268
+    m_lastTime: -8584617943769995662
     List:
     - name: General
       guid: 40349fa13a3f4f4690e0b70824685515
@@ -317,7 +317,7 @@ MonoBehaviour:
       Path: Events\Ambiences\OceanWaves
       maxAttenuation: 70
       maxDuration: 7.1
-      minDuration: 7.1
+      minDuration: 6.3513927
     - name: RegionAmbience
       guid: 180f9d5798531c45873935871b8b9525
       id: 3100698545
@@ -410,7 +410,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: baba841079c8514493bf6c26f4c5e8a5
     GuidInternal: 
-    m_lastTime: -8584619306158825732
+    m_lastTime: -8584617943770137318
     List:
     - name: EndGame
       guid: 53076c3dac51464fad481606833ea7e2
@@ -497,6 +497,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: StopAmbientGlobal
+      guid: e7236e630935ad46a9555185d1547336
+      id: 955784398
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: baba841079c8514493bf6c26f4c5e8a5
+      - ElementName: StopAmbientGlobal
+        ObjectType: 3
+        guid: e7236e630935ad46a9555185d1547336
+      Path: Events\Music\StopAmbientGlobal
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: StopAmbientLocal
       guid: d3d33045cf7f4a488d44a35deb1ecce9
       id: 3494773628
@@ -514,9 +531,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: StopMusicforEnd
+    - name: StopRegionMusic
       guid: 9f07f343fbef0644abd51d56c3fd3d2c
-      id: 2279929306
+      id: 2688098310
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -524,10 +541,10 @@ MonoBehaviour:
       - ElementName: Music
         ObjectType: 12
         guid: baba841079c8514493bf6c26f4c5e8a5
-      - ElementName: StopMusicforEnd
+      - ElementName: StopRegionMusic
         ObjectType: 3
         guid: 9f07f343fbef0644abd51d56c3fd3d2c
-      Path: Events\Music\StopMusicforEnd
+      Path: Events\Music\StopRegionMusic
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0

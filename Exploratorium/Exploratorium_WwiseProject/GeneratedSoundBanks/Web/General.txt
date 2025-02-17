@@ -2,13 +2,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	155135507	RiverClose			\Ambiences\RiverClose	
 	362167352	RiverFar			\Ambiences\RiverFar	
 	644435109	OceanBackground			\Ambiences\OceanBackground	
+	955784398	StopAmbientGlobal			\Music\StopAmbientGlobal	
 	1863533813	Mountain_Wind2			\Ambiences\Mountain_Wind2	
 	1863533814	Mountain_Wind1			\Ambiences\Mountain_Wind1	
 	1866025847	FootStep			\SFX\FootStep	
 	1918324573	RunningWind_Play			\SFX\RunningWind_Play	
 	1941965176	toDay			\Music\toDay	
 	1972369290	StarCollected			\Music\StarCollected	
-	2279929306	StopMusicforEnd			\Music\StopMusicforEnd	
+	2688098310	StopRegionMusic			\Music\StopRegionMusic	
 	2883244301	Jump_Landing			\SFX\Jump_Landing	
 	3086540886	StopAll			\Default Work Unit\StopAll	
 	3100698545	RegionAmbience			\Ambiences\RegionAmbience	
@@ -106,7 +107,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	400684044	SFX_Player_StepWater3_v2_JL	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\18\{18704427-BF90-EEBF-39C0-2CDE4761F73E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Footsteps\StepWater\SFX_Player_StepWater3_v2_JL		26488
 	403844754	AMB_ENV_FieldBirds5_v1_JL	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\E8\{E8E4891F-311E-E470-115F-1DA209789EF5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\AMB\RegionAmbiences\Field_Ambience\Birds\FieldBirds\AMB_ENV_FieldBirds5_v1_JL		56162
 	405912730	RiverFar	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\D3\{D3D1FCBC-23C6-F807-BF18-8DB16CABDAAB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Emitters\RiverFar		1415209
-	467309718	AMB_ENV_OceanWaves_v1_JL 4	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\EF\{EFDBB2C2-81B1-E960-32D6-F7FDF49AF2D2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Emitters\OceanWaves\AMB_ENV_OceanWaves_v1_JL 4		104540
+	467309718	AMB_ENV_OceanWaves_v1_JL 4	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\D9\{D975CC04-1B67-9643-DE81-BE8779339BB5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Emitters\OceanWaves\AMB_ENV_OceanWaves_v1_JL 4		93071
 	469979251	StartStinger_KalimbaLow_80-50bpm4-4_L3M(11_626S)	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\0D\{0D904924-CD08-5E02-09C3-A6D083136304}.wem		\Interactive Music Hierarchy\Default Work Unit\StartStinger\StartStinger_KalimbaLow_80-50bpm4-4_L3M(11_626S)		209776
 	493226867	SFX_Player_StepGrass4_v2_JL	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\6A\{6AA979B0-A863-5D6F-5D15-89C05CA8ED73}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Footsteps\Non-Water\StepGrass\SFX_Player_StepGrass4_v2_JL		9004
 	499896437	SFX_Player_StepLeaves5_v2_JL	C:\Users\52stu\Documents\GitHub\ExploratoriumStandardRP\Exploratorium\Exploratorium_WwiseProject\.cache\F9\{F9388D99-CCB5-799B-F116-157DE8038B5F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player\Footsteps\Non-Water\StepLeaves\SFX_Player_StepLeaves5_v2_JL		9724

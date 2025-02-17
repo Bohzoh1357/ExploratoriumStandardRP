@@ -5823,9 +5823,14 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 8f8084397cfb48c4bbc8764187812115, type: 2}
+  stopRegionMusic:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a011eafa64614a8448e7c888d0a5b25f, type: 2}
   uiPickupCanvas: {fileID: 0}
   canPickup: 0
-  timeToDestroy: 5
+  readyToDestroy: 0
+  endGame: 0
 --- !u!114 &2498725914010333909
 MonoBehaviour:
   m_ObjectHideFlags: 0

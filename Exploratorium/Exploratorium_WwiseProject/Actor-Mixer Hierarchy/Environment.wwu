@@ -755,6 +755,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="AMB_ENV_OceanWaves_v1_JL 4" ID="{10CF20E2-C21E-4678-B690-E4BA8D2E03E1}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.404907156364987"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.748607417000383"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>AMB_ENV_OceanWaves_v1_JL 4.wav</AudioFile>
 											<MediaIDList>

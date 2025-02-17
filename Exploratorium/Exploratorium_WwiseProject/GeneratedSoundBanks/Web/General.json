@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{A19F3440-3F3A-464F-90E0-B70824685515}",
     "Language": "SFX",
-    "Hash": "{A40A01A9-CD02-B064-4F59-6E9C59C4AD94}",
+    "Hash": "{CC93E758-0B4B-8123-DEAE-B203510E8FF8}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\General",
     "ShortName": "General",
     "Path": "General.bnk",
@@ -333,7 +333,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "AMB_ENV_OceanWaves_v1_JL 4.wav",
-      "CachePath": "EF/{EFDBB2C2-81B1-E960-32D6-F7FDF49AF2D2}.wem"
+      "CachePath": "D9/{D975CC04-1B67-9643-DE81-BE8779339BB5}.wem"
      },
      {
       "Id": "469979251",
@@ -1342,7 +1342,7 @@
       "GUID": "{215386E7-1E5A-410D-BD87-37A92530A464}",
       "MaxAttenuation": "70",
       "DurationType": "OneShot",
-      "DurationMin": "7.1",
+      "DurationMin": "6.3513927",
       "DurationMax": "7.1",
       "MediaRefs": [
        {
@@ -1625,6 +1625,16 @@
       "DurationMax": "0"
      },
      {
+      "Id": "955784398",
+      "Name": "StopAmbientGlobal",
+      "ObjectPath": "\\Events\\Music\\StopAmbientGlobal",
+      "GUID": "{636E23E7-3509-46AD-A955-5185D1547336}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "3494773628",
       "Name": "StopAmbientLocal",
       "ObjectPath": "\\Events\\Music\\StopAmbientLocal",
@@ -1635,9 +1645,9 @@
       "DurationMax": "0"
      },
      {
-      "Id": "2279929306",
-      "Name": "StopMusicforEnd",
-      "ObjectPath": "\\Events\\Music\\StopMusicforEnd",
+      "Id": "2688098310",
+      "Name": "StopRegionMusic",
+      "ObjectPath": "\\Events\\Music\\StopRegionMusic",
       "GUID": "{43F3079F-EFFB-4406-ABD5-1D56C3FD3D2C}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
@@ -2082,6 +2092,6 @@
     ]
    }
   ],
-  "FileHash": "{0C79C1FA-C275-8917-BBF0-3F0889A57938}"
+  "FileHash": "{2411A9CA-D4D2-243B-916B-2E560420510F}"
  }
 }

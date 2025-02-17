@@ -31,8 +31,9 @@ namespace AK
         static const AkUniqueID STARCOLLECTED = 1972369290U;
         static const AkUniqueID STARINITIALIZER = 3219695003U;
         static const AkUniqueID STOPALL = 3086540886U;
+        static const AkUniqueID STOPAMBIENTGLOBAL = 955784398U;
         static const AkUniqueID STOPAMBIENTLOCAL = 3494773628U;
-        static const AkUniqueID STOPMUSICFOREND = 2279929306U;
+        static const AkUniqueID STOPREGIONMUSIC = 2688098310U;
         static const AkUniqueID TODAY = 1941965176U;
     } // namespace EVENTS
 
