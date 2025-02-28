@@ -133,7 +133,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="StopMusicforEnd" ID="{43F3079F-EFFB-4406-ABD5-1D56C3FD3D2C}">
+				<Event Name="StopRegionMusic" ID="{43F3079F-EFFB-4406-ABD5-1D56C3FD3D2C}">
 					<ChildrenList>
 						<Action Name="" ID="{C9022686-031C-4025-9D4C-C616F5DBA64F}" ShortID="40996924">
 							<PropertyList>
@@ -146,6 +146,10 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopAmbientGlobal" ID="{636E23E7-3509-46AD-A955-5185D1547336}">
+					<ChildrenList>
 						<Action Name="" ID="{F49983C8-1F27-4A4D-A3F7-A7B7AF1BD8A9}" ShortID="80262619">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>

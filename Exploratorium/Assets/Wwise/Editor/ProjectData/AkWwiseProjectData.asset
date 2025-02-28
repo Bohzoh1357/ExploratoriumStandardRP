@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 066e43001ae1ea44b23b8efbcb25ca6e
     GuidInternal: 
-    m_lastTime: -8584628206874130171
+    m_lastTime: -8584620318171570021
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: e233e7ef4d8ae34ab662f20c007d1656
     GuidInternal: 
-    m_lastTime: -8584619444853520781
+    m_lastTime: -8584608978475196941
     List:
     - name: AMB
       guid: 6fe166de750ee34fa2d758334da5dd85
@@ -220,7 +220,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 7499e83547751a438679ea52f9d44a40
     GuidInternal: 
-    m_lastTime: -8584619425626920957
+    m_lastTime: -8584608978475186941
     List:
     - name: General
       guid: 40349fa13a3f4f4690e0b70824685515
@@ -248,7 +248,7 @@ MonoBehaviour:
     ParentPath: Events\Ambiences
     guid: 8cd75206366a67409f616615b585095f
     GuidInternal: 
-    m_lastTime: -8584623761179730218
+    m_lastTime: -8584620318217474188
     List:
     - name: Mountain_Wind1
       guid: 12cffe651f1a9642baf330078f351c4b
@@ -298,7 +298,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 672ac9ec31df4b44ada220da465dfa5d
       Path: Events\Ambiences\OceanBackground
-      maxAttenuation: 0
+      maxAttenuation: 150
       maxDuration: 0
       minDuration: 0
     - name: OceanWaves
@@ -315,9 +315,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: e78653215a1e0d41bd8737a92530a464
       Path: Events\Ambiences\OceanWaves
-      maxAttenuation: 0
+      maxAttenuation: 70
       maxDuration: 7.1
-      minDuration: 7.1
+      minDuration: 6.3513927
     - name: RegionAmbience
       guid: 180f9d5798531c45873935871b8b9525
       id: 3100698545
@@ -380,7 +380,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6a2c2bde733c794e97c4d75f0447af56
     GuidInternal: 
-    m_lastTime: -8584619448440061812
+    m_lastTime: -8584618657983741853
     List:
     - name: StopAll
       guid: 0106355caa27474aa95fc4e0731764b8
@@ -410,7 +410,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: baba841079c8514493bf6c26f4c5e8a5
     GuidInternal: 
-    m_lastTime: -8584619425989059300
+    m_lastTime: -8584608978482160853
     List:
     - name: EndGame
       guid: 53076c3dac51464fad481606833ea7e2
@@ -497,6 +497,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: StopAmbientGlobal
+      guid: e7236e630935ad46a9555185d1547336
+      id: 955784398
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: baba841079c8514493bf6c26f4c5e8a5
+      - ElementName: StopAmbientGlobal
+        ObjectType: 3
+        guid: e7236e630935ad46a9555185d1547336
+      Path: Events\Music\StopAmbientGlobal
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: StopAmbientLocal
       guid: d3d33045cf7f4a488d44a35deb1ecce9
       id: 3494773628
@@ -514,9 +531,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: StopMusicforEnd
+    - name: StopRegionMusic
       guid: 9f07f343fbef0644abd51d56c3fd3d2c
-      id: 2279929306
+      id: 2688098310
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -524,10 +541,10 @@ MonoBehaviour:
       - ElementName: Music
         ObjectType: 12
         guid: baba841079c8514493bf6c26f4c5e8a5
-      - ElementName: StopMusicforEnd
+      - ElementName: StopRegionMusic
         ObjectType: 3
         guid: 9f07f343fbef0644abd51d56c3fd3d2c
-      Path: Events\Music\StopMusicforEnd
+      Path: Events\Music\StopRegionMusic
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -559,7 +576,7 @@ MonoBehaviour:
     ParentPath: Events\SFX
     guid: 620fa6b10a6a66419f308667bf0f44ab
     GuidInternal: 
-    m_lastTime: -8584623739216153921
+    m_lastTime: -8584620318217455512
     List:
     - name: FootStep
       guid: b5127a5b2683bf4e870c4d46726fa75b
@@ -658,7 +675,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: d55cc9f1dc3cb949ac089a06a527b4da
     GuidInternal: 
-    m_lastTime: -8584619406503415427
+    m_lastTime: -8584618657983708715
     List:
     - name: Collection_SideChain
       guid: 3f03c70a7feedc409872ab880ff572aa
@@ -784,7 +801,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: cef5d7a649734543b3c70166ac695192
     GuidInternal: 
-    m_lastTime: -8584620433446073872
+    m_lastTime: -8584620318171596427
     List:
     - name: Jump
       guid: 387f017b7dd5a14ea97f6f89d1833bc1
@@ -1566,7 +1583,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 89f24706b43e9d4da320960a82266e5d
     GuidInternal: 
-    m_lastTime: -8584619406503565274
+    m_lastTime: -8584608938724167278
     List:
     - name: EndGameBass
       guid: 71cebcbf267cf64fbdc8cd949070f58a
@@ -2026,9 +2043,9 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
-    - name: Step_Water
+    - name: Step_Physical
       guid: cebafb0c9dbd374181cd5cfe7bfda1f4
-      id: 901951531
+      id: 1817007209
       PathAndIcons:
       - ElementName: Switches
         ObjectType: 5
@@ -2036,14 +2053,14 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 89f24706b43e9d4da320960a82266e5d
-      - ElementName: Step_Water
+      - ElementName: Step_Physical
         ObjectType: 11
         guid: cebafb0c9dbd374181cd5cfe7bfda1f4
-      Path: Switches\Default Work Unit\Step_Water
+      Path: Switches\Default Work Unit\Step_Physical
       values:
-      - name: DryLand
-        guid: 46eaa1195a7fad43a331624181745dff
-        id: 3451314871
+      - name: Metal
+        guid: 08b3adfc5d02444a86a84cd486080b20
+        id: 2473969246
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -2051,10 +2068,42 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 89f24706b43e9d4da320960a82266e5d
-        - ElementName: Step_Water
+        - ElementName: Step_Physical
           ObjectType: 11
           guid: cebafb0c9dbd374181cd5cfe7bfda1f4
-        - ElementName: DryLand
+        - ElementName: Metal
+          ObjectType: 10
+          guid: 08b3adfc5d02444a86a84cd486080b20
+      - name: Rocks
+        guid: 666b10de4e87454683f91f79dd546a59
+        id: 1863277117
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 89f24706b43e9d4da320960a82266e5d
+        - ElementName: Step_Physical
+          ObjectType: 11
+          guid: cebafb0c9dbd374181cd5cfe7bfda1f4
+        - ElementName: Rocks
+          ObjectType: 10
+          guid: 666b10de4e87454683f91f79dd546a59
+      - name: Terrain
+        guid: 46eaa1195a7fad43a331624181745dff
+        id: 354267144
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 89f24706b43e9d4da320960a82266e5d
+        - ElementName: Step_Physical
+          ObjectType: 11
+          guid: cebafb0c9dbd374181cd5cfe7bfda1f4
+        - ElementName: Terrain
           ObjectType: 10
           guid: 46eaa1195a7fad43a331624181745dff
       - name: Water
@@ -2067,7 +2116,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 89f24706b43e9d4da320960a82266e5d
-        - ElementName: Step_Water
+        - ElementName: Step_Physical
           ObjectType: 11
           guid: cebafb0c9dbd374181cd5cfe7bfda1f4
         - ElementName: Water
@@ -2088,7 +2137,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: e001c2d1a33b934984704e0e8c082691
     GuidInternal: 
-    m_lastTime: -8584622070977617015
+    m_lastTime: -8584620318171590145
     List:
     - name: StarCollected
       guid: fbdfe5505c21f145ace96f4eacf0f09c
@@ -2105,7 +2154,7 @@ MonoBehaviour:
         guid: fbdfe5505c21f145ace96f4eacf0f09c
       Path: Triggers\Default Work Unit\StarCollected
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0600000011000000150000001f000000330000003400000036000000370000003b000000
+  ExpandedWaapiItemIds: 05000000060000000700000011000000150000001b0000001f000000330000003400000036000000370000003b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

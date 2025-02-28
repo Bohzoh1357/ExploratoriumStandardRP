@@ -31,8 +31,9 @@ namespace AK
         static const AkUniqueID STARCOLLECTED = 1972369290U;
         static const AkUniqueID STARINITIALIZER = 3219695003U;
         static const AkUniqueID STOPALL = 3086540886U;
+        static const AkUniqueID STOPAMBIENTGLOBAL = 955784398U;
         static const AkUniqueID STOPAMBIENTLOCAL = 3494773628U;
-        static const AkUniqueID STOPMUSICFOREND = 2279929306U;
+        static const AkUniqueID STOPREGIONMUSIC = 2688098310U;
         static const AkUniqueID TODAY = 1941965176U;
     } // namespace EVENTS
 
@@ -224,16 +225,18 @@ namespace AK
             } // namespace SWITCH
         } // namespace STEP
 
-        namespace STEP_WATER
+        namespace STEP_PHYSICAL
         {
-            static const AkUniqueID GROUP = 901951531U;
+            static const AkUniqueID GROUP = 1817007209U;
 
             namespace SWITCH
             {
-                static const AkUniqueID DRYLAND = 3451314871U;
+                static const AkUniqueID METAL = 2473969246U;
+                static const AkUniqueID ROCKS = 1863277117U;
+                static const AkUniqueID TERRAIN = 354267144U;
                 static const AkUniqueID WATER = 2654748154U;
             } // namespace SWITCH
-        } // namespace STEP_WATER
+        } // namespace STEP_PHYSICAL
 
     } // namespace SWITCHES
 

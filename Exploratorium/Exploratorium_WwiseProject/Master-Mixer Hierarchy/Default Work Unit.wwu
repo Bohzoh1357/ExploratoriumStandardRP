@@ -151,8 +151,8 @@
 																						<Flags>5</Flags>
 																					</Point>
 																					<Point>
-																						<XPos>-34.84234</XPos>
-																						<YPos>-0.02254</YPos>
+																						<XPos>-28.7275</XPos>
+																						<YPos>0</YPos>
 																						<Flags>0</Flags>
 																						<SegmentShape>Log1</SegmentShape>
 																					</Point>
@@ -188,8 +188,9 @@
 																		<Custom>
 																			<Effect Name="Meter (Custom)" ID="{7A57BBBD-0579-4593-8AE4-32343B2DE9D1}" ShortID="429091368" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
 																				<PropertyList>
+																					<Property Name="Hold" Type="Real32" Value="2"/>
 																					<Property Name="Max" Type="Real32" Value="6"/>
-																					<Property Name="ReleaseTime" Type="Real32" Value="5"/>
+																					<Property Name="ReleaseTime" Type="Real32" Value="2"/>
 																				</PropertyList>
 																				<PluginData>
 	<GameParameter Name="Collection_SideChain" ID="{0AC7033F-EE7F-40DC-9872-AB880FF572AA}"/>

@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public AK.Wwise.Event stopMusic;
     public AK.Wwise.Event endgameMusic;
     public GameObject lastStar;
+    public bool timerEnable;
     public void triggerFoundMinimap()
     {
         ui.isMinimapFound = true;
@@ -34,19 +35,20 @@ public class GameManager : MonoBehaviour
         timer = 0.0f;
         endgameTimer = 0.0f;
         starCountRTPC.SetGlobalValue(starCount);
+        timerEnable = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (starCount == 4 && endgameTimer < 2.0f)
+        if(timerEnable == true)
         {
             endgameTimer += Time.deltaTime;
-        }
-        if (endgameTimer > 2.0f && endgameTimer < 10.0f)
-        {
-            endGame();
-            endgameTimer = 20.0f;
+            if (endgameTimer > 2.0f)
+            {
+                endGame();
+                timerEnable = false;
+            }
         }
         if (starCount == 5)
         {
@@ -66,7 +68,11 @@ public class GameManager : MonoBehaviour
 
     }
 
-    //if this could be triggered on a callback AND starcount being 4 that would be great
+    public void delayEndGame()
+    {
+        timerEnable = true;
+    }
+
     private void endGame()
     {
         lastStar = GameObject.FindWithTag("star");

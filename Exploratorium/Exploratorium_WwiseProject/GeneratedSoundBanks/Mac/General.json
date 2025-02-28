@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{A19F3440-3F3A-464F-90E0-B70824685515}",
     "Language": "SFX",
-    "Hash": "{C00442D7-649E-A853-E40F-FB827B7DF5F6}",
+    "Hash": "{6DECB0A6-FEAF-9305-FEAD-961120CF1EA7}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\General",
     "ShortName": "General",
     "Path": "General.bnk",
@@ -56,6 +56,14 @@
       "CachePath": "66/{66BD25CF-A9EC-FFC2-86E0-BD97A14075E3}.wem"
      },
      {
+      "Id": "77591309",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_PlayerStepMetal5.wav",
+      "CachePath": "2B/{2BE8288F-2BA0-B137-858D-EA5EC8DF93D6}.wem"
+     },
+     {
       "Id": "82504770",
       "Language": "SFX",
       "Streaming": "false",
@@ -86,6 +94,14 @@
       "Location": "Memory",
       "ShortName": "Day6_80bpm4-4_L2M.wav",
       "CachePath": "1B/{1B3995EF-63F3-FFFC-F8FE-8169B851BE4D}.wem"
+     },
+     {
+      "Id": "118943811",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_PlayerStepRock5.wav",
+      "CachePath": "51/{51F76217-197E-34FD-BA56-FAEC5B3719F5}.wem"
      },
      {
       "Id": "129690830",
@@ -144,6 +160,14 @@
       "CachePath": "9F/{9F214219-5AF1-A418-DAA1-9C723260F64E}.wem"
      },
      {
+      "Id": "201061163",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_PlayerStepRock1.wav",
+      "CachePath": "AA/{AA9CFA74-B037-DD56-9130-3B604D6CE2C4}.wem"
+     },
+     {
       "Id": "213707038",
       "Language": "SFX",
       "Streaming": "false",
@@ -182,6 +206,22 @@
       "Location": "Memory",
       "ShortName": "StarAmb_Bass1-8tMinor_80bpm4-4_L8M_P3B.wav",
       "CachePath": "7D/{7D3D6F58-2ABA-A915-F32F-C1B5524F6051}.wem"
+     },
+     {
+      "Id": "254429705",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_PlayerStepRock4.wav",
+      "CachePath": "29/{29100186-8F8F-BE09-A0E3-F33692246EB2}.wem"
+     },
+     {
+      "Id": "259063893",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_PlayerStepMetal4.wav",
+      "CachePath": "9F/{9F6A6A26-4A42-8516-5172-F3EBFCD2B69C}.wem"
      },
      {
       "Id": "272238155",
@@ -333,7 +373,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "AMB_ENV_OceanWaves_v1_JL 4.wav",
-      "CachePath": "EF/{EFDBB2C2-81B1-E960-32D6-F7FDF49AF2D2}.wem"
+      "CachePath": "D9/{D975CC04-1B67-9643-DE81-BE8779339BB5}.wem"
      },
      {
       "Id": "469979251",
@@ -374,6 +414,14 @@
       "Location": "Memory",
       "ShortName": "SFX_Player_StepGrass3_v2_JL.wav",
       "CachePath": "C2/{C2F9BEC9-F146-5D21-1444-4E0144A3A571}.wem"
+     },
+     {
+      "Id": "512024194",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_PlayerStepRock2.wav",
+      "CachePath": "E8/{E8C93876-ACB5-03C2-5020-42D277FCA133}.wem"
      },
      {
       "Id": "522882346",
@@ -528,12 +576,28 @@
       "CachePath": "C0/{C0B8B270-DA7B-BC27-7040-51F200A5B14C}.wem"
      },
      {
+      "Id": "693988198",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_PlayerStepMetal1.wav",
+      "CachePath": "3F/{3F78F814-B156-ED4F-7AC9-F15EF2F1F049}.wem"
+     },
+     {
       "Id": "708755240",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "AMB_ENV_FieldBirds1_v1_JL.wav",
       "CachePath": "3F/{3F9ED41B-0DA5-B5CC-DC9F-1D847F3F0FDF}.wem"
+     },
+     {
+      "Id": "712342862",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_PlayerStepMetal2.wav",
+      "CachePath": "7C/{7CA70A52-F80C-C64B-221B-2A34D503A763}.wem"
      },
      {
       "Id": "713448589",
@@ -598,6 +662,14 @@
       "Location": "Memory",
       "ShortName": "SFX_UI_InvOpen_v1_JL.wav",
       "CachePath": "C7/{C71651E9-1C6E-F6F4-6566-AB76478F0054}.wem"
+     },
+     {
+      "Id": "800249334",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_PlayerStepMetal3.wav",
+      "CachePath": "A4/{A413078E-78FE-DED5-8428-F9B2BF7BB5C3}.wem"
      },
      {
       "Id": "801546477",
@@ -688,6 +760,14 @@
       "CachePath": "02/{023C2D43-ED4F-04D2-6B11-376E3285AD13}.wem"
      },
      {
+      "Id": "947527067",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_PlayerStepRock6.wav",
+      "CachePath": "2C/{2C7D3FF9-B078-9988-4A41-106532993BAB}.wem"
+     },
+     {
       "Id": "958879665",
       "Language": "SFX",
       "Streaming": "false",
@@ -768,6 +848,14 @@
       "CachePath": "C1/{C1614842-8AB2-40FF-C220-02209A8F0141}.wem"
      },
      {
+      "Id": "1026412962",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_PlayerStepMetal6.wav",
+      "CachePath": "FB/{FBC37C2F-CA98-9EA6-4D10-B15C88FF8344}.wem"
+     },
+     {
       "Id": "1048791186",
       "Language": "SFX",
       "Streaming": "false",
@@ -782,6 +870,14 @@
       "Location": "Memory",
       "ShortName": "Day1_ReversePiano_80bpm4-4_L3M.wav",
       "CachePath": "46/{4640FA48-937B-5508-C685-01A0B3F01D06}.wem"
+     },
+     {
+      "Id": "1072278593",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_PlayerStepRock3.wav",
+      "CachePath": "C9/{C91F0E5E-685B-3668-C070-DAD6FB2B502A}.wem"
      }
     ],
     "Plugins": {
@@ -886,8 +982,36 @@
        {
         "SwitchValue": {
          "GroupType": "Switch",
-         "GroupId": "901951531",
-         "Id": "3451314871",
+         "GroupId": "1817007209",
+         "Id": "2473969246",
+         "GUID": "{FCADB308-025D-4A44-86A8-4CD486080B20}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "77591309"
+         },
+         {
+          "Id": "259063893"
+         },
+         {
+          "Id": "693988198"
+         },
+         {
+          "Id": "712342862"
+         },
+         {
+          "Id": "800249334"
+         },
+         {
+          "Id": "1026412962"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1817007209",
+         "Id": "354267144",
          "GUID": "{19A1EA46-7F5A-43AD-A331-624181745DFF}",
          "Default": "true"
         },
@@ -1007,7 +1131,35 @@
        {
         "SwitchValue": {
          "GroupType": "Switch",
-         "GroupId": "901951531",
+         "GroupId": "1817007209",
+         "Id": "1863277117",
+         "GUID": "{DE106B66-874E-4645-83F9-1F79DD546A59}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "118943811"
+         },
+         {
+          "Id": "201061163"
+         },
+         {
+          "Id": "254429705"
+         },
+         {
+          "Id": "512024194"
+         },
+         {
+          "Id": "947527067"
+         },
+         {
+          "Id": "1072278593"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1817007209",
          "Id": "2654748154",
          "GUID": "{7E8283D3-D580-47B6-8B04-A1752ADB180F}"
         },
@@ -1081,8 +1233,36 @@
        {
         "SwitchValue": {
          "GroupType": "Switch",
-         "GroupId": "901951531",
-         "Id": "3451314871",
+         "GroupId": "1817007209",
+         "Id": "2473969246",
+         "GUID": "{FCADB308-025D-4A44-86A8-4CD486080B20}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "77591309"
+         },
+         {
+          "Id": "259063893"
+         },
+         {
+          "Id": "693988198"
+         },
+         {
+          "Id": "712342862"
+         },
+         {
+          "Id": "800249334"
+         },
+         {
+          "Id": "1026412962"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1817007209",
+         "Id": "354267144",
          "GUID": "{19A1EA46-7F5A-43AD-A331-624181745DFF}",
          "Default": "true"
         },
@@ -1202,7 +1382,35 @@
        {
         "SwitchValue": {
          "GroupType": "Switch",
-         "GroupId": "901951531",
+         "GroupId": "1817007209",
+         "Id": "1863277117",
+         "GUID": "{DE106B66-874E-4645-83F9-1F79DD546A59}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "118943811"
+         },
+         {
+          "Id": "201061163"
+         },
+         {
+          "Id": "254429705"
+         },
+         {
+          "Id": "512024194"
+         },
+         {
+          "Id": "947527067"
+         },
+         {
+          "Id": "1072278593"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1817007209",
          "Id": "2654748154",
          "GUID": "{7E8283D3-D580-47B6-8B04-A1752ADB180F}"
         },
@@ -1327,6 +1535,7 @@
       "Name": "OceanBackground",
       "ObjectPath": "\\Events\\Ambiences\\OceanBackground",
       "GUID": "{ECC92A67-DF31-444B-ADA2-20DA465DFA5D}",
+      "MaxAttenuation": "150",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -1339,8 +1548,9 @@
       "Name": "OceanWaves",
       "ObjectPath": "\\Events\\Ambiences\\OceanWaves",
       "GUID": "{215386E7-1E5A-410D-BD87-37A92530A464}",
+      "MaxAttenuation": "70",
       "DurationType": "OneShot",
-      "DurationMin": "7.1",
+      "DurationMin": "6.3513927",
       "DurationMax": "7.1",
       "MediaRefs": [
        {
@@ -1623,6 +1833,16 @@
       "DurationMax": "0"
      },
      {
+      "Id": "955784398",
+      "Name": "StopAmbientGlobal",
+      "ObjectPath": "\\Events\\Music\\StopAmbientGlobal",
+      "GUID": "{636E23E7-3509-46AD-A955-5185D1547336}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "3494773628",
       "Name": "StopAmbientLocal",
       "ObjectPath": "\\Events\\Music\\StopAmbientLocal",
@@ -1633,9 +1853,9 @@
       "DurationMax": "0"
      },
      {
-      "Id": "2279929306",
-      "Name": "StopMusicforEnd",
-      "ObjectPath": "\\Events\\Music\\StopMusicforEnd",
+      "Id": "2688098310",
+      "Name": "StopRegionMusic",
+      "ObjectPath": "\\Events\\Music\\StopRegionMusic",
       "GUID": "{43F3079F-EFFB-4406-ABD5-1D56C3FD3D2C}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
@@ -1956,22 +2176,34 @@
       ]
      },
      {
-      "Id": "901951531",
-      "Name": "Step_Water",
-      "ObjectPath": "\\Switches\\Default Work Unit\\Step_Water",
+      "Id": "1817007209",
+      "Name": "Step_Physical",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Step_Physical",
       "GUID": "{0CFBBACE-BD9D-4137-81CD-5CFE7BFDA1F4}",
       "Switches": [
        {
-        "Id": "2654748154",
-        "Name": "Water",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Water\\Water",
-        "GUID": "{7E8283D3-D580-47B6-8B04-A1752ADB180F}"
+        "Id": "354267144",
+        "Name": "Terrain",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Physical\\Terrain",
+        "GUID": "{19A1EA46-7F5A-43AD-A331-624181745DFF}"
        },
        {
-        "Id": "3451314871",
-        "Name": "DryLand",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Water\\DryLand",
-        "GUID": "{19A1EA46-7F5A-43AD-A331-624181745DFF}"
+        "Id": "1863277117",
+        "Name": "Rocks",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Physical\\Rocks",
+        "GUID": "{DE106B66-874E-4645-83F9-1F79DD546A59}"
+       },
+       {
+        "Id": "2473969246",
+        "Name": "Metal",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Physical\\Metal",
+        "GUID": "{FCADB308-025D-4A44-86A8-4CD486080B20}"
+       },
+       {
+        "Id": "2654748154",
+        "Name": "Water",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Physical\\Water",
+        "GUID": "{7E8283D3-D580-47B6-8B04-A1752ADB180F}"
        }
       ]
      },
@@ -2080,6 +2312,6 @@
     ]
    }
   ],
-  "FileHash": "{DA40498B-2E24-287D-B7EE-262707EB57C5}"
+  "FileHash": "{D8DA9910-5E58-C9BA-14D7-CCA0085A71DC}"
  }
 }

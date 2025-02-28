@@ -16,6 +16,12 @@
 						<ObjectRef Name="Collection" ID="{D6FE1A1C-98B0-4459-B03B-1E9FDD29175F}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
 					</ObjectList>
 				</MixingSession>
+				<MixingSession Name="MusicAndEmit" ID="{E24440D2-DF94-4968-85C2-C6CCCB2F98F0}">
+					<ObjectList>
+						<ObjectRef Name="Main" ID="{9D9F2C8D-1C1B-4AF5-823A-1A45DA7648C8}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+						<ObjectRef Name="Stinger" ID="{14FD5C67-5E52-4301-A97D-FA1D29F4B567}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+					</ObjectList>
+				</MixingSession>
 			</ChildrenList>
 		</WorkUnit>
 	</MixingSessions>

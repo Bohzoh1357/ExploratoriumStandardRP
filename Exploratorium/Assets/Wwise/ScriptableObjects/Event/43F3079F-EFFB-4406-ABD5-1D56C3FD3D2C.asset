@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b11e93b32902f6745b5bc27f4f5cc4eb, type: 3}
   m_Name: 43F3079F-EFFB-4406-ABD5-1D56C3FD3D2C
   m_EditorClassIdentifier: 
-  objectName: StopMusicforEnd
-  id: 2279929306
+  objectName: StopRegionMusic
+  id: 2688098310
   guid: 43F3079F-EFFB-4406-ABD5-1D56C3FD3D2C
   IsInUserDefinedSoundBank: 1
   IsAutoBankLoaded: 0

@@ -13,7 +13,7 @@
 						<ObjectRef Name="Mountain_Wind1" ID="{65FECF12-1A1F-4296-BAF3-30078F351C4B}" WorkUnitID="{0652D78C-6A36-4067-9F61-6615B585095F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="toDay" ID="{13A97A39-AD48-42C1-807C-6157ACCEDBEC}" WorkUnitID="{1084BABA-C879-4451-93BF-6C26F4C5E8A5}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RiverClose" ID="{86D69D3A-7ED9-43AC-957A-6A0628410A35}" WorkUnitID="{0652D78C-6A36-4067-9F61-6615B585095F}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="StopMusicforEnd" ID="{43F3079F-EFFB-4406-ABD5-1D56C3FD3D2C}" WorkUnitID="{1084BABA-C879-4451-93BF-6C26F4C5E8A5}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StopRegionMusic" ID="{43F3079F-EFFB-4406-ABD5-1D56C3FD3D2C}" WorkUnitID="{1084BABA-C879-4451-93BF-6C26F4C5E8A5}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="OceanBackground" ID="{ECC92A67-DF31-444B-ADA2-20DA465DFA5D}" WorkUnitID="{0652D78C-6A36-4067-9F61-6615B585095F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music" ID="{1084BABA-C879-4451-93BF-6C26F4C5E8A5}" WorkUnitID="{1084BABA-C879-4451-93BF-6C26F4C5E8A5}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RegionAmbience" ID="{579D0F18-5398-451C-8739-35871B8B9525}" WorkUnitID="{0652D78C-6A36-4067-9F61-6615B585095F}" Origin="Manual" Filter="7"/>

@@ -8,6 +8,12 @@ namespace LowPolyWater
         public float waveFrequency = 0.5f;
         public float waveLength = 0.75f;
 
+        public SpecialEmitterCalled oceanEmitter;
+
+        public AK.Wwise.Event waveSFX;
+
+        private bool waveSoundEmitted;
+
         //Position where the waves originate from
         public Vector3 waveOriginPosition = new Vector3(0.0f, 0.0f, 0.0f);
 
@@ -24,6 +30,9 @@ namespace LowPolyWater
         void Start()
         {
             CreateMeshLowPoly(meshFilter);
+            waveSoundEmitted = false;
+            oceanEmitter = GameObject.Find("OceanCollider").GetComponent<SpecialEmitterCalled>();   
+
         }
 
         /// <summary>
@@ -86,6 +95,17 @@ namespace LowPolyWater
                 //Oscilate the wave height via sine to create a wave effect
                 v.y = waveHeight * Mathf.Sin(Time.time * Mathf.PI * 2.0f * waveFrequency
                 + (Mathf.PI * 2.0f * distance));
+
+                // decide to emit sound
+                if (!waveSoundEmitted && v.y < -0.499f)
+                {
+                    waveSoundEmitted = true;
+                    // emit sound
+                    oceanEmitter.postEvent();
+                } else if (waveSoundEmitted && v.y > 0.499f)
+                {
+                    waveSoundEmitted = false;
+                }
                 
                 //Update the vertex
                 vertices[i] = v;

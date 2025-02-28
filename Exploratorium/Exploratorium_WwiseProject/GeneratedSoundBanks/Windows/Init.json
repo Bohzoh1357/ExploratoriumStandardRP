@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{0C59F998-CB99-680B-A282-C3E23FBA5ADF}",
+    "Hash": "{B081BBC1-C993-E2B1-2DD0-A11DC04CC553}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -546,22 +546,34 @@
       ]
      },
      {
-      "Id": "901951531",
-      "Name": "Step_Water",
-      "ObjectPath": "\\Switches\\Default Work Unit\\Step_Water",
+      "Id": "1817007209",
+      "Name": "Step_Physical",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Step_Physical",
       "GUID": "{0CFBBACE-BD9D-4137-81CD-5CFE7BFDA1F4}",
       "Switches": [
        {
-        "Id": "2654748154",
-        "Name": "Water",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Water\\Water",
-        "GUID": "{7E8283D3-D580-47B6-8B04-A1752ADB180F}"
+        "Id": "354267144",
+        "Name": "Terrain",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Physical\\Terrain",
+        "GUID": "{19A1EA46-7F5A-43AD-A331-624181745DFF}"
        },
        {
-        "Id": "3451314871",
-        "Name": "DryLand",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Water\\DryLand",
-        "GUID": "{19A1EA46-7F5A-43AD-A331-624181745DFF}"
+        "Id": "1863277117",
+        "Name": "Rocks",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Physical\\Rocks",
+        "GUID": "{DE106B66-874E-4645-83F9-1F79DD546A59}"
+       },
+       {
+        "Id": "2473969246",
+        "Name": "Metal",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Physical\\Metal",
+        "GUID": "{FCADB308-025D-4A44-86A8-4CD486080B20}"
+       },
+       {
+        "Id": "2654748154",
+        "Name": "Water",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Physical\\Water",
+        "GUID": "{7E8283D3-D580-47B6-8B04-A1752ADB180F}"
        }
       ]
      },
@@ -682,6 +694,6 @@
     ]
    }
   ],
-  "FileHash": "{E04E4BC0-F15C-3672-9CB2-A9E443708DFE}"
+  "FileHash": "{2AE3CA87-090A-5CF9-B64E-B48777A3E22B}"
  }
 }
