@@ -1583,7 +1583,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 89f24706b43e9d4da320960a82266e5d
     GuidInternal: 
-    m_lastTime: -8584618657977082987
+    m_lastTime: -8584608938724167278
     List:
     - name: EndGameBass
       guid: 71cebcbf267cf64fbdc8cd949070f58a
@@ -2043,9 +2043,9 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
-    - name: Step_Water
+    - name: Step_Physical
       guid: cebafb0c9dbd374181cd5cfe7bfda1f4
-      id: 901951531
+      id: 1817007209
       PathAndIcons:
       - ElementName: Switches
         ObjectType: 5
@@ -2053,14 +2053,14 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 89f24706b43e9d4da320960a82266e5d
-      - ElementName: Step_Water
+      - ElementName: Step_Physical
         ObjectType: 11
         guid: cebafb0c9dbd374181cd5cfe7bfda1f4
-      Path: Switches\Default Work Unit\Step_Water
+      Path: Switches\Default Work Unit\Step_Physical
       values:
-      - name: DryLand
-        guid: 46eaa1195a7fad43a331624181745dff
-        id: 3451314871
+      - name: Metal
+        guid: 08b3adfc5d02444a86a84cd486080b20
+        id: 2473969246
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -2068,10 +2068,42 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 89f24706b43e9d4da320960a82266e5d
-        - ElementName: Step_Water
+        - ElementName: Step_Physical
           ObjectType: 11
           guid: cebafb0c9dbd374181cd5cfe7bfda1f4
-        - ElementName: DryLand
+        - ElementName: Metal
+          ObjectType: 10
+          guid: 08b3adfc5d02444a86a84cd486080b20
+      - name: Rocks
+        guid: 666b10de4e87454683f91f79dd546a59
+        id: 1863277117
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 89f24706b43e9d4da320960a82266e5d
+        - ElementName: Step_Physical
+          ObjectType: 11
+          guid: cebafb0c9dbd374181cd5cfe7bfda1f4
+        - ElementName: Rocks
+          ObjectType: 10
+          guid: 666b10de4e87454683f91f79dd546a59
+      - name: Terrain
+        guid: 46eaa1195a7fad43a331624181745dff
+        id: 354267144
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 89f24706b43e9d4da320960a82266e5d
+        - ElementName: Step_Physical
+          ObjectType: 11
+          guid: cebafb0c9dbd374181cd5cfe7bfda1f4
+        - ElementName: Terrain
           ObjectType: 10
           guid: 46eaa1195a7fad43a331624181745dff
       - name: Water
@@ -2084,7 +2116,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 89f24706b43e9d4da320960a82266e5d
-        - ElementName: Step_Water
+        - ElementName: Step_Physical
           ObjectType: 11
           guid: cebafb0c9dbd374181cd5cfe7bfda1f4
         - ElementName: Water
@@ -2122,7 +2154,7 @@ MonoBehaviour:
         guid: fbdfe5505c21f145ace96f4eacf0f09c
       Path: Triggers\Default Work Unit\StarCollected
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000600000011000000150000001f000000330000003400000036000000370000003b000000
+  ExpandedWaapiItemIds: 05000000060000000700000011000000150000001b0000001f000000330000003400000036000000370000003b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

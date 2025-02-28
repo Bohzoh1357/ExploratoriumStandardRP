@@ -14113,7 +14113,7 @@ MonoBehaviour:
   waveSFX:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 68712c1daf5f77d418ccad72cc526e59, type: 2}
   waveOriginPosition: {x: 0, y: 0, z: 0}
 --- !u!23 &597118844
 MeshRenderer:

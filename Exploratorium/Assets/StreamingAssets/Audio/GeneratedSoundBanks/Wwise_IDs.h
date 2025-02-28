@@ -225,16 +225,18 @@ namespace AK
             } // namespace SWITCH
         } // namespace STEP
 
-        namespace STEP_WATER
+        namespace STEP_PHYSICAL
         {
-            static const AkUniqueID GROUP = 901951531U;
+            static const AkUniqueID GROUP = 1817007209U;
 
             namespace SWITCH
             {
-                static const AkUniqueID DRYLAND = 3451314871U;
+                static const AkUniqueID METAL = 2473969246U;
+                static const AkUniqueID ROCKS = 1863277117U;
+                static const AkUniqueID TERRAIN = 354267144U;
                 static const AkUniqueID WATER = 2654748154U;
             } // namespace SWITCH
-        } // namespace STEP_WATER
+        } // namespace STEP_PHYSICAL
 
     } // namespace SWITCHES
 

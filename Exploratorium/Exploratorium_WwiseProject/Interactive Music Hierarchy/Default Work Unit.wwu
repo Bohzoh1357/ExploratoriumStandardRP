@@ -4268,13 +4268,13 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="UnCollected" ID="{DAE8B785-5E05-4000-8B4F-0B4D7C411B1E}" WorkUnitID="{A6D7F5CE-7349-4345-B3C7-0166AC695192}"/>
+									<ObjectRef Name="UnCollected" ID="{DC4FB21A-B735-4CB3-958F-A4203217C395}" WorkUnitID="{A6D7F5CE-7349-4345-B3C7-0166AC695192}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="Star2" ID="{847DB199-1C8D-4076-96CD-5C2FEF6E6344}" WorkUnitID="{A6D7F5CE-7349-4345-B3C7-0166AC695192}"/>
+									<ObjectRef Name="Star4" ID="{31CBDD08-AEB7-4EC5-B251-6FDB0A0FCA32}" WorkUnitID="{A6D7F5CE-7349-4345-B3C7-0166AC695192}"/>
 								</Reference>
 								<Reference Name="TransitionRoot">
 									<Custom>
@@ -4384,7 +4384,7 @@
 												</ObjectLists>
 												<ReferenceList>
 													<Reference Name="TrackSequenceSwitch">
-														<ObjectRef Name="Collected" ID="{0D9B8056-A128-4BC3-97FE-0453D3D85205}" WorkUnitID="{A6D7F5CE-7349-4345-B3C7-0166AC695192}"/>
+														<ObjectRef Name="Collected" ID="{1F241A7A-484C-47F4-A939-9C040B703381}" WorkUnitID="{A6D7F5CE-7349-4345-B3C7-0166AC695192}"/>
 													</Reference>
 												</ReferenceList>
 											</MusicTrackSequence>
@@ -4395,7 +4395,7 @@
 											<MusicTrackSequence Name="" ID="{7B0CF035-1466-4F83-ACFD-42DAAB069BF5}">
 												<ReferenceList>
 													<Reference Name="TrackSequenceSwitch">
-														<ObjectRef Name="UnCollected" ID="{DAE8B785-5E05-4000-8B4F-0B4D7C411B1E}" WorkUnitID="{A6D7F5CE-7349-4345-B3C7-0166AC695192}"/>
+														<ObjectRef Name="UnCollected" ID="{DC4FB21A-B735-4CB3-958F-A4203217C395}" WorkUnitID="{A6D7F5CE-7349-4345-B3C7-0166AC695192}"/>
 													</Reference>
 												</ReferenceList>
 											</MusicTrackSequence>
@@ -4557,13 +4557,13 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="UnCollected" ID="{DC4FB21A-B735-4CB3-958F-A4203217C395}" WorkUnitID="{A6D7F5CE-7349-4345-B3C7-0166AC695192}"/>
+									<ObjectRef Name="UnCollected" ID="{DAE8B785-5E05-4000-8B4F-0B4D7C411B1E}" WorkUnitID="{A6D7F5CE-7349-4345-B3C7-0166AC695192}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="Star4" ID="{31CBDD08-AEB7-4EC5-B251-6FDB0A0FCA32}" WorkUnitID="{A6D7F5CE-7349-4345-B3C7-0166AC695192}"/>
+									<ObjectRef Name="Star2" ID="{847DB199-1C8D-4076-96CD-5C2FEF6E6344}" WorkUnitID="{A6D7F5CE-7349-4345-B3C7-0166AC695192}"/>
 								</Reference>
 								<Reference Name="TransitionRoot">
 									<Custom>
@@ -4673,7 +4673,7 @@
 												</ObjectLists>
 												<ReferenceList>
 													<Reference Name="TrackSequenceSwitch">
-														<ObjectRef Name="Collected" ID="{1F241A7A-484C-47F4-A939-9C040B703381}" WorkUnitID="{A6D7F5CE-7349-4345-B3C7-0166AC695192}"/>
+														<ObjectRef Name="Collected" ID="{0D9B8056-A128-4BC3-97FE-0453D3D85205}" WorkUnitID="{A6D7F5CE-7349-4345-B3C7-0166AC695192}"/>
 													</Reference>
 												</ReferenceList>
 											</MusicTrackSequence>
@@ -4684,7 +4684,7 @@
 											<MusicTrackSequence Name="" ID="{B945CF11-8454-42C0-8BAD-FA22FB44E5EC}">
 												<ReferenceList>
 													<Reference Name="TrackSequenceSwitch">
-														<ObjectRef Name="UnCollected" ID="{DC4FB21A-B735-4CB3-958F-A4203217C395}" WorkUnitID="{A6D7F5CE-7349-4345-B3C7-0166AC695192}"/>
+														<ObjectRef Name="UnCollected" ID="{DAE8B785-5E05-4000-8B4F-0B4D7C411B1E}" WorkUnitID="{A6D7F5CE-7349-4345-B3C7-0166AC695192}"/>
 													</Reference>
 												</ReferenceList>
 											</MusicTrackSequence>

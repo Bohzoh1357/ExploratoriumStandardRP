@@ -95,7 +95,7 @@
 						<CurrentSwitchRef Name="Star0" ID="{E45D32F7-666A-4983-BBD7-FF1FFE8DA5A9}"/>
 						<CurrentSwitchRef Name="Terrain" ID="{19A1EA46-7F5A-43AD-A331-624181745DFF}"/>
 						<CurrentSwitchRef Name="Dirt" ID="{96BFD4C9-739B-42AB-9739-365199FBEFFF}"/>
-						<CurrentSwitchRef Name="StarsCollect2" ID="{2BF742CE-5085-4FFC-96BC-81F6D875981B}"/>
+						<CurrentSwitchRef Name="StarsCollect0" ID="{77CC9B1C-9612-48DD-85B4-EF065468C275}"/>
 						<CurrentSwitchRef Name="Grounded" ID="{23104471-3C07-4516-ABA3-EF628EF7AD1E}"/>
 						<CurrentSwitchRef Name="Bass2nd" ID="{A9F16843-81E5-4E10-8E25-1ACD7F313D44}"/>
 					</CurrentSwitchList>
