@@ -19,17 +19,17 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
 								</Reference>
 								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="DryLand" ID="{19A1EA46-7F5A-43AD-A331-624181745DFF}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+									<ObjectRef Name="Terrain" ID="{19A1EA46-7F5A-43AD-A331-624181745DFF}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="SFX" ID="{FA57C7B1-E189-4F3B-9A65-1E89A9379E9C}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="Step_Water" ID="{0CFBBACE-BD9D-4137-81CD-5CFE7BFDA1F4}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
+									<ObjectRef Name="Step_Physical" ID="{0CFBBACE-BD9D-4137-81CD-5CFE7BFDA1F4}" WorkUnitID="{0647F289-3EB4-4D9D-A320-960A82266E5D}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<SwitchContainer Name="Non-Water" ID="{827742F1-ABC1-44F7-A231-59EBBC92EEE0}" ShortID="209858097">
+								<SwitchContainer Name="StepTerrain" ID="{827742F1-ABC1-44F7-A231-59EBBC92EEE0}" ShortID="209858097">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
@@ -846,6 +846,294 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="StepMetal" ID="{C9CA2AA5-C70D-4D81-9E0D-CF136FB61F65}" ShortID="647472410">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SFX_PlayerStepMetal1" ID="{6FF93193-3F06-4EF3-AEA8-93C5A368620E}" ShortID="151365776">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_PlayerStepMetal1" ID="{1673F6DF-DAEB-4E2D-B68C-A4CB5BF419F3}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_PlayerStepMetal1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="693988198"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_PlayerStepMetal1" ID="{1673F6DF-DAEB-4E2D-B68C-A4CB5BF419F3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_PlayerStepMetal2" ID="{2624E0F4-822C-43D7-938E-9B8A66C57BE9}" ShortID="765531112">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_PlayerStepMetal2" ID="{5DB1ABDB-6B19-4892-8C81-CF91F0F929FC}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_PlayerStepMetal2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="712342862"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_PlayerStepMetal2" ID="{5DB1ABDB-6B19-4892-8C81-CF91F0F929FC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_PlayerStepMetal3" ID="{3FBC0098-C75B-4408-B0CF-47842106E3F4}" ShortID="820724593">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_PlayerStepMetal3" ID="{5AA36718-3313-46B0-B936-6088E9F7CEF2}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_PlayerStepMetal3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="800249334"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_PlayerStepMetal3" ID="{5AA36718-3313-46B0-B936-6088E9F7CEF2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_PlayerStepMetal4" ID="{118EB5B9-7C90-4D78-BC65-E26E5914EE54}" ShortID="839468389">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_PlayerStepMetal4" ID="{1123F407-0469-43D3-BE10-AA37CA2B72CE}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_PlayerStepMetal4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="259063893"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_PlayerStepMetal4" ID="{1123F407-0469-43D3-BE10-AA37CA2B72CE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_PlayerStepMetal5" ID="{3C643441-6192-49C5-BE99-36F2216779D1}" ShortID="369324978">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_PlayerStepMetal5" ID="{DE71FB12-6648-4CC5-968C-1DE644662A8B}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_PlayerStepMetal5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="77591309"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_PlayerStepMetal5" ID="{DE71FB12-6648-4CC5-968C-1DE644662A8B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_PlayerStepMetal6" ID="{9E1802B3-EE09-4215-985B-ECA4802E7449}" ShortID="958095086">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_PlayerStepMetal6" ID="{F18E4BEC-7284-4516-AC87-10AAEB962DDA}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_PlayerStepMetal6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1026412962"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_PlayerStepMetal6" ID="{F18E4BEC-7284-4516-AC87-10AAEB962DDA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="StepRocks" ID="{2702B17C-F71A-41C9-BC42-35313BB69276}" ShortID="560801568">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SFX_PlayerStepRock1" ID="{5B684774-DB32-455A-BD87-08DBBA54E2C7}" ShortID="358281519">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_PlayerStepRock1" ID="{4801E5A7-4116-4BBE-9C01-691B9FF0177E}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_PlayerStepRock1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="201061163"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_PlayerStepRock1" ID="{4801E5A7-4116-4BBE-9C01-691B9FF0177E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_PlayerStepRock2" ID="{9DC0F588-ADDB-423F-9BED-5BCAC4B860C5}" ShortID="85009451">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_PlayerStepRock2" ID="{B1635DA0-B28A-4E22-9438-B0F46010A46A}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_PlayerStepRock2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="512024194"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_PlayerStepRock2" ID="{B1635DA0-B28A-4E22-9438-B0F46010A46A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_PlayerStepRock3" ID="{D99BFE20-637A-49D4-90E4-7146F6C4D876}" ShortID="922482752">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_PlayerStepRock3" ID="{86588B2C-807B-48DD-A406-C57D7F25A0B1}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_PlayerStepRock3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1072278593"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_PlayerStepRock3" ID="{86588B2C-807B-48DD-A406-C57D7F25A0B1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_PlayerStepRock4" ID="{C9D71C23-3898-4D38-AEEE-95121ABD9D88}" ShortID="224344797">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_PlayerStepRock4" ID="{A95966E5-BDF2-469B-BF51-757B8D8168A4}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_PlayerStepRock4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="254429705"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_PlayerStepRock4" ID="{A95966E5-BDF2-469B-BF51-757B8D8168A4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_PlayerStepRock5" ID="{746DCEB9-88E0-4A46-8E05-58EC5B5E7748}" ShortID="511359024">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_PlayerStepRock5" ID="{91A0583E-9C0E-47F2-8F2E-110E24E1538C}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_PlayerStepRock5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="118943811"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_PlayerStepRock5" ID="{91A0583E-9C0E-47F2-8F2E-110E24E1538C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_PlayerStepRock6" ID="{A7EADD86-4365-4B19-8B64-4E170FE10543}" ShortID="862482162">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ECCD7CB0-6780-4AD7-BF6E-B341F092D4B1}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFE733E2-8A4D-4AE3-B662-F20C007D1656}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_PlayerStepRock6" ID="{89431648-F8F9-4727-B67F-1119E00ECBCA}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_PlayerStepRock6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="947527067"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_PlayerStepRock6" ID="{89431648-F8F9-4727-B67F-1119E00ECBCA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<StateInfo>
 								<StateGroupList>
@@ -901,14 +1189,32 @@
 										<ItemRef Name="StepWater" ID="{24BFA92A-4D9E-4AEA-8050-12526E069A79}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="Non-Water" ID="{827742F1-ABC1-44F7-A231-59EBBC92EEE0}"/>
+										<ItemRef Name="StepRocks" ID="{2702B17C-F71A-41C9-BC42-35313BB69276}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="StepMetal" ID="{C9CA2AA5-C70D-4D81-9E0D-CF136FB61F65}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="StepTerrain" ID="{827742F1-ABC1-44F7-A231-59EBBC92EEE0}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
-										<SwitchRef Name="DryLand" ID="{19A1EA46-7F5A-43AD-A331-624181745DFF}"/>
+										<SwitchRef Name="Metal" ID="{FCADB308-025D-4A44-86A8-4CD486080B20}"/>
 										<ItemList>
-											<ItemRef Name="Non-Water" ID="{827742F1-ABC1-44F7-A231-59EBBC92EEE0}"/>
+											<ItemRef Name="StepMetal" ID="{C9CA2AA5-C70D-4D81-9E0D-CF136FB61F65}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Terrain" ID="{19A1EA46-7F5A-43AD-A331-624181745DFF}"/>
+										<ItemList>
+											<ItemRef Name="StepTerrain" ID="{827742F1-ABC1-44F7-A231-59EBBC92EEE0}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Rocks" ID="{DE106B66-874E-4645-83F9-1F79DD546A59}"/>
+										<ItemList>
+											<ItemRef Name="StepRocks" ID="{2702B17C-F71A-41C9-BC42-35313BB69276}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>

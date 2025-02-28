@@ -11,10 +11,12 @@
 						<Switch Name="Snow" ID="{3F49E196-C40C-4F96-8FF5-BCEFB3BC4CC4}"/>
 					</ChildrenList>
 				</SwitchGroup>
-				<SwitchGroup Name="Step_Water" ID="{0CFBBACE-BD9D-4137-81CD-5CFE7BFDA1F4}">
+				<SwitchGroup Name="Step_Physical" ID="{0CFBBACE-BD9D-4137-81CD-5CFE7BFDA1F4}">
 					<ChildrenList>
-						<Switch Name="DryLand" ID="{19A1EA46-7F5A-43AD-A331-624181745DFF}"/>
+						<Switch Name="Terrain" ID="{19A1EA46-7F5A-43AD-A331-624181745DFF}"/>
 						<Switch Name="Water" ID="{7E8283D3-D580-47B6-8B04-A1752ADB180F}"/>
+						<Switch Name="Metal" ID="{FCADB308-025D-4A44-86A8-4CD486080B20}"/>
+						<Switch Name="Rocks" ID="{DE106B66-874E-4645-83F9-1F79DD546A59}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="Jump" ID="{3F4693A3-0B04-4D23-8732-36FCDF7BBF78}">

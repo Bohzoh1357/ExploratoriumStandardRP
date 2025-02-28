@@ -93,7 +93,7 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Star0" ID="{E45D32F7-666A-4983-BBD7-FF1FFE8DA5A9}"/>
-						<CurrentSwitchRef Name="DryLand" ID="{19A1EA46-7F5A-43AD-A331-624181745DFF}"/>
+						<CurrentSwitchRef Name="Terrain" ID="{19A1EA46-7F5A-43AD-A331-624181745DFF}"/>
 						<CurrentSwitchRef Name="Dirt" ID="{96BFD4C9-739B-42AB-9739-365199FBEFFF}"/>
 						<CurrentSwitchRef Name="StarsCollect2" ID="{2BF742CE-5085-4FFC-96BC-81F6D875981B}"/>
 						<CurrentSwitchRef Name="Grounded" ID="{23104471-3C07-4516-ABA3-EF628EF7AD1E}"/>

@@ -24,6 +24,9 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="SFX_UI_InvOpen_v1_JL" ID="{AEAC4565-90C9-4EB8-A42D-EE1DF1805733}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>SFX_UI_InvOpen_v1_JL.wav</AudioFile>
 									<MediaIDList>
