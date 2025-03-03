@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5321741259732028110}
   m_Layer: 0
   m_Name: BigRock03
-  m_TagString: Untagged
+  m_TagString: rocks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

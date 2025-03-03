@@ -1583,7 +1583,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 89f24706b43e9d4da320960a82266e5d
     GuidInternal: 
-    m_lastTime: -8584608938724167278
+    m_lastTime: -8584605826814144791
     List:
     - name: EndGameBass
       guid: 71cebcbf267cf64fbdc8cd949070f58a
@@ -1961,88 +1961,6 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
-    - name: Step
-      guid: 0fd15993964098469042c16269c5a7b0
-      id: 621108255
-      PathAndIcons:
-      - ElementName: Switches
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 89f24706b43e9d4da320960a82266e5d
-      - ElementName: Step
-        ObjectType: 11
-        guid: 0fd15993964098469042c16269c5a7b0
-      Path: Switches\Default Work Unit\Step
-      values:
-      - name: Dirt
-        guid: c9d4bf969b73ab429739365199fbefff
-        id: 2195636714
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 89f24706b43e9d4da320960a82266e5d
-        - ElementName: Step
-          ObjectType: 11
-          guid: 0fd15993964098469042c16269c5a7b0
-        - ElementName: Dirt
-          ObjectType: 10
-          guid: c9d4bf969b73ab429739365199fbefff
-      - name: Grass
-        guid: 0750fe8572a09944bc1f2faf36fd9a7e
-        id: 4248645337
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 89f24706b43e9d4da320960a82266e5d
-        - ElementName: Step
-          ObjectType: 11
-          guid: 0fd15993964098469042c16269c5a7b0
-        - ElementName: Grass
-          ObjectType: 10
-          guid: 0750fe8572a09944bc1f2faf36fd9a7e
-      - name: Leaves
-        guid: 00d4f48a6a7eea4aa61718483b712161
-        id: 582824249
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 89f24706b43e9d4da320960a82266e5d
-        - ElementName: Step
-          ObjectType: 11
-          guid: 0fd15993964098469042c16269c5a7b0
-        - ElementName: Leaves
-          ObjectType: 10
-          guid: 00d4f48a6a7eea4aa61718483b712161
-      - name: Snow
-        guid: 96e1493f0cc4964f8ff5bcefb3bc4cc4
-        id: 787898836
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 89f24706b43e9d4da320960a82266e5d
-        - ElementName: Step
-          ObjectType: 11
-          guid: 0fd15993964098469042c16269c5a7b0
-        - ElementName: Snow
-          ObjectType: 10
-          guid: 96e1493f0cc4964f8ff5bcefb3bc4cc4
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
     - name: Step_Physical
       guid: cebafb0c9dbd374181cd5cfe7bfda1f4
       id: 1817007209
@@ -2106,9 +2024,27 @@ MonoBehaviour:
         - ElementName: Terrain
           ObjectType: 10
           guid: 46eaa1195a7fad43a331624181745dff
-      - name: Water
-        guid: d383827e80d5b6478b04a1752adb180f
-        id: 2654748154
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Step_Terrain
+      guid: 0fd15993964098469042c16269c5a7b0
+      id: 3180743965
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 89f24706b43e9d4da320960a82266e5d
+      - ElementName: Step_Terrain
+        ObjectType: 11
+        guid: 0fd15993964098469042c16269c5a7b0
+      Path: Switches\Default Work Unit\Step_Terrain
+      values:
+      - name: Dirt
+        guid: c9d4bf969b73ab429739365199fbefff
+        id: 2195636714
         PathAndIcons:
         - ElementName: Switches
           ObjectType: 5
@@ -2116,12 +2052,110 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 89f24706b43e9d4da320960a82266e5d
-        - ElementName: Step_Physical
+        - ElementName: Step_Terrain
           ObjectType: 11
-          guid: cebafb0c9dbd374181cd5cfe7bfda1f4
-        - ElementName: Water
+          guid: 0fd15993964098469042c16269c5a7b0
+        - ElementName: Dirt
           ObjectType: 10
-          guid: d383827e80d5b6478b04a1752adb180f
+          guid: c9d4bf969b73ab429739365199fbefff
+      - name: Grass
+        guid: 0750fe8572a09944bc1f2faf36fd9a7e
+        id: 4248645337
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 89f24706b43e9d4da320960a82266e5d
+        - ElementName: Step_Terrain
+          ObjectType: 11
+          guid: 0fd15993964098469042c16269c5a7b0
+        - ElementName: Grass
+          ObjectType: 10
+          guid: 0750fe8572a09944bc1f2faf36fd9a7e
+      - name: Leaves
+        guid: 00d4f48a6a7eea4aa61718483b712161
+        id: 582824249
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 89f24706b43e9d4da320960a82266e5d
+        - ElementName: Step_Terrain
+          ObjectType: 11
+          guid: 0fd15993964098469042c16269c5a7b0
+        - ElementName: Leaves
+          ObjectType: 10
+          guid: 00d4f48a6a7eea4aa61718483b712161
+      - name: Snow
+        guid: 96e1493f0cc4964f8ff5bcefb3bc4cc4
+        id: 787898836
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 89f24706b43e9d4da320960a82266e5d
+        - ElementName: Step_Terrain
+          ObjectType: 11
+          guid: 0fd15993964098469042c16269c5a7b0
+        - ElementName: Snow
+          ObjectType: 10
+          guid: 96e1493f0cc4964f8ff5bcefb3bc4cc4
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Step_Water
+      guid: 5513f8e2bf1d6c41ac2888302393fee4
+      id: 901951531
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 89f24706b43e9d4da320960a82266e5d
+      - ElementName: Step_Water
+        ObjectType: 11
+        guid: 5513f8e2bf1d6c41ac2888302393fee4
+      Path: Switches\Default Work Unit\Step_Water
+      values:
+      - name: DryLand
+        guid: 36b24f9ecabe1c478caf225d46f4831c
+        id: 3451314871
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 89f24706b43e9d4da320960a82266e5d
+        - ElementName: Step_Water
+          ObjectType: 11
+          guid: 5513f8e2bf1d6c41ac2888302393fee4
+        - ElementName: DryLand
+          ObjectType: 10
+          guid: 36b24f9ecabe1c478caf225d46f4831c
+      - name: InWater
+        guid: c310f64f9f8d054796c2f0d650748773
+        id: 440928865
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 89f24706b43e9d4da320960a82266e5d
+        - ElementName: Step_Water
+          ObjectType: 11
+          guid: 5513f8e2bf1d6c41ac2888302393fee4
+        - ElementName: InWater
+          ObjectType: 10
+          guid: c310f64f9f8d054796c2f0d650748773
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -2153,9 +2187,9 @@ MonoBehaviour:
         ObjectType: 14
         guid: fbdfe5505c21f145ace96f4eacf0f09c
       Path: Triggers\Default Work Unit\StarCollected
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000011000000150000001b0000001f000000330000003400000036000000370000003b000000
+  ExpandedFileSystemItemIds: 05000000060000000700000011000000150000001b0000001d0000001e0000001f000000330000003400000036000000370000003b0000003f000000
+  ExpandedWaapiItemIds: 05000000060000000700000011000000150000001b0000001f0000002a000000330000003400000036000000370000003b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 

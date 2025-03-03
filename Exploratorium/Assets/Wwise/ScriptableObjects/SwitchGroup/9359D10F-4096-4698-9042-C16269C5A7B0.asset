@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 805dc323096bc2f459cb1ec7d8010a01, type: 3}
   m_Name: 9359D10F-4096-4698-9042-C16269C5A7B0
   m_EditorClassIdentifier: 
-  objectName: Step
-  id: 621108255
+  objectName: Step_Terrain
+  id: 3180743965
   guid: 9359D10F-4096-4698-9042-C16269C5A7B0

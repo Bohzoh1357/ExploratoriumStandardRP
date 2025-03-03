@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{A19F3440-3F3A-464F-90E0-B70824685515}",
     "Language": "SFX",
-    "Hash": "{6DECB0A6-FEAF-9305-FEAD-961120CF1EA7}",
+    "Hash": "{4945D3E2-2CF0-9B94-1C5A-F903CA2E70EB}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\General",
     "ShortName": "General",
     "Path": "General.bnk",
@@ -982,147 +982,186 @@
        {
         "SwitchValue": {
          "GroupType": "Switch",
-         "GroupId": "1817007209",
-         "Id": "2473969246",
-         "GUID": "{FCADB308-025D-4A44-86A8-4CD486080B20}"
-        },
-        "MediaRefs": [
-         {
-          "Id": "77591309"
-         },
-         {
-          "Id": "259063893"
-         },
-         {
-          "Id": "693988198"
-         },
-         {
-          "Id": "712342862"
-         },
-         {
-          "Id": "800249334"
-         },
-         {
-          "Id": "1026412962"
-         }
-        ]
-       },
-       {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "1817007209",
-         "Id": "354267144",
-         "GUID": "{19A1EA46-7F5A-43AD-A331-624181745DFF}",
+         "GroupId": "901951531",
+         "Id": "3451314871",
+         "GUID": "{9E4FB236-BECA-471C-8CAF-225D46F4831C}",
          "Default": "true"
         },
         "Children": [
          {
           "SwitchValue": {
            "GroupType": "Switch",
-           "GroupId": "621108255",
-           "Id": "582824249",
-           "GUID": "{8AF4D400-7E6A-4AEA-A617-18483B712161}"
+           "GroupId": "1817007209",
+           "Id": "2473969246",
+           "GUID": "{FCADB308-025D-4A44-86A8-4CD486080B20}"
           },
           "MediaRefs": [
            {
-            "Id": "134896037"
+            "Id": "77591309"
            },
            {
-            "Id": "273231139"
+            "Id": "259063893"
            },
            {
-            "Id": "499896437"
+            "Id": "693988198"
            },
            {
-            "Id": "885915024"
+            "Id": "712342862"
            },
            {
-            "Id": "928695506"
+            "Id": "800249334"
            },
            {
-            "Id": "1002357865"
+            "Id": "1026412962"
            }
           ]
          },
          {
           "SwitchValue": {
            "GroupType": "Switch",
-           "GroupId": "621108255",
-           "Id": "4248645337",
-           "GUID": "{85FE5007-A072-4499-BC1F-2FAF36FD9A7E}"
-          },
-          "MediaRefs": [
-           {
-            "Id": "493226867"
-           },
-           {
-            "Id": "509768431"
-           },
-           {
-            "Id": "522882346"
-           },
-           {
-            "Id": "607027924"
-           }
-          ]
-         },
-         {
-          "SwitchValue": {
-           "GroupType": "Switch",
-           "GroupId": "621108255",
-           "Id": "787898836",
-           "GUID": "{3F49E196-C40C-4F96-8FF5-BCEFB3BC4CC4}"
-          },
-          "MediaRefs": [
-           {
-            "Id": "140574943"
-           },
-           {
-            "Id": "280095516"
-           },
-           {
-            "Id": "542425319"
-           },
-           {
-            "Id": "554263416"
-           },
-           {
-            "Id": "555020502"
-           },
-           {
-            "Id": "640092675"
-           }
-          ]
-         },
-         {
-          "SwitchValue": {
-           "GroupType": "Switch",
-           "GroupId": "621108255",
-           "Id": "2195636714",
-           "GUID": "{96BFD4C9-739B-42AB-9739-365199FBEFFF}",
+           "GroupId": "1817007209",
+           "Id": "354267144",
+           "GUID": "{19A1EA46-7F5A-43AD-A331-624181745DFF}",
            "Default": "true"
           },
+          "Children": [
+           {
+            "SwitchValue": {
+             "GroupType": "Switch",
+             "GroupId": "3180743965",
+             "Id": "582824249",
+             "GUID": "{8AF4D400-7E6A-4AEA-A617-18483B712161}"
+            },
+            "MediaRefs": [
+             {
+              "Id": "134896037"
+             },
+             {
+              "Id": "273231139"
+             },
+             {
+              "Id": "499896437"
+             },
+             {
+              "Id": "885915024"
+             },
+             {
+              "Id": "928695506"
+             },
+             {
+              "Id": "1002357865"
+             }
+            ]
+           },
+           {
+            "SwitchValue": {
+             "GroupType": "Switch",
+             "GroupId": "3180743965",
+             "Id": "4248645337",
+             "GUID": "{85FE5007-A072-4499-BC1F-2FAF36FD9A7E}"
+            },
+            "MediaRefs": [
+             {
+              "Id": "493226867"
+             },
+             {
+              "Id": "509768431"
+             },
+             {
+              "Id": "522882346"
+             },
+             {
+              "Id": "607027924"
+             }
+            ]
+           },
+           {
+            "SwitchValue": {
+             "GroupType": "Switch",
+             "GroupId": "3180743965",
+             "Id": "787898836",
+             "GUID": "{3F49E196-C40C-4F96-8FF5-BCEFB3BC4CC4}"
+            },
+            "MediaRefs": [
+             {
+              "Id": "140574943"
+             },
+             {
+              "Id": "280095516"
+             },
+             {
+              "Id": "542425319"
+             },
+             {
+              "Id": "554263416"
+             },
+             {
+              "Id": "555020502"
+             },
+             {
+              "Id": "640092675"
+             }
+            ]
+           },
+           {
+            "SwitchValue": {
+             "GroupType": "Switch",
+             "GroupId": "3180743965",
+             "Id": "2195636714",
+             "GUID": "{96BFD4C9-739B-42AB-9739-365199FBEFFF}",
+             "Default": "true"
+            },
+            "MediaRefs": [
+             {
+              "Id": "82504770"
+             },
+             {
+              "Id": "213707038"
+             },
+             {
+              "Id": "334427377"
+             },
+             {
+              "Id": "359265107"
+             },
+             {
+              "Id": "713448589"
+             },
+             {
+              "Id": "716513626"
+             },
+             {
+              "Id": "916418708"
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "1817007209",
+           "Id": "1863277117",
+           "GUID": "{DE106B66-874E-4645-83F9-1F79DD546A59}"
+          },
           "MediaRefs": [
            {
-            "Id": "82504770"
+            "Id": "118943811"
            },
            {
-            "Id": "213707038"
+            "Id": "201061163"
            },
            {
-            "Id": "334427377"
+            "Id": "254429705"
            },
            {
-            "Id": "359265107"
+            "Id": "512024194"
            },
            {
-            "Id": "713448589"
+            "Id": "947527067"
            },
            {
-            "Id": "716513626"
-           },
-           {
-            "Id": "916418708"
+            "Id": "1072278593"
            }
           ]
          }
@@ -1131,37 +1170,9 @@
        {
         "SwitchValue": {
          "GroupType": "Switch",
-         "GroupId": "1817007209",
-         "Id": "1863277117",
-         "GUID": "{DE106B66-874E-4645-83F9-1F79DD546A59}"
-        },
-        "MediaRefs": [
-         {
-          "Id": "118943811"
-         },
-         {
-          "Id": "201061163"
-         },
-         {
-          "Id": "254429705"
-         },
-         {
-          "Id": "512024194"
-         },
-         {
-          "Id": "947527067"
-         },
-         {
-          "Id": "1072278593"
-         }
-        ]
-       },
-       {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "1817007209",
-         "Id": "2654748154",
-         "GUID": "{7E8283D3-D580-47B6-8B04-A1752ADB180F}"
+         "GroupId": "901951531",
+         "Id": "440928865",
+         "GUID": "{4FF610C3-8D9F-4705-96C2-F0D650748773}"
         },
         "MediaRefs": [
          {
@@ -1233,147 +1244,186 @@
        {
         "SwitchValue": {
          "GroupType": "Switch",
-         "GroupId": "1817007209",
-         "Id": "2473969246",
-         "GUID": "{FCADB308-025D-4A44-86A8-4CD486080B20}"
-        },
-        "MediaRefs": [
-         {
-          "Id": "77591309"
-         },
-         {
-          "Id": "259063893"
-         },
-         {
-          "Id": "693988198"
-         },
-         {
-          "Id": "712342862"
-         },
-         {
-          "Id": "800249334"
-         },
-         {
-          "Id": "1026412962"
-         }
-        ]
-       },
-       {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "1817007209",
-         "Id": "354267144",
-         "GUID": "{19A1EA46-7F5A-43AD-A331-624181745DFF}",
+         "GroupId": "901951531",
+         "Id": "3451314871",
+         "GUID": "{9E4FB236-BECA-471C-8CAF-225D46F4831C}",
          "Default": "true"
         },
         "Children": [
          {
           "SwitchValue": {
            "GroupType": "Switch",
-           "GroupId": "621108255",
-           "Id": "582824249",
-           "GUID": "{8AF4D400-7E6A-4AEA-A617-18483B712161}"
+           "GroupId": "1817007209",
+           "Id": "2473969246",
+           "GUID": "{FCADB308-025D-4A44-86A8-4CD486080B20}"
           },
           "MediaRefs": [
            {
-            "Id": "134896037"
+            "Id": "77591309"
            },
            {
-            "Id": "273231139"
+            "Id": "259063893"
            },
            {
-            "Id": "499896437"
+            "Id": "693988198"
            },
            {
-            "Id": "885915024"
+            "Id": "712342862"
            },
            {
-            "Id": "928695506"
+            "Id": "800249334"
            },
            {
-            "Id": "1002357865"
+            "Id": "1026412962"
            }
           ]
          },
          {
           "SwitchValue": {
            "GroupType": "Switch",
-           "GroupId": "621108255",
-           "Id": "4248645337",
-           "GUID": "{85FE5007-A072-4499-BC1F-2FAF36FD9A7E}"
-          },
-          "MediaRefs": [
-           {
-            "Id": "493226867"
-           },
-           {
-            "Id": "509768431"
-           },
-           {
-            "Id": "522882346"
-           },
-           {
-            "Id": "607027924"
-           }
-          ]
-         },
-         {
-          "SwitchValue": {
-           "GroupType": "Switch",
-           "GroupId": "621108255",
-           "Id": "787898836",
-           "GUID": "{3F49E196-C40C-4F96-8FF5-BCEFB3BC4CC4}"
-          },
-          "MediaRefs": [
-           {
-            "Id": "140574943"
-           },
-           {
-            "Id": "280095516"
-           },
-           {
-            "Id": "542425319"
-           },
-           {
-            "Id": "554263416"
-           },
-           {
-            "Id": "555020502"
-           },
-           {
-            "Id": "640092675"
-           }
-          ]
-         },
-         {
-          "SwitchValue": {
-           "GroupType": "Switch",
-           "GroupId": "621108255",
-           "Id": "2195636714",
-           "GUID": "{96BFD4C9-739B-42AB-9739-365199FBEFFF}",
+           "GroupId": "1817007209",
+           "Id": "354267144",
+           "GUID": "{19A1EA46-7F5A-43AD-A331-624181745DFF}",
            "Default": "true"
           },
+          "Children": [
+           {
+            "SwitchValue": {
+             "GroupType": "Switch",
+             "GroupId": "3180743965",
+             "Id": "582824249",
+             "GUID": "{8AF4D400-7E6A-4AEA-A617-18483B712161}"
+            },
+            "MediaRefs": [
+             {
+              "Id": "134896037"
+             },
+             {
+              "Id": "273231139"
+             },
+             {
+              "Id": "499896437"
+             },
+             {
+              "Id": "885915024"
+             },
+             {
+              "Id": "928695506"
+             },
+             {
+              "Id": "1002357865"
+             }
+            ]
+           },
+           {
+            "SwitchValue": {
+             "GroupType": "Switch",
+             "GroupId": "3180743965",
+             "Id": "4248645337",
+             "GUID": "{85FE5007-A072-4499-BC1F-2FAF36FD9A7E}"
+            },
+            "MediaRefs": [
+             {
+              "Id": "493226867"
+             },
+             {
+              "Id": "509768431"
+             },
+             {
+              "Id": "522882346"
+             },
+             {
+              "Id": "607027924"
+             }
+            ]
+           },
+           {
+            "SwitchValue": {
+             "GroupType": "Switch",
+             "GroupId": "3180743965",
+             "Id": "787898836",
+             "GUID": "{3F49E196-C40C-4F96-8FF5-BCEFB3BC4CC4}"
+            },
+            "MediaRefs": [
+             {
+              "Id": "140574943"
+             },
+             {
+              "Id": "280095516"
+             },
+             {
+              "Id": "542425319"
+             },
+             {
+              "Id": "554263416"
+             },
+             {
+              "Id": "555020502"
+             },
+             {
+              "Id": "640092675"
+             }
+            ]
+           },
+           {
+            "SwitchValue": {
+             "GroupType": "Switch",
+             "GroupId": "3180743965",
+             "Id": "2195636714",
+             "GUID": "{96BFD4C9-739B-42AB-9739-365199FBEFFF}",
+             "Default": "true"
+            },
+            "MediaRefs": [
+             {
+              "Id": "82504770"
+             },
+             {
+              "Id": "213707038"
+             },
+             {
+              "Id": "334427377"
+             },
+             {
+              "Id": "359265107"
+             },
+             {
+              "Id": "713448589"
+             },
+             {
+              "Id": "716513626"
+             },
+             {
+              "Id": "916418708"
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "1817007209",
+           "Id": "1863277117",
+           "GUID": "{DE106B66-874E-4645-83F9-1F79DD546A59}"
+          },
           "MediaRefs": [
            {
-            "Id": "82504770"
+            "Id": "118943811"
            },
            {
-            "Id": "213707038"
+            "Id": "201061163"
            },
            {
-            "Id": "334427377"
+            "Id": "254429705"
            },
            {
-            "Id": "359265107"
+            "Id": "512024194"
            },
            {
-            "Id": "713448589"
+            "Id": "947527067"
            },
            {
-            "Id": "716513626"
-           },
-           {
-            "Id": "916418708"
+            "Id": "1072278593"
            }
           ]
          }
@@ -1382,37 +1432,9 @@
        {
         "SwitchValue": {
          "GroupType": "Switch",
-         "GroupId": "1817007209",
-         "Id": "1863277117",
-         "GUID": "{DE106B66-874E-4645-83F9-1F79DD546A59}"
-        },
-        "MediaRefs": [
-         {
-          "Id": "118943811"
-         },
-         {
-          "Id": "201061163"
-         },
-         {
-          "Id": "254429705"
-         },
-         {
-          "Id": "512024194"
-         },
-         {
-          "Id": "947527067"
-         },
-         {
-          "Id": "1072278593"
-         }
-        ]
-       },
-       {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "1817007209",
-         "Id": "2654748154",
-         "GUID": "{7E8283D3-D580-47B6-8B04-A1752ADB180F}"
+         "GroupId": "901951531",
+         "Id": "440928865",
+         "GUID": "{4FF610C3-8D9F-4705-96C2-F0D650748773}"
         },
         "MediaRefs": [
          {
@@ -2106,38 +2128,6 @@
     ],
     "SwitchGroups": [
      {
-      "Id": "621108255",
-      "Name": "Step",
-      "ObjectPath": "\\Switches\\Default Work Unit\\Step",
-      "GUID": "{9359D10F-4096-4698-9042-C16269C5A7B0}",
-      "Switches": [
-       {
-        "Id": "582824249",
-        "Name": "Leaves",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Step\\Leaves",
-        "GUID": "{8AF4D400-7E6A-4AEA-A617-18483B712161}"
-       },
-       {
-        "Id": "787898836",
-        "Name": "Snow",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Step\\Snow",
-        "GUID": "{3F49E196-C40C-4F96-8FF5-BCEFB3BC4CC4}"
-       },
-       {
-        "Id": "2195636714",
-        "Name": "Dirt",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Step\\Dirt",
-        "GUID": "{96BFD4C9-739B-42AB-9739-365199FBEFFF}"
-       },
-       {
-        "Id": "4248645337",
-        "Name": "Grass",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Step\\Grass",
-        "GUID": "{85FE5007-A072-4499-BC1F-2FAF36FD9A7E}"
-       }
-      ]
-     },
-     {
       "Id": "804627258",
       "Name": "StarID",
       "ObjectPath": "\\Switches\\Default Work Unit\\StarID",
@@ -2176,6 +2166,26 @@
       ]
      },
      {
+      "Id": "901951531",
+      "Name": "Step_Water",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Step_Water",
+      "GUID": "{E2F81355-1DBF-416C-AC28-88302393FEE4}",
+      "Switches": [
+       {
+        "Id": "440928865",
+        "Name": "InWater",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Water\\InWater",
+        "GUID": "{4FF610C3-8D9F-4705-96C2-F0D650748773}"
+       },
+       {
+        "Id": "3451314871",
+        "Name": "DryLand",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Water\\DryLand",
+        "GUID": "{9E4FB236-BECA-471C-8CAF-225D46F4831C}"
+       }
+      ]
+     },
+     {
       "Id": "1817007209",
       "Name": "Step_Physical",
       "ObjectPath": "\\Switches\\Default Work Unit\\Step_Physical",
@@ -2198,12 +2208,6 @@
         "Name": "Metal",
         "ObjectPath": "\\Switches\\Default Work Unit\\Step_Physical\\Metal",
         "GUID": "{FCADB308-025D-4A44-86A8-4CD486080B20}"
-       },
-       {
-        "Id": "2654748154",
-        "Name": "Water",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Physical\\Water",
-        "GUID": "{7E8283D3-D580-47B6-8B04-A1752ADB180F}"
        }
       ]
      },
@@ -2300,6 +2304,38 @@
         "GUID": "{AAF7D718-4B8D-44CA-8258-9E914DA9D224}"
        }
       ]
+     },
+     {
+      "Id": "3180743965",
+      "Name": "Step_Terrain",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Step_Terrain",
+      "GUID": "{9359D10F-4096-4698-9042-C16269C5A7B0}",
+      "Switches": [
+       {
+        "Id": "582824249",
+        "Name": "Leaves",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Terrain\\Leaves",
+        "GUID": "{8AF4D400-7E6A-4AEA-A617-18483B712161}"
+       },
+       {
+        "Id": "787898836",
+        "Name": "Snow",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Terrain\\Snow",
+        "GUID": "{3F49E196-C40C-4F96-8FF5-BCEFB3BC4CC4}"
+       },
+       {
+        "Id": "2195636714",
+        "Name": "Dirt",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Terrain\\Dirt",
+        "GUID": "{96BFD4C9-739B-42AB-9739-365199FBEFFF}"
+       },
+       {
+        "Id": "4248645337",
+        "Name": "Grass",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Terrain\\Grass",
+        "GUID": "{85FE5007-A072-4499-BC1F-2FAF36FD9A7E}"
+       }
+      ]
      }
     ],
     "Triggers": [
@@ -2312,6 +2348,6 @@
     ]
    }
   ],
-  "FileHash": "{D8DA9910-5E58-C9BA-14D7-CCA0085A71DC}"
+  "FileHash": "{79FAFBFE-785D-4171-6F8E-0F0BA2AFAB67}"
  }
 }

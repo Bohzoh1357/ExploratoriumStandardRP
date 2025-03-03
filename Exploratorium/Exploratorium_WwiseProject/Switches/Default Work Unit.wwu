@@ -3,7 +3,7 @@
 	<Switches>
 		<WorkUnit Name="Default Work Unit" ID="{0647F289-3EB4-4D9D-A320-960A82266E5D}" PersistMode="Standalone">
 			<ChildrenList>
-				<SwitchGroup Name="Step" ID="{9359D10F-4096-4698-9042-C16269C5A7B0}">
+				<SwitchGroup Name="Step_Terrain" ID="{9359D10F-4096-4698-9042-C16269C5A7B0}">
 					<ChildrenList>
 						<Switch Name="Dirt" ID="{96BFD4C9-739B-42AB-9739-365199FBEFFF}"/>
 						<Switch Name="Grass" ID="{85FE5007-A072-4499-BC1F-2FAF36FD9A7E}"/>
@@ -14,7 +14,6 @@
 				<SwitchGroup Name="Step_Physical" ID="{0CFBBACE-BD9D-4137-81CD-5CFE7BFDA1F4}">
 					<ChildrenList>
 						<Switch Name="Terrain" ID="{19A1EA46-7F5A-43AD-A331-624181745DFF}"/>
-						<Switch Name="Water" ID="{7E8283D3-D580-47B6-8B04-A1752ADB180F}"/>
 						<Switch Name="Metal" ID="{FCADB308-025D-4A44-86A8-4CD486080B20}"/>
 						<Switch Name="Rocks" ID="{DE106B66-874E-4645-83F9-1F79DD546A59}"/>
 					</ChildrenList>
@@ -149,6 +148,12 @@
 							</PointList>
 						</Curve>
 					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="Step_Water" ID="{E2F81355-1DBF-416C-AC28-88302393FEE4}">
+					<ChildrenList>
+						<Switch Name="InWater" ID="{4FF610C3-8D9F-4705-96C2-F0D650748773}"/>
+						<Switch Name="DryLand" ID="{9E4FB236-BECA-471C-8CAF-225D46F4831C}"/>
+					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
