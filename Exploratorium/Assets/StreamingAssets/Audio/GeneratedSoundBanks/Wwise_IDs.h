@@ -212,19 +212,6 @@ namespace AK
             } // namespace SWITCH
         } // namespace STARID
 
-        namespace STEP
-        {
-            static const AkUniqueID GROUP = 621108255U;
-
-            namespace SWITCH
-            {
-                static const AkUniqueID DIRT = 2195636714U;
-                static const AkUniqueID GRASS = 4248645337U;
-                static const AkUniqueID LEAVES = 582824249U;
-                static const AkUniqueID SNOW = 787898836U;
-            } // namespace SWITCH
-        } // namespace STEP
-
         namespace STEP_PHYSICAL
         {
             static const AkUniqueID GROUP = 1817007209U;
@@ -234,9 +221,32 @@ namespace AK
                 static const AkUniqueID METAL = 2473969246U;
                 static const AkUniqueID ROCKS = 1863277117U;
                 static const AkUniqueID TERRAIN = 354267144U;
-                static const AkUniqueID WATER = 2654748154U;
             } // namespace SWITCH
         } // namespace STEP_PHYSICAL
+
+        namespace STEP_TERRAIN
+        {
+            static const AkUniqueID GROUP = 3180743965U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID DIRT = 2195636714U;
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID LEAVES = 582824249U;
+                static const AkUniqueID SNOW = 787898836U;
+            } // namespace SWITCH
+        } // namespace STEP_TERRAIN
+
+        namespace STEP_WATER
+        {
+            static const AkUniqueID GROUP = 901951531U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID DRYLAND = 3451314871U;
+                static const AkUniqueID INWATER = 440928865U;
+            } // namespace SWITCH
+        } // namespace STEP_WATER
 
     } // namespace SWITCHES
 

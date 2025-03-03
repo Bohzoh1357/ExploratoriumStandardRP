@@ -476,38 +476,6 @@
     ],
     "SwitchGroups": [
      {
-      "Id": "621108255",
-      "Name": "Step",
-      "ObjectPath": "\\Switches\\Default Work Unit\\Step",
-      "GUID": "{9359D10F-4096-4698-9042-C16269C5A7B0}",
-      "Switches": [
-       {
-        "Id": "582824249",
-        "Name": "Leaves",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Step\\Leaves",
-        "GUID": "{8AF4D400-7E6A-4AEA-A617-18483B712161}"
-       },
-       {
-        "Id": "787898836",
-        "Name": "Snow",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Step\\Snow",
-        "GUID": "{3F49E196-C40C-4F96-8FF5-BCEFB3BC4CC4}"
-       },
-       {
-        "Id": "2195636714",
-        "Name": "Dirt",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Step\\Dirt",
-        "GUID": "{96BFD4C9-739B-42AB-9739-365199FBEFFF}"
-       },
-       {
-        "Id": "4248645337",
-        "Name": "Grass",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Step\\Grass",
-        "GUID": "{85FE5007-A072-4499-BC1F-2FAF36FD9A7E}"
-       }
-      ]
-     },
-     {
       "Id": "804627258",
       "Name": "StarID",
       "ObjectPath": "\\Switches\\Default Work Unit\\StarID",
@@ -546,6 +514,26 @@
       ]
      },
      {
+      "Id": "901951531",
+      "Name": "Step_Water",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Step_Water",
+      "GUID": "{E2F81355-1DBF-416C-AC28-88302393FEE4}",
+      "Switches": [
+       {
+        "Id": "440928865",
+        "Name": "InWater",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Water\\InWater",
+        "GUID": "{4FF610C3-8D9F-4705-96C2-F0D650748773}"
+       },
+       {
+        "Id": "3451314871",
+        "Name": "DryLand",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Water\\DryLand",
+        "GUID": "{9E4FB236-BECA-471C-8CAF-225D46F4831C}"
+       }
+      ]
+     },
+     {
       "Id": "1817007209",
       "Name": "Step_Physical",
       "ObjectPath": "\\Switches\\Default Work Unit\\Step_Physical",
@@ -568,12 +556,6 @@
         "Name": "Metal",
         "ObjectPath": "\\Switches\\Default Work Unit\\Step_Physical\\Metal",
         "GUID": "{FCADB308-025D-4A44-86A8-4CD486080B20}"
-       },
-       {
-        "Id": "2654748154",
-        "Name": "Water",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Physical\\Water",
-        "GUID": "{7E8283D3-D580-47B6-8B04-A1752ADB180F}"
        }
       ]
      },
@@ -672,6 +654,38 @@
       ]
      },
      {
+      "Id": "3180743965",
+      "Name": "Step_Terrain",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Step_Terrain",
+      "GUID": "{9359D10F-4096-4698-9042-C16269C5A7B0}",
+      "Switches": [
+       {
+        "Id": "582824249",
+        "Name": "Leaves",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Terrain\\Leaves",
+        "GUID": "{8AF4D400-7E6A-4AEA-A617-18483B712161}"
+       },
+       {
+        "Id": "787898836",
+        "Name": "Snow",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Terrain\\Snow",
+        "GUID": "{3F49E196-C40C-4F96-8FF5-BCEFB3BC4CC4}"
+       },
+       {
+        "Id": "2195636714",
+        "Name": "Dirt",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Terrain\\Dirt",
+        "GUID": "{96BFD4C9-739B-42AB-9739-365199FBEFFF}"
+       },
+       {
+        "Id": "4248645337",
+        "Name": "Grass",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Step_Terrain\\Grass",
+        "GUID": "{85FE5007-A072-4499-BC1F-2FAF36FD9A7E}"
+       }
+      ]
+     },
+     {
       "Id": "3833651337",
       "Name": "Jump",
       "ObjectPath": "\\Switches\\Default Work Unit\\Jump",
@@ -694,6 +708,6 @@
     ]
    }
   ],
-  "FileHash": "{42D873AF-6430-AD3C-4D4D-ECCF6DCBD692}"
+  "FileHash": "{EA49A87D-93C7-290F-9717-A2B12287CF14}"
  }
 }
