@@ -2153,9 +2153,9 @@ MonoBehaviour:
         ObjectType: 14
         guid: fbdfe5505c21f145ace96f4eacf0f09c
       Path: Triggers\Default Work Unit\StarCollected
-  ExpandedFileSystemItemIds: 
+  ExpandedFileSystemItemIds: 05000000060000000700000011000000150000001b0000001f000000330000003400000036000000370000003b000000
   ExpandedWaapiItemIds: 05000000060000000700000011000000150000001b0000001f000000330000003400000036000000370000003b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 

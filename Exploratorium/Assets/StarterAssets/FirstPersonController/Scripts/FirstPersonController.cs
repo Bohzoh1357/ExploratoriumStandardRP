@@ -79,7 +79,8 @@ namespace StarterAssets
 
         public AK.Wwise.Event footstepSFX;
 		public AK.Wwise.Switch[] terrainSwitch;
-		public AK.Wwise.State inAirMute;
+        public AK.Wwise.Switch[] belowSwitch;
+        public AK.Wwise.State inAirMute;
 		public AK.Wwise.State groundedUnMute;
 		public AK.Wwise.Event runningStartSFX;
 		public AK.Wwise.Event runningStopSFX;
@@ -116,7 +117,29 @@ namespace StarterAssets
 			terrainSwitch[currentTerrainTexture].SetValue(this.gameObject);
 		}
 
-		private void Awake()
+		private void CheckBelow()
+		{
+			RaycastHit[] hit;
+			hit = Physics.RaycastAll(transform.position, Vector3.down, 10.0f);
+
+			foreach (RaycastHit rayhit in hit)
+			{
+				if (rayhit.transform.gameObject.CompareTag("rocks"))
+				{
+					belowSwitch[0].SetValue(this.gameObject);
+				}
+				else if (rayhit.transform.gameObject.CompareTag("metal"))
+				{
+                    belowSwitch[1].SetValue(this.gameObject);
+                }
+                else if (rayhit.transform.gameObject.CompareTag("terrain"))
+                {
+                    belowSwitch[2].SetValue(this.gameObject);
+                }
+            }
+		}
+
+            private void Awake()
 		{
 			// get a reference to our main camera
 			if (_mainCamera == null)
@@ -235,6 +258,7 @@ namespace StarterAssets
 
 				if (footstepTimer > footstepFrequency)
 				{
+					CheckBelow();
 					SelectTexture();
 					footstepSFX.Post(this.gameObject);
 					footstepTimer = 0.0f;
