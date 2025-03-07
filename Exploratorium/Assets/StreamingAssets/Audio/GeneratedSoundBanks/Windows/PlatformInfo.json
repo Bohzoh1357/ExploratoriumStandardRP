@@ -1,16 +1,16 @@
 {
  "PlatformInfo": {
   "Platform": {
-   "Name": "Mac",
-   "BasePlatform": "Mac",
+   "Name": "Windows",
+   "BasePlatform": "Windows",
    "Generator": "2024.1.1.8691"
   },
   "RootPaths": {
-   "ProjectRoot": "../..",
-   "SourceFilesRoot": "../../.cache",
+   "ProjectRoot": "../../../../../Exploratorium_WwiseProject",
+   "SourceFilesRoot": "../../../../../Exploratorium_WwiseProject/.cache",
    "SoundBanksRoot": ".",
    "ExternalSourcesInputFile": "",
-   "ExternalSourcesOutputRoot": "."
+   "ExternalSourcesOutputRoot": "../../../../../Exploratorium_WwiseProject/GeneratedSoundBanks/Windows"
   },
   "DefaultAlign": "16",
   "Settings": {
@@ -33,6 +33,6 @@
    "PrintObjectPath": "true",
    "PrintObjectColor": "true"
   },
-  "FileHash": "{58069556-2475-3D98-29F6-86A5B4B08D8F}"
+  "FileHash": "{BD3A9ADA-43E9-C9CD-94F5-80B3C73C981A}"
  }
 }
