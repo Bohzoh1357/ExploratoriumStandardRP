@@ -23826,7 +23826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02dd87a8d169f754ea99f2304363db74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f7e1664c
+  triggerList: ae8d9d44
   useOtherObject: 0
   data:
     idInternal: 0
@@ -23834,7 +23834,7 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: 836866390e74f714aa7964f0be35c4ae, type: 2}
   decodeBank: 0
   overrideLoadSetting: 0
-  loadAsynchronous: 0
+  loadAsynchronous: 1
   saveDecodedBank: 0
   unloadTriggerList: 958ca0ea
   bankNameInternal: 

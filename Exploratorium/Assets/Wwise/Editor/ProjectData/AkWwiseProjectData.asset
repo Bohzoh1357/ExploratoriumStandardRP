@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: e233e7ef4d8ae34ab662f20c007d1656
     GuidInternal: 
-    m_lastTime: -8584608978475196941
+    m_lastTime: -8584602960517558490
     List:
     - name: AMB
       guid: 6fe166de750ee34fa2d758334da5dd85
@@ -220,7 +220,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 7499e83547751a438679ea52f9d44a40
     GuidInternal: 
-    m_lastTime: -8584608978475186941
+    m_lastTime: -8584602960516701244
     List:
     - name: General
       guid: 40349fa13a3f4f4690e0b70824685515
@@ -410,7 +410,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: baba841079c8514493bf6c26f4c5e8a5
     GuidInternal: 
-    m_lastTime: -8584608978482160853
+    m_lastTime: -8584602960527083214
     List:
     - name: EndGame
       guid: 53076c3dac51464fad481606833ea7e2
@@ -1583,7 +1583,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 89f24706b43e9d4da320960a82266e5d
     GuidInternal: 
-    m_lastTime: -8584605826814144791
+    m_lastTime: -8584602960516619907
     List:
     - name: EndGameBass
       guid: 71cebcbf267cf64fbdc8cd949070f58a
@@ -2192,4 +2192,4 @@ MonoBehaviour:
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 1
-  CurrentPluginConfig: 
+  CurrentPluginConfig: Release
