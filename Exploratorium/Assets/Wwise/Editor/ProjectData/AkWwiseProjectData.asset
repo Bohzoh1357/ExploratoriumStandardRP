@@ -397,8 +397,8 @@ MonoBehaviour:
         guid: 0106355caa27474aa95fc4e0731764b8
       Path: Events\Default Work Unit\StopAll
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\Music.wwu
     PathAndIcons:
     - ElementName: Events
@@ -427,8 +427,8 @@ MonoBehaviour:
         guid: 53076c3dac51464fad481606833ea7e2
       Path: Events\Music\EndGame
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Music
       guid: fa65331d9c082749bed4dc3051893af9
       id: 3991942870
@@ -444,8 +444,8 @@ MonoBehaviour:
         guid: fa65331d9c082749bed4dc3051893af9
       Path: Events\Music\Music
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: StarAmbient
       guid: 56fd715d4d10f648b74bf8fe304a3295
       id: 4106215671
@@ -460,9 +460,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 56fd715d4d10f648b74bf8fe304a3295
       Path: Events\Music\StarAmbient
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 150
+      maxDuration: 0
+      minDuration: 0
     - name: StarCollected
       guid: 16cea810d365c945909b515266c3c008
       id: 1972369290
@@ -478,8 +478,8 @@ MonoBehaviour:
         guid: 16cea810d365c945909b515266c3c008
       Path: Events\Music\StarCollected
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: StarInitializer
       guid: eb2b176f84ba4540846955d549145402
       id: 3219695003
@@ -495,8 +495,8 @@ MonoBehaviour:
         guid: eb2b176f84ba4540846955d549145402
       Path: Events\Music\StarInitializer
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: StopAmbientGlobal
       guid: e7236e630935ad46a9555185d1547336
       id: 955784398
@@ -512,8 +512,8 @@ MonoBehaviour:
         guid: e7236e630935ad46a9555185d1547336
       Path: Events\Music\StopAmbientGlobal
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: StopAmbientLocal
       guid: d3d33045cf7f4a488d44a35deb1ecce9
       id: 3494773628
@@ -529,8 +529,8 @@ MonoBehaviour:
         guid: d3d33045cf7f4a488d44a35deb1ecce9
       Path: Events\Music\StopAmbientLocal
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: StopRegionMusic
       guid: 9f07f343fbef0644abd51d56c3fd3d2c
       id: 2688098310
@@ -546,8 +546,8 @@ MonoBehaviour:
         guid: 9f07f343fbef0644abd51d56c3fd3d2c
       Path: Events\Music\StopRegionMusic
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: toDay
       guid: 397aa91348adc142807c6157accedbec
       id: 1941965176
@@ -563,8 +563,8 @@ MonoBehaviour:
         guid: 397aa91348adc142807c6157accedbec
       Path: Events\Music\toDay
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\SFX.wwu
     PathAndIcons:
     - ElementName: Events

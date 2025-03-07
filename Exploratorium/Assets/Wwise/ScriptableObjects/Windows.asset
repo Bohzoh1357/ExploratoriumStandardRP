@@ -75,11 +75,11 @@ MonoBehaviour:
   - AdvancedSettings.m_MemoryMediaAllocSizeHuge
   - AdvancedSettings.m_MemoryDebugLevel
   UserSettings:
-    m_BasePath: Audio\GeneratedSoundBanks
+    m_BasePath: Audio/theSoundBanks
     m_StartupLanguage: English(US)
     m_EngineLogging: 1
     m_IsDecodedBankEnabled: 0
-    m_IsAutoBankEnabled: 1
+    m_IsAutoBankEnabled: 0
     m_DefaultListenerScalingFactor: 1
     m_MaximumNumberOfPositioningPaths: 255
     m_CommandQueueSize: 262144
@@ -127,7 +127,7 @@ MonoBehaviour:
     m_DebugOutOfRangeLimit: 16
     m_SuspendAudioDuringFocusLoss: 1
     m_RenderDuringFocusLoss: 0
-    m_SoundBankPersistentDataPath: 
+    m_SoundBankPersistentDataPath: .
     m_MemoryPrimarySbaInitSize: 2097152
     m_MemoryPrimaryTlsfInitSize: 2097152
     m_MemoryPrimaryTlsfSpanSize: 2097152
