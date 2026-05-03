@@ -77,7 +77,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="DistancetoLastPiece" ID="{2CA3F4AF-3F7E-4F8C-B0B2-A4F252B4028B}"/>
-							<Value>1.10259331635583E-312</Value>
+							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
@@ -98,7 +98,7 @@
 						<CurrentSwitchRef Name="Dirt" ID="{96BFD4C9-739B-42AB-9739-365199FBEFFF}"/>
 						<CurrentSwitchRef Name="StarsCollect0" ID="{77CC9B1C-9612-48DD-85B4-EF065468C275}"/>
 						<CurrentSwitchRef Name="Grounded" ID="{23104471-3C07-4516-ABA3-EF628EF7AD1E}"/>
-						<CurrentSwitchRef Name="Bass2nd" ID="{A9F16843-81E5-4E10-8E25-1ACD7F313D44}"/>
+						<CurrentSwitchRef Name="Bass32nd" ID="{CD32E90F-56B8-4085-9F71-4599EDD15A28}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
