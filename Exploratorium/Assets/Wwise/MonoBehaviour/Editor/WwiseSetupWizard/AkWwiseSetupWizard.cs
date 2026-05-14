@@ -5,18 +5,20 @@ The content of this file may not be used without valid licenses to the
 AUDIOKINETIC Wwise Technology.
 Note that the use of the game engine is subject to the Unity(R) Terms of
 Service at https://unity3d.com/legal/terms-of-service
- 
+
 License Usage
- 
+
 Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2024 Audiokinetic Inc.
+Copyright (c) 2026 Audiokinetic Inc.
 *******************************************************************************/
 
 #if UNITY_EDITOR
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 using System.Text.RegularExpressions;
 using UnityEditor;
 using UnityEditor.PackageManager;
@@ -29,12 +31,15 @@ public class WwiseSetupWizard
 		{2023, "WWISE_ADDRESSABLES_23_1_OR_LATER"},
 		{2024, "WWISE_ADDRESSABLES_24_1_OR_LATER"}
 	};
-	
+
 	static Dictionary<int, string> WwiseVersionDefines = new Dictionary<int, string>()
 	{
 		{2024, "WWISE_2024_OR_LATER"}
 	};
 	
+	//Change this when an API change is introduced that would break older version of the addrerssables package
+	private static string WwiseAddressableAPIDefine = "ADDRESSABLES_API_BREAK_AK_UTILITIES_WWISE_LOGGER";
+
 	public static void RunModify()
 	{
 		try
@@ -326,9 +331,6 @@ public class WwiseSetupWizard
 		if (obj is UnityEngine.GUISkin)
 			return false;
 
-		if (obj is AkWwiseProjectData)
-			return false;
-
 		if (obj is AkWwiseInitializationSettings)
 			return false;
 
@@ -478,8 +480,7 @@ public class WwiseSetupWizard
 			AkUtilities.CreateFolder(AkWwiseEditorSettings.WwiseScriptableObjectRelativePath);
 		}
 
-		AkWwiseProjectInfo.GetData().Migrate();
-		AkWwiseWWUBuilder.UpdateWwiseObjectReferenceData();
+		AkWwiseEditorSettings.GetRootOutputPath();
 
 		UnityEngine.Debug.LogFormat("WwiseUnity: Migrating Prefabs...");
 		MigratePrefabs();
@@ -545,12 +546,11 @@ public class WwiseSetupWizard
 	{
 		UnityEditor.SceneManagement.EditorSceneManager.NewScene(UnityEditor.SceneManagement.NewSceneSetup.DefaultGameObjects);
 
-		AkPluginActivator.IsVerboseLogging = true;
 		UnityEngine.Debug.Log("WwiseUnity: Deactivating all plugins...");
 		AkPluginActivator.DeactivateAllPlugins();
 
 		// 0. Make sure the SoundBank directory exists
-		var sbPath = AkUtilities.GetFullPath(UnityEngine.Application.streamingAssetsPath, AkWwiseEditorSettings.Instance.SoundbankPath);
+		var sbPath = AkWwiseEditorSettings.GetRootOutputPath();
 		if (!System.IO.Directory.Exists(sbPath))
 			System.IO.Directory.CreateDirectory(sbPath);
 
@@ -588,7 +588,7 @@ public class WwiseSetupWizard
 		// 11. Activate XboxOne network sockets.
 		AkXboxOneUtils.EnableXboxOneNetworkSockets();
 #endif
-		
+
 		// 12. Add addressables version define
 		SetWwiseVersionDefines(WwiseAddressableDefines, true, "com.audiokinetic.wwise.addressables");
 		
@@ -634,9 +634,15 @@ public class WwiseSetupWizard
 
 		if (wwiseVersionAsInteger >= 2023)
 		{
-			foreach (var TargetGroup in AvailableBuildTargetGroups)
+			foreach (BuildTargetGroup targetGroup in GetNonObsoleteTargetGroups())
 			{
-				var namedTarget = UnityEditor.Build.NamedBuildTarget.FromBuildTargetGroup(TargetGroup);
+#if UNITY_5_4_OR_NEWER
+				if (targetGroup == BuildTargetGroup.Unknown)
+				{
+					continue;
+				}
+#endif
+				var namedTarget = UnityEditor.Build.NamedBuildTarget.FromBuildTargetGroup(targetGroup);
 				string defines = PlayerSettings.GetScriptingDefineSymbols(namedTarget);
 				for (int i = 2023; i <= minimalVersion; ++i)
 				{
@@ -652,6 +658,8 @@ public class WwiseSetupWizard
 				PlayerSettings.SetScriptingDefineSymbols(namedTarget, defines);
 			}
 		}
+
+		SetAddressableAdapterSymbol();
 	}
 	
 	// Create a Wwise Global object containing the initializer and terminator scripts. Set the SoundBank path of the initializer script.
@@ -671,9 +679,6 @@ public class WwiseSetupWizard
 
 		// attach initializer component
 		UnityEditor.Undo.AddComponent<AkInitializer>(WwiseGlobalGameObject);
-
-		// Set focus on WwiseGlobal
-		UnityEditor.Selection.activeGameObject = WwiseGlobalGameObject;
 	}
 
 	private static bool DisableBuiltInAudio()
@@ -696,6 +701,21 @@ public class WwiseSetupWizard
 		return true;
 	}
 
+	private static void MigrateRootOutputPath(string wprojPath)
+	{
+		if (string.IsNullOrEmpty(AkWwiseEditorSettings.Instance.RootOutputPath))
+		{
+			var defaultRootOutputPath = AkBasePathGetter.GetDefaultRootOutputPath();
+			var pathRelativeToApplicationDataPath = AkUtilities.MakeRelativePath(UnityEngine.Application.dataPath, defaultRootOutputPath);
+			AkWwiseEditorSettings.Instance.RootOutputPath = pathRelativeToApplicationDataPath;
+			AkWwiseEditorSettings.Instance.SaveSettings();
+		}
+		if (AkUtilities.IsMigrationRequired(AkUtilities.MigrationStep.RootOutputPath_v2025_1_0))
+		{
+			AkWwiseEditorSettings.MigrateRootOutputPath(wprojPath);
+		}
+	}
+
 	// Modify the .wproj file to set needed SoundBank settings
 	private static bool SetSoundbankSettings()
 	{
@@ -703,22 +723,25 @@ public class WwiseSetupWizard
 		if (string.IsNullOrEmpty(settings.WwiseProjectPath))
 			return true;
 
-		var r = new System.Text.RegularExpressions.Regex("_WwiseIntegrationTemp.*?([/\\\\])");
-#if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
-		var FullPath = AkUtilities.GetFullPath(UnityEngine.Application.dataPath, settings.GeneratedSoundbanksPath);
-		var ProjectPath = AkUtilities.GetFullPath(UnityEngine.Application.dataPath, settings.WwiseProjectPath);
-		var SoundbankPath = AkUtilities.MakeRelativePath(System.IO.Path.GetDirectoryName(ProjectPath), FullPath);
-#else
-		var SoundbankPath = AkUtilities.GetFullPath(r.Replace(UnityEngine.Application.streamingAssetsPath, "$1"), settings.SoundbankPath);
-#endif
+		var SoundbankPath = AkBasePathGetter.GetDefaultRootOutputPath();
+		if (AkWwiseEditorSettings.Instance.RootOutputPath != null)
+		{
+			var rootOutputPath = AkWwiseEditorSettings.GetRootOutputPath();
+			var r = new Regex(Regex.Escape("_WwiseIntegrationTemp"));
+			SoundbankPath = r.Replace(rootOutputPath, "", 1);
+		}
+		if (SoundbankPath == null)
+		{
+			Debug.LogWarning("Could not get Default Root Output Path.");
+			return false;
+		}
 		var WprojPath = AkUtilities.GetFullPath(UnityEngine.Application.dataPath, settings.WwiseProjectPath);
 #if UNITY_EDITOR_OSX
 		SoundbankPath = "Z:" + SoundbankPath;
 #endif
-
-		SoundbankPath = AkUtilities.MakeRelativePath(System.IO.Path.GetDirectoryName(WprojPath), SoundbankPath);
+		MigrateRootOutputPath(WprojPath);
 		string[] settingsToDisable = {"GenerateSoundBankXML"};
-		string[] settingsToEnable = {"SoundBankGenerateHeaderFile", "SoundBankGenerateMaxAttenuationInfo", "GenerateSoundBankJSON", "SoundBankGeneratePrintGUID", "SoundBankGeneratePrintPath"};
+		string[] settingsToEnable = {"SoundBankGenerateHeaderFile", "SoundBankGenerateMaxAttenuationInfo", "GenerateSoundBankJSON", "SoundBankGeneratePrintGUID", "SoundBankGeneratePrintPath",  "AutoSoundBankEnabled"};
 		if (AkUtilities.SetSoundbankHeaderFilePath(WprojPath, SoundbankPath))
 			if (AkUtilities.ToggleBoolSoundbankSettingInWproj(settingsToDisable, WprojPath, false))
 				return AkUtilities.ToggleBoolSoundbankSettingInWproj(settingsToEnable, WprojPath, true);
@@ -782,9 +805,54 @@ public class WwiseSetupWizard
 
 		if (logWarning)
 		{
-			UnityEngine.Debug.LogWarning("Automatically added AkAudioListener to Main Camera. Go to \"Edit > Wwise Settings...\" to disable this functionality.");
+			UnityEngine.Debug.Log("Automatically added AkAudioListener to Main Camera. Go to \"Edit > Wwise Settings...\" to disable this functionality.");
 		}
 	}
+	
+	public static BuildTargetGroup[] GetNonObsoleteTargetGroups()
+	{
+		System.Type enumType = typeof(BuildTargetGroup);
+
+		return System.Enum.GetValues(enumType).Cast<BuildTargetGroup>().Where(targetGroup =>
+		{
+			string name = targetGroup.ToString();
+			MemberInfo member = enumType.GetMember(name).FirstOrDefault();
+
+			if (member == null) return false; 
+
+			return member.GetCustomAttribute<System.ObsoleteAttribute>() == null;
+		}).ToArray();
+	}
+	
+	private static void SetAddressableAdapterSymbol()
+	{
+		foreach (BuildTargetGroup targetGroup in GetNonObsoleteTargetGroups())
+		{
+#if UNITY_5_4_OR_NEWER
+			if (targetGroup == BuildTargetGroup.Unknown)
+			{
+				continue;
+			}
+#endif
+			var namedTarget = UnityEditor.Build.NamedBuildTarget.FromBuildTargetGroup(targetGroup);
+			if (PlayerSettings.GetScriptingDefineSymbols(namedTarget).Contains(WwiseAddressableAPIDefine))
+			{
+				continue;
+			}
+			
+			string currentDefines = PlayerSettings.GetScriptingDefineSymbols(namedTarget);
+			var currentDefineList = currentDefines.Split(';').ToList();
+
+			const string wwiseAddressablePrefix = "ADDRESSABLES_API";
+			currentDefineList.RemoveAll(define => define.StartsWith(wwiseAddressablePrefix));
+
+			currentDefineList.Add(WwiseAddressableAPIDefine);
+
+			string newDefinesString = string.Join(";", currentDefineList.Distinct());
+			PlayerSettings.SetScriptingDefineSymbols(namedTarget, newDefinesString);
+		}
+	}
+
 }
 
 #endif // UNITY_EDITOR

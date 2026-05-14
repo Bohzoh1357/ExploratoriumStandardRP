@@ -12,9 +12,10 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2024 Audiokinetic Inc.
+Copyright (c) 2026 Audiokinetic Inc.
 *******************************************************************************/
 
+using System.Collections;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES
@@ -52,7 +53,7 @@ namespace Wwise.API.Runtime.WwiseTypes.WwiseObjectsManagers
             m_wwiseEventReferences.TryRemove(eventReference.DisplayName, out eventReference);
         }
         
-        public void SetLanguageAndReloadLocalizedBanks(string language, List<string> eventNames = null)
+        public IEnumerator SetLanguageAndReloadLocalizedBanks(string language, List<string> eventNames = null)
         {
             var eventReferences = new List<WwiseEventReference>();
             foreach (var eventReference in m_wwiseEventReferences.Values)
@@ -60,7 +61,7 @@ namespace Wwise.API.Runtime.WwiseTypes.WwiseObjectsManagers
                 if (eventNames == null || (eventNames.Count > 0 && eventNames.Contains(eventReference.DisplayName)))
                 {
                     eventReferences.Add(eventReference);
-                    eventReference.UnloadAutoBank();
+                    yield return eventReference.UnloadAutoBank();
                 }
             }
 #if AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES

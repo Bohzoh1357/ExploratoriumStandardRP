@@ -12,12 +12,16 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2024 Audiokinetic Inc.
+Copyright (c) 2026 Audiokinetic Inc.
 *******************************************************************************/
 
 #if UNITY_EDITOR
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using UnityEditor;
+using AK.Wwise.Unity.Logging;
+
 internal class AkPlatformPluginList
 {
 	private static readonly Dictionary<string, System.DateTime> s_LastParsed = new Dictionary<string, System.DateTime>();
@@ -69,7 +73,8 @@ internal class AkPlatformPluginList
 			{
 				foreach (var pluginInfo in plugins)
 				{
-					if (pluginInfo.DllName == pluginName)
+					if (pluginInfo.DllName == pluginName ||
+					    (pluginInfo.StaticLibName == "AkMeterFX" && pluginName.Contains("AkSoundEngine")))
 					{
 						return true;
 					}
@@ -103,10 +108,10 @@ internal class AkPlatformPluginList
 	public static void Update(bool forceUpdate = false)
 	{
 		//Gather all GeneratedSoundBanks folder from the project
-		var allPaths = AkUtilities.GetAllBankPaths();
+		var allPaths = AkUtilities.GetAllBankPaths(AkWwiseEditorSettings.WwiseProjectAbsolutePath);
 		var bNeedRefresh = false;
 		var projectDir = AkBasePathGetter.GetWwiseProjectDirectory();
-		var baseSoundBankPath = AkBasePathGetter.GetFullSoundBankPathEditor();
+		var baseSoundBankPath = AkWwiseEditorSettings.GetRootOutputPath();
 
 		AkWwiseInitializationSettings.UpdatePlatforms();
 
@@ -168,7 +173,7 @@ internal class AkPlatformPluginList
 				}
 				catch (System.Exception ex)
 				{
-					UnityEngine.Debug.LogError("WwiseUnity: " + pluginFile + " could not be parsed. " + ex.Message);
+					WwiseLogger.Error(pluginFile + " could not be parsed. " + ex.Message);
 				}
 			}
 
@@ -205,9 +210,23 @@ internal class AkPlatformPluginList
 		}
 	}
 
+	private static bool PlatformUsesStaticLibs(string platform)
+	{
+		var pair = AkPluginActivator.BuildTargetToPlatformPluginActivator.FirstOrDefault(x => x.Value.WwisePlatformName == platform);
+		
+		if (pair.Equals(default(KeyValuePair<BuildTarget, AkPlatformPluginActivator>)))
+		{
+			// Platform not found
+			return false;
+		}
+		return pair.Value.RequiresStaticPluginRegistration;
+	}
+
 	private static HashSet<AkPluginInfo> ParsePlugins(string platform)
 	{
 		var newPlugins = new System.Collections.Generic.HashSet<AkPluginInfo>();
+		var usesStaticLibs = PlatformUsesStaticLibs(platform);
+
 		try
 		{
 			WwisePluginRefArray pluginRefArray = new WwisePluginRefArray();
@@ -228,14 +247,7 @@ internal class AkPlatformPluginList
 
 				var dll = string.Empty;
 
-				if (platform == "Switch" || platform == "Web")
-				{
-					if (pluginID == AkPluginActivatorConstants.PluginID.AkMeter)
-					{
-						dll = "AkMeter";
-					}
-				}
-				else if (AkPluginActivatorConstants.builtInPluginIDs.Contains(pluginID))
+				if (!usesStaticLibs && AkPluginActivatorConstants.builtInPluginIDs.Contains(pluginID))
 				{
 					continue;
 				}
@@ -262,7 +274,7 @@ internal class AkPlatformPluginList
 		}
 		catch (System.Exception ex)
 		{
-			UnityEngine.Debug.LogError("WwiseUnity: plugins could not be parsed. " + ex.Message);
+			WwiseLogger.Error("Plugins could not be parsed. " + ex.Message);
 		}
 
 		return newPlugins;
