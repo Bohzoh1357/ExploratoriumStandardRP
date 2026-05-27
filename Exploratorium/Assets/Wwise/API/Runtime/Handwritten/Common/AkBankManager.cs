@@ -1,6 +1,4 @@
-using AK.Wwise.Unity.Logging;
-
-#if !(UNITY_QNX) // Disable under unsupported platforms.
+#if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
 /*******************************************************************************
 The content of this file includes portions of the proprietary AUDIOKINETIC Wwise
 Technology released in source code form as part of the game integration package.
@@ -15,7 +13,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2026 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 /// @brief Maintains the list of loaded SoundBanks loaded. This is currently used only with AkAmbient objects.
@@ -26,11 +24,6 @@ public static class AkBankManager
 
 	private static readonly System.Collections.Generic.List<BankHandle> BanksToUnload =
 		new System.Collections.Generic.List<BankHandle>();
-
-	private static string GetBankHandleName(string bankName, AkBankTypeEnum bankType)
-	{
-		return bankName + bankType.ToString();
-	}
 
 	public static void DoUnloadBanks()
 	{
@@ -91,7 +84,7 @@ public static class AkBankManager
 		var result = AkUnitySoundEngine.LoadBank("Init.bnk", out BankID);
 		if (result != AKRESULT.AK_Success)
 		{
-			WwiseLogger.Error("Failed load Init.bnk with result: " + result);
+			UnityEngine.Debug.LogError("WwiseUnity: Failed load Init.bnk with result: " + result);
 		}
 	}
 
@@ -106,23 +99,25 @@ public static class AkBankManager
 		BankHandle handle = null;
 		lock (m_BankHandles)
 		{
-			if (m_BankHandles.TryGetValue(GetBankHandleName(name, bankType), out handle))
+			if (m_BankHandles.TryGetValue(name, out handle))
 			{
 				// Bank already loaded, increment its ref count.
 				handle.IncRef();
 				return AkUnitySoundEngine.AK_INVALID_UNIQUE_ID;
 			}
 
+#if UNITY_SWITCH
+			// No bank decoding on Nintendo switch
+			handle = new BankHandle(name, bankType);
+#else
 			if (decodeBank && bankType != AkBankTypeEnum.AkBankType_User)
 			{
-				WwiseLogger.Error("Decoding Auto-generated SoundBanks is not supported.");
-				decodeBank = false;
+				UnityEngine.Debug.LogError("Decoding Auto-generated SoundBanks is not supported.");
 			}
 
-			handle = decodeBank && AkUnitySoundEngine.PlatformSupportsDecodeBank() ? 
-				new DecodableBankHandle(name, saveDecodedBank) : new BankHandle(name, bankType);
-
-			m_BankHandles.Add(GetBankHandleName(name, bankType), handle);
+			handle = decodeBank ? new DecodableBankHandle(name, saveDecodedBank) : new BankHandle(name, bankType);
+#endif
+			m_BankHandles.Add(name, handle);
 		}
 		return handle.LoadBank();
 	}
@@ -133,7 +128,7 @@ public static class AkBankManager
 		BankHandle handle = null;
 		lock (m_BankHandles)
 		{
-			if (m_BankHandles.TryGetValue(GetBankHandleName(name, bankType), out handle))
+			if (m_BankHandles.TryGetValue(name, out handle))
 			{
 				// Bank already loaded, increment its ref count.
 				handle.IncRef();
@@ -147,12 +142,12 @@ public static class AkBankManager
 	}
 
 	/// Unloads a SoundBank. See AK::SoundEngine::UnloadBank for more information.
-	public static void UnloadBank(string name, AkBankTypeEnum bankType = AkBankTypeEnum.AkBankType_User)
+	public static void UnloadBank(string name)
 	{
 		lock (m_BankHandles)
 		{
 			BankHandle handle = null;
-			if (m_BankHandles.TryGetValue(GetBankHandleName(name, bankType), out handle))
+			if (m_BankHandles.TryGetValue(name, out handle))
 				handle.DecRef();
 		}
 	}
@@ -230,7 +225,7 @@ public static class AkBankManager
 		protected void LogLoadResult(AKRESULT result)
 		{
 			if (result != AKRESULT.AK_Success && AkUnitySoundEngine.IsInitialized())
-				WwiseLogger.Warning("Bank " + bankName + " failed to load (" + result + ")");
+				UnityEngine.Debug.LogWarning("WwiseUnity: Bank " + bankName + " failed to load (" + result + ")");
 		}
 	}
 
@@ -345,4 +340,4 @@ public static class AkBankManager
 		}
 	}
 }
-#endif // #if !(UNITY_QNX) // Disable under unsupported platforms.
+#endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.

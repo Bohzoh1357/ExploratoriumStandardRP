@@ -12,12 +12,10 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2026 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
-using AK.Wwise.Unity.Logging;
-
-#if !(UNITY_QNX) // Disable under unsupported platforms.
+#if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
 
 namespace AK.Wwise
 {
@@ -65,7 +63,7 @@ namespace AK.Wwise
 			if (IsValid())
 				return true;
 
-			WwiseLogger.Warning("Wwise ID has not been resolved. Consider picking a new " + GetType().Name + ".");
+			UnityEngine.Debug.LogWarning("Wwise ID has not been resolved. Consider picking a new " + GetType().Name + ".");
 			return false;
 		}
 
@@ -73,7 +71,7 @@ namespace AK.Wwise
 		{
 #if UNITY_EDITOR
 			if (result != AKRESULT.AK_Success && AkUnitySoundEngine.IsInitialized())
-				WwiseLogger.Warning("Unsuccessful call made on " + GetType().Name + ".");
+				UnityEngine.Debug.LogWarning("Unsuccessful call made on " + GetType().Name + ".");
 #endif
 		}
 
@@ -134,4 +132,4 @@ namespace AK.Wwise
 		#endregion
 	}
 }
-#endif // #if !(UNITY_QNX) // Disable under unsupported platforms.
+#endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.

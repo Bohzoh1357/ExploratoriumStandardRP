@@ -13,16 +13,14 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2026 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 using System;
 using System.Collections;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Threading.Tasks;
-using AK.Wwise.Unity.Logging;
 
 /// <summary>
 /// This class wraps the client that communicates with the Wwise Authoring application via WAAPI.
@@ -71,25 +69,17 @@ public class AkWaapiUtilities
 	/// Used to store store UnityEngine.Application.dataPath because we can't access it outside of the main loop
 	/// </summary>
 	private static string dataPath;
-	
-	[System.Serializable]
-	public class WwiseLogEntry
-	{
-		public string severity;
-		public string message;
-	}
-
-	[System.Serializable]
-	public class WwiseLogResult
-	{
-		public WwiseLogEntry[] logs;
-	}
 
 	/// <summary>
 	/// Bind disconnection method to compilation started delegate and start the async Waapi loop.
 	/// </summary>
 	static AkWaapiUtilities()
 	{
+		if (UnityEditor.AssetDatabase.IsAssetImportWorkerProcess())
+		{
+			return;
+		}
+
 #if UNITY_2019_1_OR_NEWER
 		UnityEditor.Compilation.CompilationPipeline.compilationStarted += (object context) => FireDisconnect(true);
 #else
@@ -103,7 +93,6 @@ public class AkWaapiUtilities
 		isDisconnecting = false;
 		dataPath = UnityEngine.Application.dataPath;
 		Loop();
-		AkWwiseEditorSettings.OnWaapiSettingsChanged += TriggerConnectionCheck;
 	}
 
 	/// <summary>
@@ -190,77 +179,61 @@ public class AkWaapiUtilities
 	public static bool IsConnected()
 	{
 		if (m_WaapiClient == null) return false;
-		if (!projectConnected) return false;
 		return WaapiClient.IsConnected();
 	}
 
 	private static bool kill;
 	private static int loopSleep = 0;
-	private static bool isLoopRunning = false;
-	private static float lastLoopExecutionTime = 0f;
 	private static bool projectConnected = false;
 
 	/// <summary>
 	/// Main loop for the WAAPI API. Checks if the client is connected and consumes all commands.
 	/// </summary>
-private static async void Loop()
-    {
-        if (isLoopRunning)
-        {
-            return;
-        }
-        isLoopRunning = true;
+	private static async void Loop()
+	{
+		try
+		{
+			ErrorMessage = "";
 
-        float currentTime = (float)UnityEditor.EditorApplication.timeSinceStartup;
+			if (await CheckConnection())
+			{
+				await ConsumeCommandQueue();
+			}
 
-        if (!kill && loopSleep > 0 && currentTime < lastLoopExecutionTime + loopSleep)
-        {
-            isLoopRunning = false;
-            UnityEditor.EditorApplication.delayCall += Loop;
-            return; 
-        }
+			if (!kill)
+			{
+				if (loopSleep > 0)
+				{
+					await Task.Delay(loopSleep * 1000);
+				}
+			}
+		}
 
-        lastLoopExecutionTime = currentTime;
-
-        try
-        {
-            try
-            {
-                ErrorMessage = "";
-
-                if (await CheckConnection())
-                {
-                    await ConsumeCommandQueue();
-                }
-            }
-            catch (System.Net.WebSockets.WebSocketException)
-            {
-                WwiseLogger.Log("Wwise Unity : WAAPI disconnected because Wwise Authoring was closed");
-                Disconnecting?.Invoke(false);
-                waapiCommandQueue = new ConcurrentQueue<WaapiCommand>();
-                projectConnected = false;
-                try
-                {
-                    await m_WaapiClient.Close();
-                }
-                catch (System.Net.Sockets.SocketException)
-                {
-                }
-            }
-            catch (Wamp.WampNotConnectedException e)
-            {
-                ErrorMessage = e.Message;
-            }
-        }
-        finally
-        {
-            isLoopRunning = false;
-            if (!kill)
-            {
-                UnityEditor.EditorApplication.delayCall += Loop;
-            }
-        }
-    }
+		//Handle socket issues caused by closing Wwise Authoring.
+		catch (System.Net.WebSockets.WebSocketException)
+		{
+			UnityEngine.Debug.Log("Wwise Unity : WAAPI disconnected because Wwise Authoring was closed");
+			Disconnecting?.Invoke(false);
+			waapiCommandQueue = new ConcurrentQueue<WaapiCommand>();
+			projectConnected = false;
+			try
+			{
+				await m_WaapiClient.Close();
+			}
+			//Closing the client will throw other exceptions because it tries to send messages to a closed socket.
+			catch (System.Net.Sockets.SocketException)
+			{
+			}
+		}
+		catch (Wamp.WampNotConnectedException e)
+		{
+			ErrorMessage = e.Message;
+		}
+		finally
+		{
+			UnityEditor.EditorApplication.delayCall += () => Loop();
+		}
+	}
 
 	/// <summary>
 	/// Consumes all WAAPICommands in the queue and then fires QueueConsumed.
@@ -305,7 +278,7 @@ private static async void Loop()
 						case ak.wwise.error.invalid_json:
 						case ak.wwise.error.invalid_arguments:
 						default:
-							WwiseLogger.Log(ErrorMessage);
+							UnityEngine.Debug.Log(ErrorMessage);
 							break;
 					}
 					break;
@@ -323,12 +296,6 @@ private static async void Loop()
 		}
 	}
 
-	private static void TriggerConnectionCheck()
-	{
-		loopSleep = 0;
-		WaapiClient.CancelConnectionAttempt();
-	}
-	
 	/// <summary>
 	/// Checks the global WAAPI settings and disconnects if WAAPI is disabled or connection settings have changed.
 	/// If disconnected, try to connect with current settings.
@@ -338,7 +305,7 @@ private static async void Loop()
 	{
 		if (AkWwiseEditorSettings.Instance.UseWaapi)
 		{
-			// If WAAPI connection settings have changed, unsubscribe and close the connection.
+			// If WAAPI connection settings have changed, unsubcribe and close the connection.
 			if (ConnectionSettingsChanged() && WaapiClient.IsConnected())
 			{
 				FireDisconnect(false);
@@ -394,11 +361,6 @@ private static async void Loop()
 	{
 		try
 		{
-			var projectAvailable = await IsProjectAvailable();
-			if (!projectAvailable)
-			{
-				return false;
-			}
 			var result = await GetProjectInfo();
 			if (result.Count == 0)
 			{
@@ -433,7 +395,7 @@ private static async void Loop()
 			}
 			if (e.Uri == "ak.wwise.locked")
 			{
-				return false;
+				return true;
 			}
 
 
@@ -451,7 +413,7 @@ private static async void Loop()
 	}
 
 	/// <summary>
-	/// Starts the disconnection process. 
+	/// Starts the diconnection process. 
 	/// Invokes Disconnecting() so that other classes using WAAPI can clean up and add commands to unsubscribe from topics.
 	/// Consumes the last batch of commands in the command queue then closes the client.
 	/// </summary>
@@ -516,46 +478,38 @@ private static async void Loop()
 	/// Returns a rich text string representing the current WAAPI connection status.
 	/// </summary>
 	/// <returns></returns>
-	public static string GetStatusString(out bool connected)
+	public static string GetStatusString()
 	{
-		connected = false;
 		var returnString = "";
 		if (!AkWwiseEditorSettings.Instance.UseWaapi)
 		{
-			returnString += "WAAPI disabled in project settings";
+			returnString += "<color=red> Waapi disabled in project settings </color>";
 		}
 		else if (WaapiClient.wamp != null)
 		{
 			var state = WaapiClient.wamp.SocketState();
-			if (state == System.Net.WebSockets.WebSocketState.Open && ErrorMessage == string.Empty)
-			{
-				returnString += "Connected to Wwise.";
-				connected = true;
-				return returnString;
-			}
 			switch (state)
 			{
-				case System.Net.WebSockets.WebSocketState.Closed:
-					returnString += "Disconnected.";
-					break;
 				case System.Net.WebSockets.WebSocketState.Open:
+					returnString += "<color=green> Connected</color>";
+					break;
+				case System.Net.WebSockets.WebSocketState.Closed:
+					returnString += "<color=red> Disconnected </color>";
+					break;
 				case System.Net.WebSockets.WebSocketState.Connecting:
-					returnString += $"Connecting to { GetUri()}.";
+					returnString += $"<color=orange> Connecting to { GetUri()}</color>";
 					break;
 				default:
-					returnString += $"Connecting to { GetUri()}.";
+					returnString += $"<color=orange> Connecting to { GetUri()}</color>";
 					break;
 			}
 		}
 		else
 		{
-			returnString += "Disconnected.";
+			returnString += "<color=red> Disconnected </color>";
 		}
-
 		if (ErrorMessage != string.Empty)
-		{
-			returnString += $" {ErrorMessage}";
-		}
+			returnString += $" <color=red>{ErrorMessage}</color>";
 		return returnString;
 	}
 
@@ -568,12 +522,6 @@ private static async void Loop()
 		var ret = UnityEngine.JsonUtility.FromJson<ReturnWwiseObjects>(result).@return;
 
 		return ParseObjectInfo(ret);
-	}
-	
-	private static async Task<bool> IsProjectAvailable()
-	{
-		var result = await WaapiClient.Call(ak.wwise.core.@object.ping, null, null);
-		return UnityEngine.JsonUtility.FromJson<PingWwiseObject>(result).isAvailable;
 	}
 
 	/// <summary>
@@ -646,15 +594,12 @@ private static async void Loop()
 	public static void GetWwiseObjects<T>(List<System.Guid> guids, ReturnOptions options, GetResultListDelegate<T> callback)
 	{
 		string guidString = "";
-		for (int i = 0; i < guids.Count; i++)
+		foreach (var guid in guids)
 		{
-			guidString += $"{guids[i]:B}";
-			if (i < guids.Count - 1)
-			{
-				guidString += ",";
-			}
-        }
-		var args = new WaqlArgs("from object \"" + guidString + "\" ");
+			guidString += $"{guid:B} ,";
+		}
+
+		var args = new WaqlArgs($"from object \"{guidString}\" ");
 		QueueCommandWithReturnWwiseObjects(args, options, callback);
 	}
 
@@ -803,14 +748,10 @@ private static async void Loop()
 	/// Creates a WaapiCommand object containing a lambda call to OpenWorkUnitInExplorerAsync and adds it to the waapiCommandQueue.
 	/// </summary>
 	/// <param name="guid">GUID of the object to be found.</param>
-	/// <param name="openNewTab">Whether to open a new explorer tab or not</param>
-	public static void OpenWorkUnitInExplorer(System.Guid guid, bool openNewTab = false)
+	public static void OpenWorkUnitInExplorer(System.Guid guid)
 	{
-		if(!guid.Equals(Guid.Empty))
-		{
-			waapiCommandQueue.Enqueue(new WaapiCommand(
-				async () => await OpenWorkUnitInExplorerAsync(guid, openNewTab)));
-		}
+		waapiCommandQueue.Enqueue(new WaapiCommand(
+			async () => await OpenWorkUnitInExplorerAsync(guid)));
 	}
 
 	/// <summary>
@@ -823,94 +764,13 @@ private static async void Loop()
 		waapiCommandQueue.Enqueue(new WaapiCommand(
 			async () => await OpenSoundBankInExplorerAsync(guid)));
 	}
-	
-	private static void ParseBankGenerationLog(string jsonResult)
-	{
-		WwiseLogResult logResult;
-        
-        try
-        {
-            logResult = UnityEngine.JsonUtility.FromJson<WwiseLogResult>(jsonResult);
-        }
-        catch (Exception e)
-        {
-	        WwiseLogger.Error($"Log Parsing Failed: Could not deserialize JSON.\nError: {e.Message}");
-            return;
-        }
-
-        List<string> issues = new List<string>();
-        int errorCount = 0;
-        int warningCount = 0;
-
-        if (logResult.logs is { Length: > 0 })
-        {
-            foreach (WwiseLogEntry logEntry in logResult.logs)
-            {
-                if (logEntry.message.Contains("message(s),") && logEntry.severity.Equals("Message", StringComparison.OrdinalIgnoreCase))
-                {
-                    continue; 
-                }
-                if (logEntry.severity.Equals("Error", StringComparison.OrdinalIgnoreCase))
-                {
-                    issues.Add($"[ERROR] {logEntry.message}");
-                    errorCount++;
-                }
-                else if (logEntry.severity.Equals("Warning", StringComparison.OrdinalIgnoreCase))
-                {
-                    issues.Add($"[WARNING] {logEntry.message}");
-                    warningCount++;
-                }
-            }
-        }
-
-        if (issues.Count > 0)
-        {
-            string header = $"SoundBanks generation FAILED with {errorCount} Error(s) and {warningCount} Warning(s):";
-            string combinedLog = header + "\n" + string.Join("\n", issues);
-            if (errorCount > 0)
-            {
-	            WwiseLogger.Error(combinedLog);
-            }
-            else
-            {
-	            WwiseLogger.Warning(combinedLog);
-            }
-        }
-        else
-        {
-            WwiseLogger.Log("SoundBanks generation successful:");
-        }
-	}
-	
-	public static void GenerateSoundbank(string[] currentPlatforms = null)
-	{
-		waapiCommandQueue.Enqueue(new WaapiCommand(
-			async () => await GenerateSoundbankAsync(currentPlatforms)));
-	}
-
-	private static async Task GenerateSoundbankAsync(string[] currentPlatforms)
-	{
-		var arguments = new Dictionary<string, object>
-		{
-			{WaapiKeywords.WRITETODISK, true },
-			{WaapiKeywords.REBUILDINITBANK, true },
-		};
-		if (currentPlatforms != null)
-		{
-			arguments.Add(WaapiKeywords.PLATFORMS, currentPlatforms );	
-		}
-		var args = CreateMultiParameterJson(arguments);
-		string result = await WaapiClient.Call(ak.wwise.core.soundbank.generate, args);
-		ParseBankGenerationLog(result);
-	}
 
 	/// <summary>
 	/// Uses a waapi call to get the object's file path, then opens the containing folder in the system's file browser.
 	/// </summary>
 	/// <param name="guid">GUID of the object to be found.</param>
-	/// <param name="openNewTab">Whether to open a new explorer tab or not</param>
 	/// <returns>Awaitable Task.</returns>
-	private static async Task OpenWorkUnitInExplorerAsync(System.Guid guid, bool openNewTab = false)
+	private static async Task OpenWorkUnitInExplorerAsync(System.Guid guid)
 	{
 		var args = new WaqlArgs($"from object \"{guid:B}\"");
 		var options = new ReturnOptions(new string[] { "filePath" });
@@ -922,36 +782,7 @@ private static async void Loop()
 #if UNITY_EDITOR_OSX
 		filePath = AkUtilities.ParseOsxPathFromWinePath(filePath);
 #endif
-		if (openNewTab)
-		{
-#if UNITY_EDITOR_WIN
-			string windowsPath = filePath.Replace('/', '\\');
-			string argument = $"/select,\"{windowsPath}\"";
-
-			try
-			{
-				Process.Start("explorer.exe", argument);
-			}
-			catch (System.Exception e)
-			{
-				WwiseLogger.Error($"Failed to open Explorer when opening a work unit in the file explorer: {e.Message}");
-			}
-#elif UNITY_EDITOR_OSX
-			string arguments = $"-R \"{filePath}\"";
-		    try
-		    {
-		        Process.Start("open", arguments);
-		    }
-		    catch (System.Exception e)
-		    {
-		        WwiseLogger.Error($"macOS failed to reveal a work unit in Finder: {e.Message}");
-		    }
-#endif
-		}
-		else
-		{
-			UnityEditor.EditorUtility.RevealInFinder(filePath);
-		}
+		UnityEditor.EditorUtility.RevealInFinder(filePath);
 	}
 
 	/// <summary>
@@ -1262,89 +1093,6 @@ private static async void Loop()
 		var info = UnityEngine.JsonUtility.FromJson<WwiseChildModifiedInfo>(json);
 		info.ParseInfo();
 		return info;
-	}
-
-	public static List<WwiseStructureChanged> ParseStructureChange(string json)
-	{
-		var info = UnityEngine.JsonUtility.FromJson<WwiseStructureObjects>(json);
-		return info.objects;
-
-	}
-	
-	public static string CreateSingleParameterJson<T>(string keyName, T value)
-	{
-	    var jsonBuilder = new System.Text.StringBuilder();
-	    jsonBuilder.Append("{");
-
-	    jsonBuilder.Append($"\"{keyName}\":");
-
-	    string valueString = GetJsonValueString(value);
-	    jsonBuilder.Append(valueString);
-
-	    jsonBuilder.Append("}");
-
-	    return jsonBuilder.ToString();
-	}
-	
-	public static string CreateMultiParameterJson(Dictionary<string, object> parameters)
-	{
-		if (parameters == null || parameters.Count == 0)
-		{
-			return "{}";
-		}
-
-		var jsonBuilder = new System.Text.StringBuilder();
-		jsonBuilder.Append("{");
-
-		bool isFirst = true;
-
-		foreach (var kvp in parameters)
-		{
-			if (!isFirst)
-			{
-				jsonBuilder.Append(",");
-			}
-			isFirst = false;
-
-			jsonBuilder.Append($"\"{kvp.Key}\":");
-
-			string valueString = GetJsonValueString(kvp.Value);
-			jsonBuilder.Append(valueString);
-		}
-
-		jsonBuilder.Append("}");
-		return jsonBuilder.ToString();
-	}
-
-	private static string GetJsonValueString<T>(T value)
-	{
-	    if (value == null)
-	    {
-	        return "null";
-	    }
-
-	    if (value is Array arrayValue)
-	    {
-	        var elements = new List<string>();
-	        foreach (var element in arrayValue)
-	        {
-	            elements.Add(GetJsonValueString(element));
-	        }
-	        return $"[{string.Join(",", elements)}]";
-	    }
-	    
-	    if (value is bool boolValue)
-	    {
-	        return boolValue.ToString().ToLowerInvariant();
-	    }
-
-	    if (value is int || value is float || value is double || value is long)
-	    {
-	        return Convert.ToString(value, System.Globalization.CultureInfo.InvariantCulture);
-	    }
-
-	    string stringValue = value.ToString();
-	    return $"\"{stringValue}\"";
 	}
 }
 #endif

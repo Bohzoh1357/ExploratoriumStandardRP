@@ -12,13 +12,12 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2026 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 ﻿#if UNITY_EDITOR
 using System.Collections.Generic;
 using System.IO;
-using AK.Wwise.Unity.Logging;
 
 public partial class AkBuildPreprocessor
 {
@@ -60,23 +59,10 @@ public partial class AkBuildPreprocessor
 		if (!string.IsNullOrEmpty(platformSubDir))
 			return platformSubDir;
 
-		//New way to access target platform name
-		string platformName = AkBasePathGetter.GetTargetPlatformName(target);
-		if (platformName != string.Empty)
-		{
-			return platformName;
-		}
-		
-		//For legacy code compatibility. Should maybe remove in 26.1 or 27.1 to give time to adjust 
 		if (PlatformConfigurations.ContainsKey(target))
 		{
-			if (platformName == string.Empty)
-			{
-				platformName = PlatformConfigurations[target].WwisePlatformName;
-			}
-			return platformName;
+			return PlatformConfigurations[target].WwisePlatformName;
 		}
-		//Keeping the old fallback of using the Unity target name.
 		return target.ToString();
 	}
 }
@@ -99,20 +85,14 @@ public partial class AkBuildPreprocessor : UnityEditor.Build.IPreprocessBuild, U
 	{
 		if (string.IsNullOrEmpty(platformName))
 		{
-			WwiseLogger.ErrorFormat("Could not determine platform name for <{0}> platform", platformName);
+			UnityEngine.Debug.LogErrorFormat("WwiseUnity: Could not determine platform name for <{0}> platform", platformName);
 			return false;
 		}
 
 		if (generate)
 		{
 			var platforms = new System.Collections.Generic.List<string> { platformName };
-			string wwiseInstallationPath = "";
-#if UNITY_EDITOR_WIN
-			wwiseInstallationPath = AkWwiseEditorSettings.Instance.WwiseInstallationPathWindows;
-#elif UNITY_EDITOR_OSX
-			wwiseInstallationPath = AkWwiseEditorSettings.Instance.WwiseInstallationPathMac;
-#endif
-			AkUtilities.GenerateSoundbanks(wwiseInstallationPath, AkWwiseEditorSettings.WwiseProjectAbsolutePath, platforms);
+			AkUtilities.GenerateSoundbanks(platforms);
 		}
 
 		string sourceFolder;
@@ -122,11 +102,11 @@ public partial class AkBuildPreprocessor : UnityEditor.Build.IPreprocessBuild, U
 		if (!AkUtilities.DirectoryCopy(sourceFolder, destinationFolder, true))
 		{
 			destinationFolder = null;
-			WwiseLogger.ErrorFormat("Could not copy SoundBank folder for <{0}> platform", platformName);
+			UnityEngine.Debug.LogErrorFormat("WwiseUnity: Could not copy SoundBank folder for <{0}> platform", platformName);
 			return false;
 		}
 
-		WwiseLogger.Log($"Copied SoundBank folder from <{sourceFolder}> to streaming assets folder <{destinationFolder}> for <{platformName}> platform build");
+		UnityEngine.Debug.LogFormat("WwiseUnity: Copied SoundBank folder to streaming assets folder <{0}> for <{1}> platform build", destinationFolder, platformName);
 		return true;
 	}
 
@@ -137,18 +117,18 @@ public partial class AkBuildPreprocessor : UnityEditor.Build.IPreprocessBuild, U
 			return;
 
 		System.IO.Directory.Delete(destinationFolder, true);
-		WwiseLogger.LogFormat("Deleting streaming assets folder <{0}>", destinationFolder);
+		UnityEngine.Debug.LogFormat("WwiseUnity: Deleting streaming assets folder <{0}>", destinationFolder);
 	}
 
 	public void OnPreprocessBuildInternal(UnityEditor.BuildTarget target, string path)
 	{
-		var platformName = GetPlatformName(target);
 #if !(AK_WWISE_ADDRESSABLES && UNITY_ADDRESSABLES)
 		if (AkWwiseEditorSettings.Instance.CopySoundBanksAsPreBuildStep)
 		{
+			var platformName = GetPlatformName(target);
 			if (!CopySoundbanks(AkWwiseEditorSettings.Instance.GenerateSoundBanksAsPreBuildStep, platformName, ref destinationSoundBankFolder))
 			{
-				WwiseLogger.ErrorFormat("SoundBank folder has not been copied for <{0}> target at <{1}>. This will likely result in a build without sound!!!", target, path);
+				UnityEngine.Debug.LogErrorFormat("WwiseUnity: SoundBank folder has not been copied for <{0}> target at <{1}>. This will likely result in a build without sound!!!", target, path);
 			}
 		}
 #endif
@@ -156,9 +136,7 @@ public partial class AkBuildPreprocessor : UnityEditor.Build.IPreprocessBuild, U
 		{
 			config.OnPreprocessBuild(path);
 		}
-		
-		// Init ProjectDB for platform being built
-		WwiseProjectDatabase.Init(AkWwiseEditorSettings.GetRootOutputPath(), platformName);
+		// @todo sjl - only update for target platform
 		AkPluginActivator.ForceUpdate();
 		AkPluginActivator.ActivatePluginsForDeployment(target, true);
 	}
@@ -174,9 +152,6 @@ public partial class AkBuildPreprocessor : UnityEditor.Build.IPreprocessBuild, U
 		DeleteSoundbanks(destinationSoundBankFolder);
 #endif
 		destinationSoundBankFolder = string.Empty;
-		
-		// Point the ProjectDB back on the current editor platform
-		WwiseProjectDatabase.Init(AkWwiseEditorSettings.GetRootOutputPath(), AkBasePathGetter.GetPlatformName());
 	}
 
 #if UNITY_2018_1_OR_NEWER

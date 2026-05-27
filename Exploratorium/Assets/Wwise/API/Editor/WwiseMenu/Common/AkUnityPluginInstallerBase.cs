@@ -12,10 +12,8 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2026 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
-
-using AK.Wwise.Unity.Logging;
 
 #if UNITY_EDITOR
 public class AkUnityAssetsInstaller
@@ -32,7 +30,7 @@ public class AkUnityAssetsInstaller
 		var fi = new System.IO.FileInfo(srcFilePath);
 		if (!fi.Exists)
 		{
-			WwiseLogger.Error(string.Format("Failed to copy. Source is missing: {0}.", srcFilePath));
+			UnityEngine.Debug.LogError(string.Format("WwiseUnity: Failed to copy. Source is missing: {0}.", srcFilePath));
 			return false;
 		}
 
@@ -48,7 +46,7 @@ public class AkUnityAssetsInstaller
 		}
 		catch (System.Exception ex)
 		{
-			WwiseLogger.Error(string.Format("Error during installation: {0}.", ex.Message));
+			UnityEngine.Debug.LogError(string.Format("WwiseUnity: Error during installation: {0}.", ex.Message));
 			return false;
 		}
 
@@ -61,7 +59,7 @@ public class AkUnityAssetsInstaller
 		var fi = new System.IO.FileInfo(srcFilePath);
 		if (!fi.Exists)
 		{
-			WwiseLogger.Error(string.Format("Failed to overwrite. Source is missing: {0}.", srcFilePath));
+			UnityEngine.Debug.LogError(string.Format("WwiseUnity: Failed to overwrite. Source is missing: {0}.", srcFilePath));
 			return false;
 		}
 
@@ -77,7 +75,7 @@ public class AkUnityAssetsInstaller
 		}
 		catch (System.Exception ex)
 		{
-			WwiseLogger.Error(string.Format("Error during installation: {0}.", ex.Message));
+			UnityEngine.Debug.LogError(string.Format("WwiseUnity: Error during installation: {0}.", ex.Message));
 			return false;
 		}
 
@@ -90,7 +88,7 @@ public class AkUnityAssetsInstaller
 		var fi = new System.IO.FileInfo(srcFilePath);
 		if (!fi.Exists)
 		{
-			WwiseLogger.Error(string.Format("Failed to move. Source is missing: {0}.", srcFilePath));
+			UnityEngine.Debug.LogError(string.Format("WwiseUnity: Failed to move. Source is missing: {0}.", srcFilePath));
 			return;
 		}
 
@@ -106,7 +104,7 @@ public class AkUnityAssetsInstaller
 		}
 		catch (System.Exception ex)
 		{
-			WwiseLogger.Error(string.Format("Error during installation: {0}.", ex.Message));
+			UnityEngine.Debug.LogError(string.Format("WwiseUnity: Error during installation: {0}.", ex.Message));
 		}
 	}
 
@@ -116,7 +114,7 @@ public class AkUnityAssetsInstaller
 	{
 		if (!srcDir.Exists)
 		{
-			WwiseLogger.Error(string.Format("Failed to copy. Source is missing: {0}.", srcDir));
+			UnityEngine.Debug.LogError(string.Format("WwiseUnity: Failed to copy. Source is missing: {0}.", srcDir));
 			return false;
 		}
 
@@ -151,7 +149,7 @@ public class AkUnityAssetsInstaller
 			}
 			catch (System.Exception ex)
 			{
-				WwiseLogger.Error(string.Format("Error during installation: {0}.", ex.Message));
+				UnityEngine.Debug.LogError(string.Format("WwiseUnity: Error during installation: {0}.", ex.Message));
 				return false;
 			}
 		}
@@ -175,7 +173,7 @@ public class AkUnityAssetsInstaller
 
 public class AkUnityPluginInstallerBase : AkUnityAssetsInstaller
 {
-	private readonly string m_progTitle = "Plugin Installation Progress";
+	private readonly string m_progTitle = "WwiseUnity: Plugin Installation Progress";
 
 	public bool InstallPluginByConfig(string config)
 	{
@@ -190,7 +188,7 @@ public class AkUnityPluginInstallerBase : AkUnityAssetsInstaller
 			new System.IO.DirectoryInfo(pluginDest), m_excludes);
 		if (!isSuccess)
 		{
-			WwiseLogger.Error(string.Format("Failed to install plugin for {0} ({1}) from {2} to {3}.",
+			UnityEngine.Debug.LogError(string.Format("WwiseUnity: Failed to install plugin for {0} ({1}) from {2} to {3}.",
 				m_platform, config, pluginSrc, pluginDest));
 			UnityEditor.EditorUtility.ClearProgressBar();
 			return false;
@@ -200,7 +198,7 @@ public class AkUnityPluginInstallerBase : AkUnityAssetsInstaller
 		UnityEditor.AssetDatabase.Refresh();
 
 		UnityEditor.EditorUtility.ClearProgressBar();
-		WwiseLogger.Log(string.Format("Plugin for {0} {1} installed from {2} to {3}.", m_platform, config,
+		UnityEngine.Debug.Log(string.Format("WwiseUnity: Plugin for {0} {1} installed from {2} to {3}.", m_platform, config,
 			pluginSrc, pluginDest));
 
 		return true;
@@ -219,7 +217,7 @@ public class AkUnityPluginInstallerBase : AkUnityAssetsInstaller
 			new System.IO.DirectoryInfo(pluginDest), m_excludes);
 		if (!isSuccess)
 		{
-			WwiseLogger.Error(string.Format("Failed to install plugin for {0} ({1}, {2}) from {3} to {4}.",
+			UnityEngine.Debug.LogError(string.Format("WwiseUnity: Failed to install plugin for {0} ({1}, {2}) from {3} to {4}.",
 				m_platform, arch, config, pluginSrc, pluginDest));
 			UnityEditor.EditorUtility.ClearProgressBar();
 			return false;
@@ -229,7 +227,7 @@ public class AkUnityPluginInstallerBase : AkUnityAssetsInstaller
 		UnityEditor.AssetDatabase.Refresh();
 
 		UnityEditor.EditorUtility.ClearProgressBar();
-		WwiseLogger.Log(string.Format("Plugin for {0} {1} {2} installed from {3} to {4}.", m_platform, arch,
+		UnityEngine.Debug.Log(string.Format("WwiseUnity: Plugin for {0} {1} {2} installed from {3} to {4}.", m_platform, arch,
 			config, pluginSrc, pluginDest));
 
 		return true;
@@ -330,7 +328,7 @@ public class AkDocHelper
 
 		if (!System.IO.File.Exists(docPath))
 		{
-			WwiseLogger.Log("Unable to show documentation. Please unzip WwiseUnityIntegrationHelp_AppleCommon_en.zip manually.");
+			UnityEngine.Debug.Log("WwiseUnity: Unable to show documentation. Please unzip WwiseUnityIntegrationHelp_AppleCommon_en.zip manually.");
 			return string.Empty;
 		}
 #endif
@@ -338,7 +336,7 @@ public class AkDocHelper
 		var fi = new System.IO.FileInfo(docPath);
 		if (!fi.Exists)
 		{
-			WwiseLogger.Error(string.Format("Failed to find documentation: {0}. Aborted.", docPath));
+			UnityEngine.Debug.LogError(string.Format("WwiseUnity: Failed to find documentation: {0}. Aborted.", docPath));
 			return string.Empty;
 		}
 
@@ -366,7 +364,7 @@ public class AkDocHelper
 			start.UseShellExecute = true;
 			start.RedirectStandardOutput = false;
 
-			var progMsg = "Unzipping documentation...";
+			var progMsg = "WwiseUnity: Unzipping documentation...";
 			var progTitle = "Unzipping Wwise documentation";
 			UnityEditor.EditorUtility.DisplayProgressBar(progTitle, progMsg, 0.5f);
 
@@ -383,17 +381,17 @@ public class AkDocHelper
 					if (isBuildSucceeded)
 					{
 						UnityEditor.EditorUtility.DisplayProgressBar(progTitle, progMsg, 1.0f);
-						WwiseLogger.Log("Documentation extraction succeeded. ");
+						UnityEngine.Debug.Log("WwiseUnity: Documentation extraction succeeded. ");
 					}
 					else
-						WwiseLogger.Error("Extraction failed.");
+						UnityEngine.Debug.LogError("WwiseUnity: Extraction failed.");
 
 					UnityEditor.EditorUtility.ClearProgressBar();
 				}
 				catch (System.Exception ex)
 				{
 					UnityEditor.EditorUtility.ClearProgressBar();
-					WwiseLogger.Error(ex.ToString());
+					UnityEngine.Debug.LogError(ex.ToString());
 					UnityEditor.EditorUtility.ClearProgressBar();
 				}
 			}

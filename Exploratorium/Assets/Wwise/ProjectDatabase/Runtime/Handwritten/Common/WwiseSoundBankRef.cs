@@ -12,31 +12,31 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2026 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 #if UNITY_EDITOR
 public class WwiseSoundBankRef: global::System.IDisposable
 {
-    private global::System.IntPtr projectDatabasePtr;
-    protected bool bDeletesManually;
+    private global::System.IntPtr swigCPtr;
+    protected bool swigCMemOwn;
 
     internal WwiseSoundBankRef(global::System.IntPtr cPtr, bool cMemoryOwn)
     {
-        bDeletesManually = cMemoryOwn;
-        projectDatabasePtr = cPtr;
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
         Medias = new WwiseMediaRefArray(cPtr);
-        Events = new WwiseSoundBankEventsRefArray(cPtr);
+        Events = new WwiseEventRefArray(cPtr);
     }
 
     internal static global::System.IntPtr getCPtr(WwiseSoundBankRef obj)
     {
-        return (obj == null) ? global::System.IntPtr.Zero : obj.projectDatabasePtr;
+        return (obj == null) ? global::System.IntPtr.Zero : obj.swigCPtr;
     }
 
     internal virtual void setCPtr(global::System.IntPtr cPtr)
     {
         Dispose();
-        projectDatabasePtr = cPtr;
+        swigCPtr = cPtr;
     }
 
     ~WwiseSoundBankRef()
@@ -54,15 +54,15 @@ public class WwiseSoundBankRef: global::System.IDisposable
     {
         lock (this)
         {
-            if (projectDatabasePtr != global::System.IntPtr.Zero)
+            if (swigCPtr != global::System.IntPtr.Zero)
             {
-                if (bDeletesManually)
+                if (swigCMemOwn)
                 {
-                    bDeletesManually = false;
-                    WwiseProjectDatabase.DeleteSoundBankRef(projectDatabasePtr);
+                    swigCMemOwn = false;
+                    WwiseProjectDatabase.DeleteSoundBankRef(swigCPtr);
                 }
 
-                projectDatabasePtr = global::System.IntPtr.Zero;
+                swigCPtr = global::System.IntPtr.Zero;
             }
 
             global::System.GC.SuppressFinalize(this);
@@ -76,19 +76,18 @@ public class WwiseSoundBankRef: global::System.IDisposable
     {
     }
 
-    public string Name => WwiseProjectDatabase.GetSoundBankName(projectDatabasePtr);
-    public string Path => WwiseProjectDatabase.GetSoundBankPath(projectDatabasePtr);
-    public string ObjectPath => WwiseProjectDatabase.GetSoundBankObjectPath(projectDatabasePtr);
-    public string Language => WwiseProjectDatabase.GetSoundBankLanguage(projectDatabasePtr);
-    public uint LanguageId => WwiseProjectDatabase.GetSoundBankLanguageId(projectDatabasePtr);
-    public System.Guid Guid => WwiseProjectDatabase.GetSoundBankGuid(projectDatabasePtr);
-    public uint ShortId => WwiseProjectDatabase.GetSoundBankShortId(projectDatabasePtr);
-    public bool IsUserBank => WwiseProjectDatabase.IsUserBank(projectDatabasePtr);
-    public bool IsInitBank => WwiseProjectDatabase.IsInitBank(projectDatabasePtr);
-    public bool IsValid => WwiseProjectDatabase.IsSoundBankValid(projectDatabasePtr);
+    public string Name => WwiseProjectDatabase.GetSoundBankName(swigCPtr);
+    public string Path => WwiseProjectDatabase.GetSoundBankPath(swigCPtr);
+    public string Language => WwiseProjectDatabase.GetSoundBankLanguage(swigCPtr);
+    public uint LanguageId => WwiseProjectDatabase.GetSoundBankLanguageId(swigCPtr);
+    public System.IntPtr Guid => WwiseProjectDatabase.GetSoundBankGuid(swigCPtr);
+    public uint ShortId => WwiseProjectDatabase.GetSoundBankShortId(swigCPtr);
+    public bool IsUserBank => WwiseProjectDatabase.IsUserBank(swigCPtr);
+    public bool IsInitBank => WwiseProjectDatabase.IsInitBank(swigCPtr);
+    public bool IsValid => WwiseProjectDatabase.IsSoundBankValid(swigCPtr);
     public WwiseMediaRefArray Medias { get; }
-    public uint MediasCount => WwiseProjectDatabase.GetSoundBankMediasCount(projectDatabasePtr);
-    public WwiseSoundBankEventsRefArray Events { get; }
-    public uint EventsCount => WwiseProjectDatabase.GetSoundBankEventsCount(projectDatabasePtr);
+    public uint MediasCount => WwiseProjectDatabase.GetSoundBankMediasCount(swigCPtr);
+    public WwiseEventRefArray Events { get; }
+    public uint EventsCount => WwiseProjectDatabase.GetSoundBankEventsCount(swigCPtr);
 }
 #endif

@@ -12,16 +12,14 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2026 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
-
-using AK.Wwise.Unity.Logging;
 
 #if UNITY_EDITOR
 
 public class AkUnityIntegrationBuilderBase
 {
-	private readonly string m_progTitle = "Rebuilding Unity Integration Progress";
+	private readonly string m_progTitle = "WwiseUnity: Rebuilding Unity Integration Progress";
 	protected string m_assetsDir = "Undefined";
 	protected string m_assetsPluginsDir = "Undefined";
 	protected string m_buildScriptDir = "Undefined";
@@ -45,7 +43,7 @@ public class AkUnityIntegrationBuilderBase
 	{
 		if (UnityEditor.EditorApplication.isPlaying)
 		{
-			WwiseLogger.Warning("Editor is in play mode. Stop playing any scenes and retry. Aborted.");
+			UnityEngine.Debug.LogWarning("WwiseUnity: Editor is in play mode. Stop playing any scenes and retry. Aborted.");
 			return;
 		}
 
@@ -54,20 +52,20 @@ public class AkUnityIntegrationBuilderBase
 		var fi = new System.IO.FileInfo(configPath);
 		if (fi.Exists)
 		{
-			var msg = string.Format("Found preference file: {0}. Use build variables defined in it.", configPath);
-			WwiseLogger.Log(msg);
+			var msg = string.Format("WwiseUnity: Found preference file: {0}. Use build variables defined in it.", configPath);
+			UnityEngine.Debug.Log(msg);
 		}
 		else
 		{
-			var msg = string.Format("Preference file: {0} is unavailable. Need user input.", configPath);
-			WwiseLogger.Log(msg);
+			var msg = string.Format("WwiseUnity: Preference file: {0} is unavailable. Need user input.", configPath);
+			UnityEngine.Debug.Log(msg);
 
 			m_wwiseSdkDir = UnityEditor.EditorUtility.OpenFolderPanel("Choose Wwise SDK folder", ".", "");
 
 			var isUserCancelledBuild = m_wwiseSdkDir == "";
 			if (isUserCancelledBuild)
 			{
-				WwiseLogger.Log("User cancelled the build.");
+				UnityEngine.Debug.Log("WwiseUnity: User cancelled the build.");
 				return;
 			}
 		}
@@ -76,8 +74,8 @@ public class AkUnityIntegrationBuilderBase
 			return;
 
 		// On Windows, separate shell console window will open. When building is done, close the Window yourself if it stays active. Usually at the end you will see the last line says "Build succeeded" or "Build failed".
-		var progMsg = string.Format("Rebuilding Wwise Unity Integration for {0} ({1}) ...", m_platform, config);
-		WwiseLogger.Log(progMsg);
+		var progMsg = string.Format("WwiseUnity: Rebuilding Wwise Unity Integration for {0} ({1}) ...", m_platform, config);
+		UnityEngine.Debug.Log(progMsg);
 
 		var start = new System.Diagnostics.ProcessStartInfo();
 		start.FileName = m_shell;
@@ -104,10 +102,10 @@ public class AkUnityIntegrationBuilderBase
 					if (isBuildSucceeded)
 					{
 						UnityEditor.EditorUtility.DisplayProgressBar(m_progTitle, progMsg, 1.0f);
-						WwiseLogger.Log("Build succeeded. Check detailed logs under the Logs folder.");
+						UnityEngine.Debug.Log("WwiseUnity: Build succeeded. Check detailed logs under the Logs folder.");
 					}
 					else
-						WwiseLogger.Error("Build failed. Check detailed logs under the Logs folder.");
+						UnityEngine.Debug.LogError("WwiseUnity: Build failed. Check detailed logs under the Logs folder.");
 
 					UnityEditor.AssetDatabase.Refresh();
 
@@ -117,8 +115,8 @@ public class AkUnityIntegrationBuilderBase
 				{
 					UnityEditor.AssetDatabase.Refresh();
 
-					WwiseLogger.Error(string.Format(
-						"Build process failed with exception: {}. Check detailed logs under the Logs folder.", ex));
+					UnityEngine.Debug.LogError(string.Format(
+						"WwiseUnity: Build process failed with exception: {}. Check detailed logs under the Logs folder.", ex));
 					UnityEditor.EditorUtility.ClearProgressBar();
 				}
 			}

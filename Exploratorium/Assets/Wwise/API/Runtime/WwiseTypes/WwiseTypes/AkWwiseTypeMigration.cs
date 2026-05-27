@@ -1,6 +1,4 @@
-using AK.Wwise.Unity.Logging;
-
-#if !(UNITY_QNX) // Disable under unsupported platforms.
+#if !(UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
 #if UNITY_EDITOR
 
 /*******************************************************************************
@@ -17,7 +15,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2026 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 
@@ -94,11 +92,11 @@ namespace AK.Wwise
 			{
 				if (objRef)
 				{
-					WwiseLogger.Log("WwiseObjectReference already set to <" + objRef.DisplayName + "> on <" + wwiseObjRefProperty.serializedObject.targetObject + "> for type <" + objRef.WwiseObjectType + ">.");
+					UnityEngine.Debug.Log("WwiseUnity: WwiseObjectReference already set to <" + objRef.DisplayName + "> on <" + wwiseObjRefProperty.serializedObject.targetObject + "> for type <" + objRef.WwiseObjectType + ">.");
 				}
 				else
 				{
-					WwiseLogger.Log("WwiseObjectReference already set to <null> on <" + wwiseObjRefProperty.serializedObject.targetObject + ">.");
+					UnityEngine.Debug.Log("WwiseUnity: WwiseObjectReference already set to <null> on <" + wwiseObjRefProperty.serializedObject.targetObject + ">.");
 				}
 				return false;
 			}
@@ -107,20 +105,20 @@ namespace AK.Wwise
 			{
 				if (objRef)
 				{
-					WwiseLogger.Warning("Overwriting WwiseObjectReference on <" + wwiseObjRefProperty.serializedObject.targetObject + "> for type <" + objRef.WwiseObjectType + "> from <" + previousObjectReference.DisplayName + "> to <" + objRef.DisplayName + ">.");
+					UnityEngine.Debug.LogWarning("WwiseUnity: Overwriting WwiseObjectReference on <" + wwiseObjRefProperty.serializedObject.targetObject + "> for type <" + objRef.WwiseObjectType + "> from <" + previousObjectReference.DisplayName + "> to <" + objRef.DisplayName + ">.");
 				}
 				else
 				{
-					WwiseLogger.Warning("Overwriting WwiseObjectReference on <" + wwiseObjRefProperty.serializedObject.targetObject + "> from <" + previousObjectReference.DisplayName + "> to <null>.");
+					UnityEngine.Debug.LogWarning("WwiseUnity: Overwriting WwiseObjectReference on <" + wwiseObjRefProperty.serializedObject.targetObject + "> from <" + previousObjectReference.DisplayName + "> to <null>.");
 				}
 			}
 			else if (objRef)
 			{
-				WwiseLogger.Log("Setting WwiseObjectReference on <" + wwiseObjRefProperty.serializedObject.targetObject + "> for type <" + objRef.WwiseObjectType + "> to <" + objRef.DisplayName + ">.");
+				UnityEngine.Debug.Log("WwiseUnity: Setting WwiseObjectReference on <" + wwiseObjRefProperty.serializedObject.targetObject + "> for type <" + objRef.WwiseObjectType + "> to <" + objRef.DisplayName + ">.");
 			}
 			else
 			{
-				WwiseLogger.Log("Setting WwiseObjectReference on <" + wwiseObjRefProperty.serializedObject.targetObject + "> to <null>.");
+				UnityEngine.Debug.Log("WwiseUnity: Setting WwiseObjectReference on <" + wwiseObjRefProperty.serializedObject.targetObject + "> to <null>.");
 			}
 
 			wwiseObjRefProperty.objectReferenceValue = objRef;
@@ -188,7 +186,7 @@ namespace AK.Wwise
 		{
 			if (wwiseObjectReferenceProperty == null)
 			{
-				WwiseLogger.Error("This migration step is no longer necessary.");
+				UnityEngine.Debug.LogError("WwiseUnity: This migration step is no longer necessary.");
 				return false;
 			}
 
@@ -196,7 +194,7 @@ namespace AK.Wwise
 			if (valueGuid == null)
 			{
 				var serializedObject = wwiseObjectReferenceProperty.serializedObject;
-				WwiseLogger.Log("No data to migrate <" + wwiseObjectType + "> on <" + serializedObject.targetObject.GetType() + ">.");
+				UnityEngine.Debug.Log("WwiseUnity: No data to migrate <" + wwiseObjectType + "> on <" + serializedObject.targetObject.GetType() + ">.");
 				return false;
 			}
 
@@ -210,7 +208,7 @@ namespace AK.Wwise
 		{
 			if (wwiseObjectReferenceProperty == null)
 			{
-				WwiseLogger.Error("This migration step is no longer necessary.");
+				UnityEngine.Debug.LogError("WwiseUnity: This migration step is no longer necessary.");
 				return false;
 			}
 
@@ -219,7 +217,7 @@ namespace AK.Wwise
 			if (valueGuid == null || groupGuid == null)
 			{
 				var serializedObject = wwiseObjectReferenceProperty.serializedObject;
-				WwiseLogger.Log("No data to migrate <" + wwiseObjectType + "> on <" + serializedObject.targetObject.GetType() + ">.");
+				UnityEngine.Debug.Log("WwiseUnity: No data to migrate <" + wwiseObjectType + "> on <" + serializedObject.targetObject.GetType() + ">.");
 				return false;
 			}
 
@@ -230,4 +228,4 @@ namespace AK.Wwise
 }
 
 #endif // UNITY_EDITOR
-#endif // #if !(UNITY_QNX) // Disable under unsupported platforms.
+#endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.

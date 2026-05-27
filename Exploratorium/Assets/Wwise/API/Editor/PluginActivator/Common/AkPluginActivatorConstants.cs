@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2026 Audiokinetic Inc.
+Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #if UNITY_EDITOR
@@ -32,6 +32,7 @@ public class AkPluginActivatorConstants
 			PluginID.AkExpander,
 			PluginID.AkGain,
 			PluginID.AkMatrixReverb,
+			PluginID.AkMeter,
 			PluginID.AkParametricEQ,
 			PluginID.AkPeakLimiter,
 			PluginID.AkRoomVerb,
@@ -71,14 +72,13 @@ public class AkPluginActivatorConstants
 			{ PluginID.AkChannelRouter, "AkChannelRouterFX" },
 			{ PluginID.AkConvolutionReverb, "AkConvolutionReverbFX" },
 			{ PluginID.AkDelay, "AkDelayFX" },
-			{ PluginID.AkExpander, "AkCompressorFX" }, // Compressor lib contains Expander
+			{ PluginID.AkExpander, "AkExpanderFX" },
 			{ PluginID.AkFlanger, "AkFlangerFX" },
 			{ PluginID.AkGain, "AkGainFX" },
 			{ PluginID.AkGuitarDistortion, "AkGuitarDistortionFX" },
 			{ PluginID.AkHarmonizer, "AkHarmonizerFX" },
 			{ PluginID.AkMatrixReverb, "AkMatrixReverbFX" },
-			{ PluginID.AkMeter, "AkMeterFX" }, 
-			{ PluginID.AkMultibandMeter, "AkMeterFX" },  // Meter lib contains MultibandMeter
+			{ PluginID.AkMeter, "AkMeterFX" },
 			{ PluginID.AkMotionSink, "AkMotionSink" },
 			{ PluginID.AkMotionSource, "AkMotionSourceSource" },
 			{ PluginID.AkParametricEQ, "AkParametricEQFX" },
@@ -132,7 +132,6 @@ public class AkPluginActivatorConstants
 		AkGain = 0x008B0003, //Gain
 		AkMatrixReverb = 0x00730003, //Matrix Reverb
 		AkMeter = 0x00810003, //Wwise Meter
-		AkMultibandMeter = 0x00C40003, //Wwise Multiband Meter
 		AkParametricEQ = 0x00690003, //Wwise Parametric EQ
 		AkPeakLimiter = 0x006E0003, //Wwise Peak Limiter
 		AkRoomVerb = 0x00760003, //Wwise RoomVerb
