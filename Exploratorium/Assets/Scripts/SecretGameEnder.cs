@@ -11,6 +11,7 @@ public class SecretGameEnder : MonoBehaviour
     public GameObject menuCanvas;
     private void Start()
     {
+        Cursor.lockState = CursorLockMode.None;
         leftStar = 0;
         rightStar = 0;
         timer = 0.0f;

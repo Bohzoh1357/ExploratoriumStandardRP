@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
         endgameTimer = 0.0f;
         starCountRTPC.SetGlobalValue(starCount);
         timerEnable = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame

@@ -24,6 +24,7 @@ public class OptionsMenuButtons : MonoBehaviour
             isOptionsOpen = !isOptionsOpen;
             optionsMenu.SetActive(isOptionsOpen);
             playerCharacter.enabled = !isOptionsOpen;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 
@@ -38,5 +39,6 @@ public class OptionsMenuButtons : MonoBehaviour
         isOptionsOpen = !isOptionsOpen;
         optionsMenu.SetActive(isOptionsOpen);
         playerCharacter.enabled = !isOptionsOpen;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }
